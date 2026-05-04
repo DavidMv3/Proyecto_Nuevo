@@ -1,0 +1,23 @@
+{
+  // ──────────────────────────────────────────────────────────────────
+  // JDK para la extensión de Gradle (VS Code Gradle Extension)
+  // Apunta al JDK 21 bundled con Android Studio, evitando el Java 8
+  // del sistema que causaba el error:
+  //   "Dependency requires at least JVM runtime version 11"
+  // ──────────────────────────────────────────────────────────────────
+  "java.jdt.ls.java.home": "C:\\Program Files\\Android\\Android Studio\\jbr",
+  "gradle.javaHome": "C:\\Program Files\\Android\\Android Studio\\jbr",
+  // Gradle extension: reconocer subproyectos anidados (Android dentro de Flutter)
+  "gradle.nestedProjects": true,
+  // Excluir carpetas de build del watcher para evitar análisis innecesario
+  "files.watcherExclude": {
+    "**/build/**": true,
+    "**/.gradle/**": true,
+    "**/android/.gradle/**": true
+  },
+  // Flutter & Dart
+  "editor.formatOnSave": true,
+  "[dart]": {
+    "editor.formatOnSave": true
+  }
+}
