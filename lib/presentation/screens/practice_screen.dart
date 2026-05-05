@@ -9,12 +9,36 @@ import '../providers/practice_notifier.dart';
 import '../widgets/interactive_equation.dart';
 import '../widgets/andean_progress_banner.dart';
 
-class PracticeScreen extends ConsumerWidget {
+class PracticeScreen extends ConsumerStatefulWidget {
   final int exerciseIndex;
   const PracticeScreen({super.key, required this.exerciseIndex});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<PracticeScreen> createState() => _PracticeScreenState();
+}
+
+class _PracticeScreenState extends ConsumerState<PracticeScreen> {
+  final ScrollController _scrollController = ScrollController();
+
+  void _scrollToBottom() {
+    if (_scrollController.hasClients) {
+      _scrollController.animateTo(
+        _scrollController.position.maxScrollExtent,
+        duration: const Duration(milliseconds: 500),
+        curve: Curves.easeOutCubic,
+      );
+    }
+  }
+
+  @override
+  void dispose() {
+    _scrollController.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final exerciseIndex = widget.exerciseIndex;
     final state    = ref.watch(practiceProvider(exerciseIndex));
     final notifier = ref.read(practiceProvider(exerciseIndex).notifier);
     final profile  = ref.watch(playerProfileProvider);
@@ -92,6 +116,13 @@ class PracticeScreen extends ConsumerWidget {
       );
     });
 
+    // ── Auto-scroll al cambiar de paso ───────────────────────────────────────
+    ref.listen<PracticeState>(practiceProvider(exerciseIndex), (prev, next) {
+      if (prev != null && prev.currentStepIndex != next.currentStepIndex) {
+        Future.delayed(const Duration(milliseconds: 300), _scrollToBottom);
+      }
+    });
+
     return Scaffold(
       backgroundColor: AppTheme.backgroundLight,
       body: Stack(
@@ -139,6 +170,7 @@ class PracticeScreen extends ConsumerWidget {
                 );
 
                 final interactiveArea = SingleChildScrollView(
+                  controller: _scrollController,
                   padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -282,7 +314,7 @@ class PracticeScreen extends ConsumerWidget {
                           crossAxisAlignment: CrossAxisAlignment.stretch,
                           children: [
                             Expanded(
-                              flex: 4,
+                              flex: 3,
                               child: LayoutBuilder(
                                 builder: (context, constraints) {
                                   return Center(
@@ -300,7 +332,7 @@ class PracticeScreen extends ConsumerWidget {
                               ),
                             ),
                             Expanded(
-                              flex: 6,
+                              flex: 7,
                               child: Column(
                                 children: [
                                   const SizedBox(height: 16),
@@ -1054,13 +1086,13 @@ class _MultipleChoiceArea extends StatelessWidget {
       children: [
         ...options.map((opt) {
           return Padding(
-            padding: const EdgeInsets.only(bottom: 12),
+            padding: const EdgeInsets.only(bottom: 8),
             child: SizedBox(
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: isStepDone ? null : () => onSelected(opt),
                 style: ElevatedButton.styleFrom(
-                  padding: const EdgeInsets.symmetric(vertical: 20),
+                  padding: const EdgeInsets.symmetric(vertical: 14),
                   backgroundColor: Colors.white,
                   foregroundColor: AppTheme.textDark,
                   elevation: 6,
@@ -1078,7 +1110,7 @@ class _MultipleChoiceArea extends StatelessWidget {
                     MathTokenWidget.formatMathText(opt),
                     textAlign: TextAlign.center,
                     style: const TextStyle(
-                        fontSize: 18, fontWeight: FontWeight.w900, fontFamily: 'Nunito'),
+                        fontSize: 16, fontWeight: FontWeight.w900, fontFamily: 'Nunito'),
                   ),
                 ),
               ),
@@ -1106,7 +1138,7 @@ class _BottomActionArea extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.fromLTRB(20, 14, 20, 24),
+      padding: const EdgeInsets.fromLTRB(20, 10, 20, 16),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: const BorderRadius.only(
@@ -1140,7 +1172,7 @@ class _BottomActionArea extends StatelessWidget {
                 ? '¡Terminar Ejercicio!'
                 : 'Siguiente Paso  →'),
             style: ElevatedButton.styleFrom(
-              padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
+              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
             ),
           ),
         ),
@@ -1248,7 +1280,7 @@ class _EquationHistory extends ConsumerWidget {
                     child: Text(
                       MathTokenWidget.formatMathText(equationText),
                       style: TextStyle(
-                        fontSize: 24, 
+                        fontSize: 20, 
                         fontWeight: FontWeight.w900,
                         fontFamily: 'Nunito',
                         color: AppTheme.textDark.withValues(alpha: isLast ? 1.0 : 0.5),
@@ -1291,7 +1323,7 @@ class _EquationHistory extends ConsumerWidget {
                     child: Text(
                       MathTokenWidget.formatMathText(equationText),
                       style: TextStyle(
-                        fontSize: 24, 
+                        fontSize: 20, 
                         fontWeight: FontWeight.w900,
                         fontFamily: 'Nunito',
                         color: AppTheme.textDark.withValues(alpha: isLast ? 1.0 : 0.5),

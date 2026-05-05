@@ -463,7 +463,7 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
         ? EquationToken.fromExpression(nextStep.expressionOverride!)
         : state.tokens;
 
-    final newExpression = nextStep.expressionOverride ?? nextTokens.map((t) => t.value).join();
+    final newExpression = nextStep.expressionOverride ?? nextTokens.map((t) => t.value).join(' ');
 
     state = state.copyWith(
       currentStepIndex: nextIndex,

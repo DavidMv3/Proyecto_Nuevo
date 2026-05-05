@@ -47,7 +47,7 @@ class InteractiveEquation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 24), // Aumentado para dar "aire"
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16), // Reducido para ahorrar espacio
       decoration: AppTheme.equationPanelDecoration,
       width: double.infinity,
       child: Column(
@@ -64,7 +64,7 @@ class InteractiveEquation extends StatelessWidget {
                       child: Row(
                         children: tokens
                             .map((token) => Padding(
-                                  padding: const EdgeInsets.symmetric(horizontal: 10), // Aumentado de 4 a 10
+                                  padding: const EdgeInsets.symmetric(horizontal: 6), // Reducido de 10 a 6
                                   child: MathTokenWidget(
                                     key: ValueKey(token.id),
                                     token: token,
@@ -350,13 +350,13 @@ class _MathTokenWidgetState extends State<MathTokenWidget>
           highlightColor: Colors.black.withValues(alpha: 0.05),
           child: Container(
             // TAREA 2: Restricciones estrictas
-            constraints: const BoxConstraints(minWidth: 45, minHeight: 55, maxHeight: 55),
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+            constraints: const BoxConstraints(minWidth: 38, minHeight: 48, maxHeight: 48),
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
             alignment: Alignment.center,
             child: Text(
               MathTokenWidget.formatMathText(widget.token.value),
               style: TextStyle(
-                fontSize:   22,
+                fontSize:   20,
                 fontWeight: FontWeight.w900,
                 color:      _resolveTextColor(),
                 fontFamily: 'Nunito',
