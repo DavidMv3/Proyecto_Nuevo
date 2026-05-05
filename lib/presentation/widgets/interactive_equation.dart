@@ -159,16 +159,24 @@ class MathTokenWidget extends StatefulWidget {
 
   /// Formatea el texto crudo (ej: sqrt -> √, * -> ×) para visualización robusta.
   static String formatMathText(String input) {
-    return input
+    String output = input
         .replaceAll(' * ', ' × ')
         .replaceAll('*', '×')
         .replaceAll(' / ', ' ÷ ')
         .replaceAll('/', '÷')
-        .replaceAll('sqrt', '√')
-        .replaceAll(' ^ 2', '²').replaceAll('^2', '²')
-        .replaceAll(' ^ 3', '³').replaceAll('^3', '³')
-        .replaceAll(' ^ 6', '⁶').replaceAll('^6', '⁶')
-        .replaceAll(' ^ 8', '⁸').replaceAll('^8', '⁸');
+        .replaceAll('sqrt', '√');
+
+    final Map<String, String> superscripts = {
+      '0': '⁰', '1': '¹', '2': '²', '3': '³', '4': '⁴',
+      '5': '⁵', '6': '⁶', '7': '⁷', '8': '⁸', '9': '⁹'
+    };
+    
+    output = output.replaceAllMapped(RegExp(r'\^\s*(\d+)'), (match) {
+      final numberStr = match.group(1)!;
+      return numberStr.split('').map((char) => superscripts[char] ?? char).join('');
+    });
+
+    return output;
   }
 
   /// Formatea la expresión para que Math.tex (LaTeX) la interprete correctamente.

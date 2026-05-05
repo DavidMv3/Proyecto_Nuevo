@@ -118,7 +118,7 @@ class PracticeScreen extends ConsumerWidget {
                 );
 
                 final llamaAndInstruction = Padding(
-                  padding: const EdgeInsets.fromLTRB(20, 16, 20, 12),
+                  padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -130,7 +130,7 @@ class PracticeScreen extends ConsumerWidget {
                         mood: state.llamaMood,
                         coins: profile.availableCoins,
                       ),
-                      const SizedBox(height: 16),
+                      const SizedBox(height: 12),
                       _InstructionCard(
                         instruction: state.currentStep.instruction,
                       ),
@@ -139,18 +139,18 @@ class PracticeScreen extends ConsumerWidget {
                 );
 
                 final interactiveArea = SingleChildScrollView(
-                  padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+                  padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       // Historial de Pasos Resueltos
                       _EquationHistory(exerciseIndex: exerciseIndex),
-                      const SizedBox(height: 24),
+                      const SizedBox(height: 16),
 
                       // 💡 BOTÓN DE PISTA (TAREA 2)
                       Center(
                         child: Container(
-                          margin: const EdgeInsets.only(bottom: 20),
+                          margin: const EdgeInsets.only(bottom: 12),
                           child: Material(
                             color: Colors.transparent,
                             child: InkWell(
@@ -282,7 +282,7 @@ class PracticeScreen extends ConsumerWidget {
                           crossAxisAlignment: CrossAxisAlignment.stretch,
                           children: [
                             Expanded(
-                              flex: 3,
+                              flex: 4,
                               child: LayoutBuilder(
                                 builder: (context, constraints) {
                                   return Center(
@@ -300,7 +300,7 @@ class PracticeScreen extends ConsumerWidget {
                               ),
                             ),
                             Expanded(
-                              flex: 7,
+                              flex: 6,
                               child: Column(
                                 children: [
                                   const SizedBox(height: 16),
@@ -985,7 +985,7 @@ class _InstructionCard extends StatelessWidget {
           child: AnimatedContainer(
             duration: const Duration(milliseconds: 300),
             curve: Curves.easeOut,
-            padding: const EdgeInsets.fromLTRB(16, 14, 16, 14),
+            padding: const EdgeInsets.fromLTRB(14, 10, 14, 10),
             decoration: AppTheme.speechBubbleDecoration,
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -994,10 +994,10 @@ class _InstructionCard extends StatelessWidget {
                   child: Text(
                     MathTokenWidget.formatMathText(instruction), // TAREA 4
                     style: const TextStyle(
-                      fontSize: 16,
+                      fontSize: 15,
                       fontWeight: FontWeight.w700,
                       color: AppTheme.textDark,
-                      height: 1.5,
+                      height: 1.4,
                     ),
                   ),
                 ),
@@ -1248,7 +1248,7 @@ class _EquationHistory extends ConsumerWidget {
                     child: Text(
                       MathTokenWidget.formatMathText(equationText),
                       style: TextStyle(
-                        fontSize: 28, 
+                        fontSize: 24, 
                         fontWeight: FontWeight.w900,
                         fontFamily: 'Nunito',
                         color: AppTheme.textDark.withValues(alpha: isLast ? 1.0 : 0.5),
@@ -1291,7 +1291,7 @@ class _EquationHistory extends ConsumerWidget {
                     child: Text(
                       MathTokenWidget.formatMathText(equationText),
                       style: TextStyle(
-                        fontSize: 28, 
+                        fontSize: 24, 
                         fontWeight: FontWeight.w900,
                         fontFamily: 'Nunito',
                         color: AppTheme.textDark.withValues(alpha: isLast ? 1.0 : 0.5),
