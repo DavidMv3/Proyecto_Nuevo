@@ -8,6 +8,7 @@ import '../providers/player_profile_provider.dart';
 import '../providers/practice_notifier.dart';
 import '../widgets/interactive_equation.dart';
 import '../widgets/andean_progress_banner.dart';
+import '../widgets/math_notebook_line.dart';
 
 class PracticeScreen extends ConsumerStatefulWidget {
   final int exerciseIndex;
@@ -162,19 +163,51 @@ class _PracticeScreenState extends ConsumerState<PracticeScreen> {
                         coins: profile.availableCoins,
                       ),
                       const SizedBox(height: 12),
-                      _InstructionCard(
-                        instruction: state.currentStep.instruction,
+                      ConstrainedBox(
+                        constraints: BoxConstraints(
+                          maxHeight: orientation == Orientation.landscape 
+                              ? MediaQuery.of(context).size.height * 0.35 
+                              : MediaQuery.of(context).size.height * 0.25,
+                        ),
+                        child: SingleChildScrollView(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: List.generate(state.currentStepIndex + 1, (index) {
+                              return Padding(
+                                padding: const EdgeInsets.only(bottom: 8.0),
+                                child: _InstructionCard(
+                                  instruction: state.exercise.steps[index].instruction,
+                                  isDimmed: index < state.currentStepIndex,
+                                ),
+                              );
+                            }),
+                          ),
+                        ),
                       ),
                     ],
                   ),
                 );
 
-                final interactiveArea = SingleChildScrollView(
-                  controller: _scrollController,
-                  padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
+                final interactiveArea = Container(
+                  margin: const EdgeInsets.fromLTRB(16, 0, 16, 0),
+                  decoration: BoxDecoration(
+                    color: const Color(0xFFFFF8E1), // Color crema para el cuaderno
+                    borderRadius: BorderRadius.circular(16),
+                    border: Border.all(color: Colors.brown.shade200, width: 2),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withValues(alpha: 0.05),
+                        blurRadius: 8,
+                        offset: const Offset(0, 4),
+                      ),
+                    ],
+                  ),
+                  child: SingleChildScrollView(
+                    controller: _scrollController,
+                    padding: const EdgeInsets.fromLTRB(16, 20, 16, 20),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
                       // Historial de Pasos Resueltos
                       _EquationHistory(exerciseIndex: exerciseIndex),
                       const SizedBox(height: 16),
@@ -297,7 +330,8 @@ class _PracticeScreenState extends ConsumerState<PracticeScreen> {
                       ],
                     ],
                   ),
-                );
+                ),
+              );
 
                 final bottomAction = _BottomActionArea(
                   stepCompleted: state.stepCompleted,
@@ -980,16 +1014,20 @@ class _StepProgressBar extends StatelessWidget {
 
 class _InstructionCard extends StatelessWidget {
   final String instruction;
+  final bool isDimmed;
 
   const _InstructionCard({
     required this.instruction,
+    this.isDimmed = false,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
+    return Opacity(
+      opacity: isDimmed ? 0.6 : 1.0,
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
         Container(
           width: 42,
           height: 42,
@@ -1038,6 +1076,7 @@ class _InstructionCard extends StatelessWidget {
           ),
         ),
       ],
+    ),
     );
   }
 }
@@ -1255,87 +1294,29 @@ class _EquationHistory extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     // Solo se reconstruye cuando la lista de historial cambia
     final history = ref.watch(practiceProvider(exerciseIndex).select((s) => s.equationHistory));
-    final exercise = ref.watch(practiceProvider(exerciseIndex).select((s) => s.exercise));
 
-    return ListView.builder(
-      shrinkWrap: true,
-      physics: const NeverScrollableScrollPhysics(),
-      itemCount: history.length,
-      itemBuilder: (context, index) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: List.generate(history.length, (index) {
         final equationText = history[index];
-        final isLast = index == history.length - 1;
         
+        String formattedEquation = equationText;
         if (index == 0) {
-          // Ejercicio Original
-          return Padding(
-            padding: const EdgeInsets.only(bottom: 16.0),
-            child: Column(
-              children: [
-                const Text('Ejercicio Original', 
-                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.grey)),
-                const SizedBox(height: 8),
-                Center(
-                  child: SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Text(
-                      MathTokenWidget.formatMathText(equationText),
-                      style: TextStyle(
-                        fontSize: 20, 
-                        fontWeight: FontWeight.w900,
-                        fontFamily: 'Nunito',
-                        color: AppTheme.textDark.withValues(alpha: isLast ? 1.0 : 0.5),
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          );
+          formattedEquation = '$equationText =';
         } else {
-          // Paso Resuelto
-          final stepInstruction = exercise.steps[index - 1].instruction;
-          return Padding(
-            padding: const EdgeInsets.only(bottom: 16.0),
-            child: Column(
-              children: [
-                const Icon(Icons.arrow_downward_rounded, color: Colors.grey, size: 24),
-                const SizedBox(height: 8),
-                Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                  decoration: BoxDecoration(
-                    color: AppTheme.primaryGreen.withValues(alpha: 0.1),
-                    borderRadius: BorderRadius.circular(16),
-                  ),
-                  child: Text(
-                    stepInstruction,
-                    textAlign: TextAlign.center,
-                    style: const TextStyle(
-                      fontSize: 15, 
-                      fontWeight: FontWeight.w700, 
-                      color: AppTheme.primaryGreenDk,
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 12),
-                Center(
-                  child: SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Text(
-                      MathTokenWidget.formatMathText(equationText),
-                      style: TextStyle(
-                        fontSize: 20, 
-                        fontWeight: FontWeight.w900,
-                        fontFamily: 'Nunito',
-                        color: AppTheme.textDark.withValues(alpha: isLast ? 1.0 : 0.5),
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          );
+          formattedEquation = '= $equationText';
         }
-      },
+        
+        return Padding(
+          padding: const EdgeInsets.only(bottom: 16.0),
+          child: Center(
+            child: MathNotebookLine(
+              equation: formattedEquation,
+              showBoxesAndColors: index == 0,
+            ),
+          ),
+        );
+      }),
     );
   }
 }
