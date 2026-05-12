@@ -48,8 +48,36 @@ void main() async {
 // App Root
 // ---------------------------------------------------------------------------
 
-class MateAndinaApp extends StatelessWidget {
+class MateAndinaApp extends StatefulWidget {
   const MateAndinaApp({super.key});
+
+  @override
+  State<MateAndinaApp> createState() => _MateAndinaAppState();
+}
+
+class _MateAndinaAppState extends State<MateAndinaApp>
+    with WidgetsBindingObserver {
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addObserver(this);
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    super.dispose();
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.resumed) {
+      FeedbackService.instance.onForeground();
+    } else {
+      // paused, inactive, hidden, detached → silenciar todo
+      FeedbackService.instance.onBackground();
+    }
+  }
 
   @override
   Widget build(BuildContext context) {

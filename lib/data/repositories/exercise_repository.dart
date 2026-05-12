@@ -96,6 +96,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 2: Operaciones en bloques.',
           feedbackError: 'Recuerda que cuando un bloque está compuesto por un solo número, este se conserva.',
+          workingExpression: '18 + ____',
         ),
         StepEntity(
           id: 'easy_1_s5',
@@ -105,6 +106,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 5: Multiplicación.',
           feedbackError: 'El resultado de la multiplicación 3 * 5 es 15.',
+          workingExpression: '18 + 15',
         ),
         StepEntity(
           id: 'easy_1_s6',
@@ -150,6 +152,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 2: Operaciones en bloques.',
           feedbackError: 'Los bloques que están compuestos por un solo número se conservan, ya que no requieren realizar operaciones.',
+          workingExpression: '8 - ____ + 1',
         ),
         StepEntity(
           id: 'easy_2_s4',
@@ -159,6 +162,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 5: Multiplicación.',
           feedbackError: 'El resultado de la multiplicación 3 * 2 es 6.',
+          workingExpression: '8 - 6 + 1',
         ),
         StepEntity(
           id: 'easy_2_s5',
@@ -204,6 +208,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 5: Multiplicación.',
           feedbackError: 'El resultado de la multiplicación 4 * 5 es 20.',
+          workingExpression: '20 - ____',
         ),
         StepEntity(
           id: 'easy_3_s4',
@@ -214,6 +219,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 5: División.',
           feedbackError: 'El resultado de la división 6 / 3 es 2.',
+          workingExpression: '20 - 2',
         ),
         StepEntity(
           id: 'easy_3_s5',
@@ -259,6 +265,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 2: Operaciones en bloques.',
           feedbackError: 'Cuando un bloque no tiene operaciones internas, el número se conserva, ya que no es necesario realizar ningún cálculo en ese bloque.',
+          workingExpression: '10 - ____ + ____',
         ),
         StepEntity(
           id: 'easy_4_s4',
@@ -277,6 +284,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 5: Multiplicación.',
           feedbackError: 'El resultado de la multiplicación 3 * 2 es 6.',
+          workingExpression: '10 - 6 + ____',
         ),
         StepEntity(
           id: 'easy_4_s6',
@@ -287,6 +295,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 4: Potenciación.',
           feedbackError: 'El resultado de la potencia 2 ^ 3 es 8.',
+          workingExpression: '10 - 6 + 8',
         ),
         StepEntity(
           id: 'easy_4_s7',
@@ -332,6 +341,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 2: Operaciones en bloques.',
           feedbackError: 'Los bloques que están compuestos por un solo número se conservan, ya que no requieren realizar operaciones.',
+          workingExpression: '1 + ____ - 1 + ____',
         ),
         StepEntity(
           id: 'easy_5_s4',
@@ -350,6 +360,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 5: División.',
           feedbackError: 'El resultado de la división 12 / 4 es 3.',
+          workingExpression: '1 + 3 - 1 + ____',
         ),
         StepEntity(
           id: 'easy_5_s6',
@@ -360,6 +371,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 4: Potenciación.',
           feedbackError: 'El resultado de la potencia 2 ^ 3 es 8.',
+          workingExpression: '1 + 3 - 1 + 8',
         ),
         StepEntity(
           id: 'easy_5_s7',
@@ -415,6 +427,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 6: Resta.',
           feedbackError: 'El resultado de la resta 3 - 2 es 1.',
+          workingExpression: '1 + ____',
         ),
         StepEntity(
           id: 'easy_6_s5',
@@ -445,6 +458,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 3: Operaciones en paréntesis.',
           feedbackError: 'El resultado de la resta 8 - 6 es 2.',
+          workingExpression: '1 + 2',
         ),
         StepEntity(
           id: 'easy_6_s8',
@@ -500,6 +514,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 6: Suma.',
           feedbackError: 'El resultado de la suma 4 + 12 es 16.',
+          workingExpression: '____ - ____',
         ),
         StepEntity(
           id: 'easy_7_s5',
@@ -519,6 +534,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 5: División.',
           feedbackError: 'El resultado de la división 15 / 5 es 3.',
+          workingExpression: '____ - 3',
         ),
         StepEntity(
           id: 'easy_7_s7',
@@ -539,6 +555,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 4: Radicación.',
           feedbackError: 'El resultado de la raíz cuadrada de 16 es 4.',
+          workingExpression: '4 - 3',
         ),
         StepEntity(
           id: 'easy_7_s9',
@@ -604,6 +621,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 4: Potencias.',
           feedbackError: 'El resultado de la potencia 3^2 es 9.',
+          workingExpression: '9 + ____ - ____',
         ),
         StepEntity(
           id: 'easy_8_s5',
@@ -614,6 +632,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 5: Multiplicación.',
           feedbackError: 'El resultado de la multiplicación 5 x 2 es 10.',
+          workingExpression: '9 + 10 - ____',
         ),
         StepEntity(
           id: 'easy_8_s6',
@@ -633,6 +652,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 6: Resta interna.',
           feedbackError: 'El resultado de la resta 30 - 5 es 25.',
+          workingExpression: '9 + 10 - sqrt( 25 )',
         ),
         StepEntity(
           id: 'easy_8_s8',
@@ -643,6 +663,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 4: Radicación.',
           feedbackError: 'El resultado de la raíz cuadrada sqrt( 25 ) es 5.',
+          workingExpression: '9 + 10 - 5',
         ),
         StepEntity(
           id: 'easy_8_s9',
@@ -707,6 +728,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 5: División.',
           feedbackError: 'El resultado de la división 20 / 4 es 5.',
+          workingExpression: '____ + ____',
         ),
         StepEntity(
           id: 'easy_9_s6',
@@ -726,6 +748,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 4: Potenciación.',
           feedbackError: 'El resultado de la potencia 2^3 es 8.',
+          workingExpression: '____ + ____',
         ),
         StepEntity(
           id: 'easy_9_s8',
@@ -745,6 +768,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 6: Suma.',
           feedbackError: 'El resultado de la suma 5 + 1 es 6.',
+          workingExpression: '____ + ____',
         ),
         StepEntity(
           id: 'easy_9_s10',
@@ -755,6 +779,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 5: Multiplicación.',
           feedbackError: 'El resultado de la multiplicación 4 x 8 es 32.',
+          workingExpression: '____ + 32',
         ),
         StepEntity(
           id: 'easy_9_s11',
@@ -774,6 +799,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 5: Multiplicaciones.',
           feedbackError: 'El resultado de la multiplicación 4 x 6 es 24.',
+          workingExpression: '24 + 32',
         ),
         StepEntity(
           id: 'easy_9_s13',
@@ -848,6 +874,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 6: Suma.',
           feedbackError: 'El resultado de 2 + 2 es 4.',
+          workingExpression: '____ - 3',
         ),
         StepEntity(
           id: 'easy_10_s7',
@@ -867,6 +894,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 4: Potenciación.',
           feedbackError: 'El resultado de 2^2 es 4.',
+          workingExpression: '____ - 3',
         ),
         StepEntity(
           id: 'easy_10_s9',
@@ -886,6 +914,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 5: Multiplicación.',
           feedbackError: 'El resultado de 4 x 4 es 16.',
+          workingExpression: '16 - 3',
         ),
         StepEntity(
           id: 'easy_10_s11',
@@ -956,6 +985,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 4: Potenciación.',
           feedbackError: 'El resultado de 3^2 es 9.',
+          workingExpression: '9 - ____',
         ),
         StepEntity(
           id: 'medium_1_s6',
@@ -994,6 +1024,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 5: Multiplicación.',
           feedbackError: 'El resultado de 2 x 3 es 6.',
+          workingExpression: '9 - 6',
         ),
         StepEntity(
           id: 'medium_1_s10',
@@ -1045,6 +1076,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 4: Potenciación.',
           feedbackError: 'El resultado de la potencia 5^2 es 25.',
+          workingExpression: '25 + ____ - ____ + ____ - ____',
         ),
         StepEntity(
           id: 'hard_1_s4',
@@ -1156,6 +1188,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 5: Multiplicación.',
           feedbackError: 'El resultado de la multiplicación 8 x 4 es 32.',
+          workingExpression: '25 + 32 - ____ + ____ - ____',
         ),
         StepEntity(
           id: 'hard_1_s16',
@@ -1166,6 +1199,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 4: Potenciación.',
           feedbackError: 'El resultado de la potencia 7^2 es 49.',
+          workingExpression: '25 + 32 - 49 + ____ - ____',
         ),
         StepEntity(
           id: 'hard_1_s17',
@@ -1185,6 +1219,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 2: Suma en paréntesis.',
           feedbackError: 'La suma 5 + 2 = 7.',
+          workingExpression: '25 + 32 - 49 + ____ - ____',
         ),
         StepEntity(
           id: 'hard_1_s19',
@@ -1195,6 +1230,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 4: Raíz cuadrada.',
           feedbackError: 'sqrt(16) = 4.',
+          workingExpression: '25 + 32 - 49 + ____ - 4',
         ),
         StepEntity(
           id: 'hard_1_s20',
@@ -1214,6 +1250,7 @@ class ExerciseRepository {
           correctIds: [],
           algorithmHint: 'Paso 5: Multiplicación.',
           feedbackError: '2 * 7 = 14.',
+          workingExpression: '25 + 32 - 49 + 14 - 4',
         ),
         StepEntity(
           id: 'hard_1_s22',

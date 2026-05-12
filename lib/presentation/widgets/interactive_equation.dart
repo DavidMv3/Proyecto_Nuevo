@@ -3,13 +3,20 @@ import '../../domain/entities/equation_token.dart';
 import '../../core/theme/app_theme.dart';
 
 // ─────────────────────────────────────────────────────────────────────────────
-// InteractiveEquation — "Aprender Haciendo" (sin pistas automáticas)
+// InteractiveEquation — Texto matemático con bloques recuadrados interactivos
 //
-// Cambios vs. versión anterior:
-//  • Se eliminó el Timer de 5 s y el pulse de pista visual (RNF pedagógico).
-//  • Nuevo parámetro [errorTokenId]: el token incorrecto recibe un flash rojo
-//    breve (animación interna) sin mostrar SnackBar ni texto explicativo.
+// Los tokens se agrupan en bloques (entre + y - a profundidad 0).
+// Cada bloque se envuelve en un Container con borde (recuadro).
+// Los signos separadores (+, -) se muestran fuera de los recuadros en azul.
+// Dentro de cada bloque, ^ se renderiza como superíndice y sqrt como √.
 // ─────────────────────────────────────────────────────────────────────────────
+
+/// Represents a group of tokens: either a block (needs box) or a separator sign.
+class _TokenGroup {
+  final List<EquationToken> tokens;
+  final bool isSeparator;
+  const _TokenGroup(this.tokens, {this.isSeparator = false});
+}
 
 class InteractiveEquation extends StatelessWidget {
   final List<EquationToken> tokens;
@@ -17,18 +24,9 @@ class InteractiveEquation extends StatelessWidget {
   final Set<String> correctIds;
   final void Function(String tokenId) onTokenTapped;
   final bool isStepDone;
-
-  /// ID del último token incorrecto tocado. Dispara el flash rojo en ese bloque.
   final String? errorTokenId;
-
-  /// IDs de los tokens destacados por el sistema de pistas (clase 'hint').
   final Set<String> hintIds;
-
-  /// Si es falso, los tokens no responden a clics (Tarea 1).
   final bool isEnabled;
-
-  /// Lista de IDs de tokens que deben estar resaltados (Tarea 4).
-  /// Si esta lista no está vacía, los tokens NO incluidos se verán atenuados (0.3 opacidad).
   final Set<String> focusIds;
 
   const InteractiveEquation({
@@ -44,93 +42,276 @@ class InteractiveEquation extends StatelessWidget {
     this.focusIds = const {},
   });
 
+  /// Groups tokens into blocks (between +/- at paren depth 0) and separators.
+  List<_TokenGroup> _groupTokens() {
+    List<_TokenGroup> groups = [];
+    List<EquationToken> currentBlock = [];
+    int parenDepth = 0;
+
+    for (final token in tokens) {
+      final v = token.value;
+      if (v.contains('(')) parenDepth += v.split('(').length - 1;
+      if (v.contains(')')) parenDepth -= v.split(')').length - 1;
+      if (parenDepth < 0) parenDepth = 0;
+
+      if (parenDepth == 0 && (v == '+' || v == '-')) {
+        // Flush current block
+        if (currentBlock.isNotEmpty) {
+          groups.add(_TokenGroup(List.from(currentBlock)));
+          currentBlock.clear();
+        }
+        // Add separator
+        groups.add(_TokenGroup([token], isSeparator: true));
+      } else {
+        currentBlock.add(token);
+      }
+    }
+    if (currentBlock.isNotEmpty) {
+      groups.add(_TokenGroup(List.from(currentBlock)));
+    }
+    return groups;
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16), // Reducido para ahorrar espacio
-      decoration: AppTheme.equationPanelDecoration,
-      width: double.infinity,
-      child: Column(
-        children: [
-          Row(
-            children: [
-              Expanded(
-                child: Stack(
-                  alignment: Alignment.center,
-                  children: [
-                    SingleChildScrollView(
-                      scrollDirection: Axis.horizontal,
-                      padding: const EdgeInsets.symmetric(horizontal: 30),
-                      child: Row(
-                        children: tokens
-                            .map((token) => Padding(
-                                  padding: const EdgeInsets.symmetric(horizontal: 6), // Reducido de 10 a 6
-                                  child: MathTokenWidget(
-                                    key: ValueKey(token.id),
-                                    token: token,
-                                    isSelected: selectedIds.contains(token.id),
-                                    isCorrect: correctIds.contains(token.id),
-                                    isStepDone: isStepDone,
-                                    hasError: errorTokenId == token.id,
-                                    isHint: hintIds.contains(token.id),
-                                    isEnabled: isEnabled,
-                                    isDimmed: focusIds.isNotEmpty && !focusIds.contains(token.id),
-                                    onTap: () => onTokenTapped(token.id),
-                                  ),
-                                ))
-                            .toList(),
-                      ),
-                    ),
-                    // Indicador de más contenido (degradado derecho)
-                    Positioned(
-                      right: 0,
-                      top: 0,
-                      bottom: 0,
-                      width: 40,
-                      child: IgnorePointer(
-                        child: Container(
-                          decoration: BoxDecoration(
-                            gradient: LinearGradient(
-                              begin: Alignment.centerLeft,
-                              end: Alignment.centerRight,
-                              colors: [
-                                Colors.white.withValues(alpha: 0),
-                                Colors.white.withValues(alpha: 0.8),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
+    final groups = _groupTokens();
+
+    return Wrap(
+      alignment: WrapAlignment.center,
+      crossAxisAlignment: WrapCrossAlignment.center,
+      spacing: 4,
+      runSpacing: 8,
+      children: groups.map((group) {
+        if (group.isSeparator) {
+          final token = group.tokens.first;
+          return _SeparatorTokenWidget(
+            token: token,
+            isSelected: selectedIds.contains(token.id),
+            isCorrect: correctIds.contains(token.id),
+            isStepDone: isStepDone,
+            hasError: errorTokenId == token.id,
+            isHint: hintIds.contains(token.id),
+            isEnabled: isEnabled,
+            isDimmed: focusIds.isNotEmpty && !focusIds.contains(token.id),
+            onTap: () => onTokenTapped(token.id),
+          );
+        } else {
+          return _BlockWidget(
+            tokens: group.tokens,
+            selectedIds: selectedIds,
+            correctIds: correctIds,
+            isStepDone: isStepDone,
+            errorTokenId: errorTokenId,
+            hintIds: hintIds,
+            isEnabled: isEnabled,
+            focusIds: focusIds,
+            onTokenTapped: onTokenTapped,
+          );
+        }
+      }).toList(),
+    );
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// _BlockWidget — A boxed group of tokens
+// ─────────────────────────────────────────────────────────────────────────────
+
+class _BlockWidget extends StatelessWidget {
+  final List<EquationToken> tokens;
+  final Set<String> selectedIds;
+  final Set<String> correctIds;
+  final bool isStepDone;
+  final String? errorTokenId;
+  final Set<String> hintIds;
+  final bool isEnabled;
+  final Set<String> focusIds;
+  final void Function(String tokenId) onTokenTapped;
+
+  const _BlockWidget({
+    required this.tokens,
+    required this.selectedIds,
+    required this.correctIds,
+    required this.isStepDone,
+    required this.errorTokenId,
+    required this.hintIds,
+    required this.isEnabled,
+    required this.focusIds,
+    required this.onTokenTapped,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    // Build the token widgets, handling ^ for superscripts
+    List<Widget> children = [];
+
+    for (int i = 0; i < tokens.length; i++) {
+      final token = tokens[i];
+      final isCaretToken = token.value == '^';
+
+      if (isCaretToken) {
+        // Skip the caret itself — combine with the next token as superscript
+        if (i + 1 < tokens.length) {
+          final exponentToken = tokens[i + 1];
+          children.add(
+            MathTokenWidget(
+              key: ValueKey('${token.id}_${exponentToken.id}'),
+              token: exponentToken,
+              displayOverride: exponentToken.value,
+              isSuperscript: true,
+              // Both the ^ and the exponent are tappable together
+              isSelected: selectedIds.contains(token.id) || selectedIds.contains(exponentToken.id),
+              isCorrect: correctIds.contains(token.id) || correctIds.contains(exponentToken.id),
+              isStepDone: isStepDone,
+              hasError: errorTokenId == token.id || errorTokenId == exponentToken.id,
+              isHint: hintIds.contains(token.id) || hintIds.contains(exponentToken.id),
+              isEnabled: isEnabled,
+              isDimmed: focusIds.isNotEmpty && !focusIds.contains(exponentToken.id),
+              onTap: () {
+                // Tap the caret token (the ^ is the meaningful one for selection)
+                onTokenTapped(token.id);
+              },
+            ),
+          );
+          i++; // Skip next token since we consumed it
+        }
+        continue;
+      }
+
+      children.add(
+        MathTokenWidget(
+          key: ValueKey(token.id),
+          token: token,
+          isSelected: selectedIds.contains(token.id),
+          isCorrect: correctIds.contains(token.id),
+          isStepDone: isStepDone,
+          hasError: errorTokenId == token.id,
+          isHint: hintIds.contains(token.id),
+          isEnabled: isEnabled,
+          isDimmed: focusIds.isNotEmpty && !focusIds.contains(token.id),
+          onTap: () => onTokenTapped(token.id),
+        ),
+      );
+    }
+
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      crossAxisAlignment: CrossAxisAlignment.end,
+      children: children,
+    );
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// _SeparatorTokenWidget — A standalone +/- sign outside blocks
+// ─────────────────────────────────────────────────────────────────────────────
+
+class _SeparatorTokenWidget extends StatefulWidget {
+  final EquationToken token;
+  final bool isSelected;
+  final bool isCorrect;
+  final bool isStepDone;
+  final bool hasError;
+  final bool isHint;
+  final bool isEnabled;
+  final bool isDimmed;
+  final VoidCallback onTap;
+
+  const _SeparatorTokenWidget({
+    required this.token,
+    required this.isSelected,
+    required this.isCorrect,
+    required this.isStepDone,
+    required this.hasError,
+    required this.isHint,
+    required this.isEnabled,
+    required this.isDimmed,
+    required this.onTap,
+  });
+
+  @override
+  State<_SeparatorTokenWidget> createState() => _SeparatorTokenWidgetState();
+}
+
+class _SeparatorTokenWidgetState extends State<_SeparatorTokenWidget>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController _errorCtrl;
+  bool _showingError = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _errorCtrl = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 320),
+    );
+    _errorCtrl.addStatusListener((status) {
+      if (status == AnimationStatus.completed) {
+        if (mounted) setState(() => _showingError = false);
+      }
+    });
+  }
+
+  @override
+  void didUpdateWidget(_SeparatorTokenWidget old) {
+    super.didUpdateWidget(old);
+    if (widget.hasError && !old.hasError && !_showingError) {
+      setState(() => _showingError = true);
+      _errorCtrl.forward(from: 0);
+    }
+  }
+
+  @override
+  void dispose() {
+    _errorCtrl.dispose();
+    super.dispose();
+  }
+
+  bool get _isActive =>
+      widget.isSelected || (widget.isStepDone && widget.isCorrect);
+
+  Color _resolveColor() {
+    if (_showingError)                              return AppTheme.errorRed;
+    if (widget.isStepDone && widget.isCorrect)      return AppTheme.primaryGreen;
+    if (widget.isSelected)                          return Colors.blue.shade700;
+    if (widget.isHint)                              return Colors.amber.shade800;
+    return Colors.black87; // Default: black
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final color = _resolveColor();
+    return Opacity(
+      opacity: widget.isDimmed ? 0.35 : 1.0,
+      child: GestureDetector(
+        onTap: (widget.isStepDone || !widget.isEnabled) ? null : widget.onTap,
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 180),
+          padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+          decoration: BoxDecoration(
+            color: _isActive ? color.withValues(alpha: 0.12) : null,
+            borderRadius: BorderRadius.circular(6),
+            border: _isActive
+                ? Border(bottom: BorderSide(color: color, width: 2.5))
+                : null,
           ),
-          const SizedBox(height: 8),
-          const Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(Icons.swipe_left_rounded, size: 14, color: Colors.grey),
-              SizedBox(width: 4),
-              Text('Desliza para ver más', 
-                style: TextStyle(fontSize: 11, color: Colors.grey, fontWeight: FontWeight.w600)),
-            ],
+          child: Text(
+            widget.token.value,
+            style: TextStyle(
+              fontSize: 24,
+              fontWeight: _isActive ? FontWeight.w800 : FontWeight.w600,
+              fontFamily: 'Nunito',
+              color: color,
+            ),
           ),
-        ],
+        ),
       ),
     );
   }
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// MathTokenWidget — Bloque táctil tipo ficha de Scrabble / bloque de madera
-//
-// Estados visuales:
-//  • idle    → bloque blanco/sand con borde inferior grueso (efecto 3D)
-//  • selected→ naranja brillante + hundido
-//  • correct → verde brillante + hundido (celebración)
-//  • error   → flash rojo breve (300ms) y luego vuelve a idle
+// MathTokenWidget — Individual tappable token inside a block
 // ─────────────────────────────────────────────────────────────────────────────
 
 class MathTokenWidget extends StatefulWidget {
@@ -138,10 +319,12 @@ class MathTokenWidget extends StatefulWidget {
   final bool isSelected;
   final bool isCorrect;
   final bool isStepDone;
-  final bool hasError;   // ← dispara el flash rojo
-  final bool isHint;     // ← dispara el resplandor de pista
-  final bool isEnabled;  // ← permite interacción
-  final bool isDimmed;   // ← baja la opacidad si no está en el foco (Tarea 4)
+  final bool hasError;
+  final bool isHint;
+  final bool isEnabled;
+  final bool isDimmed;
+  final bool isSuperscript;
+  final String? displayOverride;
   final VoidCallback onTap;
 
   const MathTokenWidget({
@@ -155,6 +338,8 @@ class MathTokenWidget extends StatefulWidget {
     this.isHint = false,
     this.isEnabled = true,
     this.isDimmed = false,
+    this.isSuperscript = false,
+    this.displayOverride,
   });
 
   /// Formatea el texto crudo (ej: sqrt -> √, * -> ×) para visualización robusta.
@@ -182,17 +367,12 @@ class MathTokenWidget extends StatefulWidget {
   /// Formatea la expresión para que Math.tex (LaTeX) la interprete correctamente.
   static String formatTexText(String input) {
     String output = input;
-    // Convierte "sqrt ( ... )" o "sqrt(...)" a "\sqrt{...}"
     output = output.replaceAllMapped(
       RegExp(r'sqrt\s*\(\s*(.*?)\s*\)'), 
       (match) => r'\sqrt{' + match.group(1)! + r'}'
     );
-    // Por si queda un sqrt suelto que no ha sido mapeado a \sqrt{}
-    // output = output.replaceAll('sqrt', r'\sqrt'); // <-- Esto causaba doble escape: \\sqrt{}
-    // En su lugar, comprobamos si queda alguno crudo que no empiece por \
     output = output.replaceAll(RegExp(r'(?<!\\)sqrt'), r'\sqrt');
     
-    // Multiplicaciones y divisiones
     output = output.replaceAll(' * ', r' \times ');
     output = output.replaceAll('*', r'\times ');
     output = output.replaceAll(' / ', r' \div ');
@@ -207,7 +387,6 @@ class MathTokenWidget extends StatefulWidget {
 
 class _MathTokenWidgetState extends State<MathTokenWidget>
     with SingleTickerProviderStateMixin {
-  // ── Flash de error: 1 ciclo rápido de opacidad roja ──────────────────────
   late final AnimationController _errorCtrl;
   late final Animation<double> _errorAnim;
   bool _showingError = false;
@@ -219,7 +398,6 @@ class _MathTokenWidgetState extends State<MathTokenWidget>
       vsync: this,
       duration: const Duration(milliseconds: 320),
     );
-    // 0→1→0 (una sola pulsación de color rojo)
     _errorAnim = TweenSequence<double>([
       TweenSequenceItem(tween: Tween(begin: 0.0, end: 1.0), weight: 40),
       TweenSequenceItem(tween: Tween(begin: 1.0, end: 0.0), weight: 60),
@@ -235,7 +413,6 @@ class _MathTokenWidgetState extends State<MathTokenWidget>
   @override
   void didUpdateWidget(MathTokenWidget old) {
     super.didUpdateWidget(old);
-    // Activa el flash solo cuando llega un error nuevo
     if (widget.hasError && !old.hasError && !_showingError) {
       setState(() => _showingError = true);
       _errorCtrl.forward(from: 0);
@@ -248,129 +425,74 @@ class _MathTokenWidgetState extends State<MathTokenWidget>
     super.dispose();
   }
 
-  // ── Lógica de estado visual ───────────────────────────────────────────────
-
   bool get _isActive =>
       widget.isSelected || (widget.isStepDone && widget.isCorrect);
 
-  Color _resolveBackground() {
-    if (_showingError)                           return AppTheme.errorRed;
-    if (widget.isStepDone && widget.isCorrect)   return AppTheme.primaryGreen;
-    if (widget.isSelected)                       return AppTheme.accentOrange;
-    return Colors.white;
-  }
-
   Color _resolveTextColor() {
-    if (_showingError)  return Colors.white;
-    if (_isActive)      return Colors.white;
-    return AppTheme.textDark;
-  }
-
-  Color get _bottomEdgeColor {
     if (_showingError)                              return AppTheme.errorRed;
-    if (widget.isStepDone && widget.isCorrect)      return AppTheme.primaryGreenDk;
-    if (widget.isSelected)                         return AppTheme.accentOrange.withValues(alpha: 0.8);
-    return const Color(0xFFBBBBBB);
+    if (widget.isStepDone && widget.isCorrect)      return AppTheme.primaryGreen;
+    if (widget.isSelected)                          return Colors.blue.shade700;
+    if (widget.isHint)                              return Colors.amber.shade800;
+    // Operators inside blocks: colored
+    final v = widget.token.value;
+    if (v == '*' || v == '/' || v == '×' || v == '÷') return Colors.black87;
+    if (v == '+' || v == '-') return Colors.black87;
+    return Colors.black87;
   }
 
-  List<BoxShadow> _resolveShadow() {
-    if (_isActive) {
-      return [
-        BoxShadow(
-          color: Colors.black.withValues(alpha: 0.15),
-          blurRadius: 2,
-          offset: const Offset(0, 2),
-        ),
-      ];
-    }
-    
-    final List<BoxShadow> shadows = [
-      BoxShadow(color: _bottomEdgeColor, blurRadius: 0, offset: const Offset(0, 5)),
-      BoxShadow(
-        color: Colors.black.withValues(alpha: 0.07),
-        blurRadius: 8,
-        offset: const Offset(0, 3),
-      ),
-    ];
-
-    if (widget.isHint) {
-      shadows.add(
-        BoxShadow(
-          color: Colors.amber.withValues(alpha: 0.9),
-          blurRadius: 15,
-          spreadRadius: 3,
-        ),
-      );
-    }
-
-    return shadows;
+  Color? _resolveBackgroundColor() {
+    if (_showingError)                              return AppTheme.errorRed.withValues(alpha: 0.15);
+    if (widget.isStepDone && widget.isCorrect)      return AppTheme.primaryGreen.withValues(alpha: 0.15);
+    if (widget.isSelected)                          return Colors.blue.withValues(alpha: 0.12);
+    if (widget.isHint)                              return Colors.amber.withValues(alpha: 0.18);
+    return null;
   }
-
 
   @override
   Widget build(BuildContext context) {
-    final bool pressed = _isActive;
+    final bgColor = _resolveBackgroundColor();
+    final textColor = _resolveTextColor();
+    final displayText = widget.displayOverride ?? widget.token.value;
+    final formattedText = MathTokenWidget.formatMathText(displayText);
+
+    final double fontSize = widget.isSuperscript ? 16 : 22;
 
     return AnimatedBuilder(
       animation: _errorAnim,
       builder: (context, child) {
         return Opacity(
-          opacity: widget.isDimmed ? 0.35 : 1.0, // TAREA 4
-          child: AnimatedContainer(
-            duration: const Duration(milliseconds: 160),
-            curve: Curves.easeOutCubic,
-            margin: EdgeInsets.only(
-              top:    pressed ? 4.0 : 0.0,
-              bottom: pressed ? 0.0 : 4.0,
-            ),
-            decoration: BoxDecoration(
-              color: _resolveBackground(),
-              borderRadius: AppTheme.tokenRadius,
-              border: Border.all(
-                color: _showingError
-                    ? AppTheme.errorRed
-                    : (pressed
-                        ? Colors.black.withValues(alpha: 0.10)
-                        : Colors.black.withValues(alpha: 0.06)),
-                width: _showingError ? 2.0 : 1.2,
-              ),
-              boxShadow: _resolveShadow(),
-            ),
-            child: child,
-          ),
+          opacity: widget.isDimmed ? 0.35 : 1.0,
+          child: child,
         );
       },
-      child: Material(
-        color: Colors.transparent,
-        borderRadius: AppTheme.tokenRadius,
-        child: InkWell(
-          onTap: (widget.isStepDone || !widget.isEnabled) ? null : widget.onTap, 
-          borderRadius: AppTheme.tokenRadius,
-          splashColor: Colors.white.withValues(alpha: 0.35),
-          highlightColor: Colors.black.withValues(alpha: 0.05),
-          child: Container(
-            // TAREA 2: Restricciones estrictas
-            constraints: const BoxConstraints(minWidth: 38, minHeight: 48, maxHeight: 48),
-            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-            alignment: Alignment.center,
-            child: Text(
-              MathTokenWidget.formatMathText(widget.token.value),
-              style: TextStyle(
-                fontSize:   20,
-                fontWeight: FontWeight.w900,
-                color:      _resolveTextColor(),
-                fontFamily: 'Nunito',
-                height:     1.0,
-                shadows: pressed
-                    ? [
-                        Shadow(
-                          color: Colors.black.withValues(alpha: 0.25),
-                          offset: const Offset(0, 1),
-                          blurRadius: 3,
-                        )
-                      ]
-                    : null,
-              ),
+      child: GestureDetector(
+        onTap: (widget.isStepDone || !widget.isEnabled) ? null : widget.onTap,
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 180),
+          curve: Curves.easeOutCubic,
+          padding: EdgeInsets.symmetric(
+            horizontal: widget.isSuperscript ? 1 : 3,
+            vertical: widget.isSuperscript ? 0 : 4,
+          ),
+          // Superscript: shift up
+          transform: widget.isSuperscript
+              ? Matrix4.translationValues(0, -10, 0)
+              : null,
+          decoration: BoxDecoration(
+            color: bgColor,
+            borderRadius: BorderRadius.circular(4),
+            border: _isActive
+                ? Border(bottom: BorderSide(color: textColor, width: 2.5))
+                : null,
+          ),
+          child: Text(
+            formattedText,
+            style: TextStyle(
+              fontSize: fontSize,
+              fontWeight: _isActive ? FontWeight.w800 : FontWeight.w600,
+              color: textColor,
+              fontFamily: 'Nunito',
+              height: 1.1,
             ),
           ),
         ),

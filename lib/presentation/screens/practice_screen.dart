@@ -10,6 +10,7 @@ import '../widgets/interactive_equation.dart';
 import '../widgets/andean_progress_banner.dart';
 import '../widgets/math_notebook_line.dart';
 
+
 class PracticeScreen extends ConsumerStatefulWidget {
   final int exerciseIndex;
   const PracticeScreen({super.key, required this.exerciseIndex});
@@ -20,20 +21,31 @@ class PracticeScreen extends ConsumerStatefulWidget {
 
 class _PracticeScreenState extends ConsumerState<PracticeScreen> {
   final ScrollController _scrollController = ScrollController();
+  final ScrollController _instructionScrollController = ScrollController();
 
   void _scrollToBottom() {
-    if (_scrollController.hasClients) {
-      _scrollController.animateTo(
-        _scrollController.position.maxScrollExtent,
-        duration: const Duration(milliseconds: 500),
-        curve: Curves.easeOutCubic,
-      );
-    }
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (_scrollController.hasClients) {
+        _scrollController.animateTo(
+          0,
+          duration: const Duration(milliseconds: 400),
+          curve: Curves.easeOutCubic,
+        );
+      }
+      if (_instructionScrollController.hasClients) {
+        _instructionScrollController.animateTo(
+          _instructionScrollController.position.maxScrollExtent + 100,
+          duration: const Duration(milliseconds: 500),
+          curve: Curves.easeOutCubic,
+        );
+      }
+    });
   }
 
   @override
   void dispose() {
     _scrollController.dispose();
+    _instructionScrollController.dispose();
     super.dispose();
   }
 
@@ -126,6 +138,12 @@ class _PracticeScreenState extends ConsumerState<PracticeScreen> {
 
     return Scaffold(
       backgroundColor: AppTheme.backgroundLight,
+      floatingActionButton: (state.isProcessing || state.hintActive) ? null : FloatingActionButton.small(
+        onPressed: notifier.buyHint,
+        backgroundColor: const Color(0xFFFFD600),
+        child: const Text('💡', style: TextStyle(fontSize: 20)),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
       body: Stack(
         children: [
           // Fondo
@@ -166,10 +184,11 @@ class _PracticeScreenState extends ConsumerState<PracticeScreen> {
                       ConstrainedBox(
                         constraints: BoxConstraints(
                           maxHeight: orientation == Orientation.landscape 
-                              ? MediaQuery.of(context).size.height * 0.35 
-                              : MediaQuery.of(context).size.height * 0.25,
+                              ? MediaQuery.of(context).size.height * 0.15 
+                              : MediaQuery.of(context).size.height * 0.12,
                         ),
                         child: SingleChildScrollView(
+                          controller: _instructionScrollController,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: List.generate(state.currentStepIndex + 1, (index) {
@@ -212,122 +231,86 @@ class _PracticeScreenState extends ConsumerState<PracticeScreen> {
                       _EquationHistory(exerciseIndex: exerciseIndex),
                       const SizedBox(height: 16),
 
-                      // 💡 BOTÓN DE PISTA (TAREA 2)
-                      Center(
-                        child: Container(
-                          margin: const EdgeInsets.only(bottom: 12),
-                          child: Material(
-                            color: Colors.transparent,
-                            child: InkWell(
-                              borderRadius: BorderRadius.circular(20),
-                              onTap: (state.hintActive || state.isProcessing) ? null : notifier.buyHint,
-                              child: AnimatedContainer(
-                                duration: const Duration(milliseconds: 300),
-                                padding: const EdgeInsets.symmetric(
-                                    horizontal: 16, vertical: 8),
-                                decoration: BoxDecoration(
-                                  color: state.hintActive
-                                      ? Colors.grey.shade300
-                                      : const Color(0xFFFFD600),
-                                  borderRadius: BorderRadius.circular(20),
-                                  boxShadow: [
-                                    if (!state.hintActive)
-                                      BoxShadow(
-                                        color: const Color(0xFFFFD600)
-                                            .withValues(alpha: 0.4),
-                                        blurRadius: 8,
-                                        offset: const Offset(0, 3),
-                                      ),
-                                  ],
-                                  border: Border.all(
-                                    color: state.hintActive
-                                        ? Colors.grey
-                                        : Colors.orange.shade700,
-                                    width: 1.5,
-                                  ),
-                                ),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    const Text('💡',
-                                        style: TextStyle(fontSize: 16)),
-                                    const SizedBox(width: 8),
-                                    Text(
-                                      'Pista (20 🪙)',
-                                      style: TextStyle(
-                                        color: state.hintActive
-                                            ? Colors.grey.shade600
-                                            : Colors.brown.shade900,
-                                        fontWeight: FontWeight.w900,
-                                        fontSize: 14,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-
                       if (!state.currentStep.isMultipleChoice)
-                        const Center(
+                        Center(
                           child: Text(
                             'TOCA LOS ELEMENTOS CORRECTOS',
                             style: TextStyle(
-                              fontSize: 13,
+                              fontSize: 11,
                               fontWeight: FontWeight.w700,
-                              letterSpacing: 1.4,
-                              color: AppTheme.earthBrown,
+                              letterSpacing: 1.2,
+                              color: AppTheme.earthBrown.withValues(alpha: 0.6),
                             ),
                           ),
                         ),
-                      const SizedBox(height: 12),
+                      const SizedBox(height: 8),
 
                       if (!state.currentStep.isMultipleChoice)
                         Opacity(
                           opacity: (state.isProcessing && !state.hintActive) ? 0.6 : 1.0,
-                          child: InteractiveEquation(
-                            tokens: state.tokens,
-                            selectedIds: state.selectedTokenIds,
-                            correctIds: state.correctIds,
-                            onTokenTapped: notifier.onTokenTapped,
-                            isStepDone: state.stepCompleted,
-                            errorTokenId: state.lastErrorTokenId,
-                            hintIds: state.hintTokenIds,
-                            isEnabled: !state.isProcessing,
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 4.0),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                if (state.equationHistory.length > 1 || 
+                                    (state.equationHistory.length == 1 && state.equationHistory.first.replaceAll(' ', '') != state.tokens.map((t)=>t.value).join(' ').replaceAll(' ', '')))
+                                  const Padding(
+                                    padding: EdgeInsets.only(right: 4.0),
+                                    child: Text('=', style: TextStyle(fontSize: 26, fontWeight: FontWeight.w600, color: Colors.black54)),
+                                  ),
+                                Flexible(
+                                  child: InteractiveEquation(
+                                    tokens: state.tokens,
+                                    selectedIds: state.selectedTokenIds,
+                                    correctIds: state.correctIds,
+                                    onTokenTapped: notifier.onTokenTapped,
+                                    isStepDone: state.stepCompleted,
+                                    errorTokenId: state.lastErrorTokenId,
+                                    hintIds: state.hintTokenIds,
+                                    isEnabled: !state.isProcessing,
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       const SizedBox(height: 24),
-
-                      // Área de Opción Múltiple (Complemento)
-                      if (state.currentStep.isMultipleChoice) ...[
-                        const Center(
-                          child: Text(
-                            'ELIGE LA RESPUESTA CORRECTA',
-                            style: TextStyle(
-                              fontSize: 13,
-                              fontWeight: FontWeight.w700,
-                              letterSpacing: 1.4,
-                              color: AppTheme.earthBrown,
-                            ),
+                      if (state.currentStep.isMultipleChoice)
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [
+                              const Divider(height: 16, thickness: 1, color: Colors.black12),
+                              const Center(
+                                child: Text(
+                                  'ELIGE LA RESPUESTA CORRECTA',
+                                  style: TextStyle(
+                                    fontSize: 13,
+                                    fontWeight: FontWeight.w700,
+                                    letterSpacing: 1.4,
+                                    color: AppTheme.earthBrown,
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(height: 4),
+                              IgnorePointer(
+                                ignoring: state.isProcessing,
+                                child: Opacity(
+                                  opacity: state.isProcessing ? 0.7 : 1.0,
+                                  child: _MultipleChoiceArea(
+                                    options: state.currentStep.options ?? [],
+                                    onSelected: notifier.checkMultipleChoiceAnswer,
+                                    isStepDone: state.stepCompleted,
+                                    feedbackError: state.currentStep.feedbackError,
+                                  ),
+                                ),
+                              ),
+                            ],
                           ),
                         ),
-                        const SizedBox(height: 16),
-                        IgnorePointer(
-                          ignoring: state.isProcessing,
-                          child: Opacity(
-                            opacity: state.isProcessing ? 0.7 : 1.0,
-                            child: _MultipleChoiceArea(
-                              options: state.currentStep.options!,
-                              onSelected: notifier.checkMultipleChoiceAnswer,
-                              isStepDone: state.stepCompleted,
-                              feedbackError: state.currentStep.feedbackError,
-                            ),
-                          ),
-                        ),
-                        const SizedBox(height: 24),
-                      ],
                     ],
                   ),
                 ),
@@ -426,7 +409,9 @@ class _PracticeScreenState extends ConsumerState<PracticeScreen> {
     showDialog(
       context: context,
       barrierDismissible: false,
-      builder: (dialogCtx) => AlertDialog(
+      builder: (dialogCtx) => PopScope(
+        canPop: false,
+        child: AlertDialog(
         shape:
             RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
         titlePadding: const EdgeInsets.fromLTRB(24, 28, 24, 0),
@@ -528,6 +513,7 @@ class _PracticeScreenState extends ConsumerState<PracticeScreen> {
             ),
           ),
         ],
+      ),
       ),
     );
   }
@@ -1119,19 +1105,30 @@ class _MultipleChoiceArea extends StatelessWidget {
     required this.feedbackError,
   });
 
+  /// Detecta si una opción contiene notación matemática que deba
+  /// renderizarse con LaTeX (potencias, raíces, operadores, etc.)
+  static bool _isMathOption(String opt) {
+    // Contiene potencias, raíces o operadores aritméticos
+    if (opt.contains('^') || opt.contains('sqrt')) return true;
+    // Es puramente numérico (un resultado)
+    if (RegExp(r'^-?\d+\.?\d*$').hasMatch(opt.trim())) return true;
+    return false;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         ...options.map((opt) {
+          final useMath = _isMathOption(opt);
           return Padding(
-            padding: const EdgeInsets.only(bottom: 8),
+            padding: const EdgeInsets.only(bottom: 6),
             child: SizedBox(
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: isStepDone ? null : () => onSelected(opt),
                 style: ElevatedButton.styleFrom(
-                  padding: const EdgeInsets.symmetric(vertical: 14),
+                  padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 14),
                   backgroundColor: Colors.white,
                   foregroundColor: AppTheme.textDark,
                   elevation: 6,
@@ -1143,14 +1140,19 @@ class _MultipleChoiceArea extends StatelessWidget {
                         width: 2),
                   ),
                 ),
-                child: FittedBox(
-                  fit: BoxFit.scaleDown,
-                  child: Text(
-                    MathTokenWidget.formatMathText(opt),
-                    textAlign: TextAlign.center,
-                    style: const TextStyle(
-                        fontSize: 16, fontWeight: FontWeight.w900, fontFamily: 'Nunito'),
-                  ),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 2.0),
+                  child: useMath
+                      ? MathNotebookLine(
+                          equation: opt,
+                          showBoxesAndColors: false,
+                        )
+                      : Text(
+                          MathTokenWidget.formatMathText(opt),
+                          textAlign: TextAlign.center,
+                          style: const TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.w900, fontFamily: 'Nunito', height: 1.3),
+                        ),
                 ),
               ),
             ),
@@ -1292,31 +1294,90 @@ class _EquationHistory extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    // Solo se reconstruye cuando la lista de historial cambia
-    final history = ref.watch(practiceProvider(exerciseIndex).select((s) => s.equationHistory));
+    final state = ref.watch(practiceProvider(exerciseIndex));
+    final history = state.equationHistory;
+    final isInteractive = !state.currentStep.isMultipleChoice;
 
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: List.generate(history.length, (index) {
-        final equationText = history[index];
-        
-        String formattedEquation = equationText;
-        if (index == 0) {
-          formattedEquation = '$equationText =';
-        } else {
-          formattedEquation = '= $equationText';
+    List<Widget> lines = [];
+
+    // ── 1. Render all completed history lines ──
+    for (int i = 0; i < history.length; i++) {
+      final equationText = history[i];
+
+      // For interactive steps, skip the last history entry if it matches
+      // current tokens (InteractiveEquation renders it instead)
+      if (isInteractive && i == history.length - 1) {
+        final currentTokensStr = state.tokens.map((t) => t.value).join(' ');
+        if (equationText.replaceAll(' ', '') == currentTokensStr.replaceAll(' ', '')) {
+          continue;
         }
-        
-        return Padding(
-          padding: const EdgeInsets.only(bottom: 16.0),
+      }
+
+      String formattedEquation = equationText;
+      if (i == 0) {
+        formattedEquation = '$equationText =';
+      } else {
+        formattedEquation = '= $equationText';
+      }
+
+      lines.add(
+        Padding(
+          padding: const EdgeInsets.only(bottom: 10.0),
           child: Center(
             child: MathNotebookLine(
               equation: formattedEquation,
-              showBoxesAndColors: index == 0,
+              showBoxesAndColors: i == 0,
             ),
           ),
+        )
+      );
+    }
+
+    // ── 2. Línea de trabajo progresiva ──
+    // Prioridad: workingLine (build progresivo) > expressionOverride (fallback)
+    final workingLine = state.workingLine;
+    final currentOverride = state.currentStep.expressionOverride;
+
+    if (workingLine != null) {
+      // Mostrar la línea progresiva (puede contener ____ = blancos)
+      final lastInHistory = history.isNotEmpty ? history.last : state.exercise.baseExpression;
+      if (lastInHistory.replaceAll(' ', '') != workingLine.replaceAll('____', '').replaceAll(' ', '')) {
+        final displayExpr = workingLine.replaceAll('____', '?');
+        lines.add(
+          Padding(
+            padding: const EdgeInsets.only(bottom: 10.0),
+            child: Center(
+              child: MathNotebookLine(
+                equation: '= $displayExpr',
+                showBoxesAndColors: false,
+              ),
+            ),
+          )
         );
-      }),
+      }
+    } else if (currentOverride != null && state.stepCompleted) {
+      // Fallback: ejercicios sin workingExpression — solo mostrar DESPUÉS
+      // de responder correctamente para no anticipar el resultado.
+      final lastInHistory = history.isNotEmpty ? history.last : state.exercise.baseExpression;
+      if (lastInHistory.replaceAll(' ', '') != currentOverride.replaceAll(' ', '')) {
+        lines.add(
+          Padding(
+            padding: const EdgeInsets.only(bottom: 10.0),
+            child: Center(
+              child: MathNotebookLine(
+                equation: '= $currentOverride',
+                showBoxesAndColors: false,
+              ),
+            ),
+          )
+        );
+      }
+    }
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: lines,
     );
   }
 }
+

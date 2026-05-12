@@ -54,7 +54,6 @@ class MainNavigationShell extends ConsumerWidget {
                   width: 86,
                   child: Column(
                     children: [
-                      _PiecesStrip(pieces: profile.availableCoins, isVertical: true),
                       Expanded(
                         child: LayoutBuilder(
                           builder: (context, constraints) {
@@ -103,8 +102,6 @@ class MainNavigationShell extends ConsumerWidget {
     bottomNavigationBar: Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        // Strip de economía: siempre visible
-        _PiecesStrip(pieces: profile.availableCoins),
         NavigationBar(
           selectedIndex: currentIndex,
           backgroundColor: Colors.white,

@@ -29,6 +29,10 @@ class StepEntity extends Equatable {
   /// Expresión opcional para pasos de sustitución.
   final String? expressionOverride;
 
+  /// Expresión progresiva del cuaderno: cómo se ve la línea de trabajo
+  /// DESPUÉS de que el usuario responde este paso. Usa '____' para blancos.
+  final String? workingExpression;
+
   const StepEntity({
     required this.id,
     required this.instruction,
@@ -39,6 +43,7 @@ class StepEntity extends Equatable {
     this.correctAnswer,
     this.specificErrorMessages = const {},
     this.expressionOverride,
+    this.workingExpression,
   });
 
   /// Determina si este paso es de opción múltiple.
@@ -55,5 +60,6 @@ class StepEntity extends Equatable {
     correctAnswer,
     specificErrorMessages,
     expressionOverride,
+    workingExpression,
   ];
 }

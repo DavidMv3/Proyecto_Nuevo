@@ -1,5 +1,37 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_math_fork/flutter_math.dart';
 import 'interactive_equation.dart';
+
+/// Converts a raw math expression string to LaTeX format for rendering.
+String _toLatex(String expr) {
+  String output = expr;
+
+  // Handle sqrt( ... ) → \sqrt{ ... }
+  // First handle nested patterns: sqrt( ... )
+  output = output.replaceAllMapped(
+    RegExp(r'sqrt\s*\(\s*(.*?)\s*\)'),
+    (match) => r'\sqrt{' + match.group(1)! + r'}',
+  );
+  // Fallback for remaining sqrt
+  output = output.replaceAll(RegExp(r'(?<!\\)sqrt'), r'\sqrt');
+
+  // Handle ^ for exponents: 3 ^ 2 → 3^{2}
+  output = output.replaceAllMapped(
+    RegExp(r'(\d+)\s*\^\s*(\d+)'),
+    (match) => '${match.group(1)}^{${match.group(2)}}',
+  );
+
+  // Multiplication and division
+  output = output.replaceAll(' * ', r' \times ');
+  output = output.replaceAll('*', r'\times ');
+  output = output.replaceAll(' / ', r' \div ');
+  output = output.replaceAll('/', r'\div ');
+
+  // Handle blank placeholder
+  output = output.replaceAll('____', r'\boxed{?}');
+
+  return output;
+}
 
 class MathNotebookLine extends StatelessWidget {
   final String equation;
@@ -14,19 +46,20 @@ class MathNotebookLine extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (!showBoxesAndColors) {
-      // Just render the text normally
-      return Text(
-        MathTokenWidget.formatMathText(equation),
-        style: const TextStyle(
-          fontSize: 24,
+      // Render with flutter_math_fork for real mathematical expressions
+      final latex = _toLatex(equation);
+      return Math.tex(
+        latex,
+        textStyle: const TextStyle(
+          fontSize: 20,
           fontWeight: FontWeight.w600,
-          fontFamily: 'Nunito',
           color: Colors.black87,
         ),
+        mathStyle: MathStyle.display,
       );
     }
 
-    // Parse blocks and signs
+    // ── Boxed mode: parse blocks and render with boxes ──
     final tokens = equation.split(' ').where((s) => s.isNotEmpty).toList();
     List<Widget> children = [];
     List<String> currentBlock = [];
@@ -34,8 +67,14 @@ class MathNotebookLine extends StatelessWidget {
 
     for (int i = 0; i < tokens.length; i++) {
       final t = tokens[i];
-      if (t == '(') parenDepth++;
-      if (t == ')') parenDepth--;
+      if (t.contains('(')) {
+        parenDepth += t.split('(').length - 1;
+      }
+      if (t.contains(')')) {
+        parenDepth -= t.split(')').length - 1;
+      }
+
+      if (parenDepth < 0) parenDepth = 0;
 
       if (parenDepth == 0 && (t == '+' || t == '-')) {
         if (currentBlock.isNotEmpty) {
@@ -62,36 +101,15 @@ class MathNotebookLine extends StatelessWidget {
       alignment: WrapAlignment.center,
       crossAxisAlignment: WrapCrossAlignment.center,
       spacing: 4,
+      runSpacing: 4,
       children: children,
     );
   }
 
   Widget _buildBlockWidget(List<String> blockTokens) {
-    List<TextSpan> spans = [];
-    for (int i = 0; i < blockTokens.length; i++) {
-      final t = blockTokens[i];
-      Color color = Colors.black87;
-      if (t == '*' || t == '/' || t == '×' || t == '÷') {
-        color = Colors.red;
-      } else if (t == '+' || t == '-') {
-        // Internal signs inside a block
-        color = Colors.red;
-      }
-      
-      spans.add(TextSpan(
-        text: MathTokenWidget.formatMathText(t),
-        style: TextStyle(
-          fontSize: 22,
-          fontWeight: FontWeight.w500,
-          fontFamily: 'Nunito',
-          color: color,
-        ),
-      ));
-      
-      if (i < blockTokens.length - 1) {
-        spans.add(const TextSpan(text: ' '));
-      }
-    }
+    // Join tokens back and convert to LaTeX for the block content
+    final blockExpr = blockTokens.join(' ');
+    final latex = _toLatex(blockExpr);
 
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
@@ -99,8 +117,14 @@ class MathNotebookLine extends StatelessWidget {
         color: Colors.white,
         border: Border.all(color: Colors.black87, width: 1.0),
       ),
-      child: RichText(
-        text: TextSpan(children: spans),
+      child: Math.tex(
+        latex,
+        textStyle: const TextStyle(
+          fontSize: 20,
+          fontWeight: FontWeight.w500,
+          color: Colors.black87,
+        ),
+        mathStyle: MathStyle.display,
       ),
     );
   }
@@ -117,7 +141,7 @@ class MathNotebookLine extends StatelessWidget {
         MathTokenWidget.formatMathText(sign),
         style: TextStyle(
           fontSize: 24,
-          fontWeight: FontWeight.w500,
+          fontWeight: FontWeight.w600,
           fontFamily: 'Nunito',
           color: color,
         ),

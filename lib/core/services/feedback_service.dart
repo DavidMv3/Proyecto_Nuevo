@@ -26,6 +26,9 @@ class FeedbackService {
 
   bool _initialized = false;
 
+  /// true cuando la app está en segundo plano — silencia todo.
+  bool _isInBackground = false;
+
   // ── Inicialización — llamar una sola vez en main() ──────────────────────────
   Future<void> init() async {
     if (_initialized) return;
@@ -47,6 +50,22 @@ class FeedbackService {
     await _victoryPlayer!.setVolume(0.80);
   }
 
+  // ── Ciclo de vida: segundo plano / primer plano ─────────────────────────────
+
+  /// Llamar cuando la app pasa a segundo plano (AppLifecycleState.paused/hidden).
+  void onBackground() {
+    _isInBackground = true;
+    // Detener cualquier sonido que esté reproduciéndose
+    _correctPlayer?.stop();
+    _errorPlayer?.stop();
+    _victoryPlayer?.stop();
+  }
+
+  /// Llamar cuando la app vuelve a primer plano (AppLifecycleState.resumed).
+  void onForeground() {
+    _isInBackground = false;
+  }
+
   // ── Liberar recursos ────────────────────────────────────────────────────────
   Future<void> dispose() async {
     await _correctPlayer?.dispose();
@@ -57,6 +76,7 @@ class FeedbackService {
 
   // ── Acierto: "Ding!" + vibración ligera ────────────────────────────────────
   void playCorrect() {
+    if (_isInBackground) return;
     _correctPlayer?.seek(Duration.zero);
     _correctPlayer?.resume();
     HapticFeedback.lightImpact();
@@ -64,6 +84,7 @@ class FeedbackService {
 
   // ── Error: "Buzz" + doble vibración ────────────────────────────────────────
   void playError() {
+    if (_isInBackground) return;
     _errorPlayer?.seek(Duration.zero);
     _errorPlayer?.resume();
     // Doble golpe fuerte — fire-and-forget sin bloquear el flujo async
@@ -73,6 +94,7 @@ class FeedbackService {
 
   // ── Victoria: fanfarria + vibración larga ──────────────────────────────────
   void playVictory() {
+    if (_isInBackground) return;
     _victoryPlayer?.seek(Duration.zero);
     _victoryPlayer?.resume();
     // Vibración larga simulada — fire-and-forget
@@ -83,6 +105,7 @@ class FeedbackService {
 
   // ── Token parcialmente correcto (selección intermedia) ─────────────────────
   void playSelection() {
+    if (_isInBackground) return;
     HapticFeedback.selectionClick();
   }
 }
