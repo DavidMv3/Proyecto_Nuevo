@@ -260,6 +260,17 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
       final updated = Set<String>.from(state.selectedTokenIds)..add(tokenId);
 
       if (updated.containsAll(correctIds)) {
+        final currentWorking = state.workingLine;
+        final newWorking = state.currentStep.expressionOverride ?? currentWorking;
+        var newHistory = List<String>.from(state.equationHistory);
+        if (newWorking != currentWorking) {
+          final lineToPush = currentWorking ?? state.exercise.baseExpression;
+          final isSameAsLast = newHistory.isNotEmpty && newHistory.last.replaceAll(' ', '') == lineToPush.replaceAll(' ', '');
+          if (!isSameAsLast && !lineToPush.contains('____')) {
+            newHistory.add(lineToPush);
+          }
+        }
+
         // Paso completado
         state = state.copyWith(
           selectedTokenIds: updated,
@@ -268,6 +279,8 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
           comboCount: newCombo,
           comboActive: isCombo,
           clearErrorToken: true,
+          workingLine: newWorking,
+          equationHistory: newHistory,
         );
         FeedbackService.instance.playCorrect();
       } else {
@@ -299,11 +312,16 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
       if (isCorrect) {
         final newCombo = state.comboCount + 1;
         
-        // Actualizar la línea de trabajo progresiva:
-        // Solo workingExpression controla qué aparece (paso a paso).
-        // expressionOverride NO se usa aquí para no revelar todo de golpe.
-        final newWorking = state.currentStep.workingExpression
-            ?? state.workingLine;
+        final currentWorking = state.workingLine;
+        final newWorking = state.currentStep.expressionOverride ?? currentWorking;
+        var newHistory = List<String>.from(state.equationHistory);
+        if (newWorking != currentWorking) {
+          final lineToPush = currentWorking ?? state.exercise.baseExpression;
+          final isSameAsLast = newHistory.isNotEmpty && newHistory.last.replaceAll(' ', '') == lineToPush.replaceAll(' ', '');
+          if (!isSameAsLast && !lineToPush.contains('____')) {
+            newHistory.add(lineToPush);
+          }
+        }
         
         state = state.copyWith(
           stepCompleted: true,
@@ -311,6 +329,7 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
           comboCount: newCombo,
           comboActive: newCombo >= 3,
           workingLine: newWorking,
+          equationHistory: newHistory,
         );
         FeedbackService.instance.playCorrect();
 
@@ -455,6 +474,8 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
   // ── 4. Terminar ejercicio ─────────────────────────────────────────────────
 
   Future<void> _finishExercise({bool withComboBonus = true}) async {
+    if (state.exerciseFinished) return;
+    
     final profileNotifier = _ref.read(playerProfileProvider.notifier);
     final repo = _ref.read(exerciseRepositoryProvider);
 
@@ -503,41 +524,13 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
     // ── Historial progresivo ──────────────────────────────────────────────────
     final newHistory = List<String>.from(state.equationHistory);
     final currentWorkingLine = state.workingLine;
-    String? nextWorkingLine = currentWorkingLine; // preserve by default
+    String? nextWorkingLine = nextStep.workingExpression ?? currentWorkingLine;
 
-    // Si hay workingLine completa (sin blancos) y el siguiente paso NO tiene
-    // workingExpression ni la continúa, persiste al historial y limpia.
-    if (currentWorkingLine != null && !currentWorkingLine.contains('____')) {
-      // Si el siguiente paso define su propio workingExpression O tiene
-      // expressionOverride sin workingExpression, es un nuevo nivel.
-      final nextHasWorking = nextStep.workingExpression != null;
-      final nextHasOverride = nextStep.expressionOverride != null;
-
-      // Persistir cuando la línea completa inicia una nueva fase
-      if (nextHasWorking || nextHasOverride) {
-        final isSameAsLast = newHistory.isNotEmpty &&
-            newHistory.last.replaceAll(' ', '') == currentWorkingLine.replaceAll(' ', '');
-        if (!isSameAsLast) {
-          newHistory.add(currentWorkingLine);
-        }
-        // Mantener la línea actual visible hasta que el próximo paso la
-        // actualice con su propia workingExpression.
-      }
-    }
-
-    // Fallback: para ejercicios sin workingExpression, usar expressionOverride
-    if (currentWorkingLine == null) {
-      final currentOverride = state.currentStep.expressionOverride;
-      if (currentOverride != null) {
-        final isSameAsLast = newHistory.isNotEmpty &&
-            newHistory.last.replaceAll(' ', '') == currentOverride.replaceAll(' ', '');
-        final hasBlockOps = RegExp(r'[*/^()]').hasMatch(currentOverride) ||
-            currentOverride.contains('sqrt');
-        final nextOverride = nextStep.expressionOverride;
-        final shouldPersist = nextOverride == null || !hasBlockOps;
-        if (shouldPersist && !isSameAsLast) {
-          newHistory.add(currentOverride);
-        }
+    if (nextWorkingLine != currentWorkingLine) {
+      final lineToPush = currentWorkingLine ?? state.exercise.baseExpression;
+      final isSameAsLast = newHistory.isNotEmpty && newHistory.last.replaceAll(' ', '') == lineToPush.replaceAll(' ', '');
+      if (!isSameAsLast && !lineToPush.contains('____')) {
+        newHistory.add(lineToPush);
       }
     }
 
@@ -552,8 +545,8 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
       showSolutionDialog: false,
       clearErrorToken: true,
       comboActive: false,
-      equationHistory: newHistory,
       workingLine: nextWorkingLine,
+      equationHistory: newHistory,
     );
 
     // Guardar progreso en el perfil (Tarea 2)

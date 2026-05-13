@@ -77,16 +77,14 @@ class FeedbackService {
   // ── Acierto: "Ding!" + vibración ligera ────────────────────────────────────
   void playCorrect() {
     if (_isInBackground) return;
-    _correctPlayer?.seek(Duration.zero);
-    _correctPlayer?.resume();
+    _correctPlayer?.stop().then((_) => _correctPlayer?.resume());
     HapticFeedback.lightImpact();
   }
 
   // ── Error: "Buzz" + doble vibración ────────────────────────────────────────
   void playError() {
     if (_isInBackground) return;
-    _errorPlayer?.seek(Duration.zero);
-    _errorPlayer?.resume();
+    _errorPlayer?.stop().then((_) => _errorPlayer?.resume());
     // Doble golpe fuerte — fire-and-forget sin bloquear el flujo async
     HapticFeedback.heavyImpact();
     Future.delayed(const Duration(milliseconds: 120), () => HapticFeedback.heavyImpact());
@@ -95,8 +93,7 @@ class FeedbackService {
   // ── Victoria: fanfarria + vibración larga ──────────────────────────────────
   void playVictory() {
     if (_isInBackground) return;
-    _victoryPlayer?.seek(Duration.zero);
-    _victoryPlayer?.resume();
+    _victoryPlayer?.stop().then((_) => _victoryPlayer?.resume());
     // Vibración larga simulada — fire-and-forget
     HapticFeedback.heavyImpact();
     Future.delayed(const Duration(milliseconds: 100), () => HapticFeedback.heavyImpact());

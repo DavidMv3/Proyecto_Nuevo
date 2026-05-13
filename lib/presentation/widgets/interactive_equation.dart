@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_math_fork/flutter_math.dart';
 import '../../domain/entities/equation_token.dart';
 import '../../core/theme/app_theme.dart';
 
@@ -453,9 +454,40 @@ class _MathTokenWidgetState extends State<MathTokenWidget>
     final bgColor = _resolveBackgroundColor();
     final textColor = _resolveTextColor();
     final displayText = widget.displayOverride ?? widget.token.value;
-    final formattedText = MathTokenWidget.formatMathText(displayText);
 
     final double fontSize = widget.isSuperscript ? 16 : 22;
+
+    // Determinar si el token necesita renderizado LaTeX
+    final needsLatex = displayText.contains('sqrt') ||
+        displayText.contains('^') ||
+        displayText == '*' ||
+        displayText == '/';
+
+    Widget textChild;
+    if (needsLatex) {
+      final latex = MathTokenWidget.formatTexText(displayText);
+      textChild = Math.tex(
+        latex,
+        textStyle: TextStyle(
+          fontSize: fontSize,
+          fontWeight: _isActive ? FontWeight.w800 : FontWeight.w600,
+          color: textColor,
+        ),
+        mathStyle: MathStyle.text,
+      );
+    } else {
+      final formattedText = MathTokenWidget.formatMathText(displayText);
+      textChild = Text(
+        formattedText,
+        style: TextStyle(
+          fontSize: fontSize,
+          fontWeight: _isActive ? FontWeight.w800 : FontWeight.w600,
+          color: textColor,
+          fontFamily: 'Nunito',
+          height: 1.1,
+        ),
+      );
+    }
 
     return AnimatedBuilder(
       animation: _errorAnim,
@@ -485,16 +517,7 @@ class _MathTokenWidgetState extends State<MathTokenWidget>
                 ? Border(bottom: BorderSide(color: textColor, width: 2.5))
                 : null,
           ),
-          child: Text(
-            formattedText,
-            style: TextStyle(
-              fontSize: fontSize,
-              fontWeight: _isActive ? FontWeight.w800 : FontWeight.w600,
-              color: textColor,
-              fontFamily: 'Nunito',
-              height: 1.1,
-            ),
-          ),
+          child: textChild,
         ),
       ),
     );

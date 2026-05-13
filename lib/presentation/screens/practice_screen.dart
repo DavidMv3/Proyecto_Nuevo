@@ -9,6 +9,8 @@ import '../providers/practice_notifier.dart';
 import '../widgets/interactive_equation.dart';
 import '../widgets/andean_progress_banner.dart';
 import '../widgets/math_notebook_line.dart';
+import '../../data/repositories/exercise_repository.dart';
+import '../../domain/entities/exercise_entity.dart';
 
 
 class PracticeScreen extends ConsumerStatefulWidget {
@@ -93,14 +95,44 @@ class _PracticeScreenState extends ConsumerState<PracticeScreen> {
       }
     });
 
-    // ── Ejercicio finalizado → diálogo (TAREA 3: botón "Volver a Niveles") ─
     ref.listen<PracticeState>(practiceProvider(exerciseIndex), (prev, next) {
       if (!next.exerciseFinished || (prev?.exerciseFinished ?? false)) return;
       _showCompletionDialog(
         context: context,
         rewardCoins: next.exercise.rewardCoins,
         unlockedAccessory: next.newlyUnlockedAccessory,
-        onRestart: () => notifier.loadLevel(next.exercise.difficulty),
+        onRestart: () {
+           final repo = ref.read(exerciseRepositoryProvider);
+           final profile = ref.read(playerProfileProvider);
+           final difficulty = next.exercise.difficulty;
+           
+           List<ExerciseEntity> pool = difficulty == 1 
+               ? repo.easyExercises 
+               : (difficulty == 2 ? repo.mediumExercises : repo.hardExercises);
+           
+           if (pool.isNotEmpty) {
+             final uncompleted = pool.where((e) => !profile.completedExerciseIds.contains(e.id)).toList();
+             
+             ExerciseEntity targetEx;
+             if (uncompleted.isNotEmpty) {
+               targetEx = uncompleted.first;
+             } else {
+               var available = pool.where((e) => e.id != next.exercise.id).toList();
+               if (available.isEmpty) available = pool;
+               targetEx = available[DateTime.now().millisecond % available.length];
+             }
+             
+             final globalIndex = repo.getAll().indexOf(targetEx);
+             
+             ref.read(playerProfileProvider.notifier).updateLastPlayedProgress(
+               level: difficulty,
+               exerciseId: targetEx.id,
+               stepIndex: 0,
+             );
+             
+             context.pushReplacement('/practice/$globalIndex');
+           }
+        },
         // TAREA 3: siempre vuelve a /levels al terminar
         onGoLevels: () => context.go('/levels'),
       );
