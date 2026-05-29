@@ -13,7 +13,7 @@ String _toLatex(String expr) {
     (match) => r'\sqrt{' + match.group(1)! + r'}',
   );
   // Fallback for remaining sqrt
-  output = output.replaceAll(RegExp(r'(?<!\\)sqrt'), r'\sqrt');
+  output = output.replaceAll(RegExp(r'(?<!\\)sqrt'), r'\sqrt{\ }');
 
   // Handle ^ for exponents: 3 ^ 2 → 3^{2}
   output = output.replaceAllMapped(
@@ -45,21 +45,9 @@ class MathNotebookLine extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (!showBoxesAndColors) {
-      // Render with flutter_math_fork for real mathematical expressions
-      final latex = _toLatex(equation);
-      return Math.tex(
-        latex,
-        textStyle: const TextStyle(
-          fontSize: 20,
-          fontWeight: FontWeight.w600,
-          color: Colors.black87,
-        ),
-        mathStyle: MathStyle.display,
-      );
-    }
-
-    // ── Boxed mode: parse blocks and render with boxes ──
+    // We now use Wrap for BOTH modes to prevent overflows.
+    // The only difference is whether we add boxes around blocks.
+    
     final tokens = equation.split(' ').where((s) => s.isNotEmpty).toList();
     List<Widget> children = [];
     List<String> currentBlock = [];
@@ -76,6 +64,9 @@ class MathNotebookLine extends StatelessWidget {
 
       if (parenDepth < 0) parenDepth = 0;
 
+      // In boxed mode, we split by top-level + or -
+      // In non-boxed mode, we still split to allow wrapping, 
+      // but we can be more granular or just use the same logic.
       if (parenDepth == 0 && (t == '+' || t == '-')) {
         if (currentBlock.isNotEmpty) {
           children.add(_buildBlockWidget(currentBlock));
@@ -101,15 +92,26 @@ class MathNotebookLine extends StatelessWidget {
       alignment: WrapAlignment.center,
       crossAxisAlignment: WrapCrossAlignment.center,
       spacing: 4,
-      runSpacing: 4,
+      runSpacing: 8, // Increased runSpacing for better legibility when wrapping
       children: children,
     );
   }
 
   Widget _buildBlockWidget(List<String> blockTokens) {
-    // Join tokens back and convert to LaTeX for the block content
     final blockExpr = blockTokens.join(' ');
     final latex = _toLatex(blockExpr);
+
+    if (!showBoxesAndColors) {
+      return Math.tex(
+        latex,
+        textStyle: const TextStyle(
+          fontSize: 20,
+          fontWeight: FontWeight.w600,
+          color: Colors.black87,
+        ),
+        mathStyle: MathStyle.display,
+      );
+    }
 
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),

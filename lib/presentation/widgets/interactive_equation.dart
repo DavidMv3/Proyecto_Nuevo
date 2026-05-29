@@ -29,6 +29,7 @@ class InteractiveEquation extends StatelessWidget {
   final Set<String> hintIds;
   final bool isEnabled;
   final Set<String> focusIds;
+  final bool showBlockBoxes;
 
   const InteractiveEquation({
     super.key,
@@ -41,6 +42,7 @@ class InteractiveEquation extends StatelessWidget {
     this.hintIds = const {},
     this.isEnabled = true,
     this.focusIds = const {},
+    this.showBlockBoxes = false,
   });
 
   /// Groups tokens into blocks (between +/- at paren depth 0) and separators.
@@ -106,6 +108,7 @@ class InteractiveEquation extends StatelessWidget {
             hintIds: hintIds,
             isEnabled: isEnabled,
             focusIds: focusIds,
+            showBox: showBlockBoxes,
             onTokenTapped: onTokenTapped,
           );
         }
@@ -127,6 +130,7 @@ class _BlockWidget extends StatelessWidget {
   final Set<String> hintIds;
   final bool isEnabled;
   final Set<String> focusIds;
+  final bool showBox;
   final void Function(String tokenId) onTokenTapped;
 
   const _BlockWidget({
@@ -138,6 +142,7 @@ class _BlockWidget extends StatelessWidget {
     required this.hintIds,
     required this.isEnabled,
     required this.focusIds,
+    required this.showBox,
     required this.onTokenTapped,
   });
 
@@ -195,10 +200,24 @@ class _BlockWidget extends StatelessWidget {
       );
     }
 
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      crossAxisAlignment: CrossAxisAlignment.end,
+    Widget wrap = Wrap(
+      alignment: WrapAlignment.center,
+      crossAxisAlignment: WrapCrossAlignment.center,
+      spacing: 2,
+      runSpacing: 4,
       children: children,
+    );
+
+    if (!showBox) return wrap;
+
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+      decoration: BoxDecoration(
+        color: AppTheme.primaryGreen.withValues(alpha: 0.05),
+        border: Border.all(color: AppTheme.primaryGreen.withValues(alpha: 0.4), width: 1.5),
+        borderRadius: BorderRadius.circular(8),
+      ),
+      child: wrap,
     );
   }
 }
@@ -372,7 +391,7 @@ class MathTokenWidget extends StatefulWidget {
       RegExp(r'sqrt\s*\(\s*(.*?)\s*\)'), 
       (match) => r'\sqrt{' + match.group(1)! + r'}'
     );
-    output = output.replaceAll(RegExp(r'(?<!\\)sqrt'), r'\sqrt');
+    output = output.replaceAll(RegExp(r'(?<!\\)sqrt'), r'\sqrt{\ }');
     
     output = output.replaceAll(' * ', r' \times ');
     output = output.replaceAll('*', r'\times ');

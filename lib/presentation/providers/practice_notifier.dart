@@ -35,8 +35,8 @@ class PracticeState {
   /// Vidas restantes para el paso actual (3 → 2 → 1 → 0).
   final int lives;
 
-  /// true cuando lives == 0 → la UI debe mostrar el BottomSheet de solución.
-  final bool showSolutionDialog;
+  /// true cuando lives == 0 → la UI debe mostrar el Game Over Dialog.
+  final bool showGameOverDialog;
 
   // ── Feedback de error silencioso (flash en token) ─────────────────────────
   /// ID del último token incorrecto. Pasa a InteractiveEquation para el flash.
@@ -57,9 +57,8 @@ class PracticeState {
   // ── Historial Cuaderno ───────────────────────────────────────────────────
   final List<String> equationHistory;
 
-  /// Línea de trabajo progresiva: se construye a medida que el usuario
-  /// responde preguntas sobre bloques. Puede contener '____' para blancos.
   final String? workingLine;
+  final List<String>? shuffledOptions;
 
   const PracticeState({
     required this.exercise,
@@ -76,12 +75,13 @@ class PracticeState {
     this.comboCount = 0,
     this.comboActive = false,
     this.lives = 3,
-    this.showSolutionDialog = false,
+    this.showGameOverDialog = false,
     this.lastErrorTokenId,
     this.errorSnackVersion = 0,
     this.errorSnackMessage = '',
     this.isProcessing = false,
     this.workingLine,
+    this.shuffledOptions,
   });
 
   // Getters de conveniencia
@@ -108,10 +108,31 @@ class PracticeState {
 
   bool get isLastStep => currentStepIndex >= exercise.steps.length - 1;
 
+  bool get showBlockBoxes {
+    final blocksStepIndex = exercise.steps.indexWhere(
+      (s) => s.instruction.toLowerCase().contains('cuántos bloques')
+    );
+    if (blocksStepIndex == -1) return false;
+    return currentStepIndex > blocksStepIndex;
+  }
+
+  bool get showBoxesOnCurrentStep {
+    if (currentStepIndex >= exercise.steps.length) return false;
+    final instruction = exercise.steps[currentStepIndex].instruction.toLowerCase();
+    if (instruction.contains('signos separadores') || instruction.contains('cuántos bloques')) {
+      return false;
+    }
+    return showBlockBoxes;
+  }
+
   factory PracticeState.fromExercise(ExerciseEntity exercise, {int initialStepIndex = 0}) {
     final safeIndex = (initialStepIndex >= exercise.steps.length) ? 0 : initialStepIndex;
     final step = exercise.steps[safeIndex];
     final initialExpr = step.expressionOverride ?? exercise.baseExpression;
+    List<String>? initialOptions;
+    if (step.isMultipleChoice && step.options != null) {
+      initialOptions = List.from(step.options!)..shuffle();
+    }
     return PracticeState(
       exercise: exercise,
       tokens: EquationToken.fromExpression(initialExpr),
@@ -123,8 +144,9 @@ class PracticeState {
       hintTokenIds: const {},
       hintActive: false,
       lives: 3,
-      showSolutionDialog: false,
+      showGameOverDialog: false,
       equationHistory: [initialExpr],
+      shuffledOptions: initialOptions,
     );
   }
 
@@ -140,7 +162,7 @@ class PracticeState {
     int? comboCount,
     bool? comboActive,
     int? lives,
-    bool? showSolutionDialog,
+    bool? showGameOverDialog,
     String? lastErrorTokenId,
     bool clearErrorToken = false,
     int? errorSnackVersion,
@@ -151,6 +173,7 @@ class PracticeState {
     List<String>? equationHistory,
     String? workingLine,
     bool clearWorkingLine = false,
+    List<String>? shuffledOptions,
   }) {
     return PracticeState(
       exercise: exercise,
@@ -168,7 +191,7 @@ class PracticeState {
       comboCount: comboCount ?? this.comboCount,
       comboActive: comboActive ?? this.comboActive,
       lives: lives ?? this.lives,
-      showSolutionDialog: showSolutionDialog ?? this.showSolutionDialog,
+      showGameOverDialog: showGameOverDialog ?? this.showGameOverDialog,
       lastErrorTokenId:
           clearErrorToken ? null : (lastErrorTokenId ?? this.lastErrorTokenId),
       errorSnackVersion: errorSnackVersion ?? this.errorSnackVersion,
@@ -176,6 +199,7 @@ class PracticeState {
       isProcessing: isProcessing ?? this.isProcessing,
       equationHistory: equationHistory ?? this.equationHistory,
       workingLine: clearWorkingLine ? null : (workingLine ?? this.workingLine),
+      shuffledOptions: shuffledOptions ?? this.shuffledOptions,
     );
   }
 }
@@ -196,7 +220,7 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
   Future<void> onTokenTapped(String tokenId) async {
     if (_isProcessing) return;
     if (state.stepCompleted || state.exerciseFinished) return;
-    if (state.showSolutionDialog) return;
+    if (state.showGameOverDialog) return;
     // Si el paso es de opción múltiple, ignoramos toques en la ecuación
     if (state.currentStep.isMultipleChoice) return;
 
@@ -224,18 +248,17 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
         FeedbackService.instance.playError();
 
         if (newLives <= 0) {
-          // ── Vida 0 → mostrar diálogo de solución (sin SnackBar) ──────────
+          // ── Vida 0 → mostrar diálogo de Game Over ──────────
           state = state.copyWith(
             llamaMood: LlamaMood.error,
             comboCount: 0,
             comboActive: false,
             lives: 0,
-            showSolutionDialog: true,
+            showGameOverDialog: true,
             lastErrorTokenId: tokenId,
           );
         } else {
           // ── Vidas > 0 → SnackBar GENÉRICO + flash en token (TAREA 1) ─────
-          // Mensaje genérico, sin pistas específicas sobre la respuesta.
           state = state.copyWith(
             llamaMood: LlamaMood.error,
             comboCount: 0,
@@ -243,8 +266,8 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
             lives: newLives,
             lastErrorTokenId: tokenId,
             errorSnackVersion: state.errorSnackVersion + 1,
-            errorSnackMessage: '¡Ups! Revisa la jerarquía de operaciones. '
-                'Te quedan $newLives corazón(es). ❤️',
+            errorSnackMessage: '¡Casi! Revisa: ${state.currentStep.algorithmHint}. '
+                'Te quedan $newLives vidas.',
           );
           // Cooldown reducido: solo el tiempo del flash del token (180ms)
           await Future.delayed(const Duration(milliseconds: 180));
@@ -288,8 +311,6 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
         state = state.copyWith(
           selectedTokenIds: updated,
           llamaMood: LlamaMood.thinking,
-          comboCount: newCombo,
-          comboActive: isCombo,
           clearErrorToken: true,
         );
       }
@@ -363,7 +384,7 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
             comboCount: 0,
             comboActive: false,
             lives: 0,
-            showSolutionDialog: true,
+            showGameOverDialog: true,
           );
         } else {
           state = state.copyWith(
@@ -372,7 +393,7 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
             comboActive: false,
             lives: newLives,
             errorSnackVersion: state.errorSnackVersion + 1,
-            errorSnackMessage: state.currentStep.feedbackError,
+            errorSnackMessage: '¡Casi! Pista: ${state.currentStep.algorithmHint}',
           );
         }
       }
@@ -464,7 +485,7 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
     } else {
       // Si hay más, avanzamos al siguiente snapshot
       state = state.copyWith(
-        showSolutionDialog: false,
+        showGameOverDialog: false,
         clearErrorToken: true,
       );
       _goToNextStep();
@@ -502,7 +523,7 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
       llamaMood: LlamaMood.victory,
       newlyUnlockedAccessory: accessory,
       comboActive: false,
-      showSolutionDialog: false,
+      showGameOverDialog: false,
     );
     FeedbackService.instance.playVictory();
   }
@@ -520,6 +541,11 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
     final nextTokens = nextStep.expressionOverride != null
         ? EquationToken.fromExpression(nextStep.expressionOverride!)
         : state.tokens;
+
+    List<String>? nextOptions;
+    if (nextStep.isMultipleChoice && nextStep.options != null) {
+      nextOptions = List.from(nextStep.options!)..shuffle();
+    }
 
     // ── Historial progresivo ──────────────────────────────────────────────────
     final newHistory = List<String>.from(state.equationHistory);
@@ -542,11 +568,12 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
       llamaMood: LlamaMood.idle,
       clearAccessory: true,
       lives: 3,
-      showSolutionDialog: false,
+      showGameOverDialog: false,
       clearErrorToken: true,
       comboActive: false,
       workingLine: nextWorkingLine,
       equationHistory: newHistory,
+      shuffledOptions: nextOptions,
     );
 
     // Guardar progreso en el perfil (Tarea 2)
@@ -578,10 +605,14 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
     try {
       final repo = _ref.read(exerciseRepositoryProvider);
       
-      // Obtener pool
-      List<ExerciseEntity> pool = difficulty == 1 
-          ? repo.easyExercises 
-          : (difficulty == 2 ? repo.mediumExercises : repo.hardExercises);
+      List<ExerciseEntity> pool;
+      if (difficulty == 0) {
+        pool = [repo.tutorialExercise];
+      } else {
+        pool = difficulty == 1 
+            ? repo.easyExercises 
+            : (difficulty == 2 ? repo.mediumExercises : repo.hardExercises);
+      }
       
       if (pool.isEmpty) return;
 

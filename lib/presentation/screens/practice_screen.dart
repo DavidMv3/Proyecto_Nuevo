@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -24,12 +25,40 @@ class PracticeScreen extends ConsumerStatefulWidget {
 class _PracticeScreenState extends ConsumerState<PracticeScreen> {
   final ScrollController _scrollController = ScrollController();
   final ScrollController _instructionScrollController = ScrollController();
+  final GlobalKey _equationHistoryEndKey = GlobalKey();
+  Timer? _timer;
+  int _elapsedSeconds = 0;
+
+  @override
+  void initState() {
+    super.initState();
+    _startTimer();
+  }
+
+  void _startTimer() {
+    _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
+      if (!mounted) return;
+      final state = ref.read(practiceProvider(widget.exerciseIndex));
+      if (!state.exerciseFinished) {
+        setState(() {
+          _elapsedSeconds++;
+        });
+      }
+    });
+  }
 
   void _scrollToBottom() {
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (_scrollController.hasClients) {
+      if (_equationHistoryEndKey.currentContext != null) {
+        Scrollable.ensureVisible(
+          _equationHistoryEndKey.currentContext!,
+          duration: const Duration(milliseconds: 400),
+          curve: Curves.easeOutCubic,
+          alignment: 0.5, // Enfocar en el medio para ver la última parte y algo de las opciones
+        );
+      } else if (_scrollController.hasClients) {
         _scrollController.animateTo(
-          0,
+          _scrollController.position.maxScrollExtent,
           duration: const Duration(milliseconds: 400),
           curve: Curves.easeOutCubic,
         );
@@ -46,6 +75,7 @@ class _PracticeScreenState extends ConsumerState<PracticeScreen> {
 
   @override
   void dispose() {
+    _timer?.cancel();
     _scrollController.dispose();
     _instructionScrollController.dispose();
     super.dispose();
@@ -65,7 +95,7 @@ class _PracticeScreenState extends ConsumerState<PracticeScreen> {
       final prevVer = prev?.errorSnackVersion ?? 0;
       if (next.errorSnackVersion > prevVer &&
           next.errorSnackMessage.isNotEmpty &&
-          !next.showSolutionDialog) {
+          !next.showGameOverDialog) {
         ScaffoldMessenger.of(context)
           ..clearSnackBars()
           ..showSnackBar(
@@ -89,7 +119,7 @@ class _PracticeScreenState extends ConsumerState<PracticeScreen> {
                   borderRadius: BorderRadius.circular(14)),
               margin:
                   const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-              duration: const Duration(seconds: 2),
+              duration: const Duration(seconds: 4),
             ),
           );
       }
@@ -97,66 +127,76 @@ class _PracticeScreenState extends ConsumerState<PracticeScreen> {
 
     ref.listen<PracticeState>(practiceProvider(exerciseIndex), (prev, next) {
       if (!next.exerciseFinished || (prev?.exerciseFinished ?? false)) return;
-      _showCompletionDialog(
+      _showVictoryDialog(
         context: context,
         rewardCoins: next.exercise.rewardCoins,
         unlockedAccessory: next.newlyUnlockedAccessory,
-        onRestart: () {
-           final repo = ref.read(exerciseRepositoryProvider);
-           final profile = ref.read(playerProfileProvider);
-           final difficulty = next.exercise.difficulty;
-           
-           List<ExerciseEntity> pool = difficulty == 1 
-               ? repo.easyExercises 
-               : (difficulty == 2 ? repo.mediumExercises : repo.hardExercises);
-           
-           if (pool.isNotEmpty) {
-             final uncompleted = pool.where((e) => !profile.completedExerciseIds.contains(e.id)).toList();
-             
-             ExerciseEntity targetEx;
-             if (uncompleted.isNotEmpty) {
-               targetEx = uncompleted.first;
-             } else {
-               var available = pool.where((e) => e.id != next.exercise.id).toList();
-               if (available.isEmpty) available = pool;
-               targetEx = available[DateTime.now().millisecond % available.length];
-             }
-             
-             final globalIndex = repo.getAll().indexOf(targetEx);
-             
-             ref.read(playerProfileProvider.notifier).updateLastPlayedProgress(
-               level: difficulty,
-               exerciseId: targetEx.id,
-               stepIndex: 0,
-             );
-             
-             context.pushReplacement('/practice/$globalIndex');
-           }
-        },
-        // TAREA 3: siempre vuelve a /levels al terminar
+        elapsedSeconds: _elapsedSeconds,
         onGoLevels: () => context.go('/levels'),
+        onRestart: () {
+          final repo = ref.read(exerciseRepositoryProvider);
+          final profile = ref.read(playerProfileProvider);
+          final difficulty = next.exercise.difficulty;
+           
+          if (difficulty == 0) {
+            ref.read(playerProfileProvider.notifier).updateLastPlayedProgress(
+              level: 0,
+              exerciseId: repo.tutorialExercise.id,
+              stepIndex: 0,
+            );
+            ref.invalidate(practiceProvider(exerciseIndex));
+            context.pushReplacement('/practice/-1');
+            return;
+          }
+           
+          List<ExerciseEntity> pool = difficulty == 1 
+              ? repo.easyExercises 
+              : (difficulty == 2 ? repo.mediumExercises : repo.hardExercises);
+           
+          if (pool.isNotEmpty) {
+            final uncompleted = pool.where((e) => !profile.completedExerciseIds.contains(e.id)).toList();
+             
+            ExerciseEntity targetEx;
+            if (uncompleted.isNotEmpty) {
+              targetEx = uncompleted.first;
+            } else {
+              var available = pool.where((e) => e.id != next.exercise.id).toList();
+              if (available.isEmpty) available = pool;
+              targetEx = available[DateTime.now().millisecond % available.length];
+            }
+             
+            final globalIndex = repo.getAll().indexOf(targetEx);
+             
+            ref.read(playerProfileProvider.notifier).updateLastPlayedProgress(
+              level: difficulty,
+              exerciseId: targetEx.id,
+              stepIndex: 0,
+            );
+             
+            if (globalIndex == exerciseIndex) {
+              setState(() { _elapsedSeconds = 0; });
+              ref.read(practiceProvider(exerciseIndex).notifier).restart();
+            } else {
+              context.pushReplacement('/practice/$globalIndex');
+            }
+          }
+        },
       );
     });
 
-    // ── Vida 0 → BottomSheet de solución ────────────────────────────────
-    // TAREA 2: el onDismiss sólo hace Navigator.pop(); el notifier avanza solo.
+    // ── Vida 0 → Diálogo de Game Over ────────────────────────────────
     ref.listen<PracticeState>(practiceProvider(exerciseIndex), (prev, next) {
-      if (!next.showSolutionDialog || (prev?.showSolutionDialog ?? false)) {
+      if (!next.showGameOverDialog || (prev?.showGameOverDialog ?? false)) {
         return;
       }
-      _showSolutionSheet(
+      _showGameOverDialog(
         context: context,
-        correctValues: next.correctTokenValues,
-        explanation: next.currentStep.feedbackError,
-        onDismiss: () {
-          // 1. Cierra el modal de forma segura usando el context local (NO rootNavigator)
-          Navigator.of(context).pop();
-
-          // 2. Esperamos 150ms para que la animación de cierre termine
-          //    antes de mutar el estado de la pantalla.
-          Future.delayed(const Duration(milliseconds: 150), () {
-            notifier.forceNextStep();
-          });
+        onRestart: () {
+          setState(() { _elapsedSeconds = 0; });
+          notifier.restart();
+        },
+        onGoLevels: () {
+          context.go('/levels');
         },
       );
     });
@@ -196,6 +236,7 @@ class _PracticeScreenState extends ConsumerState<PracticeScreen> {
                   totalSteps: state.totalSteps,
                   llamaMood: state.llamaMood,
                   lives: state.lives,
+                  elapsedSeconds: _elapsedSeconds,
                   onBack: () => context.go('/levels'),
                 );
 
@@ -261,7 +302,7 @@ class _PracticeScreenState extends ConsumerState<PracticeScreen> {
                       children: [
                       // Historial de Pasos Resueltos
                       _EquationHistory(exerciseIndex: exerciseIndex),
-                      const SizedBox(height: 16),
+                      SizedBox(key: _equationHistoryEndKey, height: 16),
 
                       if (!state.currentStep.isMultipleChoice)
                         Center(
@@ -302,6 +343,7 @@ class _PracticeScreenState extends ConsumerState<PracticeScreen> {
                                     errorTokenId: state.lastErrorTokenId,
                                     hintIds: state.hintTokenIds,
                                     isEnabled: !state.isProcessing,
+                                    showBlockBoxes: state.showBoxesOnCurrentStep,
                                   ),
                                 ),
                               ],
@@ -333,7 +375,7 @@ class _PracticeScreenState extends ConsumerState<PracticeScreen> {
                                 child: Opacity(
                                   opacity: state.isProcessing ? 0.7 : 1.0,
                                   child: _MultipleChoiceArea(
-                                    options: state.currentStep.options ?? [],
+                                    options: state.shuffledOptions ?? state.currentStep.options ?? [],
                                     onSelected: notifier.checkMultipleChoiceAnswer,
                                     isStepDone: state.stepCompleted,
                                     feedbackError: state.currentStep.feedbackError,
@@ -431,12 +473,13 @@ class _PracticeScreenState extends ConsumerState<PracticeScreen> {
 
   // ── Diálogo de finalización ───────────────────────────────────────────────
 
-  static void _showCompletionDialog({
+  static void _showVictoryDialog({
     required BuildContext context,
     required int rewardCoins,
     required RobotAccessoryEntity? unlockedAccessory,
-    required VoidCallback onRestart,
     required VoidCallback onGoLevels,
+    required VoidCallback onRestart,
+    required int elapsedSeconds,
   }) {
     showDialog(
       context: context,
@@ -501,10 +544,21 @@ class _PracticeScreenState extends ConsumerState<PracticeScreen> {
             ],
           ],
         ),
-        content: Text(
-          '¡Ganaste $rewardCoins punto(s)! 🌟',
-          textAlign: TextAlign.center,
-          style: const TextStyle(fontSize: 16, height: 1.5),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(
+              '¡Ganaste $rewardCoins punto(s)! 🌟',
+              textAlign: TextAlign.center,
+              style: const TextStyle(fontSize: 16, height: 1.5),
+            ),
+            const SizedBox(height: 8),
+            Text(
+              'Tiempo total: ${(elapsedSeconds ~/ 60).toString().padLeft(2, '0')}:${(elapsedSeconds % 60).toString().padLeft(2, '0')} ⏱️',
+              textAlign: TextAlign.center,
+              style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w800, color: AppTheme.textMedium),
+            ),
+          ],
         ),
         actionsPadding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
         actionsAlignment: MainAxisAlignment.center,
@@ -550,24 +604,73 @@ class _PracticeScreenState extends ConsumerState<PracticeScreen> {
     );
   }
 
-  // ── BottomSheet de solución (TAREA 2: solo pop) ──────────────────────────
+  // ── Diálogo de Game Over ──────────────────────────
 
-  static void _showSolutionSheet({
+  static void _showGameOverDialog({
     required BuildContext context,
-    required List<String> correctValues,
-    required String explanation,
-    required VoidCallback onDismiss,
+    required VoidCallback onRestart,
+    required VoidCallback onGoLevels,
   }) {
-    showModalBottomSheet(
+    showDialog(
       context: context,
-      isDismissible: false,
-      enableDrag: false,
-      isScrollControlled: true,
-      backgroundColor: Colors.transparent,
-      builder: (_) => _SolutionBottomSheet(
-        correctValues: correctValues,
-        explanation: explanation,
-        onDismiss: onDismiss,
+      barrierDismissible: false,
+      builder: (dialogCtx) => PopScope(
+        canPop: false,
+        child: AlertDialog(
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
+          titlePadding: const EdgeInsets.fromLTRB(24, 28, 24, 0),
+          title: Column(
+            children: [
+              const Text('😢', style: TextStyle(fontSize: 56)),
+              const SizedBox(height: 8),
+              const Text('¡Te quedaste sin vidas!',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.w800)),
+              const SizedBox(height: 8),
+              const Text('Pero no pasa nada, ¡lo importante es seguir intentando!',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                      fontSize: 14,
+                      color: AppTheme.textMedium,
+                      fontWeight: FontWeight.w600)),
+            ],
+          ),
+          content: const SizedBox(height: 8),
+          actionsPadding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
+          actionsAlignment: MainAxisAlignment.center,
+          actions: [
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton.icon(
+                onPressed: () {
+                  Navigator.of(dialogCtx, rootNavigator: true).pop();
+                  onRestart();
+                },
+                icon: const Icon(Icons.replay_rounded),
+                label: const Text('Intentar de Nuevo'),
+              ),
+            ),
+            const SizedBox(height: 8),
+            SizedBox(
+              width: double.infinity,
+              child: OutlinedButton.icon(
+                onPressed: () {
+                  Navigator.of(dialogCtx, rootNavigator: true).pop();
+                  onGoLevels();
+                },
+                icon: const Icon(Icons.grid_view_rounded),
+                label: const Text('Salir a Niveles'),
+                style: OutlinedButton.styleFrom(
+                  padding: const EdgeInsets.symmetric(vertical: 14),
+                  side: const BorderSide(color: AppTheme.primaryGreen, width: 2),
+                  foregroundColor: AppTheme.primaryGreen,
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+                  textStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.w700),
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -577,213 +680,6 @@ class _PracticeScreenState extends ConsumerState<PracticeScreen> {
 // ============================================================================
 // WIDGETS AUXILIARES
 // ============================================================================
-
-// ── Diálogo de Solución ───────────────────────────────────────────────────────
-
-class _SolutionBottomSheet extends StatelessWidget {
-  final List<String> correctValues;
-  final String explanation;
-  final VoidCallback onDismiss;
-
-  const _SolutionBottomSheet({
-    required this.correctValues,
-    required this.explanation,
-    required this.onDismiss,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.fromLTRB(12, 0, 12, 24),
-      padding: const EdgeInsets.fromLTRB(24, 20, 24, 28),
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(28),
-        boxShadow: [
-          BoxShadow(
-              color: Colors.black.withValues(alpha: 0.18),
-              blurRadius: 30,
-              offset: const Offset(0, -4)),
-        ],
-      ),
-      child: SafeArea(
-        top: false,
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            // Pill handle
-            Container(
-              width: 40,
-              height: 4,
-              decoration: BoxDecoration(
-                color: Colors.grey.withValues(alpha: 0.3),
-                borderRadius: BorderRadius.circular(2),
-              ),
-            ),
-            const SizedBox(height: 20),
-
-            Row(
-              children: [
-                Container(
-                  width: 56,
-                  height: 56,
-                  decoration: BoxDecoration(
-                    gradient: const LinearGradient(
-                      colors: [Color(0xFF5B9BD5), Color(0xFF3A78B5)],
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
-                    ),
-                    shape: BoxShape.circle,
-                    boxShadow: [
-                      BoxShadow(
-                          color: const Color(0xFF5B9BD5)
-                              .withValues(alpha: 0.40),
-                          blurRadius: 12,
-                          offset: const Offset(0, 4))
-                    ],
-                  ),
-                  child: const Center(
-                      child:
-                          Text('🦙', style: TextStyle(fontSize: 28))),
-                ),
-                const SizedBox(width: 14),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const Text('¡Tu amigo la llamita te ayuda!',
-                          style: TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.w900,
-                              color: AppTheme.textDark)),
-                      Text(
-                        'No pasa nada. ¡Aprendemos juntos! 🌟',
-                        style: TextStyle(
-                            fontSize: 13,
-                            fontWeight: FontWeight.w600,
-                            color: AppTheme.textMedium
-                                .withValues(alpha: 0.80)),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(height: 20),
-
-            // Respuesta correcta
-            Container(
-              width: double.infinity,
-              padding: const EdgeInsets.all(16),
-              decoration: BoxDecoration(
-                color: const Color(0xFFE8F5E9),
-                borderRadius: BorderRadius.circular(16),
-                border: Border.all(
-                    color: AppTheme.primaryGreen.withValues(alpha: 0.40),
-                    width: 1.5),
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const Row(
-                    children: [
-                      Icon(Icons.check_circle_rounded,
-                          color: AppTheme.primaryGreen, size: 20),
-                      SizedBox(width: 8),
-                      Text('La respuesta correcta era:',
-                          style: TextStyle(
-                              fontSize: 13,
-                              fontWeight: FontWeight.w800,
-                              color: AppTheme.primaryGreenDk)),
-                    ],
-                  ),
-                  const SizedBox(height: 10),
-                  Wrap(
-                    spacing: 8,
-                    runSpacing: 6,
-                    children: correctValues
-                        .map((val) => Container(
-                              padding: const EdgeInsets.symmetric(
-                                  horizontal: 14, vertical: 8),
-                              decoration: BoxDecoration(
-                                color: AppTheme.primaryGreen,
-                                borderRadius:
-                                    BorderRadius.circular(12),
-                                boxShadow: [
-                                  BoxShadow(
-                                      color: Colors.black
-                                          .withValues(alpha: 0.15),
-                                      blurRadius: 0,
-                                      offset: const Offset(0, 3))
-                                ],
-                              ),
-                              child: Text(val,
-                                  style: const TextStyle(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.w900,
-                                      fontSize: 20)),
-                            ))
-                        .toList(),
-                  ),
-                ],
-              ),
-            ),
-            const SizedBox(height: 16),
-
-            // Justificación
-            Container(
-              width: double.infinity,
-              padding: const EdgeInsets.all(16),
-              decoration: BoxDecoration(
-                color: const Color(0xFFFFF8E1),
-                borderRadius: BorderRadius.circular(16),
-                border: Border.all(
-                    color:
-                        AppTheme.accentOrange.withValues(alpha: 0.35),
-                    width: 1.5),
-              ),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const Text('💡', style: TextStyle(fontSize: 22)),
-                  const SizedBox(width: 10),
-                  Expanded(
-                    child: Text(explanation,
-                        style: const TextStyle(
-                            fontSize: 15,
-                            fontWeight: FontWeight.w600,
-                            color: AppTheme.textDark,
-                            height: 1.5)),
-                  ),
-                ],
-              ),
-            ),
-            const SizedBox(height: 24),
-
-            // CTA — TAREA 2: SOLO pop(). El notifier avanza solo después.
-            SizedBox(
-              width: double.infinity,
-              child: ElevatedButton.icon(
-                onPressed: onDismiss, // <- Navigator.pop() + autoCompleteStep()
-                icon: const Icon(Icons.arrow_forward_rounded, size: 22),
-                label: const Text('¡Entendido, continuar!'),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFF5B9BD5),
-                  foregroundColor: Colors.white,
-                  padding: const EdgeInsets.symmetric(vertical: 16),
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(18)),
-                  textStyle: const TextStyle(
-                      fontSize: 17, fontWeight: FontWeight.w800),
-                ),
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
 
 // ── TopBar ──────────────────────────────────────────────────────────────────
 
@@ -796,6 +692,7 @@ class _PracticeTopBar extends StatelessWidget {
   final LlamaMood llamaMood;
   final int lives;
   final VoidCallback onBack;
+  final int elapsedSeconds;
 
   const _PracticeTopBar({
     this.isTutorial = false,
@@ -806,6 +703,7 @@ class _PracticeTopBar extends StatelessWidget {
     required this.llamaMood,
     required this.lives,
     required this.onBack,
+    this.elapsedSeconds = 0,
   });
 
   @override
@@ -844,6 +742,8 @@ class _PracticeTopBar extends StatelessWidget {
                 if (!isTutorial) _AvatarMiniature(mood: llamaMood),
                 if (!isTutorial) const SizedBox(width: 10),
                 if (!isTutorial) _PointsCounter(pieces: pieces),
+                if (!isTutorial) const SizedBox(width: 10),
+                if (!isTutorial) _TimerDisplay(seconds: elapsedSeconds),
               ],
             ),
           ),
@@ -996,6 +896,39 @@ class _PointsCounter extends StatelessWidget {
                   color: Colors.white,
                   fontSize: 18,
                   fontWeight: FontWeight.w800)),
+        ],
+      ),
+    );
+  }
+}
+
+// ── Timer Display ─────────────────────────────────────────────────────────────
+
+class _TimerDisplay extends StatelessWidget {
+  final int seconds;
+  const _TimerDisplay({required this.seconds});
+
+  @override
+  Widget build(BuildContext context) {
+    final minutesStr = (seconds ~/ 60).toString().padLeft(2, '0');
+    final secondsStr = (seconds % 60).toString().padLeft(2, '0');
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+      decoration: BoxDecoration(
+        color: Colors.white.withValues(alpha: 0.2),
+        borderRadius: BorderRadius.circular(20),
+        border: Border.all(color: Colors.white38, width: 1),
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          const Icon(Icons.timer_outlined, color: Colors.white, size: 18),
+          const SizedBox(width: 4),
+          Text('$minutesStr:$secondsStr',
+              style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 16,
+                  fontWeight: FontWeight.w900)),
         ],
       ),
     );
@@ -1356,9 +1289,11 @@ class _EquationHistory extends ConsumerWidget {
         Padding(
           padding: const EdgeInsets.only(bottom: 10.0),
           child: Center(
-            child: MathNotebookLine(
-              equation: formattedEquation,
-              showBoxesAndColors: i == 0,
+            child: RepaintBoundary(
+              child: MathNotebookLine(
+                equation: formattedEquation,
+                showBoxesAndColors: state.showBlockBoxes,
+              ),
             ),
           ),
         )
@@ -1379,9 +1314,11 @@ class _EquationHistory extends ConsumerWidget {
           Padding(
             padding: const EdgeInsets.only(bottom: 10.0),
             child: Center(
-              child: MathNotebookLine(
-                equation: '= $displayExpr',
-                showBoxesAndColors: false,
+              child: RepaintBoundary(
+                child: MathNotebookLine(
+                  equation: '= $displayExpr',
+                  showBoxesAndColors: state.showBoxesOnCurrentStep,
+                ),
               ),
             ),
           )
@@ -1396,9 +1333,11 @@ class _EquationHistory extends ConsumerWidget {
           Padding(
             padding: const EdgeInsets.only(bottom: 10.0),
             child: Center(
-              child: MathNotebookLine(
-                equation: '= $currentOverride',
-                showBoxesAndColors: false,
+              child: RepaintBoundary(
+                child: MathNotebookLine(
+                  equation: '= $currentOverride',
+                  showBoxesAndColors: state.showBoxesOnCurrentStep,
+                ),
               ),
             ),
           )
