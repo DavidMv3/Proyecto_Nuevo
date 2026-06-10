@@ -203,7 +203,7 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_3_s3',
-          expressionOverride: '8 - + 1',
+          expressionOverride: '8 -',
           instruction: 'Los bloques en los que se deben conservar los números son:',
           options: ['El primero y el tercero', 'El primero y el segundo', 'El segundo y el tercero'],
           correctAnswer: 'El primero y el tercero',
@@ -420,7 +420,7 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_6_s4',
-          expressionOverride: '1 + ( 8 - 2 x 3 )',
+          expressionOverride: '1 +',
           instruction: 'El resultado de la resta entre los dos primeros bloques es:',
           options: ['5', '2', '1', '3'],
           correctAnswer: '1',
@@ -430,6 +430,7 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_6_s5',
+          expressionOverride: '1 + ( 8 -',
           instruction: 'En el segundo bloque, ¿qué operación se resuelve primero?',
           options: ['La multiplicación', 'La resta'],
           correctAnswer: 'La multiplicación',
