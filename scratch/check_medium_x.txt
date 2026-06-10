@@ -1,0 +1,348 @@
+X) [
+p√
+81 + 42] − [30 ÷ 5 − 3]
+1) Selecciona los signos separadores que no constan en las operaciones internas.
+Solución. Son signos separadores los escritos en color azul, mientras que los de
+color rojo no lo son.
+Debe aparecer:
+[
+q√
+81+42]−[30÷5−3]
+2) ¿En cuántos bloques queda dividida la expresión aritmética?
+a) 1
+b) 2
+c) 3
+d) 4
+Solución. La respuesta correcta es b) 2.
+Debe aparecer:
+[
+q√
+81 + 42] − [30 ÷ 5 − 3] =
+
+=== PAGE 82 ===
+3) En el primer bloque, ¿qué se debe resolver primero?
+a) La raíz cuadrada interior
+√
+81
+b) La propiedad raíz de raíz
+c) La potencia 42
+d) La resta entre bloques
+Solución. La respuesta correcta es b) La propiedad raíz de raíz.
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: Recuerda que
+primero se aplican las propiedades de la potenciación y radicación; luego se
+resuelven las potencias o raíces, y finalmente las sumas o restas.
+Debe aparecer:
+[
+q√
+81 + 42] − [30 ÷ 5 − 3] =
+=[
+4) Al aplicar la propiedad raíz de raíz en
+p√
+81, el resultado queda:
+a)
+4√
+81
+b)
+√
+81
+c)
+3√
+81
+d) 812
+Solución. La respuesta correcta es a)
+4√
+81.
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: En una raíz
+dentro de otra raíz, se multiplican los índices. Por eso,
+p√
+81 =
+4√
+81.
+Debe aparecer:
+[
+q√
+81 + 42] − [30 ÷ 5 − 3] =
+=[
+4√
+81+
+5) En el primer bloque, ¿qué se debe resolver ahora?
+a) La raíz cuarta
+4√
+81
+
+=== PAGE 83 ===
+b) La potencia 42
+c) La suma del primer bloque
+d) La división del segundo bloque
+Solución. La respuesta correcta es b) La potencia 42.
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: Luego de aplicar
+las propiedades de la radicación, se resuelven las potencias antes que las raíces y
+sumas.
+Debe aparecer:
+[
+q√
+81 + 42] − [30 ÷ 5 − 3] =
+=[
+4√
+81+
+6) El resultado de la potencia42 es:
+a) 8
+b) 12
+c) 16
+d) 20
+Solución. La respuesta correcta es c) 16.
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: Recuerda que
+42 = 4 × 4 = 16.
+Debe aparecer:
+[
+q√
+81 + 42] − [30 ÷ 5 − 3] =
+=[
+4√
+81 + 16] − [
+7) En el segundo bloque, ¿qué operación se debe resolver primero?
+a) La resta 5 − 3
+b) La división 30 ÷ 5
+c) La raíz cuarta
+
+=== PAGE 84 ===
+d) La suma entre bloques
+Solución. La respuesta correcta es b) La división 30 ÷ 5.
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: En el segundo
+bloque primero se resuelve la división, porque tiene mayor jerarquía que la resta.
+Debe aparecer:
+[
+q√
+81 + 42] − [30 ÷ 5 − 3] =
+=[
+4√
+81 + 16] − [
+8) El resultado de la división30 ÷ 5 es:
+a) 5
+b) 6
+c) 7
+d) 8
+Solución. La respuesta correcta es b) 6.
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: El resultado de
+la división 30 ÷ 5 es 6.
+Debe aparecer:
+[
+q√
+81 + 42] − [30 ÷ 5 − 3] =
+=[
+4√
+81 + 16] − [6 − 3]
+9) En el primer bloque, ¿qué se debe resolver ahora?
+a) La raíz cuarta
+4√
+81
+b) La suma
+4√
+81 + 16
+c) La resta del segundo bloque
+d) La suma entre bloques
+Solución. La respuesta correcta es a) La raíz cuarta
+4√
+81.
+
+=== PAGE 85 ===
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: Luego de resolver
+las potencias, se resuelven las raíces antes que las sumas o restas.
+Debe aparecer:
+[
+q√
+81 + 42] − [30 ÷ 5 − 3] =
+=[
+4√
+81 + 16] − [6 − 3]
+=[
+10) El resultado de la raíz cuarta
+4√
+81 es:
+a) 2
+b) 3
+c) 4
+d) 9
+Solución. La respuesta correcta es b) 3.
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: Como34 = 81,
+entonces
+4√
+81 = 3.
+Debe aparecer:
+[
+q√
+81 + 42] − [30 ÷ 5 − 3] =
+=[
+4√
+81 + 16] − [6 − 3]
+=[3 + 16]−
+11) El resultado de las operaciones internas del segundo bloque es:
+a) 2
+b) 3
+c) 4
+d) 5
+Solución. La respuesta correcta es b) 3.
+
+=== PAGE 86 ===
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: El resultado de
+la resta 6 − 3 es 3.
+Debe aparecer:
+[
+q√
+81 + 42] − [30 ÷ 5 − 3] =
+=[
+4√
+81 + 16] − [6 − 3]
+=[3 + 16] − [3]
+12) El resultado de las operaciones internas del primer bloque es:
+a) 18
+b) 19
+c) 20
+d) 21
+Solución. La respuesta correcta es b) 19.
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: El resultado de
+la suma 3 + 16 es 19.
+Debe aparecer:
+[
+q√
+81 + 42] − [30 ÷ 5 − 3] =
+=[
+4√
+81 + 16] − [6 − 3]
+=[3 + 16] − [3]
+=[19] − [3]
+13) El resultado de la última operación es:
+a) 15
+b) 16
+c) 17
+d) 18
+Solución. La respuesta correcta es b) 16.
+
+=== PAGE 87 ===
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: El resultado de
+la resta 19 − 3 es 16.
+Debe aparecer:
+[
+q√
+81 + 42] − [30 ÷ 5 − 3] =
+=[
+4√
+81 + 16] − [6 − 3]
+=[3 + 16] − [3]
+=[19] − [3]
+=16
+X) [
+10√
+620 + 24] − [√16 + 20 − 3]
+1) Selecciona los signos separadores que no constan en las operaciones internas.
+Solución. Son signos separadores los escritos en color azul, mientras que los de
+color rojo no lo son.
+Debe aparecer:
+[
+10√
+620+24]−[
+√
+16+20−3]
+2) ¿En cuántos bloques queda dividida la expresión aritmética?
+a) 1
+b) 2
+c) 3
+d) 4
+Solución. La respuesta correcta es b) 2.
+Debe aparecer:
+[
+10√
+620 + 24] − [
+√
+16 + 20 − 3] =
+3) En el primer bloque, ¿qué se debe resolver primero?
+a) La raíz
+10√
+620
+
+=== PAGE 88 ===
+b) La propiedad de la raíz de una potencia
+c) La potencia 24
+d) La resta entre bloques
+Solución. La respuesta correcta es b) La propiedad de la raíz de una potencia.
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: Recuerda que
+primero se aplican las propiedades de la potenciación y radicación; luego se
+resuelven las potencias o raíces, y finalmente las sumas o restas.
+Debe aparecer:
+[
+10√
+620 + 24] − [
+√
+16 + 20 − 3] =
+=[
+4) Al aplicar la propiedad de la raíz de una potencia en
+10√
+620, el resultado queda:
+a) 610
+b) 62
+c) 630
+d) 620
+Solución. La respuesta correcta es b) 62.
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: En la raíz de
+una potencia, el exponente se divide para el índice de la raíz; por eso,20 ÷ 10 = 2.
+Debe aparecer:
+[
+10√
+620 + 24] − [
+√
+16 + 20 − 3] =
+=[62+
+5) En el primer bloque, ¿qué se debe resolver ahora?
+a) La potencia 62
+b) La potencia 24
+c) La suma del primer bloque
+
+=== PAGE 89 ===
+d) La operación interna del segundo bloque
+Solución. La respuesta correcta es b) La potencia 24.
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: Luego de aplicar
+la propiedad de la raíz de una potencia, se resuelven las potencias antes que las
+raíces, multiplicaciones, divisiones, sumas o restas.
+Debe aparecer:
+[
+10√
+620 + 24] − [
+√
+16 + 20 − 3] =
+=[62+
+6) El resultado de la potencia24 es:
+a) 8
+b) 12
+c) 16
+d) 24
+Solución. La respuesta correcta es c) 16.
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: Recuerda que
+24 = 2 × 2 × 2 × 2 = 16.
+Debe aparecer:
+[
+10√
+620 + 24] − [
+√
+16 + 20 − 3] =
+=[62 + 16]−
+7) En el segundo bloque, ¿qué se debe resolver primero?
+a) La raíz cuadrada
+b) La operación interna16 + 20
+c) La resta
+d) La potencia 62
+Solución. La respuesta correcta e

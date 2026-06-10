@@ -7,14 +7,6 @@ import '../../domain/entities/robot_accessory_entity.dart';
 import '../../domain/entities/step_entity.dart';
 import 'player_profile_provider.dart';
 
-String getExpressionForStep(ExerciseEntity exercise, int stepIndex) {
-  for (int i = stepIndex - 1; i >= 0; i--) {
-    final override = exercise.steps[i].expressionOverride;
-    if (override != null) return override;
-  }
-  return exercise.baseExpression;
-}
-
 // ─────────────────────────────────────────────────────────────────────────────
 // ESTADO VISUAL DEL ROBOT GUARDIÁN
 // ─────────────────────────────────────────────────────────────────────────────
@@ -118,7 +110,7 @@ class PracticeState {
 
   bool get showBlockBoxes {
     final blocksStepIndex = exercise.steps.indexWhere(
-      (s) => s.instruction.toLowerCase().contains('bloques queda dividida')
+      (s) => s.instruction.toLowerCase().contains('cuántos bloques')
     );
     if (blocksStepIndex == -1) return false;
     return currentStepIndex > blocksStepIndex;
@@ -127,7 +119,7 @@ class PracticeState {
   bool get showBoxesOnCurrentStep {
     if (currentStepIndex >= exercise.steps.length) return false;
     final instruction = exercise.steps[currentStepIndex].instruction.toLowerCase();
-    if (instruction.contains('signos separadores') || instruction.contains('bloques queda dividida')) {
+    if (instruction.contains('signos separadores') || instruction.contains('cuántos bloques')) {
       return false;
     }
     return showBlockBoxes;
@@ -136,21 +128,10 @@ class PracticeState {
   factory PracticeState.fromExercise(ExerciseEntity exercise, {int initialStepIndex = 0}) {
     final safeIndex = (initialStepIndex >= exercise.steps.length) ? 0 : initialStepIndex;
     final step = exercise.steps[safeIndex];
-    final initialExpr = getExpressionForStep(exercise, safeIndex);
+    final initialExpr = step.expressionOverride ?? exercise.baseExpression;
     List<String>? initialOptions;
     if (step.isMultipleChoice && step.options != null) {
       initialOptions = List.from(step.options!)..shuffle();
-    }
-    final history = [exercise.baseExpression];
-    for (int i = 0; i < safeIndex; i++) {
-      final override = exercise.steps[i].expressionOverride;
-      if (override != null) {
-        final cleanOverride = override.replaceAll(' ', '');
-        final isSame = history.any((h) => h.replaceAll(' ', '') == cleanOverride);
-        if (!isSame) {
-          history.add(override);
-        }
-      }
     }
     return PracticeState(
       exercise: exercise,
@@ -164,9 +145,8 @@ class PracticeState {
       hintActive: false,
       lives: 3,
       showGameOverDialog: false,
-      equationHistory: history,
+      equationHistory: [initialExpr],
       shuffledOptions: initialOptions,
-      workingLine: initialExpr,
     );
   }
 
@@ -286,7 +266,8 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
             lives: newLives,
             lastErrorTokenId: tokenId,
             errorSnackVersion: state.errorSnackVersion + 1,
-            errorSnackMessage: 'incorrecto. ${state.currentStep.feedbackError}',
+            errorSnackMessage: '¡Casi! Revisa: ${state.currentStep.algorithmHint}. '
+                'Te quedan $newLives vidas.',
           );
           // Cooldown reducido: solo el tiempo del flash del token (180ms)
           await Future.delayed(const Duration(milliseconds: 180));
@@ -381,8 +362,7 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
           final finalHistory = List<String>.from(state.equationHistory);
           if (currentLine != null && !currentLine.contains('____')) {
             final isSame = finalHistory.isNotEmpty &&
-                finalHistory.last.replaceAll(' ', '').replaceAll('\$', '') ==
-                    currentLine.replaceAll(' ', '').replaceAll('\$', '');
+                finalHistory.last.replaceAll(' ', '') == currentLine.replaceAll(' ', '');
             if (!isSame) finalHistory.add(currentLine);
           }
           state = state.copyWith(
@@ -413,7 +393,7 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
             comboActive: false,
             lives: newLives,
             errorSnackVersion: state.errorSnackVersion + 1,
-            errorSnackMessage: 'incorrecto. ${state.currentStep.feedbackError}',
+            errorSnackMessage: '¡Casi! Pista: ${state.currentStep.algorithmHint}',
           );
         }
       }
@@ -552,27 +532,31 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
 
   void _goToNextStep() {
     final nextIndex = state.currentStepIndex + 1;
+    // Doble seguridad
     if (nextIndex >= state.exercise.steps.length) {
       _finishExercise(withComboBonus: false);
       return;
     }
     final nextStep = state.exercise.steps[nextIndex];
-    final nextExpr = getExpressionForStep(state.exercise, nextIndex);
-    final nextTokens = EquationToken.fromExpression(nextExpr);
+    final nextTokens = nextStep.expressionOverride != null
+        ? EquationToken.fromExpression(nextStep.expressionOverride!)
+        : state.tokens;
 
     List<String>? nextOptions;
     if (nextStep.isMultipleChoice && nextStep.options != null) {
       nextOptions = List.from(nextStep.options!)..shuffle();
     }
 
+    // ── Historial progresivo ──────────────────────────────────────────────────
     final newHistory = List<String>.from(state.equationHistory);
     final currentWorkingLine = state.workingLine;
+    String? nextWorkingLine = nextStep.workingExpression ?? currentWorkingLine;
 
-    if (currentWorkingLine != null) {
-      final cleanWorking = currentWorkingLine.replaceAll(' ', '').replaceAll('\$', '');
-      final isSameAsLast = newHistory.isNotEmpty && newHistory.last.replaceAll(' ', '').replaceAll('\$', '') == cleanWorking;
-      if (!isSameAsLast) {
-        newHistory.add(currentWorkingLine);
+    if (nextWorkingLine != currentWorkingLine) {
+      final lineToPush = currentWorkingLine ?? state.exercise.baseExpression;
+      final isSameAsLast = newHistory.isNotEmpty && newHistory.last.replaceAll(' ', '') == lineToPush.replaceAll(' ', '');
+      if (!isSameAsLast && !lineToPush.contains('____')) {
+        newHistory.add(lineToPush);
       }
     }
 
@@ -587,11 +571,12 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
       showGameOverDialog: false,
       clearErrorToken: true,
       comboActive: false,
-      workingLine: nextExpr,
+      workingLine: nextWorkingLine,
       equationHistory: newHistory,
       shuffledOptions: nextOptions,
     );
 
+    // Guardar progreso en el perfil (Tarea 2)
     _saveProgress();
   }
 

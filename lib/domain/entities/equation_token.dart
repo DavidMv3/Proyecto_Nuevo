@@ -31,9 +31,9 @@ class EquationToken {
     return List.generate(parts.length, (i) {
       final val = parts[i];
       TokenType type;
-      if (val == '(' || val == ')') {
+      if (val == '(' || val == ')' || val == '[' || val == ']') {
         type = TokenType.parenthesis;
-      } else if (['+', '-', '*', '/'].contains(val)) {
+      } else if (['+', '-', '*', '/', 'x', '÷', '×'].contains(val)) {
         type = TokenType.operator;
       } else {
         type = TokenType.number;

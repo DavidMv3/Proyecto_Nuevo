@@ -1,0 +1,253 @@
+=== MEDIUM II ===
+  Step 1: Selecciona los signos separadores que no constan en las oper -> Override: None
+  Step 2: ¿En cuántos bloques queda dividida la expresión aritmética? -> Override: None
+  Step 3: En el primer bloque, ¿qué operación se debe resolver primero -> Override: [23 * 22 - 20] + [6 + 3 2] =
+  Step 4: Al aplicar el producto de potencias de igual base en23 * 22, -> Override: [23 * 22 - 20] + [6 + 3 2] =
+  Step 5: En el segundo bloque, ¿qué operación se debe resolver primer -> Override: [23 * 22 - 20] + [6 + 3 2] =
+  Step 6: El resultado de la potencia32 es/ -> Override: [23 * 22 - 20] + [6 + 3 2] =
+  Step 7: En el primer bloque, ¿qué operación se debe resolver primero -> Override: [23 * 22 - 20] + [6 + 3 2] =
+  Step 8: El resultado de la potencia25 es/ -> Override: [23 * 22 - 20] + [6 + 3 2] =
+  Step 9: El resultado de las operaciones internas del segundo bloque  -> Override: [23 * 22 - 20] + [6 + 3 2] =
+  Step 10: El resultado de las operaciones internas del primer bloque e -> Override: [23 * 22 - 20] + [6 + 3 2] =
+  Step 11: El resultado de la última operación es/ -> Override: None
+=== MEDIUM III ===
+  Step 1: Selecciona los signos separadores que no constan en las oper -> Override: [34/32+7]-[7+23]
+  Step 2: ¿En cuántos bloques queda dividida la expresión aritmética? -> Override: [34 / 3 2 + 7] - [7 + 23] =
+  Step 3: En el primer bloque, ¿qué operación se debe resolver primero -> Override: [34 / 3 2 + 7] - [7 + 23] =
+  Step 4: Al aplicar la división de potencias de igual base en34 / 3 2 -> Override: [34 / 3 2 + 7] - [7 + 23] =
+  Step 5: En el segundo bloque, ¿qué operación se debe resolver primer -> Override: [34 / 3 2 + 7] - [7 + 23] =
+  Step 6: El resultado de la potencia23 es/ -> Override: [34 / 3 2 + 7] - [7 + 23] =
+  Step 7: En el primer bloque, ¿qué operación se debe resolver primero -> Override: [34 / 3 2 + 7] - [7 + 23] =
+  Step 8: El resultado de la potencia32 es/ -> Override: [34 / 3 2 + 7] - [7 + 23] =
+  Step 9: El resultado de las operaciones internas del segundo bloque  -> Override: [34 / 3 2 + 7] - [7 + 23] =
+  Step 10: El resultado de las operaciones internas del primer bloque e -> Override: [34 / 3 2 + 7] - [7 + 23] =
+  Step 11: El resultado de la última operación es/ -> Override: None
+=== MEDIUM IV ===
+  Step 1: Selecciona los signos separadores que no constan en las oper -> Override: [(2*3)2-30]+[18/3+10]
+  Step 2: ¿En cuántos bloques queda dividida la expresión aritmética? -> Override: [(2 * 3)2 - 30] + [18 / 3 + 10] =
+  Step 3: En el primer bloque, ¿qué operación se debe resolver primero -> Override: [(2 * 3)2 - 30] + [18 / 3 + 10] =
+  Step 4: El resultado de la multiplicación2 * 3 es/ -> Override: [(2 * 3)2 - 30] + [18 / 3 + 10] =
+  Step 5: En el segundo bloque, ¿qué operación se debe resolver primer -> Override: [(2 * 3)2 - 30] + [18 / 3 + 10] =
+  Step 6: El resultado de la división18 / 3 es/ -> Override: [(2 * 3)2 - 30] + [18 / 3 + 10] =
+  Step 7: En el primer bloque, ¿qué operación se debe resolver primero -> Override: [(2 * 3)2 - 30] + [18 / 3 + 10] =
+  Step 8: El resultado de la potencia62 es/ -> Override: [(2 * 3)2 - 30] + [18 / 3 + 10] =
+  Step 9: El resultado de las operaciones internas del segundo bloque  -> Override: [(2 * 3)2 - 30] + [18 / 3 + 10] =
+  Step 10: El resultado de las operaciones internas del primer bloque e -> Override: [(2 * 3)2 - 30] + [18 / 3 + 10] =
+  Step 11: El resultado de la última operación es/ -> Override: None
+=== MEDIUM V ===
+  Step 1: Selecciona los signos separadores que no constan en las oper -> Override: [(8/2)2-12]+[52-4]
+  Step 2: ¿En cuántos bloques queda dividida la expresión aritmética? -> Override: [(8 / 2) 2 - 12] + [5 2 - 4] =
+  Step 3: En el primer bloque, ¿qué operación se debe resolver primero -> Override: [(8 / 2) 2 - 12] + [5 2 - 4] =
+  Step 4: El resultado de la división8 / 2 es/ -> Override: [(8 / 2) 2 - 12] + [5 2 - 4] =
+  Step 5: En el segundo bloque, ¿qué operación se debe resolver primer -> Override: [(8 / 2) 2 - 12] + [5 2 - 4] =
+  Step 6: El resultado de la potencia52 es/ -> Override: [(8 / 2) 2 - 12] + [5 2 - 4] =
+  Step 7: En el primer bloque, ¿qué operación se debe resolver ahora? -> Override: [(8 / 2) 2 - 12] + [5 2 - 4] =
+  Step 8: El resultado de la potencia(4)2 es/ -> Override: [(8 / 2) 2 - 12] + [5 2 - 4] =
+  Step 9: El resultado de las operaciones internas del segundo bloque  -> Override: [(8 / 2) 2 - 12] + [5 2 - 4] =
+  Step 10: El resultado de las operaciones internas del primer bloque e -> Override: [(8 / 2) 2 - 12] + [5 2 - 4] =
+  Step 11: El resultado de la última operación es/ -> Override: None
+=== MEDIUM VI ===
+  Step 1: Selecciona los signos separadores que no constan en las oper -> Override: [(22)3-50/5]+[9*2-15]
+  Step 2: ¿En cuántos bloques queda dividida la expresión aritmética? -> Override: [(22)3 - 50 / 5] + [9 * 2 - 15] =
+  Step 3: En el primer bloque, ¿qué operación se debe resolver primero -> Override: [(22)3 - 50 / 5] + [9 * 2 - 15] =
+  Step 4: Al aplicar la propiedad de potencia de potencia en(22)3, el  -> Override: [(22)3 - 50 / 5] + [9 * 2 - 15] =
+  Step 5: En el primer bloque, ¿cuál es el resultado de la división50  -> Override: [(22)3 - 50 / 5] + [9 * 2 - 15] =
+  Step 6: En el segundo bloque, ¿qué operación se debe resolver primer -> Override: [(22)3 - 50 / 5] + [9 * 2 - 15] =
+  Step 7: El resultado de la multiplicación9 * 2 es/ -> Override: [(22)3 - 50 / 5] + [9 * 2 - 15] =
+  Step 8: En el primer bloque, ¿qué operación se debe resolver primero -> Override: [(22)3 - 50 / 5] + [9 * 2 - 15] =
+  Step 9: El resultado de la potencia26 es/ -> Override: [(22)3 - 50 / 5] + [9 * 2 - 15] =
+  Step 10: El resultado de las operaciones internas del segundo bloque  -> Override: [(22)3 - 50 / 5] + [9 * 2 - 15] =
+  Step 11: El resultado de las operaciones internas del primer bloque e -> Override: [(22)3 - 50 / 5] + [9 * 2 - 15] =
+  Step 12: El resultado de la última operación es/ -> Override: None
+=== MEDIUM VII ===
+  Step 1: Selecciona los signos separadores que no constan en las oper -> Override: [15-(7-4)2]+[3*5+20]
+  Step 2: ¿En cuántos bloques queda dividida la expresión aritmética? -> Override: [15 - (7 - 4)2] + [3 * 5 + 20] =
+  Step 3: En el primer bloque, ¿qué operación se debe resolver primero -> Override: [15 - (7 - 4)2] + [3 * 5 + 20] =
+  Step 4: El resultado de la operación interna7 - 4 es/ -> Override: [15 - (7 - 4)2] + [3 * 5 + 20] =
+  Step 5: En el segundo bloque, ¿qué operación se debe resolver primer -> Override: [15 - (7 - 4)2] + [3 * 5 + 20] =
+  Step 6: El resultado de la multiplicación3 * 5 es/ -> Override: [15 - (7 - 4)2] + [3 * 5 + 20] =
+  Step 7: En el primer bloque, ¿qué operación se debe resolver ahora? -> Override: [15 - (7 - 4)2] + [3 * 5 + 20] =
+  Step 8: El resultado de la potencia(3)2 es/ -> Override: [15 - (7 - 4)2] + [3 * 5 + 20] =
+  Step 9: El resultado de las operaciones internas del segundo bloque  -> Override: [15 - (7 - 4)2] + [3 * 5 + 20] =
+  Step 10: El resultado de las operaciones internas del primer bloque e -> Override: [15 - (7 - 4)2] + [3 * 5 + 20] =
+  Step 11: El resultado de la última operación es/ -> Override: None
+=== MEDIUM VIII ===
+  Step 1: Selecciona los signos separadores que no constan en las oper -> Override: 16+20]-[52-10]
+  Step 2: ¿En cuántos bloques queda dividida la expresión aritmética? -> Override: 16 + 20] - [52 - 10] =
+  Step 3: En el primer bloque, ¿qué se debe resolver primero? -> Override: 16 + 20] - [52 - 10] =
+  Step 4: Al aplicar la propiedad de división de raíces con el mismo í -> Override: 16 + 20] - [52 - 10] =
+  Step 5: En el segundo bloque, ¿qué operación se debe resolver primer -> Override: 16 + 20] - [52 - 10] =
+  Step 6: El resultado de la potencia52 es/ -> Override: 16 + 20] - [52 - 10] =
+  Step 7: En el primer bloque, ¿qué se debe resolver ahora? -> Override: 16 + 20] - [52 - 10] =
+  Step 8: El resultado de la división144 / 16 es/ -> Override: 16 + 20] - [52 - 10] =
+  Step 9: El resultado de las operaciones internas del segundo bloque  -> Override: 16 + 20] - [52 - 10] =
+  Step 10: En el primer bloque, ¿qué se debe resolver ahora? -> Override: 16 + 20] - [52 - 10] =
+  Step 11: El resultado de la raíz cuadrada √ 9 es/ -> Override: 16 + 20] - [52 - 10] =
+  Step 12: El resultado de las operaciones internas del primer bloque e -> Override: 16 + 20] - [52 - 10] =
+  Step 13: El resultado de la última operación es/ -> Override: None
+=== MEDIUM IX ===
+  Step 1: Selecciona los signos separadores que no constan en las oper -> Override: 81+42]-[30/5-3]
+  Step 2: ¿En cuántos bloques queda dividida la expresión aritmética? -> Override: 81 + 42] - [30 / 5 - 3] =
+  Step 3: En el primer bloque, ¿qué se debe resolver primero? -> Override: 81 + 42] - [30 / 5 - 3] =
+  Step 4: Al aplicar la propiedad raíz de raíz en p√ 81, el resultado  -> Override: 81 + 42] - [30 / 5 - 3] =
+  Step 5: En el primer bloque, ¿qué se debe resolver ahora? -> Override: 81 + 42] - [30 / 5 - 3] =
+  Step 6: El resultado de la potencia42 es/ -> Override: 81 + 42] - [30 / 5 - 3] =
+  Step 7: En el segundo bloque, ¿qué operación se debe resolver primer -> Override: 81 + 42] - [30 / 5 - 3] =
+  Step 8: El resultado de la división30 / 5 es/ -> Override: 81 + 42] - [30 / 5 - 3] =
+  Step 9: En el primer bloque, ¿qué se debe resolver ahora? -> Override: 81 + 42] - [30 / 5 - 3] =
+  Step 10: El resultado de la raíz cuarta 4√ 81 es/ -> Override: 81 + 42] - [30 / 5 - 3] =
+  Step 11: El resultado de las operaciones internas del segundo bloque  -> Override: 81 + 42] - [30 / 5 - 3] =
+  Step 12: El resultado de las operaciones internas del primer bloque e -> Override: 81 + 42] - [30 / 5 - 3] =
+  Step 13: El resultado de la última operación es/ -> Override: None
+=== MEDIUM X ===
+  Step 1: Selecciona los signos separadores que no constan en las oper -> Override: 620+24]-[
+  Step 2: ¿En cuántos bloques queda dividida la expresión aritmética? -> Override: 620 + 24] - [
+  Step 3: En el primer bloque, ¿qué se debe resolver primero? -> Override: 620 + 24] - [
+  Step 4: Al aplicar la propiedad de la raíz de una potencia en 10√ 62 -> Override: 620 + 24] - [
+  Step 5: En el primer bloque, ¿qué se debe resolver ahora? -> Override: 620 + 24] - [
+  Step 6: El resultado de la potencia24 es/ -> Override: 620 + 24] - [
+  Step 7: En el segundo bloque, ¿qué se debe resolver primero? -> Override: 620 + 24] - [
+  Step 8: El resultado de la operación interna16 + 20 es/ -> Override: 620 + 24] - [
+  Step 9: En el primer bloque, ¿qué se debe resolver ahora? -> Override: 620 + 24] - [
+  Step 10: El resultado de la potencia62 es/ -> Override: 620 + 24] - [
+  Step 11: En el segundo bloque, ¿qué se debe resolver ahora? -> Override: 620 + 24] - [
+  Step 12: El resultado de la raíz cuadrada √ 36 es/ -> Override: 620 + 24] - [
+  Step 13: El resultado de las operaciones internas del primer bloque e -> Override: 620 + 24] - [
+  Step 14: El resultado de las operaciones internas del segundo bloque  -> Override: 620 + 24] - [
+  Step 15: El resultado de la última operación es/ -> Override: None
+=== HARD I ===
+  Step 1: Selecciona los signos separadores que no constan en las oper -> Override: None
+  Step 2: ¿En cuántos bloques queda dividida la expresión aritmética? -> Override: None
+  Step 3: En el primer bloque, ¿qué operación se debe resolver? -> Override: 15*2 +
+  Step 4: El resultado de la multiplicación del primer bloque es/ -> Override: 15*2 +
+  Step 5: En el segundo bloque, ¿qué operación se debe resolver primer -> Override: 15*2 +
+  Step 6: El resultado de la operación interna del segundo bloque es/ -> Override: 15*2 +
+  Step 7: En el tercer bloque, ¿qué operación se debe resolver primero -> Override: 15*2 +
+  Step 8: El resultado de la multiplicación del tercer bloque es/ -> Override: 15*2 +
+  Step 9: En el segundo bloque, ¿qué operación se debe resolver ahora? -> Override: 15*2 +
+  Step 10: El resultado de la raíz cuadrada del segundo bloque es/ -> Override: 15*2 +
+  Step 11: El resultado de la resta del tercer bloque es/ -> Override: 15*2 +
+  Step 12: ¿Qué operación se debe resolver primero en30 + 3 - 5? -> Override: 15*2 +
+  Step 13: El resultado de las últimas operaciones es/ -> Override: None
+=== HARD II ===
+  Step 1: Selecciona los signos separadores. -> Override: None
+  Step 2: ¿En cuántos bloques queda dividida la expresión aritmética? -> Override: None
+  Step 3: En el segundo bloque, ¿qué operación se debe resolver primer -> Override: 30 - 76/75 + 8/2*4 =
+  Step 4: El resultado de76 / 75 es/ -> Override: 30 - 76/75 + 8/2*4 =
+  Step 5: En el tercer bloque, ¿qué operación se debe resolver primero -> Override: 30 - 76/75 + 8/2*4 =
+  Step 6: El resultado de la división8 / 2 es/ -> Override: 30 - 76/75 + 8/2*4 =
+  Step 7: El resultado de la multiplicación del tercer bloque es/ -> Override: None
+=== HARD III ===
+  Step 1: Selecciona los signos separadores que no constan en las oper -> Override: 26+3*(5-2)/(3-2) =
+  Step 2: ¿En cuántos bloques queda dividida la expresión aritmética? -> Override: 26 + 3*(5-2)/(3-2) =
+  Step 3: En el primer bloque, ¿qué se debe resolver primero? -> Override: 26 + 3 * (5 - 2) / (3 - 2) =
+  Step 4: Al aplicar la propiedad√an = a n 2, el exponente queda/ -> Override: 26 + 3 * (5 - 2) / (3 - 2) =
+  Step 5: En el segundo bloque, ¿qué operación se debe resolver primer -> Override: 26 + 3*(5-2)/(3-2) =
+  Step 6: En las operaciones internas del segundo bloque, ¿qué operaci -> Override: 26 + 3*(5-2)/(3-2) =
+  Step 7: El resultado de la operación interna5 - 2 es/ -> Override: 26 + 3*(5-2)/(3-2) =
+  Step 8: El resultado de las últimas operaciones es/ -> Override: 30-76/75+8/2*4 =
+  Step 8: En las operaciones internas del segundo bloque, ¿qué operaci -> Override: 26 + 3*(5-2)/(3-2) =
+  Step 9: El resultado de la operación interna3 - 2 es/ -> Override: 26 + 3*(5-2)/(3-2) =
+  Step 10: En el primer bloque, ¿qué operación se debe resolver ahora? -> Override: 26 + 3*(5-2)/(3-2) =
+  Step 11: El resultado de la potencia23 es/ -> Override: 26 + 3*(5-2)/(3-2) =
+  Step 12: En el segundo bloque, ¿qué operación se debe resolver ahora? -> Override: 26 + 3*(5-2)/(3-2) =
+  Step 13: El resultado de la multiplicación3 * 3 es/ -> Override: 26 + 3*(5-2)/(3-2) =
+  Step 14: En el segundo bloque, ¿qué operación se debe resolver ahora? -> Override: 26 + 3*(5-2)/(3-2) =
+  Step 15: El resultado de la división9 / 1 es/ -> Override: 26 + 3*(5-2)/(3-2) =
+  Step 16: El resultado de las últimas operaciones es/ -> Override: None
+=== HARD IV ===
+  Step 1: Selecciona los signos separadores. -> Override: 55-3*2+3*
+  Step 2: ¿En cuántos bloques queda dividida la expresión aritmética? -> Override: 55 - 3*2 + 3*
+  Step 3: Observando la expresión, ¿qué operación se debe resolver pri -> Override: 55 - 3 * 2 + 3 *
+  Step 4: El resultado de la multiplicación3 * 2 es/ -> Override: 55 - 3 * 2 + 3 *
+  Step 5: Observando el tercer bloque, ¿qué operación se debe resolver -> Override: 55 - 3 * 2 + 3 *
+  Step 6: Al aplicar la propiedad 3√an = a n 3, el exponente queda/ -> Override: 55 - 3 * 2 + 3 *
+  Step 7: La operación que se realiza primero es/ -> Override: 55 - 3 * 2 + 3 *
+  Step 8: El resultado de la potencia52 es/ -> Override: 55 - 3 * 2 + 3 *
+  Step 9: La operación que se realiza primero es/ -> Override: 55 - 3 * 2 + 3 *
+  Step 10: El resultado de la multiplicación3 * 25 es/ -> Override: 55 - 3 * 2 + 3 *
+  Step 11: El resultado de las últimas operaciones es/ -> Override: None
+=== HARD V ===
+  Step 1: En la expresión aritmética, ¿qué elemento se debe conservar  -> Override: 3 * [33 - 16 / (5 + 3)] =
+  Step 2: ¿Qué parte de la expresión se debe analizar primero? -> Override: 3 * [33 - 16 / (5 + 3)] =
+  Step 3: Dentro del corchete, ¿qué operación se debe resolver primero -> Override: 3 * [33 - 16 / (5 + 3)] =
+  Step 4: El resultado de la potencia33 es/ -> Override: 3 * [33 - 16 / (5 + 3)] =
+  Step 5: Dentro del corchete, ¿qué operación se debe resolver ahora? -> Override: 3 * [33 - 16 / (5 + 3)] =
+  Step 6: El resultado de la operación interna5 + 3 es/ -> Override: 3 * [33 - 16 / (5 + 3)] =
+  Step 7: Dentro del corchete, ¿qué operación se debe resolver ahora? -> Override: 3 * [33 - 16 / (5 + 3)] =
+  Step 8: El resultado de la división16 / 8 es/ -> Override: 3 * [33 - 16 / (5 + 3)] =
+  Step 9: El resultado de la operación interna del corchete es/ -> Override: 3 * [33 - 16 / (5 + 3)] =
+  Step 10: El resultado de la última operación es/ -> Override: 3 * [33 - 16 / (5 + 3)] =
+=== HARD VI ===
+  Step 1: Selecciona los signos separadores. -> Override: 20+10/5-
+  Step 2: ¿En cuántos bloques queda dividida la expresión aritmética? -> Override: 20 + 10 / 5 -
+  Step 3: En el primer bloque no hay operaciones internas, por lo tant -> Override: 20 + 10 / 5 -
+  Step 4: El resultado de la división del segundo bloque es/ -> Override: 20 + 10 / 5 -
+  Step 5: En el tercer bloque, ¿qué se debe resolver primero? -> Override: 20 + 10 / 5 -
+  Step 6: Al aplicar la propiedad 3√ 312 = 3 12 3 , el exponente queda -> Override: 20 + 10 / 5 -
+  Step 7: En el cuarto bloque no hay operaciones internas, por lo tant -> Override: 20 + 10 / 5 -
+  Step 8: Entre las operaciones que quedaron ¿cuál tiene mayor jerarqu -> Override: 20 + 10 / 5 -
+  Step 9: Al aplicar la propiedad 2√ 34 = 3 4 2, el exponente queda/ -> Override: 20 + 10 / 5 -
+  Step 10: La operación que se debe resolver ahora es/ -> Override: 20 + 10 / 5 -
+  Step 11: El resultado de la potencia32 es/ -> Override: None
+=== HARD VII ===
+  Step 1: Selecciona los signos separadores que no constan en las oper -> Override: (22 + 1)3+[10 - (9/3+1)]-
+  Step 2: ¿En cuántos bloques queda dividida la expresión aritmética? -> Override: (22 + 1)3 + [10 - (9 / 3 + 1)] -
+  Step 3: En el primer bloque, ¿qué operación se debe resolver primero -> Override: (22 + 1)3 + [10 - (9 / 3 + 1)] -
+  Step 4: El resultado de la potencia22 es/ -> Override: (22 + 1)3 + [10 - (9 / 3 + 1)] -
+  Step 5: En el segundo bloque, ¿qué operación se debe resolver primer -> Override: (22 + 1)3 + [10 - (9 / 3 + 1)] -
+  Step 6: En la operación interna del segundo bloque, ¿qué se debe res -> Override: (22 + 1)3 + [10 - (9 / 3 + 1)] -
+  Step 7: El resultado de la división9 / 3 es/ -> Override: (22 + 1)3 + [10 - (9 / 3 + 1)] -
+  Step 8: En el tercer bloque, ¿qué se debe resolver primero? -> Override: (22 + 1)3 + [10 - (9 / 3 + 1)] -
+  Step 9: El resultado de la operación interna del tercer bloque es/ -> Override: (22 + 1)3 + [10 - (9 / 3 + 1)] -
+  Step 10: En el primer bloque, ¿qué operación se debe resolver ahora? -> Override: (22 + 1)3 + [10 - (9 / 3 + 1)] -
+  Step 11: El resultado de la suma4 + 1 es/ -> Override: (22 + 1)3 + [10 - (9 / 3 + 1)] -
+  Step 12: El resultado de las últimas operaciones es/ -> Override: 20 + 10 / 5 -
+  Step 12: En el segundo bloque, ¿qué operación se debe resolver ahora? -> Override: (22 + 1)3 + [10 - (9 / 3 + 1)] -
+  Step 13: El resultado de la suma3 + 1 es/ -> Override: (22 + 1)3 + [10 - (9 / 3 + 1)] -
+  Step 14: En el tercer bloque, ¿qué operación se debe resolver ahora? -> Override: (22 + 1)3 + [10 - (9 / 3 + 1)] -
+  Step 15: El resultado de la raíz cuadrada del tercer bloque es/ -> Override: (22 + 1)3 + [10 - (9 / 3 + 1)] -
+  Step 16: En el primer bloque, ¿qué operación se debe resolver ahora? -> Override: (22 + 1)3 + [10 - (9 / 3 + 1)] -
+  Step 17: El resultado de la potencia53 es/ -> Override: (22 + 1)3 + [10 - (9 / 3 + 1)] -
+  Step 18: En el segundo bloque, ¿qué operación se debe resolver ahora? -> Override: (22 + 1)3 + [10 - (9 / 3 + 1)] -
+  Step 19: El resultado de la resta10 - (4) es/ -> Override: (22 + 1)3 + [10 - (9 / 3 + 1)] -
+  Step 20: El resultado de las últimas operaciones es/ -> Override: None
+=== HARD VIII ===
+  Step 1: Selecciona los signos separadores que no constan en las oper -> Override: 5+[15 - (3-1)2+23]+
+  Step 2: ¿En cuántos bloques queda dividida la expresión aritmética? -> Override: 5 + [15 - (3 - 1)2 + 23] +
+  Step 3: En el primer bloque no hay operaciones internas, por lo tant -> Override: 5 + [15 - (3 - 1)2 + 23] +
+  Step 4: En el segundo bloque, ¿qué operación se debe resolver primer -> Override: 5 + [15 - (3 - 1)2 + 23] +
+  Step 5: El resultado de la operación interna3 - 1 es/ -> Override: 5 + [15 - (3 - 1)2 + 23] +
+  Step 6: En el segundo bloque, ¿qué operación se resuelve ahora? -> Override: 5 + [15 - (3 - 1)2 + 23] +
+  Step 7: El resultado de la potencia23 es/ -> Override: 5 + [15 - (3 - 1)2 + 23] +
+  Step 8: En el tercer bloque, ¿qué se debe resolver primero? -> Override: 5 + [15 - (3 - 1)2 + 23] +
+  Step 9: El resultado de la operación interna del tercer bloque es/ -> Override: 5 + [15 - (3 - 1)2 + 23] +
+  Step 10: En el segundo bloque, ¿qué operación se debe resolver ahora? -> Override: 5 + [15 - (3 - 1)2 + 23] +
+  Step 11: El resultado de la potencia(2)2 es/ -> Override: 5 + [15 - (3 - 1)2 + 23] +
+  Step 12: En el tercer bloque, ¿qué operación se debe resolver ahora? -> Override: 5 + [15 - (3 - 1)2 + 23] +
+  Step 13: El resultado de 3√ 8 es/ -> Override: 5 + [15 - (3 - 1)2 + 23] +
+  Step 14: El resultado de las operaciones en el segundo bloque es -> Override: 5 + [15 - (3 - 1)2 + 23] +
+  Step 15: El resultado de las operaciones finales es -> Override: 5 + [15 - (3 - 1)2 + 23] +
+=== HARD IX ===
+  Step 1: Selecciona los signos separadores que no constan en las oper -> Override: (92 + 2) * 3-
+  Step 2: ¿En cuántos bloques queda dividida la expresión aritmética? -> Override: (92 + 2) * 3 -
+  Step 3: En el primer bloque, ¿qué operación se debe resolver primero -> Override: (92 + 2) * 3 -
+  Step 4: El resultado de la potencia92 es/ -> Override: (92 + 2) * 3 -
+  Step 5: En el segundo bloque, ¿qué operación se debe resolver primer -> Override: (92 + 2) * 3 -
+  Step 6: En la operación interna del segundo bloque, ¿qué se debe res -> Override: (92 + 2) * 3 -
+  Step 7: El resultado de la potencia22 es/ -> Override: (92 + 2) * 3 -
+  Step 8: En el tercer bloque, ¿qué se debe resolver primero? -> Override: (92 + 2) * 3 -
+  Step 9: El resultado de la operación interna6 + 2 es/ -> Override: (92 + 2) * 3 -
+  Step 10: En el primer bloque, ¿qué operación se debe resolver ahora? -> Override: (92 + 2) * 3 -
+  Step 11: El resultado de la suma81 + 2 es/ -> Override: (92 + 2) * 3 -
+  Step 12: En el segundo bloque, ¿qué operación se debe resolver ahora? -> Override: (92 + 2) * 3 -
+  Step 13: El resultado de la suma4 + 1 es/ -> Override: (92 + 2) * 3 -
+  Step 14: En el tercer bloque, ¿qué operación se debe resolver ahora? -> Override: (92 + 2) * 3 -
+  Step 15: El resultado de la potencia(8)2 es/ -> Override: (92 + 2) * 3 -
+  Step 16: En el primer bloque, ¿qué operación se debe resolver ahora? -> Override: (92 + 2) * 3 -
+  Step 17: El resultado de la multiplicación83 * 3 es/ -> Override: (92 + 2) * 3 -
+  Step 18: En el segundo bloque, ¿qué operación se debe resolver ahora? -> Override: (92 + 2) * 3 -
+  Step 19: El resultado de la división10 / 5 es/ -> Override: (92 + 2) * 3 -
+  Step 20: El resultado de la operación interna del radical es/ -> Override: (92 + 2) * 3 -
+  Step 21: El resultado de la raíz cuadrada √ 25 es/ -> Override: (92 + 2) * 3 -
+  Step 22: El resultado de las operaciones finales es/ -> Override: None

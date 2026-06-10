@@ -1,0 +1,409 @@
+=== AUDIT REPORT ===
+
+Dart ID: easy_1 (18 + 3 * 5) <---> PDF: Baja II (II) 18+3×5 = (Colocar esta expresión aritmética en un solo color) ===)
+  easy_1_s1: Dart Override='None' vs PDF Step 1 equations: '(no new line)'
+  easy_1_s2: Dart Override='None' vs PDF Step 2 equations: '(no new line)'
+  easy_1_s3: Dart Override='None' vs PDF Step 3 equations: '(no new line)'
+  easy_1_s4: Dart Override='18 +' vs PDF Step 4 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  easy_1_s5: Dart Override='18 + 15' vs PDF Step 5 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  easy_1_s6: Dart Override='33' vs PDF Step 6 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+
+Dart ID: easy_2 (8 - 3 * 2 + 1) <---> PDF: Baja III (III) 8−3×2+1 = (Colocar esta expresión aritmética en un solo color) ===)
+  easy_2_s1: Dart Override='None' vs PDF Step 1 equations: '(no new line)'
+  easy_2_s2: Dart Override='None' vs PDF Step 2 equations: '(no new line)'
+  easy_2_s3: Dart Override='8 -' vs PDF Step 3 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  easy_2_s4: Dart Override='8 - 6 + 1' vs PDF Step 4 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  easy_2_s5: Dart Override='3' vs PDF Step 5 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+
+Dart ID: easy_3 (4 * 5 - 6 / 3) <---> PDF: Baja I (I) 4×5−6÷3 = (Colocar esta expresión aritmética en un solo color) ===)
+  easy_3_s1: Dart Override='None' vs PDF Step 1 equations: '(no new line)'
+  easy_3_s2: Dart Override='None' vs PDF Step 2 equations: '(no new line)'
+  easy_3_s3: Dart Override='20 - 6 / 3' vs PDF Step 3 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  easy_3_s4: Dart Override='20 - 2' vs PDF Step 4 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  easy_3_s5: Dart Override='18' vs PDF Step 5 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+
+Dart ID: easy_4 (10 - 3 * 2 + 2 ^ 3) <---> PDF: Baja IV (IV) 10−3×2+23 = (Colocar esta expresión aritmética en un solo color) ===)
+  easy_4_s1: Dart Override='None' vs PDF Step 1 equations: '(no new line)'
+  easy_4_s2: Dart Override='None' vs PDF Step 2 equations: '(no new line)'
+  easy_4_s3: Dart Override='10 -' vs PDF Step 3 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  easy_4_s4: Dart Override='None' vs PDF Step 4 equations: '(no new line)'
+  easy_4_s5: Dart Override='10 - 6' vs PDF Step 5 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  easy_4_s6: Dart Override='10 - 6 + 8' vs PDF Step 6 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  easy_4_s7: Dart Override='12' vs PDF Step 7 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+
+Dart ID: easy_5 (1 + 12 / 4 - 1 + 2 ^ 3) <---> PDF: Baja V (V) 1+12÷4−1+23 = (Colocar esta expresión aritmética en un solo color) ===)
+  easy_5_s1: Dart Override='None' vs PDF Step 1 equations: '(no new line)'
+  easy_5_s2: Dart Override='None' vs PDF Step 2 equations: '(no new line)'
+  easy_5_s3: Dart Override='1 +' vs PDF Step 3 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  easy_5_s4: Dart Override='None' vs PDF Step 4 equations: '(no new line)'
+  easy_5_s5: Dart Override='1 + 3' vs PDF Step 5 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  easy_5_s6: Dart Override='1 + 3 - 1 + 8' vs PDF Step 6 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  easy_5_s7: Dart Override='11' vs PDF Step 7 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+
+Dart ID: easy_6 (3 - 2 + ( 8 - 2 * 3 )) <---> PDF: Baja VI (VI) 3−2+[8−2×3] = (Colocar esta expresión aritmética en un solo color) ===)
+  easy_6_s1: Dart Override='None' vs PDF Step 1 equations: '(no new line)'
+  easy_6_s2: Dart Override='None' vs PDF Step 2 equations: '(no new line)'
+  easy_6_s3: Dart Override='None' vs PDF Step 3 equations: '(no new line)'
+  easy_6_s4: Dart Override='1 + ( 8 - 2 * 3 )' vs PDF Step 4 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  easy_6_s5: Dart Override='None' vs PDF Step 5 equations: '(no new line)'
+  easy_6_s6: Dart Override='1 + ( 8 - 6 )' vs PDF Step 6 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  easy_6_s7: Dart Override='1 + ( 2 )' vs PDF Step 7 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  easy_6_s8: Dart Override='3' vs PDF Step 8 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+
+Dart ID: easy_7 (sqrt( 4 + 12 ) - 15 / 5) <---> PDF: Baja VII (VII) √4+12−15÷5 = (Colocar esta expresión aritmética en un solo color) ===)
+  easy_7_s1: Dart Override='None' vs PDF Step 1 equations: '(no new line)'
+  easy_7_s2: Dart Override='None' vs PDF Step 2 equations: '(no new line)'
+  easy_7_s3: Dart Override='None' vs PDF Step 3 equations: '(no new line)'
+  easy_7_s4: Dart Override='sqrt( 16 ) - 15 / 5' vs PDF Step 4 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  easy_7_s5: Dart Override='None' vs PDF Step 5 equations: '(no new line)'
+  easy_7_s6: Dart Override='sqrt( 16 ) - 3' vs PDF Step 6 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  easy_7_s7: Dart Override='None' vs PDF Step 7 equations: '(no new line)'
+  easy_7_s8: Dart Override='4' vs PDF Step 8 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  easy_7_s9: Dart Override='4 - 3' vs PDF Step 9 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  easy_7_s10: Dart Override='1' vs PDF Step 10 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+
+Dart ID: easy_8 (3 ^ 2 + 5 * 2 - sqrt( 30 - 5 )) <---> PDF: Baja VIII (VIII) 32+5×2−√30−5 = (Colocar esta expresión aritmética en un solo color) ===)
+  easy_8_s1: Dart Override='None' vs PDF Step 1 equations: '(no new line)'
+  easy_8_s2: Dart Override='None' vs PDF Step 2 equations: '(no new line)'
+  easy_8_s3: Dart Override='None' vs PDF Step 3 equations: '(no new line)'
+  easy_8_s4: Dart Override='9 + 5 * 2 - sqrt( 30 - 5 )' vs PDF Step 4 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  easy_8_s5: Dart Override='9 + 10 - sqrt( 30 - 5 )' vs PDF Step 5 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  easy_8_s6: Dart Override='None' vs PDF Step 6 equations: '(no new line)'
+  easy_8_s7: Dart Override='9 + 10 - sqrt( 25 )' vs PDF Step 7 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  easy_8_s8: Dart Override='9 + 10 - 5' vs PDF Step 8 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  easy_8_s9: Dart Override='14' vs PDF Step 9 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+
+Dart ID: easy_9 (4 * ( 20 / 4 + 1 ) + 4 * 2 ^ 3) <---> PDF: Baja IX (IX) 4×(20÷4+1)+4×23 = (Colocar esta expresión aritmética en un solo color) ===)
+  easy_9_s1: Dart Override='None' vs PDF Step 1 equations: '(no new line)'
+  easy_9_s2: Dart Override='None' vs PDF Step 2 equations: '(no new line)'
+  easy_9_s3: Dart Override='None' vs PDF Step 3 equations: '(no new line)'
+  easy_9_s4: Dart Override='None' vs PDF Step 4 equations: '(no new line)'
+  easy_9_s5: Dart Override='4 * ( 5 + 1 ) + 4 * 2 ^ 3' vs PDF Step 5 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  easy_9_s6: Dart Override='None' vs PDF Step 6 equations: '(no new line)'
+  easy_9_s7: Dart Override='4 * ( 5 + 1 ) + 4 * 8' vs PDF Step 7 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  easy_9_s8: Dart Override='None' vs PDF Step 8 equations: '(no new line)'
+  easy_9_s9: Dart Override='4 * ( 6 ) + 4 * 8' vs PDF Step 9 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  easy_9_s10: Dart Override='4 * ( 6 ) + 32' vs PDF Step 10 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  easy_9_s11: Dart Override='None' vs PDF Step 11 equations: '(no new line)'
+  easy_9_s12: Dart Override='24 + 32' vs PDF Step 12 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  easy_9_s13: Dart Override='56' vs PDF Step 13 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+
+Dart ID: easy_10 (( 2 + 10 / 5 ) * 2 ^ 2 - 3) <---> PDF: Baja X (X) (2+10÷5)×22−3 = (Colocar esta expresión aritmética en un solo color) ===)
+  easy_10_s1: Dart Override='None' vs PDF Step 1 equations: '(no new line)'
+  easy_10_s2: Dart Override='None' vs PDF Step 2 equations: '(no new line)'
+  easy_10_s3: Dart Override='None' vs PDF Step 3 equations: '(no new line)'
+  easy_10_s4: Dart Override='( 2 + 2 ) * 2 ^ 2 - 3' vs PDF Step 4 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  easy_10_s5: Dart Override='None' vs PDF Step 5 equations: '(no new line)'
+  easy_10_s6: Dart Override='4 * 2 ^ 2 - 3' vs PDF Step 6 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  easy_10_s7: Dart Override='None' vs PDF Step 7 equations: '(no new line)'
+  easy_10_s8: Dart Override='4 * 4 - 3' vs PDF Step 8 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  easy_10_s9: Dart Override='None' vs PDF Step 9 equations: '(no new line)'
+  easy_10_s10: Dart Override='16 - 3' vs PDF Step 10 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  easy_10_s11: Dart Override='13' vs PDF Step 11 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+
+Dart ID: medium_1 (3 ^ 6 / 3 ^ 4 - 2 * ( 5 - 2 )) <---> PDF: Media I (I) 36÷34−2×(5−2) = (Colocar esta expresión aritmética en un solo color) ===)
+  medium_1_s1: Dart Override='None' vs PDF Step 1 equations: '(no new line)'
+  medium_1_s2: Dart Override='None' vs PDF Step 2 equations: '(no new line)'
+  medium_1_s3: Dart Override='None' vs PDF Step 3 equations: '(no new line)'
+  medium_1_s4: Dart Override='3 ^ 2 - 2 * ( 5 - 2 )' vs PDF Step 4 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  medium_1_s5: Dart Override='9 - 2 * ( 5 - 2 )' vs PDF Step 5 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  medium_1_s6: Dart Override='None' vs PDF Step 6 equations: '(no new line)'
+  medium_1_s7: Dart Override='9 - 2 * 3' vs PDF Step 7 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  medium_1_s8: Dart Override='None' vs PDF Step 8 equations: '(no new line)'
+  medium_1_s9: Dart Override='9 - 6' vs PDF Step 9 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  medium_1_s10: Dart Override='3' vs PDF Step 10 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+
+Dart ID: medium_2 ([ 2 ^ 3 * 2 ^ 2 - 20 ] + [ 6 + 3 ^ 2 ]) <---> PDF: Media II (II) [23 × 22 − 20] + [6 + 3 2] = ===)
+  medium_2_s1: Dart Override='None' vs PDF Step 1 equations: '(no new line)'
+  medium_2_s2: Dart Override='None' vs PDF Step 2 equations: '(no new line)'
+  medium_2_s3: Dart Override='None' vs PDF Step 3 equations: '(no new line)'
+  medium_2_s4: Dart Override='[ 2 ^ 5 - 20 ] + [ 6 + 3 ^ 2 ]' vs PDF Step 4 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  medium_2_s5: Dart Override='None' vs PDF Step 5 equations: '(no new line)'
+  medium_2_s6: Dart Override='[ 2 ^ 5 - 20 ] + [ 6 + 9 ]' vs PDF Step 6 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  medium_2_s7: Dart Override='None' vs PDF Step 7 equations: '(no new line)'
+  medium_2_s8: Dart Override='[ 32 - 20 ] + [ 6 + 9 ]' vs PDF Step 8 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  medium_2_s9: Dart Override='[ 32 - 20 ] + 15' vs PDF Step 9 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  medium_2_s10: Dart Override='12 + 15' vs PDF Step 10 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  medium_2_s11: Dart Override='27' vs PDF Step 11 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+
+Dart ID: medium_3 ([ 3 ^ 4 / 3 ^ 2 + 7 ] - [ 7 + 2 ^ 3 ]) <---> PDF: Media III (III) [34 : 3 2 + 7] − [7 + 23] ===)
+  medium_3_s1: Dart Override='None' vs PDF Step 1 equations: '(no new line)'
+  medium_3_s2: Dart Override='None' vs PDF Step 2 equations: '(no new line)'
+  medium_3_s3: Dart Override='None' vs PDF Step 3 equations: '= ['  <-- MISMATCH: PDF has new line but Dart has None
+  medium_3_s4: Dart Override='[ 3 ^ 2 + 7 ] - [ 7 + 2 ^ 3 ]' vs PDF Step 4 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  medium_3_s5: Dart Override='None' vs PDF Step 5 equations: '(no new line)'
+  medium_3_s6: Dart Override='[ 3 ^ 2 + 7 ] - [ 7 + 8 ]' vs PDF Step 6 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  medium_3_s7: Dart Override='None' vs PDF Step 7 equations: '(no new line)'
+  medium_3_s8: Dart Override='[ 9 + 7 ] - [ 7 + 8 ]' vs PDF Step 8 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  medium_3_s9: Dart Override='[ 9 + 7 ] - 15' vs PDF Step 9 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  medium_3_s10: Dart Override='16 - 15' vs PDF Step 10 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  medium_3_s11: Dart Override='1' vs PDF Step 11 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+
+Dart ID: medium_4 ([ ( 2 * 3 ) ^ 2 - 30 ] + [ 18 / 3 + 10 ]) <---> PDF: Media IV (IV) [(2 × 3)2 − 30] + [18 : 3 + 10] ===)
+  medium_4_s1: Dart Override='None' vs PDF Step 1 equations: '(no new line)'
+  medium_4_s2: Dart Override='None' vs PDF Step 2 equations: '(no new line)'
+  medium_4_s3: Dart Override='None' vs PDF Step 3 equations: '= [('  <-- MISMATCH: PDF has new line but Dart has None
+  medium_4_s4: Dart Override='[ 6 ^ 2 - 30 ] + [ 18 / 3 + 10 ]' vs PDF Step 4 equations: '=[62 − 30] + ['
+  medium_4_s5: Dart Override='None' vs PDF Step 5 equations: '=[62 − 30] + ['  <-- MISMATCH: PDF has new line but Dart has None
+  medium_4_s6: Dart Override='[ 6 ^ 2 - 30 ] + [ 6 + 10 ]' vs PDF Step 6 equations: '=[62 − 30] + [6 + 10]'
+  medium_4_s7: Dart Override='None' vs PDF Step 7 equations: '=[62 − 30] + [6 + 10] | =['  <-- MISMATCH: PDF has new line but Dart has None
+  medium_4_s8: Dart Override='[ 36 - 30 ] + [ 6 + 10 ]' vs PDF Step 8 equations: '=[62 − 30] + [6 + 10] | =[36 − 30] + ['
+  medium_4_s9: Dart Override='[ 36 - 30 ] + 16' vs PDF Step 9 equations: '= | =[62 − 30] + [6 + 10] | =[36 − 30] + [16]'
+  medium_4_s10: Dart Override='6 + 16' vs PDF Step 10 equations: '= | =[62 − 30] + [6 + 10] | =[36 − 30] + [16] | =[6] + [16]'
+  medium_4_s11: Dart Override='22' vs PDF Step 11 equations: '= | =[62 − 30] + [6 + 10] | =[36 − 30] + [16] | =[6] + [16] | =22'
+
+Dart ID: medium_5 ([ ( 8 / 2 ) ^ 2 - 12 ] + [ 5 ^ 2 - 4 ]) <---> PDF: Media V (V) [(8 : 2) 2 − 12] + [52 − 4] ===)
+  medium_5_s1: Dart Override='None' vs PDF Step 1 equations: '(no new line)'
+  medium_5_s2: Dart Override='None' vs PDF Step 2 equations: '(no new line)'
+  medium_5_s3: Dart Override='None' vs PDF Step 3 equations: '=[('  <-- MISMATCH: PDF has new line but Dart has None
+  medium_5_s4: Dart Override='[ ( 4 ) ^ 2 - 12 ] + [ 5 ^ 2 - 4 ]' vs PDF Step 4 equations: '=[(4)2 − 12] + ['
+  medium_5_s5: Dart Override='None' vs PDF Step 5 equations: '=[(4)2 − 12] + ['  <-- MISMATCH: PDF has new line but Dart has None
+  medium_5_s6: Dart Override='[ ( 4 ) ^ 2 - 12 ] + [ 25 - 4 ]' vs PDF Step 6 equations: '=[(4)2 − 12] + [25 − 4]'
+  medium_5_s7: Dart Override='None' vs PDF Step 7 equations: '=[(4)2 − 12] + [25 − 4] | =['  <-- MISMATCH: PDF has new line but Dart has None
+  medium_5_s8: Dart Override='[ 16 - 12 ] + [ 25 - 4 ]' vs PDF Step 8 equations: '=[(4)2 − 12] + [25 − 4] | =[(16) − 12] + ['
+  medium_5_s9: Dart Override='[ 16 - 12 ] + 21' vs PDF Step 9 equations: '=[(4)2 − 12] + [25 − 4] | =[16 − 12] + [21]'
+  medium_5_s10: Dart Override='4 + 21' vs PDF Step 10 equations: '=[(4)2 − 12] + [25 − 4] | =[16 − 12] + [21] | =[4] + [21]'
+  medium_5_s11: Dart Override='25' vs PDF Step 11 equations: '=[(4)2 − 12] + [25 − 4] | =[16 − 12] + [21] | =[4] + [21] | =25'
+
+Dart ID: medium_6 ([ ( 2 ^ 2 ) ^ 3 - 50 / 5 ] + [ 9 * 2 - 15 ]) <---> PDF: Media VI (VI) [(22)3 − 50 ÷ 5] + [9 × 2 − 15] ===)
+  medium_6_s1: Dart Override='None' vs PDF Step 1 equations: '(no new line)'
+  medium_6_s2: Dart Override='None' vs PDF Step 2 equations: '(no new line)'
+  medium_6_s3: Dart Override='None' vs PDF Step 3 equations: '=['  <-- MISMATCH: PDF has new line but Dart has None
+  medium_6_s4: Dart Override='[ 2 ^ 6 - 50 / 5 ] + [ 9 * 2 - 15 ]' vs PDF Step 4 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  medium_6_s5: Dart Override='[ 2 ^ 6 - 10 ] + [ 9 * 2 - 15 ]' vs PDF Step 5 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  medium_6_s6: Dart Override='None' vs PDF Step 6 equations: '(no new line)'
+  medium_6_s7: Dart Override='[ 2 ^ 6 - 10 ] + [ 18 - 15 ]' vs PDF Step 7 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  medium_6_s8: Dart Override='None' vs PDF Step 8 equations: '(no new line)'
+  medium_6_s9: Dart Override='[ 64 - 10 ] + [ 18 - 15 ]' vs PDF Step 9 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  medium_6_s10: Dart Override='[ 64 - 10 ] + 3' vs PDF Step 10 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  medium_6_s11: Dart Override='54 + 3' vs PDF Step 11 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  medium_6_s12: Dart Override='57' vs PDF Step 12 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+
+Dart ID: medium_7 ([ 15 - ( 7 - 4 ) ^ 2 ] + [ 3 * 5 + 20 ]) <---> PDF: Media VII (VII) [15 − (7 − 4)2] + [3 × 5 + 20] ===)
+  medium_7_s1: Dart Override='None' vs PDF Step 1 equations: '(no new line)'
+  medium_7_s2: Dart Override='None' vs PDF Step 2 equations: '(no new line)'
+  medium_7_s3: Dart Override='None' vs PDF Step 3 equations: '=[15 − ('  <-- MISMATCH: PDF has new line but Dart has None
+  medium_7_s4: Dart Override='[ 15 - 3 ^ 2 ] + [ 3 * 5 + 20 ]' vs PDF Step 4 equations: '=[15 − (3)2] + ['
+  medium_7_s5: Dart Override='None' vs PDF Step 5 equations: '=[15 − (3)2] + ['  <-- MISMATCH: PDF has new line but Dart has None
+  medium_7_s6: Dart Override='[ 15 - 3 ^ 2 ] + [ 15 + 20 ]' vs PDF Step 6 equations: '=[15 − (3)2] + [15 + 20]'
+  medium_7_s7: Dart Override='None' vs PDF Step 7 equations: '(no new line)'
+  medium_7_s8: Dart Override='[ 15 - 9 ] + [ 15 + 20 ]' vs PDF Step 8 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  medium_7_s9: Dart Override='[ 15 - 9 ] + 35' vs PDF Step 9 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  medium_7_s10: Dart Override='6 + 35' vs PDF Step 10 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  medium_7_s11: Dart Override='41' vs PDF Step 11 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+
+Dart ID: medium_8 ([ sqrt( 144 ) / sqrt( 16 ) + 20 ] - [ 5 ^ 2 - 10 ]) <---> PDF: Media VIII (VIII) [ √ 144 ÷ √ 16 + 20] − [52 − 10] ===)
+  medium_8_s1: Dart Override='None' vs PDF Step 1 equations: '(no new line)'
+  medium_8_s2: Dart Override='None' vs PDF Step 2 equations: '(no new line)'
+  medium_8_s3: Dart Override='None' vs PDF Step 3 equations: '=['  <-- MISMATCH: PDF has new line but Dart has None
+  medium_8_s4: Dart Override='[ sqrt( 144 / 16 ) + 20 ] - [ 5 ^ 2 - 10 ]' vs PDF Step 4 equations: '=['
+  medium_8_s5: Dart Override='None' vs PDF Step 5 equations: '=['  <-- MISMATCH: PDF has new line but Dart has None
+  medium_8_s6: Dart Override='[ sqrt( 144 / 16 ) + 20 ] - [ 25 - 10 ]' vs PDF Step 6 equations: '=['
+  medium_8_s7: Dart Override='None' vs PDF Step 7 equations: '=[ | =[√'  <-- MISMATCH: PDF has new line but Dart has None
+  medium_8_s8: Dart Override='[ sqrt( 9 ) + 20 ] - [ 25 - 10 ]' vs PDF Step 8 equations: '=[ | =['
+  medium_8_s9: Dart Override='[ sqrt( 9 ) + 20 ] - 15' vs PDF Step 9 equations: '=[ | =['
+  medium_8_s10: Dart Override='None' vs PDF Step 10 equations: '=[ | =[ | =['  <-- MISMATCH: PDF has new line but Dart has None
+  medium_8_s11: Dart Override='[ 3 + 20 ] - 15' vs PDF Step 11 equations: '=[ | =[ | =[3 + 20] − [15]'
+  medium_8_s12: Dart Override='23 - 15' vs PDF Step 12 equations: '=[ | =[ | =[3 + 20] − [15] | =[23] − [15]'
+  medium_8_s13: Dart Override='8' vs PDF Step 13 equations: '=[ | =[ | =[3 + 20] − [15] | =[23] − [15] | =8'
+
+Dart ID: medium_9 ([ sqrt( sqrt( 81 ) ) + 4 ^ 2 ] - [ 30 / 5 - 3 ]) <---> PDF: Media IX (IX) [ p√ 81 + 42] − [30 ÷ 5 − 3] ===)
+  medium_9_s1: Dart Override='None' vs PDF Step 1 equations: '(no new line)'
+  medium_9_s2: Dart Override='None' vs PDF Step 2 equations: '(no new line)'
+  medium_9_s3: Dart Override='None' vs PDF Step 3 equations: '=['  <-- MISMATCH: PDF has new line but Dart has None
+  medium_9_s4: Dart Override='[ root4( 81 ) + 4 ^ 2 ] - [ 30 / 5 - 3 ]' vs PDF Step 4 equations: '=['
+  medium_9_s5: Dart Override='None' vs PDF Step 5 equations: '=['  <-- MISMATCH: PDF has new line but Dart has None
+  medium_9_s6: Dart Override='[ root4( 81 ) + 16 ] - [ 30 / 5 - 3 ]' vs PDF Step 6 equations: '=['
+  medium_9_s7: Dart Override='None' vs PDF Step 7 equations: '=['  <-- MISMATCH: PDF has new line but Dart has None
+  medium_9_s8: Dart Override='[ root4( 81 ) + 16 ] - [ 6 - 3 ]' vs PDF Step 8 equations: '=['
+  medium_9_s9: Dart Override='None' vs PDF Step 9 equations: '=[ | =['  <-- MISMATCH: PDF has new line but Dart has None
+  medium_9_s10: Dart Override='[ 3 + 16 ] - [ 6 - 3 ]' vs PDF Step 10 equations: '=[ | =[3 + 16]−'
+  medium_9_s11: Dart Override='[ 3 + 16 ] - 3' vs PDF Step 11 equations: '=[ | =[3 + 16] − [3]'
+  medium_9_s12: Dart Override='19 - 3' vs PDF Step 12 equations: '=[ | =[3 + 16] − [3] | =[19] − [3]'
+  medium_9_s13: Dart Override='16' vs PDF Step 13 equations: '=[ | =[3 + 16] − [3] | =[19] − [3] | =16'
+
+Dart ID: medium_10 ([ root10( 6 ^ 20 ) + 2 ^ 4 ] - [ sqrt( 16 ) + 20 - 3 ]) <---> PDF: Media X (X) [ 10√ 620 + 24] − [√16 + 20 − 3] ===)
+  medium_10_s1: Dart Override='None' vs PDF Step 1 equations: '(no new line)'
+  medium_10_s2: Dart Override='None' vs PDF Step 2 equations: '(no new line)'
+  medium_10_s3: Dart Override='None' vs PDF Step 3 equations: '=['  <-- MISMATCH: PDF has new line but Dart has None
+  medium_10_s4: Dart Override='[ 6 ^ 2 + 2 ^ 4 ] - [ sqrt( 16 + 20 ) - 3 ]' vs PDF Step 4 equations: '=[62+'
+  medium_10_s5: Dart Override='None' vs PDF Step 5 equations: '=[62+'  <-- MISMATCH: PDF has new line but Dart has None
+  medium_10_s6: Dart Override='[ 6 ^ 2 + 16 ] - [ sqrt( 16 + 20 ) - 3 ]' vs PDF Step 6 equations: '=[62 + 16]−'
+  medium_10_s7: Dart Override='None' vs PDF Step 7 equations: '=[62 + 16] − [√'  <-- MISMATCH: PDF has new line but Dart has None
+  medium_10_s8: Dart Override='[ 6 ^ 2 + 16 ] - [ sqrt( 36 ) - 3 ]' vs PDF Step 8 equations: '=[62 + 16] − ['
+  medium_10_s9: Dart Override='None' vs PDF Step 9 equations: '(no new line)'
+  medium_10_s10: Dart Override='[ 36 + 16 ] - [ sqrt( 36 ) - 3 ]' vs PDF Step 10 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  medium_10_s11: Dart Override='None' vs PDF Step 11 equations: '(no new line)'
+  medium_10_s12: Dart Override='[ 36 + 16 ] - [ 6 - 3 ]' vs PDF Step 12 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  medium_10_s13: Dart Override='52 - [ 6 - 3 ]' vs PDF Step 13 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  medium_10_s14: Dart Override='52 - 3' vs PDF Step 14 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  medium_10_s15: Dart Override='49' vs PDF Step 15 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+
+Dart ID: hard_1 (15 * 2 + sqrt( 4 + 5 ) - ( 2 * 3 - 1 )) <---> PDF: Alta I (I) 15×2+√4+5−(2×3−1) = (Colocar esta expresión aritmética en un solo color) ===)
+  hard_1_s1: Dart Override='None' vs PDF Step 1 equations: '(no new line)'
+  hard_1_s2: Dart Override='None' vs PDF Step 2 equations: '(no new line)'
+  hard_1_s3: Dart Override='None' vs PDF Step 3 equations: '(no new line)'
+  hard_1_s4: Dart Override='30 + sqrt( 4 + 5 ) - ( 2 * 3 - 1 )' vs PDF Step 4 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_1_s5: Dart Override='None' vs PDF Step 5 equations: '(no new line)'
+  hard_1_s6: Dart Override='30 + sqrt( 4 + 5 ) - ( 6 - 1 )' vs PDF Step 6 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_1_s7: Dart Override='None' vs PDF Step 7 equations: '(no new line)'
+  hard_1_s8: Dart Override='30 + sqrt( 9 ) - ( 6 - 1 )' vs PDF Step 8 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_1_s9: Dart Override='None' vs PDF Step 9 equations: '(no new line)'
+  hard_1_s10: Dart Override='30 + 3 - ( 6 - 1 )' vs PDF Step 10 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_1_s11: Dart Override='30 + 3 - 5' vs PDF Step 11 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_1_s12: Dart Override='None' vs PDF Step 12 equations: '(no new line)'
+  hard_1_s13: Dart Override='28' vs PDF Step 13 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+
+Dart ID: hard_2 (30 - 7 ^ 6 / 7 ^ 5 + 8 / 2 * 4) <---> PDF: Alta II (II) 30−76÷75+8÷2×4 = (Colocar esta expresión aritmética en un solo color) ===)
+  hard_2_s1: Dart Override='None' vs PDF Step 1 equations: '(no new line)'
+  hard_2_s2: Dart Override='None' vs PDF Step 2 equations: '(no new line)'
+  hard_2_s3: Dart Override='None' vs PDF Step 3 equations: '(no new line)'
+  hard_2_s4: Dart Override='30 - 7 + 8 / 2 * 4' vs PDF Step 4 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_2_s5: Dart Override='None' vs PDF Step 5 equations: '(no new line)'
+  hard_2_s6: Dart Override='30 - 7 + 4 * 4' vs PDF Step 6 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_2_s7: Dart Override='30 - 7 + 16' vs PDF Step 7 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_2_s8: Dart Override='39' vs PDF Step 8 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+
+Dart ID: hard_3 (sqrt( 2 ^ 6 ) + 3 * ( 5 - 2 ) / ( 3 - 2 )) <---> PDF: Alta III (III) √ 26+3×(5−2)÷(3−2) = (Colocar esta expresión aritmética en un solo color) ===)
+  hard_3_s1: Dart Override='None' vs PDF Step 1 equations: '(no new line)'
+  hard_3_s2: Dart Override='None' vs PDF Step 2 equations: '(no new line)'
+  hard_3_s3: Dart Override='None' vs PDF Step 3 equations: '(no new line)'
+  hard_3_s4: Dart Override='2 ^ 3 + 3 * ( 5 - 2 ) / ( 3 - 2 )' vs PDF Step 4 equations: '= 2 3+'
+  hard_3_s5: Dart Override='None' vs PDF Step 5 equations: '= 2 3 + 3 × ('  <-- MISMATCH: PDF has new line but Dart has None
+  hard_3_s6: Dart Override='None' vs PDF Step 6 equations: '= 2 3 + 3 × ('  <-- MISMATCH: PDF has new line but Dart has None
+  hard_3_s7: Dart Override='2 ^ 3 + 3 * 3 / ( 3 - 2 )' vs PDF Step 7 equations: '= 2 3 + 3 × 3 ÷ ('
+  hard_3_s8: Dart Override='None' vs PDF Step 8 equations: '= 2 3 + 3 × 3 ÷ ('  <-- MISMATCH: PDF has new line but Dart has None
+  hard_3_s9: Dart Override='2 ^ 3 + 3 * 3 / 1' vs PDF Step 9 equations: '= 2 3 + 3 × 3 ÷ 1'
+  hard_3_s10: Dart Override='None' vs PDF Step 10 equations: '= 2 3 + 3 × 3 ÷ 1'  <-- MISMATCH: PDF has new line but Dart has None
+  hard_3_s11: Dart Override='8 + 3 * 3 / 1' vs PDF Step 11 equations: '= 2 3 + 3 × 3 ÷ 1 | = 8+'
+  hard_3_s12: Dart Override='None' vs PDF Step 12 equations: '(no new line)'
+  hard_3_s13: Dart Override='8 + 9 / 1' vs PDF Step 13 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_3_s14: Dart Override='None' vs PDF Step 14 equations: '(no new line)'
+  hard_3_s15: Dart Override='8 + 9' vs PDF Step 15 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_3_s16: Dart Override='17' vs PDF Step 16 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+
+Dart ID: hard_4 (55 - 3 * 2 + 3 * root3( 5 ^ 6 )) <---> PDF: Alta IV (IV) 55−3×2+3× 3√ 56 = (Colocar esta expresión aritmética en un solo color) ===)
+  hard_4_s1: Dart Override='None' vs PDF Step 1 equations: '(no new line)'
+  hard_4_s2: Dart Override='None' vs PDF Step 2 equations: '(no new line)'
+  hard_4_s3: Dart Override='None' vs PDF Step 3 equations: '= 55−'  <-- MISMATCH: PDF has new line but Dart has None
+  hard_4_s4: Dart Override='55 - 6 + 3 * root3( 5 ^ 6 )' vs PDF Step 4 equations: '= 55 − 6+'
+  hard_4_s5: Dart Override='None' vs PDF Step 5 equations: '= 55 − 6 + 3×'  <-- MISMATCH: PDF has new line but Dart has None
+  hard_4_s6: Dart Override='55 - 6 + 3 * 5 ^ 2' vs PDF Step 6 equations: '= 55 − 6 + 3 × 52'
+  hard_4_s7: Dart Override='None' vs PDF Step 7 equations: '(no new line)'
+  hard_4_s8: Dart Override='55 - 6 + 3 * 25' vs PDF Step 8 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_4_s9: Dart Override='None' vs PDF Step 9 equations: '(no new line)'
+  hard_4_s10: Dart Override='55 - 6 + 75' vs PDF Step 10 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_4_s11: Dart Override='124' vs PDF Step 11 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+
+Dart ID: hard_5 (3 * [ 3 ^ 3 - 16 / ( 5 + 3 ) ]) <---> PDF: Alta V (V) 3×[33−16÷(5+3)] = (Colocar esta expresión aritmética en un solo color) ===)
+  hard_5_s1: Dart Override='None' vs PDF Step 1 equations: '(no new line)'
+  hard_5_s2: Dart Override='None' vs PDF Step 2 equations: '(no new line)'
+  hard_5_s3: Dart Override='None' vs PDF Step 3 equations: '= 3 × ['  <-- MISMATCH: PDF has new line but Dart has None
+  hard_5_s4: Dart Override='3 * [ 27 - 16 / ( 5 + 3 ) ]' vs PDF Step 4 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_5_s5: Dart Override='None' vs PDF Step 5 equations: '(no new line)'
+  hard_5_s6: Dart Override='3 * [ 27 - 16 / 8 ]' vs PDF Step 6 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_5_s7: Dart Override='None' vs PDF Step 7 equations: '(no new line)'
+  hard_5_s8: Dart Override='3 * [ 27 - 2 ]' vs PDF Step 8 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_5_s9: Dart Override='3 * 25' vs PDF Step 9 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_5_s10: Dart Override='75' vs PDF Step 10 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+
+Dart ID: hard_6 (20 + 10 / 5 - sqrt( root3( 3 ^ 12 ) ) + 1) <---> PDF: Alta VI (VI) 20+10÷5− 2p 3√ 312+1 = (Colocar esta expresión aritmética en un solo color) ===)
+  hard_6_s1: Dart Override='None' vs PDF Step 1 equations: '(no new line)'
+  hard_6_s2: Dart Override='None' vs PDF Step 2 equations: '(no new line)'
+  hard_6_s3: Dart Override='20 +' vs PDF Step 3 equations: '= 20+'
+  hard_6_s4: Dart Override='20 + 2' vs PDF Step 4 equations: '= 20 + 2'
+  hard_6_s5: Dart Override='None' vs PDF Step 5 equations: '= 20 + 2 −'  <-- MISMATCH: PDF has new line but Dart has None
+  hard_6_s6: Dart Override='20 + 2 - sqrt( 3 ^ 4 )' vs PDF Step 6 equations: '= 20 + 2 −'
+  hard_6_s7: Dart Override='20 + 2 - sqrt( 3 ^ 4 ) + 1' vs PDF Step 7 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_6_s8: Dart Override='None' vs PDF Step 8 equations: '(no new line)'
+  hard_6_s9: Dart Override='20 + 2 - 3 ^ 2 + 1' vs PDF Step 9 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_6_s10: Dart Override='None' vs PDF Step 10 equations: '(no new line)'
+  hard_6_s11: Dart Override='20 + 2 - 9 + 1' vs PDF Step 11 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_6_s12: Dart Override='14' vs PDF Step 12 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+
+Dart ID: hard_7 (( 2 ^ 2 + 1 ) ^ 3 + [ 10 - ( 9 / 3 + 1 ) ] - sqrt( 9 + 40 )) <---> PDF: Alta VII (VII) (22 + 1)3+[10 − (9÷3+1)]−√9+40 = (Colocar esta expresión aritmética en un solo color) ===)
+  hard_7_s1: Dart Override='None' vs PDF Step 1 equations: '(no new line)'
+  hard_7_s2: Dart Override='None' vs PDF Step 2 equations: '(no new line)'
+  hard_7_s3: Dart Override='None' vs PDF Step 3 equations: '='  <-- MISMATCH: PDF has new line but Dart has None
+  hard_7_s4: Dart Override='( 4 + 1 ) ^ 3 + [ 10 - ( 9 / 3 + 1 ) ] - sqrt( 9 + 40 )' vs PDF Step 4 equations: '= (4 + 1) 3+'
+  hard_7_s5: Dart Override='None' vs PDF Step 5 equations: '= (4 + 1) 3 + [10 − ('  <-- MISMATCH: PDF has new line but Dart has None
+  hard_7_s6: Dart Override='None' vs PDF Step 6 equations: '= (4 + 1) 3 + [10 − ('  <-- MISMATCH: PDF has new line but Dart has None
+  hard_7_s7: Dart Override='( 4 + 1 ) ^ 3 + [ 10 - ( 3 + 1 ) ] - sqrt( 9 + 40 )' vs PDF Step 7 equations: '= (4 + 1) 3 + [10 − (3 + 1)]−'
+  hard_7_s8: Dart Override='None' vs PDF Step 8 equations: '= (4 + 1) 3 + [10 − (3 + 1)] − √'  <-- MISMATCH: PDF has new line but Dart has None
+  hard_7_s9: Dart Override='( 4 + 1 ) ^ 3 + [ 10 - ( 3 + 1 ) ] - sqrt( 49 )' vs PDF Step 9 equations: '= (4 + 1) 3 + [10 − (3 + 1)] −'
+  hard_7_s10: Dart Override='None' vs PDF Step 10 equations: '= (4 + 1) 3 + [10 − (3 + 1)] − | ='  <-- MISMATCH: PDF has new line but Dart has None
+  hard_7_s11: Dart Override='5 ^ 3 + [ 10 - ( 3 + 1 ) ] - sqrt( 49 )' vs PDF Step 11 equations: '= (4 + 1) 3 + [10 − (3 + 1)] − | = 5 3+'
+  hard_7_s12: Dart Override='None' vs PDF Step 12 equations: '(no new line)'
+  hard_7_s13: Dart Override='5 ^ 3 + [ 10 - 4 ] - sqrt( 49 )' vs PDF Step 13 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_7_s14: Dart Override='None' vs PDF Step 14 equations: '(no new line)'
+  hard_7_s15: Dart Override='5 ^ 3 + [ 10 - 4 ] - 7' vs PDF Step 15 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_7_s16: Dart Override='None' vs PDF Step 16 equations: '(no new line)'
+  hard_7_s17: Dart Override='125 + [ 10 - 4 ] - 7' vs PDF Step 17 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_7_s18: Dart Override='None' vs PDF Step 18 equations: '(no new line)'
+  hard_7_s19: Dart Override='125 + 6 - 7' vs PDF Step 19 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_7_s20: Dart Override='124' vs PDF Step 20 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+
+Dart ID: hard_8 (5 + [ 15 - ( 3 - 1 ) ^ 2 + 2 ^ 3 ] + root3( 7 + 1 )) <---> PDF: Alta VIII (VIII) 5+[15 − (3−1)2+23]+ 3√7+1 = (Colocar esta expresión aritmética en un solo color) ===)
+  hard_8_s1: Dart Override='None' vs PDF Step 1 equations: '(no new line)'
+  hard_8_s2: Dart Override='None' vs PDF Step 2 equations: '(no new line)'
+  hard_8_s3: Dart Override='5 +' vs PDF Step 3 equations: '= 5'
+  hard_8_s4: Dart Override='None' vs PDF Step 4 equations: '= 5 + [15 − ('  <-- MISMATCH: PDF has new line but Dart has None
+  hard_8_s5: Dart Override='5 + [ 15 - 2 ^ 2 + 2 ^ 3 ]' vs PDF Step 5 equations: '= 5 + [15 − (2)2+'
+  hard_8_s6: Dart Override='None' vs PDF Step 6 equations: '= 5 + [15 − (2)2+'  <-- MISMATCH: PDF has new line but Dart has None
+  hard_8_s7: Dart Override='5 + [ 15 - 2 ^ 2 + 8 ]' vs PDF Step 7 equations: '= 5 + [15 − (2)2 + 8'
+  hard_8_s8: Dart Override='None' vs PDF Step 8 equations: '= 5 + [15 − (2)2 + 8] + 3'  <-- MISMATCH: PDF has new line but Dart has None
+  hard_8_s9: Dart Override='5 + [ 15 - 2 ^ 2 + 8 ] + root3( 8 )' vs PDF Step 9 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_8_s10: Dart Override='None' vs PDF Step 10 equations: '(no new line)'
+  hard_8_s11: Dart Override='5 + [ 15 - 4 + 8 ] + root3( 8 )' vs PDF Step 11 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_8_s12: Dart Override='None' vs PDF Step 12 equations: '(no new line)'
+  hard_8_s13: Dart Override='5 + [ 15 - 4 + 8 ] + 2' vs PDF Step 13 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_8_s14: Dart Override='5 + 19 + 2' vs PDF Step 14 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_8_s15: Dart Override='26' vs PDF Step 15 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+
+Dart ID: hard_9 (( 9 ^ 2 + 2 ) * 3 - sqrt( 23 + 10 / ( 2 ^ 2 + 1 ) ) - ( 6 + 2 ) ^ 2) <---> PDF: Alta IX (IX) (92 + 2) × 3− p 23+10÷(22+1)−(6+2)2 = (Colocar esta expresión aritmética en un solo color) ===)
+  hard_9_s1: Dart Override='None' vs PDF Step 1 equations: '(no new line)'
+  hard_9_s2: Dart Override='None' vs PDF Step 2 equations: '(no new line)'
+  hard_9_s3: Dart Override='None' vs PDF Step 3 equations: '(no new line)'
+  hard_9_s4: Dart Override='( 81 + 2 ) * 3 - sqrt( 23 + 10 / ( 2 ^ 2 + 1 ) ) - ( 6 + 2 ) ^ 2' vs PDF Step 4 equations: '= (81 + 2) × 3−'
+  hard_9_s5: Dart Override='None' vs PDF Step 5 equations: '= (81 + 2) × 3 −'  <-- MISMATCH: PDF has new line but Dart has None
+  hard_9_s6: Dart Override='None' vs PDF Step 6 equations: '= (81 + 2) × 3 −'  <-- MISMATCH: PDF has new line but Dart has None
+  hard_9_s7: Dart Override='( 81 + 2 ) * 3 - sqrt( 23 + 10 / ( 4 + 1 ) ) - ( 6 + 2 ) ^ 2' vs PDF Step 7 equations: '= (81 + 2) × 3 −'
+  hard_9_s8: Dart Override='None' vs PDF Step 8 equations: '= (81 + 2) × 3 −'  <-- MISMATCH: PDF has new line but Dart has None
+  hard_9_s9: Dart Override='( 81 + 2 ) * 3 - sqrt( 23 + 10 / ( 4 + 1 ) ) - 8 ^ 2' vs PDF Step 9 equations: '= (81 + 2) × 3 −'
+  hard_9_s10: Dart Override='None' vs PDF Step 10 equations: '= (81 + 2) × 3 −'  <-- MISMATCH: PDF has new line but Dart has None
+  hard_9_s11: Dart Override='83 * 3 - sqrt( 23 + 10 / ( 4 + 1 ) ) - 8 ^ 2' vs PDF Step 11 equations: '= (81 + 2) × 3 − | = (83) × 3−'
+  hard_9_s12: Dart Override='None' vs PDF Step 12 equations: '= (81 + 2) × 3 − | = (83) × 3−'  <-- MISMATCH: PDF has new line but Dart has None
+  hard_9_s13: Dart Override='83 * 3 - sqrt( 23 + 10 / 5 ) - 8 ^ 2' vs PDF Step 13 equations: '= (81 + 2) × 3 − | = (83) × 3 −'
+  hard_9_s14: Dart Override='None' vs PDF Step 14 equations: '= (81 + 2) × 3 − | = (83) × 3 −'  <-- MISMATCH: PDF has new line but Dart has None
+  hard_9_s15: Dart Override='83 * 3 - sqrt( 23 + 10 / 5 ) - 64' vs PDF Step 15 equations: '= (81 + 2) × 3 − | = (83) × 3 −'
+  hard_9_s16: Dart Override='None' vs PDF Step 16 equations: '= (81 + 2) × 3 − | = (83) × 3 −'  <-- MISMATCH: PDF has new line but Dart has None
+  hard_9_s17: Dart Override='249 - sqrt( 23 + 10 / 5 ) - 64' vs PDF Step 17 equations: '= (81 + 2) × 3 − | = (83) × 3 − | = 249−'
+  hard_9_s18: Dart Override='None' vs PDF Step 18 equations: '= (81 + 2) × 3 − | = (83) × 3 − | = 249 −'  <-- MISMATCH: PDF has new line but Dart has None
+  hard_9_s19: Dart Override='249 - sqrt( 23 + 2 ) - 64' vs PDF Step 19 equations: '= (81 + 2) × 3 − | = (83) × 3 − | = 249 −'
+  hard_9_s20: Dart Override='249 - sqrt( 25 ) - 64' vs PDF Step 20 equations: '= (81 + 2) × 3 − | = (83) × 3 − | = 249 − | = 249 −'
+  hard_9_s21: Dart Override='249 - 5 - 64' vs PDF Step 21 equations: '= (81 + 2) × 3 − | = (83) × 3 − | = 249 − | = 249 − | = 249 − 5 − 64'
+  hard_9_s22: Dart Override='180' vs PDF Step 22 equations: '= (81 + 2) × 3 − | = (83) × 3 − | = 249 − | = 249 − | = 249 − 5 − 64 | = 180'
+
+Dart ID: hard_10 (5 ^ 2 + 8 * 2 ^ 2 - 7 ^ 8 / 7 ^ 6 + 2 * ( 5 + 4 / 2 ) - sqrt ( 15 + 1 )) <---> PDF: Alta X (X) 52+8 × 22−78 ÷ 76+2 × (5+4 ÷ 2)−√15+1 = (Colocar esta expresión aritmética en un solo color) ===)
+  hard_10_s1: Dart Override='None' vs PDF Step 1 equations: '(no new line)'
+  hard_10_s2: Dart Override='None' vs PDF Step 2 equations: '(no new line)'
+  hard_10_s3: Dart Override='25 + 8 * 2 ^ 2 - 7 ^ 8 / 7 ^ 6 + 2 * ( 5 + 4 / 2 ) - sqrt ( 15 + 1 )' vs PDF Step 3 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_10_s4: Dart Override='None' vs PDF Step 4 equations: '(no new line)'
+  hard_10_s5: Dart Override='25 + 8 * 4 - 7 ^ 8 / 7 ^ 6 + 2 * ( 5 + 4 / 2 ) - sqrt ( 15 + 1 )' vs PDF Step 5 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_10_s6: Dart Override='None' vs PDF Step 6 equations: '(no new line)'
+  hard_10_s7: Dart Override='25 + 8 * 4 - 7 ^ 2 + 2 * ( 5 + 4 / 2 ) - sqrt ( 15 + 1 )' vs PDF Step 7 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_10_s8: Dart Override='None' vs PDF Step 8 equations: '(no new line)'
+  hard_10_s9: Dart Override='None' vs PDF Step 9 equations: '(no new line)'
+  hard_10_s10: Dart Override='25 + 8 * 4 - 7 ^ 2 + 2 * ( 5 + 2 ) - sqrt ( 15 + 1 )' vs PDF Step 10 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_10_s11: Dart Override='25 + 8 * 4 - 7 ^ 2 + 2 * ( 5 + 2 ) - sqrt ( 16 )' vs PDF Step 11 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_10_s12: Dart Override='None' vs PDF Step 12 equations: '(no new line)'
+  hard_10_s13: Dart Override='None' vs PDF Step 13 equations: '(no new line)'
+  hard_10_s14: Dart Override='25 +' vs PDF Step 14 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_10_s15: Dart Override='25 + 32 - 7 ^ 2 + 2 * ( 5 + 2 ) - sqrt ( 16 )' vs PDF Step 15 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_10_s16: Dart Override='25 + 32 - 49 + 2 * ( 5 + 2 ) - sqrt ( 16 )' vs PDF Step 16 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_10_s17: Dart Override='None' vs PDF Step 17 equations: '(no new line)'
+  hard_10_s18: Dart Override='25 + 32 - 49 + 2 * ( 7 ) - sqrt ( 16 )' vs PDF Step 18 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_10_s19: Dart Override='25 + 32 - 49 + 2 * ( 7 ) - 4' vs PDF Step 19 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_10_s20: Dart Override='None' vs PDF Step 20 equations: '(no new line)'
+  hard_10_s21: Dart Override='25 + 32 - 49 + 14 - 4' vs PDF Step 21 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override
+  hard_10_s22: Dart Override='18' vs PDF Step 22 equations: '(no new line)'  <-- MISMATCH: PDF has no new line but Dart has override

@@ -1,0 +1,2668 @@
+[
+  {
+    "roman": "I",
+    "page": 1,
+    "base_expression": "4*5-6/3",
+    "complexity": "Baja",
+    "steps": [
+      {
+        "num": 1,
+        "instruction": "Selecciona los signos separadores de la expresión aritmética",
+        "options": [
+          "Selecciona los signos separadores de la expresión aritmética"
+        ],
+        "correct_answer": "Seleccionar signos",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 2,
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "¿En cuántos bloques queda dividida la expresión aritmética?",
+          "3",
+          "4",
+          "5",
+          "2"
+        ],
+        "correct_answer": "2",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 3,
+        "instruction": "El resultado de la multiplicación del primer bloque es:",
+        "options": [
+          "El resultado de la multiplicación del primer bloque es:",
+          "20",
+          "9",
+          "10",
+          "1"
+        ],
+        "correct_answer": "20",
+        "correct_ids": [],
+        "feedback": "El resultado de la división6 ÷ 3 es 2",
+        "override": null
+      },
+      {
+        "num": 4,
+        "instruction": "El resultado de la división del segundo bloque es:",
+        "options": [
+          "El resultado de la división del segundo bloque es:",
+          "5",
+          "3",
+          "2",
+          "6"
+        ],
+        "correct_answer": "2",
+        "correct_ids": [],
+        "feedback": "El resultado de la división6 ÷ 3 es 2",
+        "override": null
+      },
+      {
+        "num": 5,
+        "instruction": "El resultado de la última operación es:",
+        "options": [
+          "10"
+        ],
+        "correct_answer": "",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      }
+    ]
+  },
+  {
+    "roman": "II",
+    "page": 3,
+    "base_expression": "18+3*5",
+    "complexity": "Baja",
+    "steps": [
+      {
+        "num": 1,
+        "instruction": "Selecciona los signos separadores de la expresión aritmética",
+        "options": [
+          "Selecciona los signos separadores de la expresión aritmética"
+        ],
+        "correct_answer": "Seleccionar signos",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 2,
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "¿En cuántos bloques queda dividida la expresión aritmética?",
+          "3",
+          "4",
+          "5",
+          "2"
+        ],
+        "correct_answer": "",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 3,
+        "instruction": "Es correcto afirmar que se resuelve primero:",
+        "options": [
+          "Es correcto afirmar que se resuelve primero:",
+          "La suma 18 + 3",
+          "La multiplicación 3 × 5",
+          "La suma 18 + 5"
+        ],
+        "correct_answer": "La multiplicación 3 × 5",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 4,
+        "instruction": "La multiplicación 18 × 3",
+        "options": [
+          "La multiplicación 18 × 3"
+        ],
+        "correct_answer": "La multiplicación 3 × 5",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 5,
+        "instruction": "El resultado de la operación del segundo bloque es:",
+        "options": [
+          "20",
+          "9",
+          "15",
+          "12"
+        ],
+        "correct_answer": "15",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "18 + 3*5 ="
+      },
+      {
+        "num": 6,
+        "instruction": "El resultado de la última operación es:",
+        "options": [
+          "3",
+          "33",
+          "32",
+          "23"
+        ],
+        "correct_answer": "33",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "18 + 3*5 ="
+      }
+    ]
+  },
+  {
+    "roman": "III",
+    "page": 6,
+    "base_expression": "8-3*2+1",
+    "complexity": "Baja",
+    "steps": [
+      {
+        "num": 1,
+        "instruction": "Selecciona los signos separadores de la expresión aritmética",
+        "options": [
+          "Selecciona los signos separadores de la expresión aritmética"
+        ],
+        "correct_answer": "Seleccionar signos",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 2,
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "¿En cuántos bloques queda dividida la expresión aritmética?",
+          "3",
+          "4",
+          "5",
+          "2"
+        ],
+        "correct_answer": "3",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 3,
+        "instruction": "Los bloques en los que se deben conservar los números son:",
+        "options": [
+          "Los bloques en los que se deben conservar los números son:",
+          "El primero y el tercero"
+        ],
+        "correct_answer": "",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 4,
+        "instruction": "El resultado de la operación del segundo bloque es:",
+        "options": [
+          "El resultado de la operación del segundo bloque es:",
+          "6",
+          "9",
+          "5",
+          "11"
+        ],
+        "correct_answer": "6",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 5,
+        "instruction": "El resultado de la última operación es:",
+        "options": [
+          "3",
+          "15",
+          "10"
+        ],
+        "correct_answer": "",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      }
+    ]
+  },
+  {
+    "roman": "IV",
+    "page": 8,
+    "base_expression": "10-3*2+23",
+    "complexity": "Baja",
+    "steps": [
+      {
+        "num": 1,
+        "instruction": "Selecciona los signos separadores de la expresión aritmética",
+        "options": [
+          "Selecciona los signos separadores de la expresión aritmética"
+        ],
+        "correct_answer": "Seleccionar signos",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 2,
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "¿En cuántos bloques queda dividida la expresión aritmética?",
+          "3",
+          "4",
+          "5",
+          "2"
+        ],
+        "correct_answer": "3",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 3,
+        "instruction": "En el primer bloque de la expresión aritmética no hay operaciones internas, por",
+        "options": [
+          "En el primer bloque de la expresión aritmética no hay operaciones internas, por",
+          "Se conserva el número",
+          "Se elimina el número",
+          "Se realiza primero la suma",
+          "Se debe multiplicar"
+        ],
+        "correct_answer": "Se conserva el número",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 4,
+        "instruction": "Se pueden resolver la multiplicación y la potenciación sin importar el orden",
+        "options": [
+          "Se pueden resolver la multiplicación y la potenciación sin importar el orden",
+          "Están en diferentes bloques",
+          "La multiplicación y la potenciación tienen la misma jerarquía",
+          "No importa la jerarquía al resolver multiplicaciones y potencias"
+        ],
+        "correct_answer": "",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 5,
+        "instruction": "El resultado de la multiplicación del segundo bloque es:",
+        "options": [
+          "5",
+          "3",
+          "2",
+          "6"
+        ],
+        "correct_answer": "6",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 6,
+        "instruction": "El resultado de la potencia del tercer bloque es:",
+        "options": [
+          "5",
+          "3",
+          "8"
+        ],
+        "correct_answer": "",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      }
+    ]
+  },
+  {
+    "roman": "V",
+    "page": 11,
+    "base_expression": "1+12/4-1+23",
+    "complexity": "Baja",
+    "steps": [
+      {
+        "num": 7,
+        "instruction": "El resultado de las últimas operaciones es:",
+        "options": [
+          "11",
+          "12",
+          "10",
+          "9"
+        ],
+        "correct_answer": "12",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "10 - 3*2 + 2 3 ="
+      },
+      {
+        "num": 1,
+        "instruction": "Selecciona los signos separadores de la expresión aritmética",
+        "options": [
+          "Selecciona los signos separadores de la expresión aritmética"
+        ],
+        "correct_answer": "Seleccionar signos",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 2,
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "¿En cuántos bloques queda dividida la expresión aritmética?",
+          "3",
+          "4",
+          "5",
+          "2"
+        ],
+        "correct_answer": "4",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 3,
+        "instruction": "Los bloques en los que se deben conservar los números son:",
+        "options": [
+          "Los bloques en los que se deben conservar los números son:",
+          "El primero y el tercero",
+          "El segundo y el cuarto",
+          "El primero y el segundo",
+          "El tercero y el cuarto"
+        ],
+        "correct_answer": "El primero y el tercero",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 4,
+        "instruction": "Se pueden resolver la división y la potenciación sin importar el orden porque:",
+        "options": [
+          "Se pueden resolver la división y la potenciación sin importar el orden porque:",
+          "Están en diferentes bloques",
+          "La división y la potenciación tienen la misma jerarquía",
+          "No importa la jerarquía al resolver divisiones y potencias",
+          "Siempre se resuelve la primera operación que aparece en una expresión"
+        ],
+        "correct_answer": "Están en diferentes bloques",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 5,
+        "instruction": "El resultado de la división del segundo bloque es:",
+        "options": [
+          "4",
+          "2",
+          "3",
+          "1"
+        ],
+        "correct_answer": "3",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 6,
+        "instruction": "El resultado de la potencia del cuarto bloque es:",
+        "options": [
+          "6",
+          "8",
+          "9",
+          "5"
+        ],
+        "correct_answer": "8",
+        "correct_ids": [],
+        "feedback": "El resultado de la potencia23 es 8",
+        "override": null
+      }
+    ]
+  },
+  {
+    "roman": "VI",
+    "page": 15,
+    "base_expression": "3-2+[8-2*3]",
+    "complexity": "Baja",
+    "steps": [
+      {
+        "num": 1,
+        "instruction": "Selecciona los signos separadores que no constan en las operaciones internas",
+        "options": [
+          "Selecciona los signos separadores que no constan en las operaciones internas"
+        ],
+        "correct_answer": "Seleccionar signos",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 2,
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "¿En cuántos bloques queda dividida la expresión aritmética?",
+          "3",
+          "4",
+          "5",
+          "2"
+        ],
+        "correct_answer": "3",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 3,
+        "instruction": "Se puede resolver la resta entre los dos primeros bloques",
+        "options": [
+          "Se puede resolver la resta entre los dos primeros bloques",
+          "Verdadero",
+          "Falso"
+        ],
+        "correct_answer": "Verdadero",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "3 - 2 + [8-2*3] ="
+      },
+      {
+        "num": 4,
+        "instruction": "El resultado de la resta entre los dos primeros bloques es:",
+        "options": [
+          "El resultado de la resta entre los dos primeros bloques es:",
+          "5",
+          "2",
+          "1",
+          "3"
+        ],
+        "correct_answer": "1",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "3 - 2 + [8-2*3] ="
+      },
+      {
+        "num": 5,
+        "instruction": "En el segundo bloque, ¿qué operación se resuelve primero?",
+        "options": [
+          "La multiplicación",
+          "La resta"
+        ],
+        "correct_answer": "",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 6,
+        "instruction": "¿Cuál es el resultado de la multiplicación?",
+        "options": [
+          "6",
+          "5",
+          "3"
+        ],
+        "correct_answer": "6",
+        "correct_ids": [],
+        "feedback": "El resultado de la resta8 − 6 es 2",
+        "override": "3 - 2 + [8-2*3] ="
+      },
+      {
+        "num": 7,
+        "instruction": "El resultado de las operaciones internas es:",
+        "options": [
+          "2",
+          "9",
+          "5",
+          "4"
+        ],
+        "correct_answer": "2",
+        "correct_ids": [],
+        "feedback": "El resultado de la resta8 − 6 es 2",
+        "override": null
+      }
+    ]
+  },
+  {
+    "roman": "VII",
+    "page": 18,
+    "base_expression": "√4+12-15/5",
+    "complexity": "Baja",
+    "steps": [
+      {
+        "num": 8,
+        "instruction": "El resultado de la última operación es:",
+        "options": [
+          "2",
+          "3",
+          "1",
+          "0"
+        ],
+        "correct_answer": "3",
+        "correct_ids": [],
+        "feedback": "El resultado de la suma1 + 2 es 3",
+        "override": "3 - 2 + [8-2*3] ="
+      },
+      {
+        "num": 1,
+        "instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+        "options": [
+          "Selecciona los signos separadores que no constan en las operaciones internas."
+        ],
+        "correct_answer": "Seleccionar signos",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 2,
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "¿En cuántos bloques queda dividida la expresión aritmética?",
+          "3",
+          "4",
+          "2",
+          "5"
+        ],
+        "correct_answer": "2",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 3,
+        "instruction": "En el primer bloque, ¿qué se debe realizar primero?",
+        "options": [
+          "En el primer bloque, ¿qué se debe realizar primero?",
+          "La operación interna",
+          "La resta",
+          "La división",
+          "Conservar el número"
+        ],
+        "correct_answer": "La operación interna",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 4,
+        "instruction": "El resultado de la operación interna del primer bloque es:",
+        "options": [
+          "El resultado de la operación interna del primer bloque es:",
+          "8",
+          "16",
+          "12",
+          "4"
+        ],
+        "correct_answer": "16",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 5,
+        "instruction": "Se pueden resolver la raíz cuadrada y la división sin importar el orden porque:",
+        "options": [
+          "Están en diferentes bloques",
+          "Tienen la misma jerarquía",
+          "Siempre se resuelve primero la división",
+          "Siempre se resuelve primero la resta"
+        ],
+        "correct_answer": "Están en diferentes bloques",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 6,
+        "instruction": "El resultado de la división del segundo bloque es:",
+        "options": [
+          "3",
+          "5",
+          "12",
+          "18"
+        ],
+        "correct_answer": "3",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 7,
+        "instruction": "¿Qué se debe resolver primero?",
+        "options": [
+          "La resta",
+          "La raíz cuadrada de16",
+          "La suma"
+        ],
+        "correct_answer": "La raíz cuadrada de 16",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 9,
+        "instruction": "¿Qué acción hacemos con el 3?",
+        "options": [
+          "Lo conservamos",
+          "Lo eliminamos",
+          "Lo introducimos en el radical"
+        ],
+        "correct_answer": "Lo conservamos",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 10,
+        "instruction": "El resultado de la última operación es:",
+        "options": [],
+        "correct_answer": "",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      }
+    ]
+  },
+  {
+    "roman": "VIII",
+    "page": 23,
+    "base_expression": "32+5*2-√30-5",
+    "complexity": "Baja",
+    "steps": [
+      {
+        "num": 1,
+        "instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+        "options": [
+          "Selecciona los signos separadores que no constan en las operaciones internas."
+        ],
+        "correct_answer": "Seleccionar signos",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 2,
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "¿En cuántos bloques queda dividida la expresión aritmética?",
+          "2",
+          "3"
+        ],
+        "correct_answer": "",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 3,
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver?",
+        "options": [
+          "En el primer bloque, ¿qué operación se debe resolver?",
+          "La potenciación",
+          "La suma",
+          "La multiplicación",
+          "La resta"
+        ],
+        "correct_answer": "La potenciación",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 4,
+        "instruction": "El resultado de la potenciación del primer bloque es:",
+        "options": [
+          "El resultado de la potenciación del primer bloque es:",
+          "6",
+          "9"
+        ],
+        "correct_answer": "",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 5,
+        "instruction": "El resultado de la multiplicación del segundo bloque es:",
+        "options": [
+          "7",
+          "10",
+          "12",
+          "5"
+        ],
+        "correct_answer": "10",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 6,
+        "instruction": "En el tercer bloque, ¿qué se debe resolver primero?",
+        "options": [
+          "La raíz cuadrada",
+          "La operación interna",
+          "La suma",
+          "La multiplicación"
+        ],
+        "correct_answer": "",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 7,
+        "instruction": "El resultado de la operación interna del tercer bloque es:",
+        "options": [
+          "35",
+          "25",
+          "30",
+          "5"
+        ],
+        "correct_answer": "25",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 8,
+        "instruction": "El resultado de la raíz cuadrada del tercer bloque es:",
+        "options": [
+          "25",
+          "10",
+          "5",
+          "6"
+        ],
+        "correct_answer": "5",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      }
+    ]
+  },
+  {
+    "roman": "IX",
+    "page": 27,
+    "base_expression": "4*(20/4+1)+4*23",
+    "complexity": "Baja",
+    "steps": [
+      {
+        "num": 9,
+        "instruction": "El resultado de las últimas operaciones es:",
+        "options": [
+          "12",
+          "14",
+          "15",
+          "24"
+        ],
+        "correct_answer": "14",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "32 + 5*2 -"
+      },
+      {
+        "num": 1,
+        "instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+        "options": [
+          "Selecciona los signos separadores que no constan en las operaciones internas."
+        ],
+        "correct_answer": "Seleccionar signos",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 2,
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "¿En cuántos bloques queda dividida la expresión aritmética?",
+          "2",
+          "3",
+          "4",
+          "1"
+        ],
+        "correct_answer": "2",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 3,
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "En el primer bloque, ¿qué operación se debe resolver primero?",
+          "La multiplicación",
+          "La operación interna",
+          "La suma final",
+          "La potenciación"
+        ],
+        "correct_answer": "La operación interna",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 4,
+        "instruction": "En las operaciones internas del primer bloque, ¿qué se resuelve primero?",
+        "options": [
+          "En las operaciones internas del primer bloque, ¿qué se resuelve primero?",
+          "La suma",
+          "La división"
+        ],
+        "correct_answer": "La división",
+        "correct_ids": [],
+        "feedback": "El resultado de la división20 ÷ 4 es 5",
+        "override": "4*(20/4+1) + 4*23 ="
+      },
+      {
+        "num": 5,
+        "instruction": "El resultado de la división20 ÷ 4 es:",
+        "options": [
+          "4",
+          "5",
+          "6",
+          "10"
+        ],
+        "correct_answer": "5",
+        "correct_ids": [],
+        "feedback": "El resultado de la división20 ÷ 4 es 5",
+        "override": "4*(20/4+1) + 4*23 ="
+      },
+      {
+        "num": 6,
+        "instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La multiplicación",
+          "La potenciación",
+          "La resta",
+          "La suma"
+        ],
+        "correct_answer": "La potenciación",
+        "correct_ids": [],
+        "feedback": "El resultado de la potencia23 es 8",
+        "override": "4*(20/4+1) + 4*23 ="
+      },
+      {
+        "num": 7,
+        "instruction": "El resultado de la potencia23 es:",
+        "options": [
+          "6",
+          "8",
+          "4",
+          "3"
+        ],
+        "correct_answer": "8",
+        "correct_ids": [],
+        "feedback": "El resultado de la potencia23 es 8",
+        "override": "4*(20/4+1) + 4*23 ="
+      },
+      {
+        "num": 8,
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver ahora?",
+        "options": [
+          "La suma",
+          "La multiplicación",
+          "La resta"
+        ],
+        "correct_answer": "",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 10,
+        "instruction": "El resultado de la multiplicación del segundo bloque es:",
+        "options": [
+          "12",
+          "32",
+          "24",
+          "28"
+        ],
+        "correct_answer": "32",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 11,
+        "instruction": "Ahora se resuelve primero:",
+        "options": [
+          "La suma",
+          "La multiplicación",
+          "La resta",
+          "La división"
+        ],
+        "correct_answer": "La multiplicación",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "4*(20/4+1) + 4*23 ="
+      },
+      {
+        "num": 12,
+        "instruction": "El resultado de4 × 6 es:",
+        "options": [
+          "24",
+          "20",
+          "18",
+          "12"
+        ],
+        "correct_answer": "24",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      }
+    ]
+  },
+  {
+    "roman": "X",
+    "page": 33,
+    "base_expression": "(2+10/5)*22-3",
+    "complexity": "Baja",
+    "steps": [
+      {
+        "num": 13,
+        "instruction": "El resultado de la última operación es:",
+        "options": [
+          "8",
+          "56",
+          "60",
+          "50"
+        ],
+        "correct_answer": "56",
+        "correct_ids": [],
+        "feedback": "El resultado de la suma24 + 32 es 56",
+        "override": "4*(20/4+1)+4*23 ="
+      },
+      {
+        "num": 1,
+        "instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+        "options": [
+          "Selecciona los signos separadores que no constan en las operaciones internas."
+        ],
+        "correct_answer": "Seleccionar signos",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 2,
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "¿En cuántos bloques queda dividida la expresión aritmética?",
+          "2",
+          "3",
+          "4",
+          "1"
+        ],
+        "correct_answer": "2",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 3,
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "En el primer bloque, ¿qué operación se debe resolver primero?",
+          "La suma",
+          "La división",
+          "La multiplicación",
+          "La potenciación"
+        ],
+        "correct_answer": "",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 4,
+        "instruction": "El resultado de la división10 ÷ 5 es:",
+        "options": [
+          "El resultado de la división10 ÷ 5 es:",
+          "5",
+          "2",
+          "10",
+          "15"
+        ],
+        "correct_answer": "2",
+        "correct_ids": [],
+        "feedback": "El resultado de10 ÷ 5 es 2",
+        "override": "(2+10/5)*22 - 3 ="
+      },
+      {
+        "num": 5,
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver ahora?",
+        "options": [
+          "La suma",
+          "La multiplicación",
+          "La resta",
+          "La potenciación"
+        ],
+        "correct_answer": "La suma",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 6,
+        "instruction": "El resultado de la suma2 + 2 es:",
+        "options": [
+          "4",
+          "2",
+          "5",
+          "3"
+        ],
+        "correct_answer": "4",
+        "correct_ids": [],
+        "feedback": "El resultado de2 + 2 es 4",
+        "override": "(2+10/5)*22 - 3 ="
+      },
+      {
+        "num": 7,
+        "instruction": "En el siguiente paso, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La multiplicación",
+          "La potenciación",
+          "La resta",
+          "La suma"
+        ],
+        "correct_answer": "La potenciación",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "(2+10/5)*22 - 3 ="
+      },
+      {
+        "num": 8,
+        "instruction": "El resultado de la potencia22 es:",
+        "options": [
+          "2",
+          "4",
+          "6",
+          "8"
+        ],
+        "correct_answer": "4",
+        "correct_ids": [],
+        "feedback": "22 = 4",
+        "override": "(2+10/5)*22 - 3 ="
+      },
+      {
+        "num": 9,
+        "instruction": "En el siguiente paso, ¿qué operación se debe resolver?",
+        "options": [
+          "La multiplicación",
+          "La resta",
+          "La suma",
+          "Ninguna"
+        ],
+        "correct_answer": "La multiplicación",
+        "correct_ids": [],
+        "feedback": "Se debe resolver la multiplicación4 × 4",
+        "override": "(2+10/5)*22 - 3 ="
+      },
+      {
+        "num": 10,
+        "instruction": "El resultado de la multiplicación4 × 4 es:",
+        "options": [],
+        "correct_answer": "",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 11,
+        "instruction": "El resultado de la última operación es:",
+        "options": [
+          "13",
+          "19",
+          "12",
+          "9"
+        ],
+        "correct_answer": "13",
+        "correct_ids": [],
+        "feedback": "El resultado de16 − 3 es 13",
+        "override": "(2+10/5)*22 - 3 ="
+      }
+    ]
+  },
+  {
+    "roman": "I",
+    "page": 39,
+    "base_expression": "36/34-2*(5-2)",
+    "complexity": "Media",
+    "steps": [
+      {
+        "num": 1,
+        "instruction": "Selecciona los signos separadores que no constan en las operaciones internas",
+        "options": [
+          "Selecciona los signos separadores que no constan en las operaciones internas"
+        ],
+        "correct_answer": "Seleccionar signos",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 2,
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "¿En cuántos bloques queda dividida la expresión aritmética?",
+          "3",
+          "4",
+          "5",
+          "2"
+        ],
+        "correct_answer": "2",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 3,
+        "instruction": "En el primer bloque se debe:",
+        "options": [
+          "En el primer bloque se debe:",
+          "Aplicar una propiedad de la potenciación",
+          "Resolver cada una de las potencias",
+          "Resolver la división directamente",
+          "Resolver una suma"
+        ],
+        "correct_answer": "Aplicar una propiedad de la potenciación",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 4,
+        "instruction": "Al aplicar la propiedad de división de potencias de igual base en el primer bloque,",
+        "options": [
+          "Al aplicar la propiedad de división de potencias de igual base en el primer bloque,",
+          "32",
+          "310",
+          "34",
+          "33"
+        ],
+        "correct_answer": "32",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 5,
+        "instruction": "En el segundo bloque, se resuelve primero:",
+        "options": [
+          "La resta",
+          "La multiplicación",
+          "La suma",
+          "La división"
+        ],
+        "correct_answer": "La resta",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 6,
+        "instruction": "El resultado de la resta5 − 2 es:",
+        "options": [
+          "3",
+          "5",
+          "2",
+          "7"
+        ],
+        "correct_answer": "3",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 7,
+        "instruction": "En el siguiente paso se pueden resolver dos operaciones: la potencia y la",
+        "options": [
+          "Están en diferentes bloques",
+          "Tienen la misma jerarquía",
+          "Se resuelve primero la resta",
+          "No importa el orden en ningún caso"
+        ],
+        "correct_answer": "Están en diferentes bloques",
+        "correct_ids": [],
+        "feedback": "32 = 3 × 3 = 9",
+        "override": null
+      },
+      {
+        "num": 8,
+        "instruction": "El resultado de la potencia32 es:",
+        "options": [
+          "9",
+          "6",
+          "5",
+          "1"
+        ],
+        "correct_answer": "9",
+        "correct_ids": [],
+        "feedback": "32 = 3 × 3 = 9",
+        "override": null
+      },
+      {
+        "num": 9,
+        "instruction": "El resultado de la multiplicación2 × 3 es:",
+        "options": [
+          "9",
+          "6",
+          "5",
+          "1"
+        ],
+        "correct_answer": "6",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 10,
+        "instruction": "El resultado de la última operación es:",
+        "options": [
+          "9",
+          "6",
+          "3",
+          "1"
+        ],
+        "correct_answer": "3",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      }
+    ]
+  },
+  {
+    "roman": "II",
+    "page": 44,
+    "base_expression": "[23 * 22 - 20] + [6 + 3 2]",
+    "complexity": "Media",
+    "steps": [
+      {
+        "num": 1,
+        "instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+        "options": [
+          "Selecciona los signos separadores que no constan en las operaciones internas."
+        ],
+        "correct_answer": "Seleccionar signos",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 2,
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "¿En cuántos bloques queda dividida la expresión aritmética?",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "correct_answer": "2",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 3,
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "En el primer bloque, ¿qué operación se debe resolver primero?",
+          "La resta 22 − 20",
+          "La multiplicación 23 × 22",
+          "La propiedad del producto de potencias de igual base",
+          "La suma 23 + 22"
+        ],
+        "correct_answer": "La propiedad del producto de potencias de",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "[23 * 22 - 20] + [6 + 3 2] ="
+      },
+      {
+        "num": 4,
+        "instruction": "Al aplicar el producto de potencias de igual base en23 · 22, el resultado queda:",
+        "options": [
+          "Al aplicar el producto de potencias de igual base en23 · 22, el resultado queda:",
+          "26",
+          "25",
+          "45",
+          "21"
+        ],
+        "correct_answer": "25",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "[23 * 22 - 20] + [6 + 3 2] ="
+      },
+      {
+        "num": 5,
+        "instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La suma 6 + 3",
+          "La potencia 32",
+          "La resta 25 − 20",
+          "La suma final"
+        ],
+        "correct_answer": "La potencia 32",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "[23 * 22 - 20] + [6 + 3 2] ="
+      },
+      {
+        "num": 6,
+        "instruction": "El resultado de la potencia32 es:",
+        "options": [
+          "6",
+          "9",
+          "3",
+          "12"
+        ],
+        "correct_answer": "9",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "[23 * 22 - 20] + [6 + 3 2] ="
+      },
+      {
+        "num": 7,
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La resta 25 − 20"
+        ],
+        "correct_answer": "",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 8,
+        "instruction": "El resultado de la potencia25 es:",
+        "options": [
+          "10",
+          "16",
+          "32",
+          "25"
+        ],
+        "correct_answer": "32",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "[23 * 22 - 20] + [6 + 3 2] ="
+      },
+      {
+        "num": 9,
+        "instruction": "El resultado de las operaciones internas del segundo bloque es:",
+        "options": [
+          "12"
+        ],
+        "correct_answer": "",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 10,
+        "instruction": "El resultado de las operaciones internas del primer bloque es:",
+        "options": [
+          "12",
+          "52",
+          "22",
+          "20"
+        ],
+        "correct_answer": "12",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "[23 * 22 - 20] + [6 + 3 2] ="
+      },
+      {
+        "num": 11,
+        "instruction": "El resultado de la última operación es:",
+        "options": [
+          "25"
+        ],
+        "correct_answer": "",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 12,
+        "instruction": "El resultado de la última operación es:",
+        "options": [
+          "55",
+          "56",
+          "57",
+          "58"
+        ],
+        "correct_answer": "57",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 13,
+        "instruction": "El resultado de la última operación es:",
+        "options": [
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "correct_answer": "",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 14,
+        "instruction": "El resultado de las operaciones internas del segundo bloque es:",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "correct_answer": "3",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "620 + 24] - ["
+      },
+      {
+        "num": 15,
+        "instruction": "El resultado de la última operación es:",
+        "options": [
+          "47",
+          "48",
+          "49",
+          "50"
+        ],
+        "correct_answer": "49",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      }
+    ]
+  },
+  {
+    "roman": "I",
+    "page": 94,
+    "base_expression": "15*2+√4+5-(2*3-1)",
+    "complexity": "Alta",
+    "steps": [
+      {
+        "num": 1,
+        "instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+        "options": [
+          "Selecciona los signos separadores que no constan en las operaciones internas."
+        ],
+        "correct_answer": "Seleccionar signos",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 2,
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "¿En cuántos bloques queda dividida la expresión aritmética?",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "correct_answer": "3",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 3,
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver?",
+        "options": [
+          "En el primer bloque, ¿qué operación se debe resolver?",
+          "La multiplicación",
+          "La suma",
+          "La resta",
+          "La raíz cuadrada"
+        ],
+        "correct_answer": "La multiplicación",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "15*2 +"
+      },
+      {
+        "num": 4,
+        "instruction": "El resultado de la multiplicación del primer bloque es:",
+        "options": [
+          "El resultado de la multiplicación del primer bloque es:",
+          "17",
+          "30",
+          "13",
+          "25"
+        ],
+        "correct_answer": "30",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 5,
+        "instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La raíz cuadrada",
+          "La operación interna",
+          "La multiplicación",
+          "La resta"
+        ],
+        "correct_answer": "La operación interna",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "15*2 +"
+      },
+      {
+        "num": 6,
+        "instruction": "El resultado de la operación interna del segundo bloque es:",
+        "options": [
+          "9",
+          "1",
+          "20",
+          "5"
+        ],
+        "correct_answer": "9",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "15*2 +"
+      },
+      {
+        "num": 7,
+        "instruction": "En el tercer bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La resta",
+          "La multiplicación",
+          "La suma",
+          "La raíz cuadrada"
+        ],
+        "correct_answer": "La multiplicación",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "15*2 +"
+      },
+      {
+        "num": 8,
+        "instruction": "El resultado de la multiplicación del tercer bloque es:",
+        "options": [
+          "5",
+          "6",
+          "4",
+          "9"
+        ],
+        "correct_answer": "6",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "15*2 +"
+      },
+      {
+        "num": 9,
+        "instruction": "En el segundo bloque, ¿qué operación se debe resolver ahora?",
+        "options": [
+          "La suma",
+          "La raíz cuadrada"
+        ],
+        "correct_answer": "",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 10,
+        "instruction": "El resultado de la raíz cuadrada del segundo bloque es:",
+        "options": [
+          "9",
+          "6",
+          "3",
+          "4"
+        ],
+        "correct_answer": "3",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "15*2 +"
+      },
+      {
+        "num": 11,
+        "instruction": "El resultado de la resta del tercer bloque es:",
+        "options": [
+          "7",
+          "6",
+          "5",
+          "4"
+        ],
+        "correct_answer": "",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 12,
+        "instruction": "¿Qué operación se debe resolver primero en30 + 3 − 5?",
+        "options": [
+          "La suma 30 + 3",
+          "La resta 3 − 5",
+          "La resta 30 − 5",
+          "La multiplicación"
+        ],
+        "correct_answer": "La suma 30 + 3",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "15*2 +"
+      },
+      {
+        "num": 13,
+        "instruction": "El resultado de las últimas operaciones es:",
+        "options": [
+          "35",
+          "33",
+          "28",
+          "30"
+        ],
+        "correct_answer": "28",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      }
+    ]
+  },
+  {
+    "roman": "II",
+    "page": 100,
+    "base_expression": "30-76/75+8/2*4",
+    "complexity": "Alta",
+    "steps": [
+      {
+        "num": 1,
+        "instruction": "Selecciona los signos separadores.",
+        "options": [
+          "Selecciona los signos separadores."
+        ],
+        "correct_answer": "Seleccionar signos",
+        "correct_ids": [],
+        "feedback": "Este no es un signo separador",
+        "override": null
+      },
+      {
+        "num": 2,
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "¿En cuántos bloques queda dividida la expresión aritmética?",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "correct_answer": "3",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 3,
+        "instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "En el segundo bloque, ¿qué operación se debe resolver primero?",
+          "La división",
+          "La potenciación",
+          "La suma",
+          "La resta"
+        ],
+        "correct_answer": "La potenciación",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "30 - 76/75 + 8/2*4 ="
+      },
+      {
+        "num": 4,
+        "instruction": "El resultado de76 ÷ 75 es:",
+        "options": [
+          "El resultado de76 ÷ 75 es:",
+          "7",
+          "49",
+          "1",
+          "14"
+        ],
+        "correct_answer": "7",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 5,
+        "instruction": "En el tercer bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La multiplicación",
+          "La división",
+          "La suma",
+          "La resta"
+        ],
+        "correct_answer": "La división",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "30 - 76/75 + 8/2*4 ="
+      },
+      {
+        "num": 6,
+        "instruction": "El resultado de la división8 ÷ 2 es:",
+        "options": [
+          "2",
+          "4",
+          "6",
+          "8"
+        ],
+        "correct_answer": "4",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "30 - 76/75 + 8/2*4 ="
+      },
+      {
+        "num": 7,
+        "instruction": "El resultado de la multiplicación del tercer bloque es:",
+        "options": [],
+        "correct_answer": "",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 8,
+        "instruction": "El resultado de las últimas operaciones es:",
+        "options": [
+          "39",
+          "41",
+          "37",
+          "35"
+        ],
+        "correct_answer": "39",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "30-76/75+8/2*4 ="
+      },
+      {
+        "num": 9,
+        "instruction": "El resultado de la operación interna3 − 2 es:",
+        "options": [
+          "2",
+          "3",
+          "1",
+          "4"
+        ],
+        "correct_answer": "1",
+        "correct_ids": [],
+        "feedback": "El resultado de la resta3 − 2 es 1",
+        "override": "26 + 3*(5-2)/(3-2) ="
+      },
+      {
+        "num": 10,
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver ahora?",
+        "options": [
+          "La potencia 23",
+          "La suma",
+          "La multiplicación",
+          "La división"
+        ],
+        "correct_answer": "La potencia 23",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 11,
+        "instruction": "El resultado de la potencia23 es:",
+        "options": [
+          "6",
+          "8",
+          "4",
+          "12"
+        ],
+        "correct_answer": "8",
+        "correct_ids": [],
+        "feedback": "El resultado de la potencia23 es 8",
+        "override": "26 + 3*(5-2)/(3-2) ="
+      },
+      {
+        "num": 12,
+        "instruction": "En el segundo bloque, ¿qué operación se debe resolver ahora?",
+        "options": [
+          "La multiplicación 3 × 3",
+          "La división 3 ÷ 1",
+          "La suma",
+          "La resta"
+        ],
+        "correct_answer": "La multiplicación 3 × 3",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 13,
+        "instruction": "El resultado de la multiplicación3 × 3 es:",
+        "options": [
+          "6",
+          "9",
+          "12",
+          "3"
+        ],
+        "correct_answer": "9",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "26 + 3*(5-2)/(3-2) ="
+      },
+      {
+        "num": 14,
+        "instruction": "En el segundo bloque, ¿qué operación se debe resolver ahora?",
+        "options": [
+          "La división 9 ÷ 1",
+          "La multiplicación",
+          "La suma",
+          "La resta"
+        ],
+        "correct_answer": "La división 9 ÷ 1",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 15,
+        "instruction": "El resultado de la división9 ÷ 1 es:",
+        "options": [
+          "9",
+          "1",
+          "8",
+          "10"
+        ],
+        "correct_answer": "9",
+        "correct_ids": [],
+        "feedback": "El resultado de la división9 ÷ 1 es 9",
+        "override": "26 + 3*(5-2)/(3-2) ="
+      },
+      {
+        "num": 16,
+        "instruction": "El resultado de las últimas operaciones es:",
+        "options": [
+          "17",
+          "16",
+          "15",
+          "14"
+        ],
+        "correct_answer": "17",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      }
+    ]
+  },
+  {
+    "roman": "V",
+    "page": 116,
+    "base_expression": "3*[33-16/(5+3)]",
+    "complexity": "Alta",
+    "steps": [
+      {
+        "num": 1,
+        "instruction": "En la expresión aritmética, ¿qué elemento se debe conservar inicialmente?",
+        "options": [
+          "En la expresión aritmética, ¿qué elemento se debe conservar inicialmente?",
+          "El número 3 que está fuera del corchete",
+          "La resta",
+          "La división",
+          "La suma"
+        ],
+        "correct_answer": "El número 3 que está fuera del corchete",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "3 * [33 - 16 / (5 + 3)] ="
+      },
+      {
+        "num": 2,
+        "instruction": "¿Qué parte de la expresión se debe analizar primero?",
+        "options": [
+          "¿Qué parte de la expresión se debe analizar primero?",
+          "El contenido del corchete",
+          "La multiplicación externa",
+          "Solo el número3",
+          "La resta final"
+        ],
+        "correct_answer": "El contenido del corchete",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 3,
+        "instruction": "Dentro del corchete, ¿qué operación se debe resolver primero?",
+        "options": [
+          "Dentro del corchete, ¿qué operación se debe resolver primero?",
+          "La potencia 33",
+          "La resta",
+          "La división",
+          "La suma"
+        ],
+        "correct_answer": "La potencia 33",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "3 * [33 - 16 / (5 + 3)] ="
+      },
+      {
+        "num": 4,
+        "instruction": "El resultado de la potencia33 es:",
+        "options": [
+          "El resultado de la potencia33 es:",
+          "9",
+          "27",
+          "6",
+          "18"
+        ],
+        "correct_answer": "27",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 5,
+        "instruction": "Dentro del corchete, ¿qué operación se debe resolver ahora?",
+        "options": [
+          "La resta 27 − 16",
+          "La operación interna del paréntesis",
+          "La multiplicación externa",
+          "La resta 5 − 3"
+        ],
+        "correct_answer": "La operación interna del paréntesis",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "3 * [33 - 16 / (5 + 3)] ="
+      },
+      {
+        "num": 6,
+        "instruction": "El resultado de la operación interna5 + 3 es:",
+        "options": [
+          "2",
+          "8",
+          "15",
+          "6"
+        ],
+        "correct_answer": "8",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "3 * [33 - 16 / (5 + 3)] ="
+      },
+      {
+        "num": 7,
+        "instruction": "Dentro del corchete, ¿qué operación se debe resolver ahora?",
+        "options": [
+          "La resta 27 − 16",
+          "La división 16 ÷ 8",
+          "La multiplicación 3 × 27",
+          "La suma"
+        ],
+        "correct_answer": "La división 16 ÷ 8",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "3 * [33 - 16 / (5 + 3)] ="
+      },
+      {
+        "num": 8,
+        "instruction": "El resultado de la división16 ÷ 8 es:",
+        "options": [
+          "2",
+          "8",
+          "4",
+          "16"
+        ],
+        "correct_answer": "2",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "3 * [33 - 16 / (5 + 3)] ="
+      },
+      {
+        "num": 9,
+        "instruction": "El resultado de la operación interna del corchete es:",
+        "options": [],
+        "correct_answer": "",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 10,
+        "instruction": "El resultado de la última operación es:",
+        "options": [
+          "75",
+          "28",
+          "25",
+          "72"
+        ],
+        "correct_answer": "75",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "3 * [33 - 16 / (5 + 3)] ="
+      },
+      {
+        "num": 11,
+        "instruction": "El resultado de la potencia32 es:",
+        "options": [
+          "6",
+          "9",
+          "3",
+          "12"
+        ],
+        "correct_answer": "9",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      }
+    ]
+  },
+  {
+    "roman": "VII",
+    "page": 126,
+    "base_expression": "(22 + 1)3+[10 - (9/3+1)]-√9+40",
+    "complexity": "Alta",
+    "steps": [
+      {
+        "num": 12,
+        "instruction": "El resultado de las últimas operaciones es:",
+        "options": [
+          "14",
+          "12",
+          "20",
+          "22"
+        ],
+        "correct_answer": "14",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "20 + 10 / 5 -"
+      },
+      {
+        "num": 1,
+        "instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+        "options": [
+          "Selecciona los signos separadores que no constan en las operaciones internas."
+        ],
+        "correct_answer": "Seleccionar signos",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 2,
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "¿En cuántos bloques queda dividida la expresión aritmética?",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "correct_answer": "3",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "(22 + 1)3 + [10 - (9 / 3 + 1)] -"
+      },
+      {
+        "num": 3,
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "En el primer bloque, ¿qué operación se debe resolver primero?",
+          "La suma",
+          "La potencia 22",
+          "La potencia exterior",
+          "La resta"
+        ],
+        "correct_answer": "La potencia 22",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "(22 + 1)3 + [10 - (9 / 3 + 1)] -"
+      },
+      {
+        "num": 4,
+        "instruction": "El resultado de la potencia22 es:",
+        "options": [
+          "El resultado de la potencia22 es:",
+          "2",
+          "4",
+          "6",
+          "8"
+        ],
+        "correct_answer": "4",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "(22 + 1)3 + [10 - (9 / 3 + 1)] -"
+      },
+      {
+        "num": 5,
+        "instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La resta 10 − 9",
+          "La operación interna del paréntesis",
+          "La suma exterior",
+          "La raíz cuadrada"
+        ],
+        "correct_answer": "La operación interna del paréntesis",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "(22 + 1)3 + [10 - (9 / 3 + 1)] -"
+      },
+      {
+        "num": 6,
+        "instruction": "En la operación interna del segundo bloque, ¿qué se debe resolver primero?",
+        "options": [
+          "La división 9 ÷ 3",
+          "La suma 3 + 1"
+        ],
+        "correct_answer": "",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 7,
+        "instruction": "El resultado de la división9 ÷ 3 es:",
+        "options": [
+          "2",
+          "3",
+          "6",
+          "9"
+        ],
+        "correct_answer": "3",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "(22 + 1)3 + [10 - (9 / 3 + 1)] -"
+      },
+      {
+        "num": 8,
+        "instruction": "En el tercer bloque, ¿qué se debe resolver primero?",
+        "options": [
+          "La raíz cuadrada",
+          "La operación interna del radical",
+          "La resta",
+          "La suma final"
+        ],
+        "correct_answer": "La operación interna del radical",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 9,
+        "instruction": "El resultado de la operación interna del tercer bloque es:",
+        "options": [
+          "49",
+          "41",
+          "50",
+          "45"
+        ],
+        "correct_answer": "49",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "(22 + 1)3 + [10 - (9 / 3 + 1)] -"
+      },
+      {
+        "num": 10,
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver ahora?",
+        "options": [
+          "La suma 4 + 1",
+          "La potencia exterior",
+          "La resta",
+          "La raíz cuadrada"
+        ],
+        "correct_answer": "La suma 4 + 1",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 11,
+        "instruction": "El resultado de la suma4 + 1 es:",
+        "options": [
+          "5",
+          "4",
+          "6",
+          "3"
+        ],
+        "correct_answer": "5",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "(22 + 1)3 + [10 - (9 / 3 + 1)] -"
+      },
+      {
+        "num": 13,
+        "instruction": "El resultado de la suma3 + 1 es:",
+        "options": [
+          "4",
+          "3",
+          "5",
+          "2"
+        ],
+        "correct_answer": "4",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "(22 + 1)3 + [10 - (9 / 3 + 1)] -"
+      },
+      {
+        "num": 14,
+        "instruction": "En el tercer bloque, ¿qué operación se debe resolver ahora?",
+        "options": [
+          "La raíz cuadrada de49",
+          "La resta",
+          "La suma",
+          "La multiplicación"
+        ],
+        "correct_answer": "La raíz cuadrada de 49",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 15,
+        "instruction": "El resultado de la raíz cuadrada del tercer bloque es:",
+        "options": [
+          "6",
+          "7",
+          "8",
+          "5"
+        ],
+        "correct_answer": "7",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "(22 + 1)3 + [10 - (9 / 3 + 1)] -"
+      },
+      {
+        "num": 16,
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver ahora?",
+        "options": [
+          "La potencia 53",
+          "La suma",
+          "La resta",
+          "La raíz cuadrada"
+        ],
+        "correct_answer": "La potencia 53",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 17,
+        "instruction": "El resultado de la potencia53 es:",
+        "options": [
+          "25",
+          "125",
+          "15",
+          "20"
+        ],
+        "correct_answer": "125",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "(22 + 1)3 + [10 - (9 / 3 + 1)] -"
+      },
+      {
+        "num": 18,
+        "instruction": "En el segundo bloque, ¿qué operación se debe resolver ahora?",
+        "options": [
+          "La resta 10 − (4)",
+          "La suma",
+          "La potencia",
+          "La multiplicación"
+        ],
+        "correct_answer": "La resta 10 − (4)",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 19,
+        "instruction": "El resultado de la resta10 − (4) es:",
+        "options": [
+          "6",
+          "4",
+          "5",
+          "3"
+        ],
+        "correct_answer": "6",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "(22 + 1)3 + [10 - (9 / 3 + 1)] -"
+      },
+      {
+        "num": 20,
+        "instruction": "El resultado de las últimas operaciones es:",
+        "options": [
+          "124",
+          "125",
+          "126",
+          "122"
+        ],
+        "correct_answer": "124",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 21,
+        "instruction": "El resultado de la raíz cuadrada",
+        "options": [
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "correct_answer": "5",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "(92 + 2) * 3 -"
+      },
+      {
+        "num": 22,
+        "instruction": "El resultado de las operaciones finales es:",
+        "options": [
+          "170",
+          "180"
+        ],
+        "correct_answer": "",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      }
+    ]
+  },
+  {
+    "roman": "X",
+    "page": 153,
+    "base_expression": "52+8 * 22-78 / 76+2 * (5+4 / 2)-√15+1",
+    "complexity": "Alta",
+    "steps": [
+      {
+        "num": 1,
+        "instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+        "options": [
+          "Selecciona los signos separadores que no constan en las operaciones internas."
+        ],
+        "correct_answer": "Seleccionar signos",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 2,
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "¿En cuántos bloques queda dividida la expresión aritmética?",
+          "3",
+          "4"
+        ],
+        "correct_answer": "",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 3,
+        "instruction": "El resultado del primer bloque es:",
+        "options": [
+          "El resultado del primer bloque es:",
+          "10",
+          "7",
+          "15",
+          "25"
+        ],
+        "correct_answer": "25",
+        "correct_ids": [],
+        "feedback": "",
+        "override": "52 + 8 * 22 - 78 / 76 + 2 * (5+4 / 2) -"
+      },
+      {
+        "num": 4,
+        "instruction": "En el segundo bloque, ¿qué operación se debe realizar primero?",
+        "options": [
+          "En el segundo bloque, ¿qué operación se debe realizar primero?",
+          "La multiplicación",
+          "La potenciación"
+        ],
+        "correct_answer": "La potenciación",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 5,
+        "instruction": "¿Cuál es el resultado de22?",
+        "options": [
+          "2",
+          "4",
+          "8",
+          "1"
+        ],
+        "correct_answer": "4",
+        "correct_ids": [],
+        "feedback": "22 = 2 × 2 = 4",
+        "override": "52 + 8 * 22 - 78 / 76 + 2 * (5+4 / 2) -"
+      },
+      {
+        "num": 6,
+        "instruction": "En el tercer bloque, ¿qué se debe realizar primero?",
+        "options": [
+          "Las potencias",
+          "La división",
+          "La propiedad de la división de potencias de igual base"
+        ],
+        "correct_answer": "La propiedad de la división de potencias de",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 7,
+        "instruction": "¿Cuál es el resultado de78 ÷ 76?",
+        "options": [
+          "714",
+          "72",
+          "7"
+        ],
+        "correct_answer": "",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 8,
+        "instruction": "En el bloque cuatro, ¿qué operación se resuelve primero?",
+        "options": [
+          "La multiplicación",
+          "La suma",
+          "Las operaciones internas"
+        ],
+        "correct_answer": "Las operaciones internas",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 9,
+        "instruction": "En las operaciones internas del bloque cuatro, ¿qué operación se resuelve primero?",
+        "options": [
+          "La suma",
+          "La división"
+        ],
+        "correct_answer": "La división",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 10,
+        "instruction": "El resultado de la división que consta en las operaciones internas del bloque cuatro",
+        "options": [
+          "9",
+          "2",
+          "7",
+          "1"
+        ],
+        "correct_answer": "2",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 11,
+        "instruction": "En el bloque cinco, ¿cuál es el resultado de la operación interna?",
+        "options": [
+          "4",
+          "16",
+          "15",
+          "14"
+        ],
+        "correct_answer": "16",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 12,
+        "instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+        "options": [],
+        "correct_answer": "Seleccionar signos",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 13,
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "3",
+          "4",
+          "5",
+          "2"
+        ],
+        "correct_answer": "5",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 14,
+        "instruction": "¿Qué se realiza en el primer bloque?",
+        "options": [
+          "Se conserva",
+          "Se elimina"
+        ],
+        "correct_answer": "Se conserva",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 15,
+        "instruction": "¿Cuál es el resultado del segundo bloque?",
+        "options": [
+          "32",
+          "12"
+        ],
+        "correct_answer": "32",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 16,
+        "instruction": "¿Cuál es el resultado del tercer bloque?",
+        "options": [
+          "49",
+          "14"
+        ],
+        "correct_answer": "49",
+        "correct_ids": [],
+        "feedback": "El resultado de la potencia72 es 49",
+        "override": null
+      },
+      {
+        "num": 17,
+        "instruction": "En el bloque cuatro, ¿qué se realiza primero?",
+        "options": [
+          "La operación interna",
+          "La multiplicación"
+        ],
+        "correct_answer": "La operación interna",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 18,
+        "instruction": "¿Cuál es el resultado de la operación interna del bloque cuatro?",
+        "options": [
+          "7",
+          "10"
+        ],
+        "correct_answer": "7",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 19,
+        "instruction": "¿Cuál es el resultado de la operación interna del bloque cinco?",
+        "options": [
+          "8",
+          "4"
+        ],
+        "correct_answer": "4",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 20,
+        "instruction": "¿Qué operación se realiza primero?",
+        "options": [
+          "La multiplicación",
+          "Las sumas",
+          "Las restas"
+        ],
+        "correct_answer": "La multiplicación",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      },
+      {
+        "num": 21,
+        "instruction": "¿Cuál es el resultado de la multiplicación?",
+        "options": [
+          "9",
+          "14"
+        ],
+        "correct_answer": "14",
+        "correct_ids": [],
+        "feedback": "2 × 7 = 14",
+        "override": null
+      },
+      {
+        "num": 22,
+        "instruction": "Al resolver ordenadamente las sumas y restas de la expresión aritmética, se obtiene",
+        "options": [
+          "18",
+          "22",
+          "50",
+          "21"
+        ],
+        "correct_answer": "18",
+        "correct_ids": [],
+        "feedback": "",
+        "override": null
+      }
+    ]
+  }
+]

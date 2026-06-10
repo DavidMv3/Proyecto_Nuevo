@@ -1,0 +1,551 @@
+=== PAGE 75 ===
+[15 − (7 − 4)2] + [3 × 5 + 20] =
+=[15 − (3)2] + [15 + 20]
+=[15 − (9)] + [35]
+=[6] + [35]
+=41
+VIII) [
+√
+144 ÷
+√
+16 + 20] − [52 − 10]
+1) Selecciona los signos separadores que no constan en las operaciones internas.
+Solución. Son signos separadores los escritos en color azul, mientras que los de
+color rojo no lo son.
+Debe aparecer:
+[
+√
+144÷
+√
+16+20]−[52−10]
+2) ¿En cuántos bloques queda dividida la expresión aritmética?
+a) 1
+b) 2
+c) 3
+d) 4
+Solución. La respuesta correcta es b) 2.
+Debe aparecer:
+[
+√
+144 ÷
+√
+16 + 20] − [52 − 10] =
+3) En el primer bloque, ¿qué se debe resolver primero?
+a) La división
+√
+=== PAGE 76 ===
+Solución. La respuesta correcta es b) La propiedad de división de raíces con el
+mismo índice.
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: Primero se
+aplican las propiedades de la radicación. Cuando dos raíces tienen el mismo índice
+y se dividen, se conserva la raíz y se dividen los radicandos.
+Debe aparecer:
+[
+√
+144 ÷
+√
+16 + 20] − [52 − 10] =
+=[
+4) Al aplicar la propiedad de división de raíces con el mismo índice en
+√
+144 ÷
+√
+16,
+el resultado queda:
+a) √144 + 16
+b) √144 ÷ 16
+c) √144 − 16
+d) √144 × 16
+Solución. La respuesta correcta es b) √144 ÷ 16.
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: En la división
+de raíces con el mismo índice, se conserva la raíz y se dividen los radicandos:
+√
+144 ÷
+√
+16 = √144 ÷ 16.
+Debe aparecer:
+[
+√
+=== PAGE 81 ===
+Solución. La respuesta correcta es c) 8.
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: El resultado de
+la resta 23 − 15 es 8.
+Debe aparecer:
+[
+√
+144 ÷
+√
+16 + 20] − [52 − 10] =
+=[
+√
+144 ÷ 16 + 20] − [25 − 10]
+=[
+√
+9 + 20] − [15]
+=[3 + 20] − [15]
+=[23] − [15]
+=8
+IX) [
+p√
+81 + 42] − [30 ÷ 5 − 3]
+1) Selecciona los signos separadores que no constan en las operaciones internas.
+Solución. Son signos separadores los escritos en color azul, mientras que los de
+color rojo no lo son.
+Debe aparecer:
+[
+q√
+81+42]−[30÷5−3]
+2) ¿En cuántos bloques queda dividida la expresión aritmética?
+a) 1
+b) 2
+c) 3
+d) 4
+=== PAGE 82 ===
+3) En el primer bloque, ¿qué se debe resolver primero?
+a) La raíz cuadrada interior
+√
+81
+b) La propiedad raíz de raíz
+c) La potencia 42
+d) La resta entre bloques
+Solución. La respuesta correcta es b) La propiedad raíz de raíz.
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: Recuerda que
+primero se aplican las propiedades de la potenciación y radicación; luego se
+resuelven las potencias o raíces, y finalmente las sumas o restas.
+Debe aparecer:
+[
+q√
+81 + 42] − [30 ÷ 5 − 3] =
+=[
+4) Al aplicar la propiedad raíz de raíz en
+p√
+81, el resultado queda:
+a)
+4√
+81
+b)
+√
+81
+c)
+3√
+81
+d) 812
+Solución. La respuesta correcta es a)
+4√
+81.
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+=== PAGE 87 ===
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: El resultado de
+la resta 19 − 3 es 16.
+Debe aparecer:
+[
+q√
+81 + 42] − [30 ÷ 5 − 3] =
+=[
+4√
+81 + 16] − [6 − 3]
+=[3 + 16] − [3]
+=[19] − [3]
+=16
+X) [
+10√
+620 + 24] − [√16 + 20 − 3]
+1) Selecciona los signos separadores que no constan en las operaciones internas.
+Solución. Son signos separadores los escritos en color azul, mientras que los de
+color rojo no lo son.
+Debe aparecer:
+[
+10√
+620+24]−[
+√
+16+20−3]
+2) ¿En cuántos bloques queda dividida la expresión aritmética?
+a) 1
+b) 2
+c) 3
+d) 4
+Solución. La respuesta correcta es b) 2.
+Debe aparecer:
+[
+10√
+=== PAGE 88 ===
+b) La propiedad de la raíz de una potencia
+c) La potencia 24
+d) La resta entre bloques
+Solución. La respuesta correcta es b) La propiedad de la raíz de una potencia.
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: Recuerda que
+primero se aplican las propiedades de la potenciación y radicación; luego se
+resuelven las potencias o raíces, y finalmente las sumas o restas.
+Debe aparecer:
+[
+10√
+620 + 24] − [
+√
+16 + 20 − 3] =
+=[
+4) Al aplicar la propiedad de la raíz de una potencia en
+10√
+620, el resultado queda:
+a) 610
+b) 62
+c) 630
+d) 620
+Solución. La respuesta correcta es b) 62.
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: En la raíz de
+una potencia, el exponente se divide para el índice de la raíz; por eso,20 ÷ 10 = 2.
+Debe aparecer:
+[
+10√
+620 + 24] − [
+√
+16 + 20 − 3] =
+=[62+
+5) En el primer bloque, ¿qué se debe resolver ahora?
+=== PAGE 103 ===
+a) 8
+b) 16
+c) 12
+d) 20
+Solución. La respuesta correcta es b) 16.
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: El resultado de
+la multiplicación 4 × 4 es 16.
+Debe aparecer:
+30 − 76÷75 + 8÷2×4 =
+= 30 − 7 + 16
+8) El resultado de las últimas operaciones es:
+a) 39
+b) 41
+c) 37
+d) 35
+Solución. La respuesta correcta es a) 39.
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: El resultado de
+la suma 30 − 7 + 16 es 39.
+Debe aparecer:
+30−76÷75+8÷2×4 =
+= 30 − 7 + 16
+= 39
+III)
+√
+26+3×(5−2)÷(3−2) = (Colocar esta expresión aritmética en un solo color)
+1) Selecciona los signos separadores que no constan en las operaciones internas.
+
+
+=== PAGE 104 ===
+Solución. Son signos separadores los escritos en color azul, mientras que los de
+color rojo no lo son.
+En caso de que el estudiante seleccione los rojos, debe desplegarse la palabra
+incorrecto, junto con una retroalimentación: Este es un signo separador de
+operaciones internas.
+Debe aparecer:
+√
+26+3×(5−2)÷(3−2) =
+2) ¿En cuántos bloques queda dividida la expresión aritmética?
+a) 2
+b) 3
+c) 4
+d) 1
+Solución. La respuesta correcta es a) 2.
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: Recuerda que
+los bloques se identifican a partir de los signos separadores que no están dentro
+de operaciones internas.
+Debe aparecer:
+√
+26 + 3×(5−2)÷(3−2) =
+3) En el primer bloque, ¿qué se debe resolver primero?
+a) La potencia
+b) La propiedad de la raíz de una potencia
+c) La suma
+d) La multiplicación
+Solución. La respuesta correcta es b) La propiedad de la raíz de una potencia.
+En caso de que el estudiante seleccione otra opción, debe desplegarse la palabra
+incorrecto, junto con la retroalimentación: Antes de desarrollar la potencia, se
+aplica la propiedad de la raíz de una potencia.
+
+
+=== PAGE 111 ===
+√
+26+3×(5−2)÷(3−2) =
+= 2 3 + 3 × 3 ÷ 1
+= 8 + 9
+= 17
+IV) 55−3×2+3×
+3√
+56 = (Colocar esta expresión aritmética en un solo color)
+1) Selecciona los signos separadores.
+Solución. Son signos separadores los escritos en color azul, mientras que los de
+color rojo no lo son.
+En caso de que el estudiante seleccione los rojos, debe desplegarse la palabra
+incorrecto, junto con una retroalimentación: Este es un signo de multiplicación.
+Debe aparecer:
+55−3×2+3×
+3√
+56 =
+2) ¿En cuántos bloques queda dividida la expresión aritmética?
+a) 2
+b) 3
+c) 4
+d) 1
+Solución. La respuesta correcta es b) 3.
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: Recuerda que
+los bloques se identifican a partir de los signos separadores.
+Debe aparecer:
+55 − 3×2 + 3×
+3√
+56 =
+3) Observando la expresión, ¿qué operación se debe resolver primero?
+a) La resta 55 − 3
+
+
+=== PAGE 112 ===
+b) La multiplicación 3 × 2
+c) La suma
+d) La raíz
+Solución. La respuesta correcta es b) La multiplicación 3 × 2.
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: Se debe resolver
+la primera operación disponible de izquierda a derecha. Debe aparecer:
+55 − 3 × 2 + 3 ×
+3√
+56 =
+= 55−
+4) El resultado de la multiplicación3 × 2 es:
+a) 5
+b) 6
+c) 3
+d) 8
+Solución. La respuesta correcta es b) 6.
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: El resultado de
+multiplicar 3 y 2 es 6.
+Debe aparecer:
+55 − 3 × 2 + 3 ×
+3√
+56 =
+= 55 − 6+
+5) Observando el tercer bloque, ¿qué operación se debe resolver ahora?
+a) La resta 55 − 6
+b) La multiplicación 3 ×
+3√
+56
+c) La potenciación 56
+d) La propiedad raíz de una potencia
+Solución. La respuesta correcta es d) La propiedad raíz de una potencia.
+
+=== PAGE 121 ===
+VI) 20+10÷5−
+2p
+3√
+312+1 = (Colocar esta expresión aritmética en un solo color)
+1) Selecciona los signos separadores.
+Solución. Son signos separadores los escritos en color azul, mientras que los de
+color rojo no lo son.
+En caso de que el estudiante seleccione los rojos, debe desplegarse la palabra
+incorrecto, junto con una retroalimentación: Los signos separadores son el+ y el
+−.
+Debe aparecer:
+20+10÷5−
+2
+q
+3√
+312+1 =
+2) ¿En cuántos bloques queda dividida la expresión aritmética?
+a) 2
+b) 3
+c) 4
+d) 5
+Solución. La respuesta correcta es c) 4.
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: Los bloques se
+identifican a partir de los signos separadores.
+Debe aparecer:
+20 + 10 ÷ 5 −
+2
+q
+3√
+312 + 1 =
+3) En el primer bloque no hay operaciones internas, por lo tanto:
+a) Se conserva el número
+b) Se elimina el número
+=== PAGE 122 ===
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: Cuando un
+bloque no tiene operaciones internas, el número se conserva.
+Debe aparecer:
+20 + 10 ÷ 5 −
+2
+q
+3√
+312 + 1 =
+= 20+
+4) El resultado de la división del segundo bloque es:
+a) 2
+b) 5
+c) 10
+d) 15
+Solución. La respuesta correcta es a) 2.
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: El resultado de
+la división 10 ÷ 5 es 2.
+Debe aparecer:
+20 + 10 ÷ 5 −
+2
+q
+3√
+312 + 1 =
+= 20 + 2
+5) En el tercer bloque, ¿qué se debe resolver primero?
+a) La raíz cuadrada exterior
+b) La propiedad de la raíz cúbica de una potencia
+c) La suma final
+d) La resta
+Solución. La respuesta correcta es b) La propiedad de la raíz cúbica de una
+potencia.
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+=== PAGE 136 ===
+Debe aparecer:
+(22 + 1)3 + [10 − (9 ÷ 3 + 1)] −
+√
+9 + 40 =
+= (4 + 1) 3 + [10 − (3 + 1)] −
+√
+49
+= 5 3 + [10 − (4)] − 7
+= 125 + 6 − 7
+= 124
+VIII) 5+[15 − (3−1)2+23]+
+3√7+1 = (Colocar esta expresión aritmética en un solo color)
+1) Selecciona los signos separadores que no constan en las operaciones internas.
+Solución. Son signos separadores los escritos en color azul, mientras que los de
+color rojo no lo son.
+En caso de que el estudiante seleccione los rojos, debe desplegarse la palabra
+incorrecto, junto con la retroalimentación: Este signo forma parte de una operación
+interna.
+Debe aparecer:
+5+[15 − (3−1)2+23]+
+3√
+7+1 =
+2) ¿En cuántos bloques queda dividida la expresión aritmética?
+a) 2
+b) 3
+c) 4
+d) 5
+Solución. La respuesta correcta es b) 3.
+En caso de que el estudiante elija cualquiera de las otras opciones, debe desplegarse
+la palabra incorrecto, junto con la retroalimentación: Los bloques se identifican
+por los signos separadores externos.
+Debe aparecer:
+5 + [15 − (3 − 1)2 + 23] +
+3√
+=== PAGE 137 ===
+3) En el primer bloque no hay operaciones internas, por lo tanto:
+a) Se conserva el número5
+b) Se elimina el número5
+c) Se realiza la suma5 + 15
+d) Se multiplica
+Solución. La respuesta correcta es a) Se conserva el número 5.
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: Cuando un
+bloque no tiene operaciones internas, el número se conserva.
+Debe aparecer:
+5 + [15 − (3 − 1)2 + 23] +
+3√
+7 + 1 =
+= 5
+4) En el segundo bloque, ¿qué operación se debe resolver primero?
+a) La resta 15 − 3
+b) La operación interna del paréntesis
+c) La suma 23
+d) La suma final
+Solución. La respuesta correcta es b) La operación interna del paréntesis.
+En caso de que el estudiante elija cualquiera de las otras opciones, debe desplegarse
+la palabra incorrecto, junto con la retroalimentación: Primero se resuelve la
+operación interna (3 − 1).
+Debe aparecer:
+5 + [15 − (3 − 1)2 + 23] +
+3√
+7 + 1 =
+= 5 + [15 − (
+5) El resultado de la operación interna3 − 1 es:
+a) 1
+b) 2
+
+
+=== PAGE 143 ===
+IX) (92 + 2) × 3−
+p
+23+10÷(22+1)−(6+2)2 = (Colocar esta expresión aritmética en un
+solo color)
+1) Selecciona los signos separadores que no constan en las operaciones internas.
+Solución. Son signos separadores los escritos en color azul, mientras que los de
+color rojo no lo son.
+En caso de que el estudiante seleccione los rojos, debe desplegarse la palabra
+incorrecto, junto con la retroalimentación: Este signo forma parte de una operación
+interna.
+Debe aparecer:
+(92 + 2) × 3−
+p
+23+10÷(22+1)−(6+2)2 =
+2) ¿En cuántos bloques queda dividida la expresión aritmética?
+a) 2
+b) 3
+c) 4
+d) 5
+Solución. La respuesta correcta es b) 3.
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: Los bloques se
+identifican por los signos separadores externos.
+Debe aparecer:
+(92 + 2) × 3 −
+p
+23 + 10 ÷ (22 + 1) − (6 + 2)2 =
+3) En el primer bloque, ¿qué operación se debe resolver primero?
+a) La suma 9 + 2
+b) La potencia 92
+c) La multiplicación por3
+d) La resta
+
+
+=== PAGE 144 ===
+Solución. La respuesta correcta es b) La potencia 92.
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: Dentro del
+paréntesis, entre la potencia y la suma, se resuelve primero la potencia.
+Debe aparecer:
+(92 + 2) × 3 −
+p
+23 + 10 ÷ (22 + 1) − (6 + 2)2 =
+4) El resultado de la potencia92 es:
+a) 18
+b) 81
+c) 27
+d) 72
+Solución. La respuesta correcta es b) 81.
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: El resultado de
+la potencia 92 es 81.
+Debe aparecer:
+(92 + 2) × 3 −
+p
+23 + 10 ÷ (22 + 1) − (6 + 2)2 =
+= (81 + 2) × 3−
+5) En el segundo bloque, ¿qué operación se debe resolver primero?
+a) La raíz cuadrada
+b) La suma 23 + 10
+c) La operación interna del paréntesis
+d) La resta
+Solución. La respuesta correcta es c) La operación interna del paréntesis.
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: En el segundo
+bloque primero se analiza la operación interna que está dentro del paréntesis.
+

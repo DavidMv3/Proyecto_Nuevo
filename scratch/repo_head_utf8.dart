@@ -10,57 +10,56 @@ class ExerciseRepository {
     ExerciseEntity(
       id: 'tutorial_1',
       title: 'Tutorial de MateAndina',
-      baseExpression: '2 + 3 x 4',
+      baseExpression: '2 + 3 * 4',
       rewardCoins: 5,
       difficulty: 0,
       steps: [
         StepEntity(
           id: 'tut1_s1',
           instruction: '¡Bienvenido a MateAndina! Vamos a aprender a jugar.\nPrimero, selecciona todos los signos separadores (+) o (-).',
-          correctIds: ['t1'], // El '+' en '2 + 3 x 4'
-          algorithmHint: 'Fíjate en los signos + y - que están sueltos; ellos dividen el ejercicio.',
-          feedbackError: '¡Casi! Los signos separadores de bloques son el "+" y el "-". Inténtalo de nuevo.',
+          correctIds: ['t1'],
+          algorithmHint: 'Fíjate en los signos \$+\$ y \$-\$ que están sueltos; ellos dividen el ejercicio.',
+          feedbackError: '¡Casi! Los signos separadores de bloques son el "\$"\$+\$"\$" y el "\$-\$". Inténtalo de nuevo.',
         ),
         StepEntity(
           id: 'tut1_s2',
-          instruction: '¡Excelente! Ahora veamos la jerarquía.\nEntre sumar o multiplicar (3 x 4), ¿cuál tiene prioridad (se resuelve primero)?',
-          correctIds: ['t2', 't3', 't4'], // '3 x 4'
+          instruction: '¡Excelente! Ahora veamos la jerarquía.\nEntre sumar o multiplicar (3 * 4), ¿cuál tiene prioridad (se resuelve primero)?',
+          correctIds: ['t2', 't3', 't4'],
           algorithmHint: 'Asegúrate de resolver primero las multiplicaciones antes de sumar o restar.',
           feedbackError: 'Recuerda que las multiplicaciones y divisiones tienen más fuerza que sumas y restas.',
         ),
         StepEntity(
           id: 'tut1_s3',
-          instruction: '¡Muy bien! Ahora toca la respuesta correcta.\n¿Cuál es el resultado de 3 x 4?',
+          instruction: '¡Muy bien! Ahora toca la respuesta correcta.\n¿Cuál es el resultado de \$3\$ * 4?',
+          expressionOverride: '2 + 12',
           options: ['7', '12', '14'],
           correctAnswer: '12',
-          algorithmHint: 'Asegúrate de resolver primero las multiplicaciones antes de sumar o restar.',
-          feedbackError: 'Al multiplicar 3 veces 4 obtenemos 12.',
           correctIds: [],
-          expressionOverride: '2 + 12',
+          algorithmHint: 'Asegúrate de resolver primero las multiplicaciones antes de sumar o restar.',
+          feedbackError: 'Al multiplicar 3 veces 4 obtenemos \$12\$.',
         ),
         StepEntity(
           id: 'tut1_s4',
+          instruction: '¡Último paso! Ahora nuestra ecuación es \$2\$ + 12.\n¿Cuál es el resultado final?',
           expressionOverride: '2 + 12',
-          instruction: '¡Último paso! Ahora nuestra ecuación es 2 + 12.\n¿Cuál es el resultado final?',
           options: ['10', '24', '14'],
           correctAnswer: '14',
-          algorithmHint: 'Suma o resta directamente los elementos que te quedan.',
-          feedbackError: 'Si sumas 2 + 12 el resultado es 14.',
           correctIds: [],
-        ),
+          algorithmHint: 'Suma o resta directamente los elementos que te quedan.',
+          feedbackError: 'Si sumas 2 + 12 el resultado es \$14\$.',
+        )
       ],
-    ),
+    )
   ];
 
   // ==========================================
   // NIVEL FÁCIL
   // ==========================================
   static final List<ExerciseEntity> _easyData = [
-    
     ExerciseEntity(
       id: 'easy_1',
       title: 'Nivel Fácil 1',
-      baseExpression: '4 x 5 - 6 ÷ 3',
+      baseExpression: '4 * 5 - 6 / 3',
       rewardCoins: 10,
       difficulty: 1,
       steps: [
@@ -82,41 +81,40 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_1_s3',
-          expressionOverride: '20 -',
           instruction: 'El resultado de la multiplicación del primer bloque es:',
+          expressionOverride: '20 -',
           options: ['20', '9', '10', '1'],
           correctAnswer: '20',
           correctIds: [],
           algorithmHint: 'Asegúrate de resolver primero las multiplicaciones antes de sumar o restar.',
-          feedbackError: 'El resultado de la multiplicación 4 x 5 es 20.',
+          feedbackError: 'El resultado de la multiplicación 4 * 5 es 20.',
         ),
         StepEntity(
           id: 'easy_1_s4',
-          expressionOverride: '20 - 2',
           instruction: 'El resultado de la división del segundo bloque es:',
+          expressionOverride: '20 - 2',
           options: ['5', '3', '2', '6'],
           correctAnswer: '2',
           correctIds: [],
           algorithmHint: 'Resuelve las divisiones antes que las sumas y restas.',
-          feedbackError: 'El resultado de la división 6 ÷ 3 es 2.',
+          feedbackError: 'El resultado de la división 6 / 3 es 2.',
         ),
         StepEntity(
           id: 'easy_1_s5',
-          expressionOverride: '18',
           instruction: 'El resultado de la última operación es:',
+          expressionOverride: '18',
           options: ['10', '18', '22', '11'],
           correctAnswer: '18',
           correctIds: [],
           algorithmHint: 'Ya casi terminas, ahora solo suma y resta los valores de cada bloque.',
           feedbackError: 'El resultado de la última operación es 18.',
-        ),
+        )
       ],
     ),
-
     ExerciseEntity(
       id: 'easy_2',
       title: 'Nivel Fácil 2',
-      baseExpression: '18 + 3 x 5',
+      baseExpression: '18 + 3 * 5',
       rewardCoins: 10,
       difficulty: 1,
       steps: [
@@ -139,15 +137,14 @@ class ExerciseRepository {
         StepEntity(
           id: 'easy_2_s3',
           instruction: 'Es correcto afirmar que se resuelve primero:',
-          options: ['La suma 18 + 3', 'La multiplicación 3 x 5', 'La suma 18 + 5', 'La multiplicación 18 x 3'],
-          correctAnswer: 'La multiplicación 3 x 5',
+          options: ['La suma 18 + 3', 'La multiplicación 3 * 5', 'La suma 18 + 5', 'La multiplicación 18 * 3'],
+          correctAnswer: 'La multiplicación 3 * 5',
           correctIds: [],
           algorithmHint: 'Recuerda resolver potencias/raíces, luego multiplicaciones/divisiones, y al final sumas/restas.',
           feedbackError: 'Recuerda que, entre la suma y la multiplicación, se resuelve primero la multiplicación.',
         ),
         StepEntity(
           id: 'easy_2_s4',
-          expressionOverride: '18 +',
           instruction: 'Cuando en un bloque no hay operaciones se debe:',
           options: ['Conservar el número', 'Desaparecer el número'],
           correctAnswer: 'Conservar el número',
@@ -157,31 +154,30 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_2_s5',
-          expressionOverride: '18 + 15',
           instruction: 'El resultado de la operación del segundo bloque es:',
+          expressionOverride: '18 + 15',
           options: ['20', '9', '15', '12'],
           correctAnswer: '15',
           correctIds: [],
           algorithmHint: 'Asegúrate de resolver primero las multiplicaciones antes de sumar o restar.',
-          feedbackError: 'El resultado de la multiplicación 3 x 5 es 15.',
+          feedbackError: 'El resultado de la multiplicación 3 * 5 es 15.',
         ),
         StepEntity(
           id: 'easy_2_s6',
-          expressionOverride: '33',
           instruction: 'El resultado de la última operación es:',
+          expressionOverride: '33',
           options: ['3', '33', '32', '23'],
           correctAnswer: '33',
           correctIds: [],
           algorithmHint: 'Ya casi terminas, ahora solo suma y resta los valores de cada bloque.',
           feedbackError: 'El resultado de la última operación es 33.',
-        ),
+        )
       ],
     ),
-
     ExerciseEntity(
       id: 'easy_3',
       title: 'Nivel Fácil 3',
-      baseExpression: '8 - 3 x 2 + 1',
+      baseExpression: '8 - 3 * 2 + 1',
       rewardCoins: 10,
       difficulty: 1,
       steps: [
@@ -203,7 +199,6 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_3_s3',
-          expressionOverride: '8 - + 1',
           instruction: 'Los bloques en los que se deben conservar los números son:',
           options: ['El primero y el tercero', 'El primero y el segundo', 'El segundo y el tercero'],
           correctAnswer: 'El primero y el tercero',
@@ -213,31 +208,30 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_3_s4',
-          expressionOverride: '8 - 6 + 1',
           instruction: 'El resultado de la operación del segundo bloque es:',
+          expressionOverride: '8 - 6 + 1',
           options: ['6', '9', '5', '11'],
           correctAnswer: '6',
           correctIds: [],
           algorithmHint: 'Asegúrate de resolver primero las multiplicaciones antes de sumar o restar.',
-          feedbackError: 'El resultado de la multiplicación 3 x 2 es 6.',
+          feedbackError: 'El resultado de la multiplicación 3 * 2 es 6.',
         ),
         StepEntity(
           id: 'easy_3_s5',
-          expressionOverride: '3',
           instruction: 'El resultado de la última operación es:',
+          expressionOverride: '3',
           options: ['3', '15', '10', '9'],
           correctAnswer: '3',
           correctIds: [],
           algorithmHint: 'Ya casi terminas, ahora solo suma y resta los valores de cada bloque.',
           feedbackError: 'El resultado de la última operación es 3.',
-        ),
+        )
       ],
     ),
-
     ExerciseEntity(
       id: 'easy_4',
       title: 'Nivel Fácil 4',
-      baseExpression: '10 - 3 x 2 + 2 ^ 3',
+      baseExpression: '10 - 3 * 2 + 2 ^ 3',
       rewardCoins: 10,
       difficulty: 1,
       steps: [
@@ -259,7 +253,6 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_4_s3',
-          expressionOverride: '10 -',
           instruction: 'En el primer bloque de la expresión aritmética no hay operaciones internas, por lo tanto:',
           options: ['Se conserva el número', 'Se elimina el número', 'Se realiza primero la suma', 'Se debe multiplicar'],
           correctAnswer: 'Se conserva el número',
@@ -269,7 +262,6 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_4_s4',
-          expressionOverride: '10 -',
           instruction: 'Se pueden resolver la multiplicación y la potenciación sin importar el orden porque:',
           options: ['Están en diferentes bloques', 'La multiplicación y la potenciación tienen la misma jerarquía', 'No importa la jerarquía al resolver multiplicaciones y potencias', 'Siempre se resuelve la primera operación que aparece en una expresión aritmética'],
           correctAnswer: 'Están en diferentes bloques',
@@ -279,18 +271,18 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_4_s5',
-          expressionOverride: '10 - 6',
           instruction: 'El resultado de la multiplicación del segundo bloque es:',
+          expressionOverride: '10 - 6 + 2 ^ 3',
           options: ['5', '3', '2', '6'],
           correctAnswer: '6',
           correctIds: [],
           algorithmHint: 'Asegúrate de resolver primero las multiplicaciones antes de sumar o restar.',
-          feedbackError: 'El resultado de la multiplicación 3 x 2 es 6.',
+          feedbackError: 'El resultado de la multiplicación 3 * 2 es 6.',
         ),
         StepEntity(
           id: 'easy_4_s6',
-          expressionOverride: '10 - 6 + 8',
           instruction: 'El resultado de la potencia del tercer bloque es:',
+          expressionOverride: '10 - 6 + 8',
           options: ['5', '3', '8', '4'],
           correctAnswer: '8',
           correctIds: [],
@@ -299,21 +291,20 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_4_s7',
-          expressionOverride: '12',
           instruction: 'El resultado de la última operación es:',
+          expressionOverride: '12',
           options: ['12', '10', '4', '8'],
           correctAnswer: '12',
           correctIds: [],
           algorithmHint: 'Ya casi terminas, ahora solo suma y resta los valores de cada bloque.',
           feedbackError: 'El resultado de la última operación es 12.',
-        ),
+        )
       ],
     ),
-
     ExerciseEntity(
       id: 'easy_5',
       title: 'Nivel Fácil 5',
-      baseExpression: '1 + 12 ÷ 4 - 1 + 2 ^ 3',
+      baseExpression: '1 + 12 / 4 - 1 + 2 ^ 3',
       rewardCoins: 10,
       difficulty: 1,
       steps: [
@@ -335,7 +326,6 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_5_s3',
-          expressionOverride: '1 +',
           instruction: 'Los bloques en los que se deben conservar los números son:',
           options: ['El primero y el tercero', 'El segundo y el cuarto', 'El primero y el segundo', 'El tercero y el cuarto'],
           correctAnswer: 'El primero y el tercero',
@@ -345,7 +335,6 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_5_s4',
-          expressionOverride: '1 +',
           instruction: 'Se pueden resolver la división y la potenciación sin importar el orden porque:',
           options: ['Están en diferentes bloques', 'La división y la potenciación tienen la misma jerarquía', 'No importa la jerarquía al resolver divisiones y potencias', 'Siempre se resuelve la primera operación que aparece en una expresión aritmética'],
           correctAnswer: 'Están en diferentes bloques',
@@ -355,18 +344,18 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_5_s5',
-          expressionOverride: '1 + 3 - 1 +',
           instruction: 'El resultado de la división del segundo bloque es:',
+          expressionOverride: '1 + 3 - 1 + 2 ^ 3',
           options: ['4', '2', '3', '1'],
           correctAnswer: '3',
           correctIds: [],
           algorithmHint: 'Resuelve las divisiones antes que las sumas y restas.',
-          feedbackError: 'El resultado de la división 12 ÷ 4 es 3.',
+          feedbackError: 'El resultado de la división 12 / 4 es 3.',
         ),
         StepEntity(
           id: 'easy_5_s6',
-          expressionOverride: '1 + 3 - 1 + 8',
           instruction: 'El resultado de la potencia del cuarto bloque es:',
+          expressionOverride: '1 + 3 - 1 + 8',
           options: ['6', '8', '9', '5'],
           correctAnswer: '8',
           correctIds: [],
@@ -375,21 +364,20 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_5_s7',
-          expressionOverride: '11',
           instruction: 'El resultado de las últimas operaciones es:',
+          expressionOverride: '11',
           options: ['11', '12', '10', '9'],
           correctAnswer: '11',
           correctIds: [],
           algorithmHint: 'Ya casi terminas, ahora solo suma y resta los valores de cada bloque.',
           feedbackError: 'El resultado de las últimas operaciones es 11.',
-        ),
+        )
       ],
     ),
-
     ExerciseEntity(
       id: 'easy_6',
       title: 'Nivel Fácil 6',
-      baseExpression: '3 - 2 + ( 8 - 2 x 3 )',
+      baseExpression: '3 - 2 + ( 8 - 2 * 3 )',
       rewardCoins: 12,
       difficulty: 1,
       steps: [
@@ -420,8 +408,8 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_6_s4',
-          expressionOverride: '1 + ( 8 - 2 x 3 )',
           instruction: 'El resultado de la resta entre los dos primeros bloques es:',
+          expressionOverride: '1 + ( 8 - 2 * 3 )',
           options: ['5', '2', '1', '3'],
           correctAnswer: '1',
           correctIds: [],
@@ -439,8 +427,8 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_6_s6',
-          expressionOverride: '1 + ( 8 - 6 )',
           instruction: '¿Cuál es el resultado de la multiplicación?',
+          expressionOverride: '1 + ( 8 - 6 )',
           options: ['6', '5', '3'],
           correctAnswer: '6',
           correctIds: [],
@@ -449,8 +437,8 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_6_s7',
-          expressionOverride: '1 + ( 2 )',
           instruction: 'El resultado de las operaciones internas es:',
+          expressionOverride: '1 + ( 2 )',
           options: ['2', '9', '5', '4'],
           correctAnswer: '2',
           correctIds: [],
@@ -459,28 +447,27 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_6_s8',
-          expressionOverride: '3',
           instruction: 'El resultado de la última operación es:',
+          expressionOverride: '3',
           options: ['2', '3', '1', '0'],
           correctAnswer: '3',
           correctIds: [],
           algorithmHint: 'Ya casi terminas, ahora solo suma y resta los valores de cada bloque.',
           feedbackError: 'El resultado de la suma 1 + 2 es 3.',
-        ),
+        )
       ],
     ),
-
     ExerciseEntity(
       id: 'easy_7',
       title: 'Nivel Fácil 7',
-      baseExpression: 'sqrt( 4 + 12 ) - 15 ÷ 5',
+      baseExpression: 'sqrt( 4 + 12 ) - 15 / 5',
       rewardCoins: 12,
       difficulty: 1,
       steps: [
         StepEntity(
           id: 'easy_7_s1',
           instruction: 'Selecciona los signos separadores que no constan en las operaciones internas.',
-          correctIds: ['t5'], // sqrt( (t0) 4 (t1) + (t2) 12 (t3) ) (t4) - (t5) 15 (t6) / (t7) 5 (t8)
+          correctIds: ['t5'],
           algorithmHint: 'Fíjate en los signos + y - que están sueltos; ellos dividen el ejercicio.',
           feedbackError: 'Este es un signo separador de operaciones internas.',
         ),
@@ -504,8 +491,8 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_7_s4',
-          expressionOverride: 'sqrt( 16 ) -',
           instruction: 'El resultado de la operación interna del primer bloque es:',
+          expressionOverride: 'sqrt( 16 ) - 15 / 5',
           options: ['8', '16', '12', '4'],
           correctAnswer: '16',
           correctIds: [],
@@ -514,7 +501,6 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_7_s5',
-          expressionOverride: 'sqrt( 16 ) -',
           instruction: 'Se pueden resolver la raíz cuadrada y la división sin importar el orden porque:',
           options: ['Están en diferentes bloques', 'Tienen la misma jerarquía', 'Siempre se resuelve primero la división', 'Siempre se resuelve primero la resta'],
           correctAnswer: 'Están en diferentes bloques',
@@ -524,17 +510,16 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_7_s6',
-          expressionOverride: 'sqrt( 16 ) - 3',
           instruction: 'El resultado de la división del segundo bloque es:',
+          expressionOverride: 'sqrt( 16 ) - 3',
           options: ['3', '5', '12', '18'],
           correctAnswer: '3',
           correctIds: [],
           algorithmHint: 'Resuelve las divisiones antes que las sumas y restas.',
-          feedbackError: 'El resultado de la división 15 ÷ 5 es 3.',
+          feedbackError: 'El resultado de la división 15 / 5 es 3.',
         ),
         StepEntity(
           id: 'easy_7_s7',
-          expressionOverride: 'sqrt( 16 ) - 3',
           instruction: '¿Qué se debe resolver primero?',
           options: ['La resta', 'La raíz cuadrada de 16', 'La suma'],
           correctAnswer: 'La raíz cuadrada de 16',
@@ -544,8 +529,8 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_7_s8',
-          expressionOverride: '4 -',
           instruction: 'El resultado de la raíz cuadrada del primer bloque es:',
+          expressionOverride: '4 - 3',
           options: ['2', '8', '4', '16'],
           correctAnswer: '4',
           correctIds: [],
@@ -554,7 +539,6 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_7_s9',
-          expressionOverride: '4 - 3',
           instruction: '¿Qué acción hacemos con el 3?',
           options: ['Lo conservamos', 'Lo eliminamos', 'Lo introducimos en el radical'],
           correctAnswer: 'Lo conservamos',
@@ -564,21 +548,20 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_7_s10',
-          expressionOverride: '1',
           instruction: 'El resultado de la última operación es:',
+          expressionOverride: '1',
           options: ['1', '9', '21', '0'],
           correctAnswer: '1',
           correctIds: [],
           algorithmHint: 'Suma o resta directamente los elementos que te quedan.',
           feedbackError: 'El resultado de la última operación 4 - 3 es 1.',
-        ),
+        )
       ],
     ),
-
     ExerciseEntity(
       id: 'easy_8',
       title: 'Nivel Fácil 8',
-      baseExpression: '3 ^ 2 + 5 x 2 - sqrt( 30 - 5 )',
+      baseExpression: '3 ^ 2 + 5 * 2 - sqrt( 30 - 5 )',
       rewardCoins: 12,
       difficulty: 1,
       steps: [
@@ -609,8 +592,8 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_8_s4',
-          expressionOverride: '9 +',
           instruction: 'El resultado de la potenciación del primer bloque es:',
+          expressionOverride: '9 + 5 * 2 - sqrt( 30 - 5 )',
           options: ['6', '9', '5', '3'],
           correctAnswer: '9',
           correctIds: [],
@@ -619,8 +602,8 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_8_s5',
-          expressionOverride: '9 + 10 -',
           instruction: 'El resultado de la multiplicación del segundo bloque es:',
+          expressionOverride: '9 + 10 - sqrt( 30 - 5 )',
           options: ['7', '10', '12', '5'],
           correctAnswer: '10',
           correctIds: [],
@@ -629,7 +612,6 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_8_s6',
-          expressionOverride: '9 + 10 -',
           instruction: 'En el tercer bloque, ¿qué se debe resolver primero?',
           options: ['La raíz cuadrada', 'La operación interna', 'La suma', 'La multiplicación'],
           correctAnswer: 'La operación interna',
@@ -639,8 +621,8 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_8_s7',
-          expressionOverride: '9 + 10 - sqrt( 25 )',
           instruction: 'El resultado de la operación interna del tercer bloque es:',
+          expressionOverride: '9 + 10 - sqrt( 25 )',
           options: ['35', '25', '30', '5'],
           correctAnswer: '25',
           correctIds: [],
@@ -649,8 +631,8 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_8_s8',
-          expressionOverride: '9 + 10 - 5',
           instruction: 'El resultado de la raíz cuadrada del tercer bloque es:',
+          expressionOverride: '9 + 10 - 5',
           options: ['25', '10', '5', '6'],
           correctAnswer: '5',
           correctIds: [],
@@ -659,28 +641,27 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_8_s9',
-          expressionOverride: '14',
           instruction: 'El resultado de las últimas operaciones es:',
+          expressionOverride: '14',
           options: ['12', '14', '15', '24'],
           correctAnswer: '14',
           correctIds: [],
           algorithmHint: 'Ya casi terminas, ahora solo suma y resta los valores de cada bloque.',
           feedbackError: 'El resultado de las últimas operaciones es 14.',
-        ),
+        )
       ],
     ),
-
     ExerciseEntity(
       id: 'easy_9',
       title: 'Nivel Fácil 9',
-      baseExpression: '4 x ( 20 ÷ 4 + 1 ) + 4 x 2 ^ 3',
+      baseExpression: '4 * ( 20 / 4 + 1 ) + 4 * 2 ^ 3',
       rewardCoins: 12,
       difficulty: 1,
       steps: [
         StepEntity(
           id: 'easy_9_s1',
           instruction: 'Selecciona los signos separadores que no constan en las operaciones internas.',
-          correctIds: ['t9'], // 4(t0) x(t1) ((t2) 20(t3) ÷(t4) 4(t5) +(t6) 1(t7) )(t8) +(t9) 4(t10) x(t11) 2(t12) ^(t13) 3(t14)
+          correctIds: ['t9'],
           algorithmHint: 'Fíjate en los signos + y - que están sueltos; ellos dividen el ejercicio.',
           feedbackError: 'Este es un signo separador de operaciones internas.',
         ),
@@ -713,17 +694,16 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_9_s5',
-          expressionOverride: '4 x ( 5 + 1 ) +',
-          instruction: 'El resultado de la división 20 ÷ 4 es:',
+          instruction: 'El resultado de la división 20 / 4 es:',
+          expressionOverride: '4 * ( 5 + 1 ) + 4 * 2 ^ 3',
           options: ['4', '5', '6', '10'],
           correctAnswer: '5',
           correctIds: [],
           algorithmHint: 'Resuelve las divisiones antes que las sumas y restas.',
-          feedbackError: 'El resultado de la división 20 ÷ 4 es 5.',
+          feedbackError: 'El resultado de la división 20 / 4 es 5.',
         ),
         StepEntity(
           id: 'easy_9_s6',
-          expressionOverride: '4 x ( 5 + 1 ) + 4 x',
           instruction: 'En el segundo bloque, ¿qué operación se debe resolver primero?',
           options: ['La multiplicación', 'La potenciación', 'La resta', 'La suma'],
           correctAnswer: 'La potenciación',
@@ -733,8 +713,8 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_9_s7',
-          expressionOverride: '4 x ( 5 + 1 ) + 4 x 8',
           instruction: 'El resultado de la potencia 2^3 es:',
+          expressionOverride: '4 * ( 5 + 1 ) + 4 * 8',
           options: ['6', '8', '4', '3'],
           correctAnswer: '8',
           correctIds: [],
@@ -743,7 +723,6 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_9_s8',
-          expressionOverride: '4 x ( 5 + 1 ) + 4 x 8',
           instruction: 'En el primer bloque, ¿qué operación se debe resolver ahora?',
           options: ['La suma', 'La multiplicación', 'La resta'],
           correctAnswer: 'La suma',
@@ -753,8 +732,8 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_9_s9',
-          expressionOverride: '4 x ( 6 ) +',
           instruction: 'El resultado de la suma 5 + 1 es:',
+          expressionOverride: '4 * ( 6 ) + 4 * 8',
           options: ['5', '6', '7', '4'],
           correctAnswer: '6',
           correctIds: [],
@@ -763,8 +742,8 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_9_s10',
-          expressionOverride: '4 x ( 6 ) + 32',
           instruction: 'El resultado de la multiplicación del segundo bloque es:',
+          expressionOverride: '4 * ( 6 ) + 32',
           options: ['12', '32', '24', '28'],
           correctAnswer: '32',
           correctIds: [],
@@ -773,7 +752,6 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_9_s11',
-          expressionOverride: '4 x ( 6 ) + 32',
           instruction: 'Ahora se resuelve primero:',
           options: ['La suma', 'La multiplicación', 'La resta', 'La división'],
           correctAnswer: 'La multiplicación',
@@ -783,8 +761,8 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_9_s12',
-          expressionOverride: '24 + 32',
           instruction: 'El resultado de 4 x 6 es:',
+          expressionOverride: '24 + 32',
           options: ['24', '20', '18', '12'],
           correctAnswer: '24',
           correctIds: [],
@@ -793,28 +771,27 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_9_s13',
-          expressionOverride: '56',
           instruction: 'El resultado de la última operación es:',
+          expressionOverride: '56',
           options: ['8', '56', '60', '50'],
           correctAnswer: '56',
           correctIds: [],
           algorithmHint: 'Suma o resta directamente los elementos que te quedan.',
           feedbackError: 'El resultado de la suma 24 + 32 es 56.',
-        ),
+        )
       ],
     ),
-
     ExerciseEntity(
       id: 'easy_10',
       title: 'Nivel Fácil 10',
-      baseExpression: '( 2 + 10 ÷ 5 ) x 2 ^ 2 - 3',
+      baseExpression: '( 2 + 10 / 5 ) * 2 ^ 2 - 3',
       rewardCoins: 12,
       difficulty: 1,
       steps: [
         StepEntity(
           id: 'easy_10_s1',
           instruction: 'Selecciona los signos separadores que no constan en las operaciones internas.',
-          correctIds: ['t11'], // ((t0) 2(t1) +(t2) 10(t3) ÷(t4) 5(t5) )(t6) x(t7) 2(t8) ^(t9) 2(t10) -(t11) 3(t12)
+          correctIds: ['t11'],
           algorithmHint: 'Fíjate en los signos + y - que están sueltos; ellos dividen el ejercicio.',
           feedbackError: 'Este es un signo separador de operaciones internas.',
         ),
@@ -838,13 +815,13 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_10_s4',
-          expressionOverride: '( 2 + 2 ) x 2 ^ 2 - 3',
-          instruction: 'El resultado de la división 10 ÷ 5 es:',
+          instruction: 'El resultado de la división 10 / 5 es:',
+          expressionOverride: '( 2 + 2 ) * 2 ^ 2 - 3',
           options: ['5', '2', '10', '15'],
           correctAnswer: '2',
           correctIds: [],
           algorithmHint: 'Resuelve las divisiones antes que las sumas y restas.',
-          feedbackError: 'El resultado de 10 ÷ 5 es 2.',
+          feedbackError: 'El resultado de 10 / 5 es 2.',
         ),
         StepEntity(
           id: 'easy_10_s5',
@@ -857,8 +834,8 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_10_s6',
-          expressionOverride: '4 x 2 ^ 2 - 3',
           instruction: 'El resultado de la suma 2 + 2 es:',
+          expressionOverride: '4 * 2 ^ 2 - 3',
           options: ['4', '2', '0', '6'],
           correctAnswer: '4',
           correctIds: [],
@@ -876,8 +853,8 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_10_s8',
-          expressionOverride: '4 x 4 - 3',
           instruction: 'El resultado de la potencia 2^2 es:',
+          expressionOverride: '4 * 4 - 3',
           options: ['4', '2', '8', '6'],
           correctAnswer: '4',
           correctIds: [],
@@ -895,8 +872,8 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_10_s10',
-          expressionOverride: '16 - 3',
           instruction: 'El resultado de la multiplicación 4 x 4 es:',
+          expressionOverride: '16 - 3',
           options: ['16', '8', '12', '10'],
           correctAnswer: '16',
           correctIds: [],
@@ -905,27 +882,26 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'easy_10_s11',
-          expressionOverride: '13',
           instruction: 'El resultado de la última operación es:',
+          expressionOverride: '13',
           options: ['13', '19', '10', '12'],
           correctAnswer: '13',
           correctIds: [],
           algorithmHint: 'Suma o resta directamente los elementos que te quedan.',
           feedbackError: 'El resultado de 16 - 3 es 13.',
-        ),
+        )
       ],
-    ),
+    )
   ];
 
   // ==========================================
   // NIVEL MEDIO
   // ==========================================
   static final List<ExerciseEntity> _mediumData = [
-    
     ExerciseEntity(
       id: 'medium_1',
       title: 'Nivel Medio 1',
-      baseExpression: '3 ^ 6 ÷ 3 ^ 4 - 2 x ( 5 - 2 )',
+      baseExpression: '3 ^ 6 / 3 ^ 4 - 2 * ( 5 - 2 )',
       rewardCoins: 20,
       difficulty: 2,
       steps: [
@@ -933,7 +909,7 @@ class ExerciseRepository {
           id: 'medium_1_s1',
           instruction: 'Selecciona los signos separadores que no constan en las operaciones internas',
           correctIds: ['t7'],
-          algorithmHint: 'Fíjate en los signos + y - que están sueltos; ellos dividen el ejercicio.',
+          algorithmHint: 'Fíjate en los signos \$+\$ y \$-\$ que están sueltos; ellos dividen el ejercicio.',
           feedbackError: 'Son signos separadores aquellos que no están dentro de operaciones internas ni corresponden a multiplicaciones o divisiones.',
         ),
         StepEntity(
@@ -956,27 +932,26 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'medium_1_s4',
-          expressionOverride: '3 ^ 2 -',
           instruction: 'Al aplicar la propiedad de división de potencias de igual base en el primer bloque, el resultado es:',
-          options: ['3^2', '3^10', '3^4', '3^3'],
-          correctAnswer: '3^2',
+          expressionOverride: '3 ^ 2 - 2 * ( 5 - 2 )',
+          options: ['\$3^2\$', '3^10', '3^4', '3^3'],
+          correctAnswer: '\$3^2\$',
           correctIds: [],
           algorithmHint: 'Resuelve las divisiones antes que las sumas y restas.',
           feedbackError: 'En la división de potencias de igual base, se conserva la base y se restan los exponentes.',
         ),
         StepEntity(
           id: 'medium_1_s5',
-          expressionOverride: '3 ^ 2 -',
-          instruction: '¿Cuánto es 3^2?',
+          instruction: '¿Cuánto es \$3^2\$?',
+          expressionOverride: '9 - 2 * ( 5 - 2 )',
           options: ['6', '9', '3', '27'],
           correctAnswer: '9',
           correctIds: [],
           algorithmHint: 'Recuerda resolver primero las potencias (los números elevados).',
-          feedbackError: 'El resultado de 3^2 es 9.',
+          feedbackError: 'El resultado de \$3^2\$ es \$9\$.',
         ),
         StepEntity(
           id: 'medium_1_s6',
-          expressionOverride: '9 -',
           instruction: 'En el segundo bloque, ¿qué operación se debe resolver primero?',
           options: ['La multiplicación', 'La operación interna', 'La resta'],
           correctAnswer: 'La operación interna',
@@ -986,17 +961,16 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'medium_1_s7',
-          expressionOverride: '9 -',
           instruction: 'El resultado de la resta 5 - 2 es:',
+          expressionOverride: '9 - 2 * 3',
           options: ['3', '7', '2', '4'],
           correctAnswer: '3',
           correctIds: [],
           algorithmHint: 'Suma o resta directamente los elementos que te quedan.',
-          feedbackError: 'El resultado de 5 - 2 es 3.',
+          feedbackError: 'El resultado de \$5\$ - 2 es \$3\$.',
         ),
         StepEntity(
           id: 'medium_1_s8',
-          expressionOverride: '9 - 2 x 3',
           instruction: 'En el segundo bloque, ¿qué operación se debe resolver ahora?',
           options: ['La suma', 'La multiplicación', 'La resta'],
           correctAnswer: 'La multiplicación',
@@ -1006,45 +980,44 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'medium_1_s9',
-          expressionOverride: '9 - 2 x 3',
           instruction: 'El resultado de la multiplicación 2 x 3 es:',
+          expressionOverride: '9 - 6',
           options: ['5', '6', '8', '4'],
           correctAnswer: '6',
           correctIds: [],
           algorithmHint: 'Asegúrate de resolver primero las multiplicaciones antes de sumar o restar.',
-          feedbackError: 'El resultado de 2 x 3 es 6.',
+          feedbackError: 'El resultado de \$2\$ x 3 es \$6\$.',
         ),
         StepEntity(
           id: 'medium_1_s10',
-          expressionOverride: '9 - 6',
           instruction: 'El resultado final es:',
+          expressionOverride: '3',
           options: ['3', '15', '6', '2'],
           correctAnswer: '3',
           correctIds: [],
           algorithmHint: 'Suma o resta directamente los elementos que te quedan.',
-          feedbackError: 'El resultado de 9 - 6 es 3.',
-        ),
+          feedbackError: 'El resultado de \$9\$ - 6 es \$3\$.',
+        )
       ],
-    ),
+    )
   ];
 
   // ==========================================
   // NIVEL DIFÍCIL
   // ==========================================
   static final List<ExerciseEntity> _hardData = [
-    
     ExerciseEntity(
       id: 'hard_1',
       title: 'Nivel Difícil 1',
-      baseExpression: '5 ^ 2 + 8 x 2 ^ 2 - 7 ^ 8 ÷ 7 ^ 6 + 2 x ( 5 + 4 ÷ 2 ) - sqrt ( 15 + 1 )',
+      baseExpression: '5 ^ 2 + 8 * 2 ^ 2 - 7 ^ 8 / 7 ^ 6 + 2 * ( 5 + 4 / 2 ) - sqrt ( 15 + 1 )',
       rewardCoins: 35,
       difficulty: 3,
       steps: [
         StepEntity(
           id: 'hard_1_s1',
           instruction: 'Selecciona los signos separadores que no constan en las operaciones internas.',
-          correctIds: ['t3', 't9', 't17', 't27'], // (t0)5 (t1)^ (t2)2 (t3)+ (t4)8 (t5)* (t6)2 (t7)^ (t8)2 (t9)- (t10)7 (t11)^ (t12)8 (t13)/ (t14)7 (t15)^ (t16)6 (t17)+ (t18)2 (t19)* (t20)( (t21)5 (t22)+ (t23)4 (t24)/ (t25)2 (t26)) (t27)- (t28)sqrt (t29)( (t30)15 (t31)+ (t32)1 (t33))
-          algorithmHint: 'Fíjate en los signos + y - que están sueltos; ellos dividen el ejercicio.',
+          correctIds: ['t3', 't9', 't17', 't27'],
+          algorithmHint: 'Fíjate en los signos \$+\$ y \$-\$ que están sueltos; ellos dividen el ejercicio.',
           feedbackError: 'Este es un signo separador de operaciones internas.',
         ),
         StepEntity(
@@ -1058,17 +1031,16 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'hard_1_s3',
-          expressionOverride: '25 +',
           instruction: 'El resultado del primer bloque es:',
+          expressionOverride: '25 + 8 * 2 ^ 2 - 7 ^ 8 / 7 ^ 6 + 2 * ( 5 + 4 / 2 ) - sqrt ( 15 + 1 )',
           options: ['10', '7', '15', '25'],
           correctAnswer: '25',
           correctIds: [],
           algorithmHint: 'Recuerda resolver primero las potencias (los números elevados).',
-          feedbackError: 'El resultado de la potencia 5^2 es 25.',
+          feedbackError: 'El resultado de la potencia 5^2 es \$25\$.',
         ),
         StepEntity(
           id: 'hard_1_s4',
-          expressionOverride: '25 +',
           instruction: 'En el segundo bloque, ¿qué operación se debe realizar primero?',
           options: ['La multiplicación', 'La potenciación'],
           correctAnswer: 'La potenciación',
@@ -1078,17 +1050,16 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'hard_1_s5',
-          expressionOverride: '25 + 8 x 4 -',
-          instruction: '¿Cuál es el resultado de 2^2?',
+          instruction: '¿Cuál es el resultado de \$2^2\$?',
+          expressionOverride: '25 + 8 * 4 - 7 ^ 8 / 7 ^ 6 + 2 * ( 5 + 4 / 2 ) - sqrt ( 15 + 1 )',
           options: ['2', '4', '8'],
           correctAnswer: '4',
           correctIds: [],
           algorithmHint: 'Recuerda resolver primero las potencias (los números elevados).',
-          feedbackError: '2 x 2 = 4.',
+          feedbackError: '2 * 2 = 4.',
         ),
         StepEntity(
           id: 'hard_1_s6',
-          expressionOverride: '25 + 8 x 4 -',
           instruction: 'En el tercer bloque, ¿qué se debe realizar primero?',
           options: ['Las potencias', 'La división', 'La propiedad de la división de potencias de igual base'],
           correctAnswer: 'La propiedad de la división de potencias de igual base',
@@ -1098,8 +1069,8 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'hard_1_s7',
-          expressionOverride: '25 + 8 x 4 - 7 ^ 2 +',
-          instruction: '¿Cuál es el resultado de 7^8 ÷ 7^6?',
+          instruction: '¿Cuál es el resultado de \$7\$^8 / 7^6?',
+          expressionOverride: '25 + 8 * 4 - 7 ^ 2 + 2 * ( 5 + 4 / 2 ) - sqrt ( 15 + 1 )',
           options: ['7^14', '7^2', '7', '2'],
           correctAnswer: '7^2',
           correctIds: [],
@@ -1108,7 +1079,6 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'hard_1_s8',
-          expressionOverride: '25 + 8 x 4 - 7 ^ 2 +',
           instruction: 'En el bloque cuatro, ¿qué operación se resuelve primero?',
           options: ['La multiplicación', 'La suma', 'Las operaciones internas'],
           correctAnswer: 'Las operaciones internas',
@@ -1118,7 +1088,6 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'hard_1_s9',
-          expressionOverride: '25 + 8 x 4 - 7 ^ 2 +',
           instruction: 'En las operaciones internas del bloque cuatro, ¿qué operación se resuelve primero?',
           options: ['La suma', 'La división'],
           correctAnswer: 'La división',
@@ -1128,8 +1097,8 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'hard_1_s10',
-          expressionOverride: '25 + 8 x 4 - 7 ^ 2 + 2 x ( 5 + 2 ) -',
           instruction: 'El resultado de la división que consta en las operaciones internas del bloque cuatro es:',
+          expressionOverride: '25 + 8 * 4 - 7 ^ 2 + 2 * ( 5 + 2 ) - sqrt ( 15 + 1 )',
           options: ['9', '2', '7', '1'],
           correctAnswer: '2',
           correctIds: [],
@@ -1138,25 +1107,23 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'hard_1_s11',
-          expressionOverride: '25 + 8 x 4 - 7 ^ 2 + 2 x ( 5 + 2 ) - sqrt( 15 + 1 )',
           instruction: 'En el bloque cinco, ¿cuál es el resultado de la operación interna?',
+          expressionOverride: '25 + 8 * 4 - 7 ^ 2 + 2 * ( 5 + 2 ) - sqrt ( 16 )',
           options: ['4', '16', '15', '14'],
           correctAnswer: '16',
           correctIds: [],
           algorithmHint: 'Operaciones bajo la raíz.',
-          feedbackError: 'La suma 15 + 1 = 16.',
+          feedbackError: 'La suma 1\$5 + 1\$ = 16.',
         ),
         StepEntity(
           id: 'hard_1_s12',
-          expressionOverride: '25 + 8 x 4 - 7 ^ 2 + 2 x ( 5 + 2 ) - sqrt( 16 )',
           instruction: 'Selecciona los signos separadores que no constan en las operaciones internas.',
           correctIds: ['t1', 't5', 't9', 't17'],
-          algorithmHint: 'Fíjate en los signos + y - que están sueltos; ellos dividen el ejercicio.',
+          algorithmHint: 'Fíjate en los signos \$+\$ y \$-\$ que están sueltos; ellos dividen el ejercicio.',
           feedbackError: 'Este es un signo separador de operaciones internas.',
         ),
         StepEntity(
           id: 'hard_1_s13',
-          expressionOverride: '25 + 8 x 4 - 7 ^ 2 + 2 x ( 5 + 2 ) - sqrt( 16 )',
           instruction: '¿En cuántos bloques queda dividida la expresión aritmética?',
           options: ['3', '4', '5', '2'],
           correctAnswer: '5',
@@ -1166,7 +1133,6 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'hard_1_s14',
-          expressionOverride: '25 +',
           instruction: '¿Qué se realiza en el primer bloque?',
           options: ['Se conserva', 'Se elimina'],
           correctAnswer: 'Se conserva',
@@ -1176,27 +1142,26 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'hard_1_s15',
-          expressionOverride: '25 + 32 -',
           instruction: '¿Cuál es el resultado del segundo bloque?',
+          expressionOverride: '25 + 32 - 7 ^ 2 + 2 * ( 5 + 2 ) - sqrt ( 16 )',
           options: ['32', '12'],
           correctAnswer: '32',
           correctIds: [],
           algorithmHint: 'Asegúrate de resolver primero las multiplicaciones antes de sumar o restar.',
-          feedbackError: 'El resultado de la multiplicación 8 x 4 es 32.',
+          feedbackError: 'El resultado de la multiplicación 8 x 4 es \$32\$.',
         ),
         StepEntity(
           id: 'hard_1_s16',
-          expressionOverride: '25 + 32 - 49 +',
           instruction: '¿Cuál es el resultado del tercer bloque?',
+          expressionOverride: '25 + 32 - 49 + 2 * ( 5 + 2 ) - sqrt ( 16 )',
           options: ['49', '14'],
           correctAnswer: '49',
           correctIds: [],
           algorithmHint: 'Recuerda resolver primero las potencias (los números elevados).',
-          feedbackError: 'El resultado de la potencia 7^2 es 49.',
+          feedbackError: 'El resultado de la potencia 7^2 es \$49\$.',
         ),
         StepEntity(
           id: 'hard_1_s17',
-          expressionOverride: '25 + 32 - 49 +',
           instruction: 'En el bloque cuatro, ¿qué se realiza primero?',
           options: ['La operación interna', 'La multiplicación'],
           correctAnswer: 'La operación interna',
@@ -1206,8 +1171,8 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'hard_1_s18',
-          expressionOverride: '25 + 32 - 49 + 2 x ( 7 ) -',
           instruction: '¿Cuál es el resultado de la operación interna del bloque cuatro?',
+          expressionOverride: '25 + 32 - 49 + 2 * ( 7 ) - sqrt ( 16 )',
           options: ['7', '10'],
           correctAnswer: '7',
           correctIds: [],
@@ -1216,8 +1181,8 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'hard_1_s19',
-          expressionOverride: '25 + 32 - 49 + 2 x ( 7 ) - sqrt( 16 )',
           instruction: '¿Cuál es el resultado de la operación interna del bloque cinco?',
+          expressionOverride: '25 + 32 - 49 + 2 * ( 7 ) - 4',
           options: ['8', '4'],
           correctAnswer: '4',
           correctIds: [],
@@ -1226,7 +1191,6 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'hard_1_s20',
-          expressionOverride: '25 + 32 - 49 + 2 x ( 7 ) - 4',
           instruction: '¿Qué operación se realiza primero?',
           options: ['La multiplicación', 'Las sumas', 'Las restas'],
           correctAnswer: 'La multiplicación',
@@ -1236,26 +1200,26 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'hard_1_s21',
-          expressionOverride: '25 + 32 - 49 + 2 x ( 7 ) - 4',
           instruction: '¿Cuál es el resultado de la multiplicación?',
+          expressionOverride: '25 + 32 - 49 + 14 - 4',
           options: ['9', '14'],
           correctAnswer: '14',
           correctIds: [],
           algorithmHint: 'Asegúrate de resolver primero las multiplicaciones antes de sumar o restar.',
-          feedbackError: '2 x 7 = 14.',
+          feedbackError: '2 * 7 = 14.',
         ),
         StepEntity(
           id: 'hard_1_s22',
-          expressionOverride: '25 + 32 - 49 + 14 - 4',
           instruction: 'Al resolver ordenadamente las sumas y restas de la expresión aritmética, se obtiene el siguiente resultado:',
+          expressionOverride: '18',
           options: ['18', '22', '50', '21'],
           correctAnswer: '18',
           correctIds: [],
           algorithmHint: 'Suma o resta directamente los elementos que te quedan.',
           feedbackError: '25 + 32 - 49 + 14 - 4 = 18.',
-        ),
+        )
       ],
-    ),
+    )
   ];
 
   // Getters

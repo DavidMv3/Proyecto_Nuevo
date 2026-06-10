@@ -54,7 +54,11 @@ class InteractiveEquation extends StatelessWidget {
     for (final token in tokens) {
       final v = token.value;
       if (v.contains('(')) parenDepth += v.split('(').length - 1;
+      if (v.contains('[')) parenDepth += v.split('[').length - 1;
+      if (v.contains('{')) parenDepth += v.split('{').length - 1;
       if (v.contains(')')) parenDepth -= v.split(')').length - 1;
+      if (v.contains(']')) parenDepth -= v.split(']').length - 1;
+      if (v.contains('}')) parenDepth -= v.split('}').length - 1;
       if (parenDepth < 0) parenDepth = 0;
 
       if (parenDepth == 0 && (v == '+' || v == '-')) {
@@ -96,6 +100,7 @@ class InteractiveEquation extends StatelessWidget {
             isHint: hintIds.contains(token.id),
             isEnabled: isEnabled,
             isDimmed: focusIds.isNotEmpty && !focusIds.contains(token.id),
+            showBlue: showBlockBoxes,
             onTap: () => onTokenTapped(token.id),
           );
         } else {
@@ -213,9 +218,9 @@ class _BlockWidget extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
       decoration: BoxDecoration(
-        color: AppTheme.primaryGreen.withValues(alpha: 0.05),
-        border: Border.all(color: AppTheme.primaryGreen.withValues(alpha: 0.4), width: 1.5),
-        borderRadius: BorderRadius.circular(8),
+        color: Colors.white,
+        border: Border.all(color: Colors.black87, width: 1.0),
+        borderRadius: BorderRadius.zero,
       ),
       child: wrap,
     );
@@ -236,6 +241,7 @@ class _SeparatorTokenWidget extends StatefulWidget {
   final bool isEnabled;
   final bool isDimmed;
   final VoidCallback onTap;
+  final bool showBlue;
 
   const _SeparatorTokenWidget({
     required this.token,
@@ -247,6 +253,7 @@ class _SeparatorTokenWidget extends StatefulWidget {
     required this.isEnabled,
     required this.isDimmed,
     required this.onTap,
+    required this.showBlue,
   });
 
   @override
@@ -295,6 +302,7 @@ class _SeparatorTokenWidgetState extends State<_SeparatorTokenWidget>
     if (widget.isStepDone && widget.isCorrect)      return AppTheme.primaryGreen;
     if (widget.isSelected)                          return Colors.blue.shade700;
     if (widget.isHint)                              return Colors.amber.shade800;
+    if (widget.showBlue)                            return Colors.blue.shade700;
     return Colors.black87; // Default: black
   }
 
@@ -367,9 +375,22 @@ class MathTokenWidget extends StatefulWidget {
     String output = input
         .replaceAll(' * ', ' × ')
         .replaceAll('*', '×')
+        .replaceAll(' x ', ' × ')
         .replaceAll(' / ', ' ÷ ')
         .replaceAll('/', '÷')
-        .replaceAll('sqrt', '√');
+        .replaceAll('÷', '÷');
+
+    output = output.replaceAllMapped(RegExp(r'root(\d+)'), (match) {
+      final index = match.group(1)!;
+      final superIndices = {
+        '0': '⁰', '1': '¹', '2': '²', '3': '³', '4': '⁴',
+        '5': '⁵', '6': '⁶', '7': '⁷', '8': '⁸', '9': '⁹'
+      };
+      final superStr = index.split('').map((char) => superIndices[char] ?? char).join('');
+      return '${superStr}√';
+    });
+
+    output = output.replaceAll('sqrt', '√');
 
     final Map<String, String> superscripts = {
       '0': '⁰', '1': '¹', '2': '²', '3': '³', '4': '⁴',
@@ -388,15 +409,29 @@ class MathTokenWidget extends StatefulWidget {
   static String formatTexText(String input) {
     String output = input;
     output = output.replaceAllMapped(
+      RegExp(r'root(\d+)\s*\(\s*(.*?)\s*\)'), 
+      (match) => '\\sqrt[' + match.group(1)! + ']{' + match.group(2)! + '}'
+    );
+    output = output.replaceAllMapped(
       RegExp(r'sqrt\s*\(\s*(.*?)\s*\)'), 
       (match) => r'\sqrt{' + match.group(1)! + r'}'
+    );
+    output = output.replaceAllMapped(
+      RegExp(r'(?<!\\)root(\d+)'), 
+      (match) => '\\sqrt[' + match.group(1)! + ']{\\ }'
     );
     output = output.replaceAll(RegExp(r'(?<!\\)sqrt'), r'\sqrt{\ }');
     
     output = output.replaceAll(' * ', r' \times ');
     output = output.replaceAll('*', r'\times ');
+    output = output.replaceAll(' x ', r' \times ');
+    output = output.replaceAll('×', r'\times ');
     output = output.replaceAll(' / ', r' \div ');
     output = output.replaceAll('/', r'\div ');
+    output = output.replaceAll('÷', r'\div ');
+
+    // Handle blank placeholder
+    output = output.replaceAll('____', r'\boxed{\phantom{0}}');
 
     return output;
   }
@@ -455,7 +490,7 @@ class _MathTokenWidgetState extends State<MathTokenWidget>
     if (widget.isHint)                              return Colors.amber.shade800;
     // Operators inside blocks: colored
     final v = widget.token.value;
-    if (v == '*' || v == '/' || v == '×' || v == '÷') return Colors.black87;
+    if (v == '*' || v == '/' || v == 'x' || v == '×' || v == '÷') return Colors.black87;
     if (v == '+' || v == '-') return Colors.black87;
     return Colors.black87;
   }
@@ -478,6 +513,7 @@ class _MathTokenWidgetState extends State<MathTokenWidget>
 
     // Determinar si el token necesita renderizado LaTeX
     final needsLatex = displayText.contains('sqrt') ||
+        displayText.contains('root') ||
         displayText.contains('^') ||
         displayText == '*' ||
         displayText == '/';

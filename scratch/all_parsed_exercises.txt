@@ -1,0 +1,268 @@
+=== EXERCISE 1: 4*5-6/3 (Baja) ===
+  Step 1: Selecciona los signos separadores de la expresión aritmética -> Answer: Seleccionar signos
+  Step 2: ¿En cuántos bloques queda dividida la expresión aritmética? -> Answer: 2
+  Step 3: El resultado de la multiplicación del primer bloque es: -> Answer: 20
+  Step 4: El resultado de la división del segundo bloque es: -> Answer: 2
+  Step 5: El resultado de la última operación es: -> Answer: 
+=== EXERCISE 2: 18+3*5 (Baja) ===
+  Step 1: Selecciona los signos separadores de la expresión aritmética -> Answer: Seleccionar signos
+  Step 2: ¿En cuántos bloques queda dividida la expresión aritmética? -> Answer: 
+  Step 3: Es correcto afirmar que se resuelve primero: -> Answer: La multiplicación 3 × 5
+  Step 4: La multiplicación 18 × 3 -> Answer: La multiplicación 3 × 5
+  Step 5: El resultado de la operación del segundo bloque es: -> Answer: 15
+    Override: 18 + 3*5 =
+  Step 6: El resultado de la última operación es: -> Answer: 33
+    Override: 18 + 3*5 =
+=== EXERCISE 3: 8-3*2+1 (Baja) ===
+  Step 1: Selecciona los signos separadores de la expresión aritmética -> Answer: Seleccionar signos
+  Step 2: ¿En cuántos bloques queda dividida la expresión aritmética? -> Answer: 3
+  Step 3: Los bloques en los que se deben conservar los números son: -> Answer: 
+  Step 4: El resultado de la operación del segundo bloque es: -> Answer: 6
+  Step 5: El resultado de la última operación es: -> Answer: 
+=== EXERCISE 4: 10-3*2+23 (Baja) ===
+  Step 1: Selecciona los signos separadores de la expresión aritmética -> Answer: Seleccionar signos
+  Step 2: ¿En cuántos bloques queda dividida la expresión aritmética? -> Answer: 3
+  Step 3: En el primer bloque de la expresión aritmética no hay operaciones internas, por -> Answer: Se conserva el número
+  Step 4: Se pueden resolver la multiplicación y la potenciación sin importar el orden -> Answer: 
+  Step 5: El resultado de la multiplicación del segundo bloque es: -> Answer: 6
+  Step 6: El resultado de la potencia del tercer bloque es: -> Answer: 
+=== EXERCISE 5: 1+12/4-1+23 (Baja) ===
+  Step 1: El resultado de las últimas operaciones es: -> Answer: 12
+    Override: 10 - 3*2 + 2 3 =
+  Step 2: Selecciona los signos separadores de la expresión aritmética -> Answer: Seleccionar signos
+  Step 3: ¿En cuántos bloques queda dividida la expresión aritmética? -> Answer: 4
+  Step 4: Los bloques en los que se deben conservar los números son: -> Answer: El primero y el tercero
+  Step 5: Se pueden resolver la división y la potenciación sin importar el orden porque: -> Answer: Están en diferentes bloques
+  Step 6: El resultado de la división del segundo bloque es: -> Answer: 3
+  Step 7: El resultado de la potencia del cuarto bloque es: -> Answer: 8
+=== EXERCISE 6: 3-2+[8-2*3] (Baja) ===
+  Step 1: Selecciona los signos separadores que no constan en las operaciones internas -> Answer: Seleccionar signos
+  Step 2: ¿En cuántos bloques queda dividida la expresión aritmética? -> Answer: 3
+  Step 3: Se puede resolver la resta entre los dos primeros bloques -> Answer: Verdadero
+    Override: 3 - 2 + [8-2*3] =
+  Step 4: El resultado de la resta entre los dos primeros bloques es: -> Answer: 1
+    Override: 3 - 2 + [8-2*3] =
+  Step 5: En el segundo bloque, ¿qué operación se resuelve primero? -> Answer: 
+  Step 6: ¿Cuál es el resultado de la multiplicación? -> Answer: 6
+    Override: 3 - 2 + [8-2*3] =
+  Step 7: El resultado de las operaciones internas es: -> Answer: 2
+=== EXERCISE 7: √4+12-15/5 (Baja) ===
+  Step 1: El resultado de la última operación es: -> Answer: 3
+    Override: 3 - 2 + [8-2*3] =
+  Step 2: Selecciona los signos separadores que no constan en las operaciones internas. -> Answer: Seleccionar signos
+  Step 3: ¿En cuántos bloques queda dividida la expresión aritmética? -> Answer: 2
+  Step 4: En el primer bloque, ¿qué se debe realizar primero? -> Answer: La operación interna
+  Step 5: El resultado de la operación interna del primer bloque es: -> Answer: 16
+  Step 6: Se pueden resolver la raíz cuadrada y la división sin importar el orden porque: -> Answer: Están en diferentes bloques
+  Step 7: El resultado de la división del segundo bloque es: -> Answer: 3
+  Step 8: ¿Qué se debe resolver primero? -> Answer: La raíz cuadrada de 16
+  Step 9: ¿Qué acción hacemos con el 3? -> Answer: Lo conservamos
+  Step 10: El resultado de la última operación es: -> Answer: 
+=== EXERCISE 8: 32+5*2-√30-5 (Baja) ===
+  Step 1: Selecciona los signos separadores que no constan en las operaciones internas. -> Answer: Seleccionar signos
+  Step 2: ¿En cuántos bloques queda dividida la expresión aritmética? -> Answer: 
+  Step 3: En el primer bloque, ¿qué operación se debe resolver? -> Answer: La potenciación
+  Step 4: El resultado de la potenciación del primer bloque es: -> Answer: 
+  Step 5: El resultado de la multiplicación del segundo bloque es: -> Answer: 10
+  Step 6: En el tercer bloque, ¿qué se debe resolver primero? -> Answer: 
+  Step 7: El resultado de la operación interna del tercer bloque es: -> Answer: 25
+  Step 8: El resultado de la raíz cuadrada del tercer bloque es: -> Answer: 5
+=== EXERCISE 9: 4*(20/4+1)+4*23 (Baja) ===
+  Step 1: El resultado de las últimas operaciones es: -> Answer: 14
+    Override: 32 + 5*2 -
+  Step 2: Selecciona los signos separadores que no constan en las operaciones internas. -> Answer: Seleccionar signos
+  Step 3: ¿En cuántos bloques queda dividida la expresión aritmética? -> Answer: 2
+  Step 4: En el primer bloque, ¿qué operación se debe resolver primero? -> Answer: La operación interna
+  Step 5: En las operaciones internas del primer bloque, ¿qué se resuelve primero? -> Answer: La división
+    Override: 4*(20/4+1) + 4*23 =
+  Step 6: El resultado de la división20 ÷ 4 es: -> Answer: 5
+    Override: 4*(20/4+1) + 4*23 =
+  Step 7: En el segundo bloque, ¿qué operación se debe resolver primero? -> Answer: La potenciación
+    Override: 4*(20/4+1) + 4*23 =
+  Step 8: El resultado de la potencia23 es: -> Answer: 8
+    Override: 4*(20/4+1) + 4*23 =
+  Step 9: En el primer bloque, ¿qué operación se debe resolver ahora? -> Answer: 
+  Step 10: El resultado de la multiplicación del segundo bloque es: -> Answer: 32
+  Step 11: Ahora se resuelve primero: -> Answer: La multiplicación
+    Override: 4*(20/4+1) + 4*23 =
+  Step 12: El resultado de4 × 6 es: -> Answer: 24
+=== EXERCISE 10: (2+10/5)*22-3 (Baja) ===
+  Step 1: El resultado de la última operación es: -> Answer: 56
+    Override: 4*(20/4+1)+4*23 =
+  Step 2: Selecciona los signos separadores que no constan en las operaciones internas. -> Answer: Seleccionar signos
+  Step 3: ¿En cuántos bloques queda dividida la expresión aritmética? -> Answer: 2
+  Step 4: En el primer bloque, ¿qué operación se debe resolver primero? -> Answer: 
+  Step 5: El resultado de la división10 ÷ 5 es: -> Answer: 2
+    Override: (2+10/5)*22 - 3 =
+  Step 6: En el primer bloque, ¿qué operación se debe resolver ahora? -> Answer: La suma
+  Step 7: El resultado de la suma2 + 2 es: -> Answer: 4
+    Override: (2+10/5)*22 - 3 =
+  Step 8: En el siguiente paso, ¿qué operación se debe resolver primero? -> Answer: La potenciación
+    Override: (2+10/5)*22 - 3 =
+  Step 9: El resultado de la potencia22 es: -> Answer: 4
+    Override: (2+10/5)*22 - 3 =
+  Step 10: En el siguiente paso, ¿qué operación se debe resolver? -> Answer: La multiplicación
+    Override: (2+10/5)*22 - 3 =
+  Step 11: El resultado de la multiplicación4 × 4 es: -> Answer: 
+  Step 12: El resultado de la última operación es: -> Answer: 13
+    Override: (2+10/5)*22 - 3 =
+=== EXERCISE 11: 36/34-2*(5-2) (Media) ===
+  Step 1: Selecciona los signos separadores que no constan en las operaciones internas -> Answer: Seleccionar signos
+  Step 2: ¿En cuántos bloques queda dividida la expresión aritmética? -> Answer: 2
+  Step 3: En el primer bloque se debe: -> Answer: Aplicar una propiedad de la potenciación
+  Step 4: Al aplicar la propiedad de división de potencias de igual base en el primer bloque, -> Answer: 32
+  Step 5: En el segundo bloque, se resuelve primero: -> Answer: La resta
+  Step 6: El resultado de la resta5 − 2 es: -> Answer: 3
+  Step 7: En el siguiente paso se pueden resolver dos operaciones: la potencia y la -> Answer: Están en diferentes bloques
+  Step 8: El resultado de la potencia32 es: -> Answer: 9
+  Step 9: El resultado de la multiplicación2 × 3 es: -> Answer: 6
+  Step 10: El resultado de la última operación es: -> Answer: 3
+=== EXERCISE 12: [23 * 22 - 20] + [6 + 3 2] (Media) ===
+  Step 1: Selecciona los signos separadores que no constan en las operaciones internas. -> Answer: Seleccionar signos
+  Step 2: ¿En cuántos bloques queda dividida la expresión aritmética? -> Answer: 2
+  Step 3: En el primer bloque, ¿qué operación se debe resolver primero? -> Answer: La propiedad del producto de potencias de
+    Override: [23 * 22 - 20] + [6 + 3 2] =
+  Step 4: Al aplicar el producto de potencias de igual base en23 · 22, el resultado queda: -> Answer: 25
+    Override: [23 * 22 - 20] + [6 + 3 2] =
+  Step 5: En el segundo bloque, ¿qué operación se debe resolver primero? -> Answer: La potencia 32
+    Override: [23 * 22 - 20] + [6 + 3 2] =
+  Step 6: El resultado de la potencia32 es: -> Answer: 9
+    Override: [23 * 22 - 20] + [6 + 3 2] =
+  Step 7: En el primer bloque, ¿qué operación se debe resolver primero? -> Answer: 
+  Step 8: El resultado de la potencia25 es: -> Answer: 32
+    Override: [23 * 22 - 20] + [6 + 3 2] =
+  Step 9: El resultado de las operaciones internas del segundo bloque es: -> Answer: 
+  Step 10: El resultado de las operaciones internas del primer bloque es: -> Answer: 12
+    Override: [23 * 22 - 20] + [6 + 3 2] =
+  Step 11: El resultado de la última operación es: -> Answer: 
+  Step 12: El resultado de la última operación es: -> Answer: 57
+  Step 13: El resultado de la última operación es: -> Answer: 
+  Step 14: El resultado de las operaciones internas del segundo bloque es: -> Answer: 3
+    Override: 620 + 24] - [
+  Step 15: El resultado de la última operación es: -> Answer: 49
+=== EXERCISE 13: 15*2+√4+5-(2*3-1) (Alta) ===
+  Step 1: Selecciona los signos separadores que no constan en las operaciones internas. -> Answer: Seleccionar signos
+  Step 2: ¿En cuántos bloques queda dividida la expresión aritmética? -> Answer: 3
+  Step 3: En el primer bloque, ¿qué operación se debe resolver? -> Answer: La multiplicación
+    Override: 15*2 +
+  Step 4: El resultado de la multiplicación del primer bloque es: -> Answer: 30
+  Step 5: En el segundo bloque, ¿qué operación se debe resolver primero? -> Answer: La operación interna
+    Override: 15*2 +
+  Step 6: El resultado de la operación interna del segundo bloque es: -> Answer: 9
+    Override: 15*2 +
+  Step 7: En el tercer bloque, ¿qué operación se debe resolver primero? -> Answer: La multiplicación
+    Override: 15*2 +
+  Step 8: El resultado de la multiplicación del tercer bloque es: -> Answer: 6
+    Override: 15*2 +
+  Step 9: En el segundo bloque, ¿qué operación se debe resolver ahora? -> Answer: 
+  Step 10: El resultado de la raíz cuadrada del segundo bloque es: -> Answer: 3
+    Override: 15*2 +
+  Step 11: El resultado de la resta del tercer bloque es: -> Answer: 
+  Step 12: ¿Qué operación se debe resolver primero en30 + 3 − 5? -> Answer: La suma 30 + 3
+    Override: 15*2 +
+  Step 13: El resultado de las últimas operaciones es: -> Answer: 28
+=== EXERCISE 14: 30-76/75+8/2*4 (Alta) ===
+  Step 1: Selecciona los signos separadores. -> Answer: Seleccionar signos
+  Step 2: ¿En cuántos bloques queda dividida la expresión aritmética? -> Answer: 3
+  Step 3: En el segundo bloque, ¿qué operación se debe resolver primero? -> Answer: La potenciación
+    Override: 30 - 76/75 + 8/2*4 =
+  Step 4: El resultado de76 ÷ 75 es: -> Answer: 7
+  Step 5: En el tercer bloque, ¿qué operación se debe resolver primero? -> Answer: La división
+    Override: 30 - 76/75 + 8/2*4 =
+  Step 6: El resultado de la división8 ÷ 2 es: -> Answer: 4
+    Override: 30 - 76/75 + 8/2*4 =
+  Step 7: El resultado de la multiplicación del tercer bloque es: -> Answer: 
+  Step 8: El resultado de las últimas operaciones es: -> Answer: 39
+    Override: 30-76/75+8/2*4 =
+  Step 9: El resultado de la operación interna3 − 2 es: -> Answer: 1
+    Override: 26 + 3*(5-2)/(3-2) =
+  Step 10: En el primer bloque, ¿qué operación se debe resolver ahora? -> Answer: La potencia 23
+  Step 11: El resultado de la potencia23 es: -> Answer: 8
+    Override: 26 + 3*(5-2)/(3-2) =
+  Step 12: En el segundo bloque, ¿qué operación se debe resolver ahora? -> Answer: La multiplicación 3 × 3
+  Step 13: El resultado de la multiplicación3 × 3 es: -> Answer: 9
+    Override: 26 + 3*(5-2)/(3-2) =
+  Step 14: En el segundo bloque, ¿qué operación se debe resolver ahora? -> Answer: La división 9 ÷ 1
+  Step 15: El resultado de la división9 ÷ 1 es: -> Answer: 9
+    Override: 26 + 3*(5-2)/(3-2) =
+  Step 16: El resultado de las últimas operaciones es: -> Answer: 17
+=== EXERCISE 15: 3*[33-16/(5+3)] (Alta) ===
+  Step 1: En la expresión aritmética, ¿qué elemento se debe conservar inicialmente? -> Answer: El número 3 que está fuera del corchete
+    Override: 3 * [33 - 16 / (5 + 3)] =
+  Step 2: ¿Qué parte de la expresión se debe analizar primero? -> Answer: El contenido del corchete
+  Step 3: Dentro del corchete, ¿qué operación se debe resolver primero? -> Answer: La potencia 33
+    Override: 3 * [33 - 16 / (5 + 3)] =
+  Step 4: El resultado de la potencia33 es: -> Answer: 27
+  Step 5: Dentro del corchete, ¿qué operación se debe resolver ahora? -> Answer: La operación interna del paréntesis
+    Override: 3 * [33 - 16 / (5 + 3)] =
+  Step 6: El resultado de la operación interna5 + 3 es: -> Answer: 8
+    Override: 3 * [33 - 16 / (5 + 3)] =
+  Step 7: Dentro del corchete, ¿qué operación se debe resolver ahora? -> Answer: La división 16 ÷ 8
+    Override: 3 * [33 - 16 / (5 + 3)] =
+  Step 8: El resultado de la división16 ÷ 8 es: -> Answer: 2
+    Override: 3 * [33 - 16 / (5 + 3)] =
+  Step 9: El resultado de la operación interna del corchete es: -> Answer: 
+  Step 10: El resultado de la última operación es: -> Answer: 75
+    Override: 3 * [33 - 16 / (5 + 3)] =
+  Step 11: El resultado de la potencia32 es: -> Answer: 9
+=== EXERCISE 16: (22 + 1)3+[10 - (9/3+1)]-√9+40 (Alta) ===
+  Step 1: El resultado de las últimas operaciones es: -> Answer: 14
+    Override: 20 + 10 / 5 -
+  Step 2: Selecciona los signos separadores que no constan en las operaciones internas. -> Answer: Seleccionar signos
+  Step 3: ¿En cuántos bloques queda dividida la expresión aritmética? -> Answer: 3
+    Override: (22 + 1)3 + [10 - (9 / 3 + 1)] -
+  Step 4: En el primer bloque, ¿qué operación se debe resolver primero? -> Answer: La potencia 22
+    Override: (22 + 1)3 + [10 - (9 / 3 + 1)] -
+  Step 5: El resultado de la potencia22 es: -> Answer: 4
+    Override: (22 + 1)3 + [10 - (9 / 3 + 1)] -
+  Step 6: En el segundo bloque, ¿qué operación se debe resolver primero? -> Answer: La operación interna del paréntesis
+    Override: (22 + 1)3 + [10 - (9 / 3 + 1)] -
+  Step 7: En la operación interna del segundo bloque, ¿qué se debe resolver primero? -> Answer: 
+  Step 8: El resultado de la división9 ÷ 3 es: -> Answer: 3
+    Override: (22 + 1)3 + [10 - (9 / 3 + 1)] -
+  Step 9: En el tercer bloque, ¿qué se debe resolver primero? -> Answer: La operación interna del radical
+  Step 10: El resultado de la operación interna del tercer bloque es: -> Answer: 49
+    Override: (22 + 1)3 + [10 - (9 / 3 + 1)] -
+  Step 11: En el primer bloque, ¿qué operación se debe resolver ahora? -> Answer: La suma 4 + 1
+  Step 12: El resultado de la suma4 + 1 es: -> Answer: 5
+    Override: (22 + 1)3 + [10 - (9 / 3 + 1)] -
+  Step 13: El resultado de la suma3 + 1 es: -> Answer: 4
+    Override: (22 + 1)3 + [10 - (9 / 3 + 1)] -
+  Step 14: En el tercer bloque, ¿qué operación se debe resolver ahora? -> Answer: La raíz cuadrada de 49
+  Step 15: El resultado de la raíz cuadrada del tercer bloque es: -> Answer: 7
+    Override: (22 + 1)3 + [10 - (9 / 3 + 1)] -
+  Step 16: En el primer bloque, ¿qué operación se debe resolver ahora? -> Answer: La potencia 53
+  Step 17: El resultado de la potencia53 es: -> Answer: 125
+    Override: (22 + 1)3 + [10 - (9 / 3 + 1)] -
+  Step 18: En el segundo bloque, ¿qué operación se debe resolver ahora? -> Answer: La resta 10 − (4)
+  Step 19: El resultado de la resta10 − (4) es: -> Answer: 6
+    Override: (22 + 1)3 + [10 - (9 / 3 + 1)] -
+  Step 20: El resultado de las últimas operaciones es: -> Answer: 124
+  Step 21: El resultado de la raíz cuadrada -> Answer: 5
+    Override: (92 + 2) * 3 -
+  Step 22: El resultado de las operaciones finales es: -> Answer: 
+=== EXERCISE 17: 52+8 * 22-78 / 76+2 * (5+4 / 2)-√15+1 (Alta) ===
+  Step 1: Selecciona los signos separadores que no constan en las operaciones internas. -> Answer: Seleccionar signos
+  Step 2: ¿En cuántos bloques queda dividida la expresión aritmética? -> Answer: 
+  Step 3: El resultado del primer bloque es: -> Answer: 25
+    Override: 52 + 8 * 22 - 78 / 76 + 2 * (5+4 / 2) -
+  Step 4: En el segundo bloque, ¿qué operación se debe realizar primero? -> Answer: La potenciación
+  Step 5: ¿Cuál es el resultado de22? -> Answer: 4
+    Override: 52 + 8 * 22 - 78 / 76 + 2 * (5+4 / 2) -
+  Step 6: En el tercer bloque, ¿qué se debe realizar primero? -> Answer: La propiedad de la división de potencias de
+  Step 7: ¿Cuál es el resultado de78 ÷ 76? -> Answer: 
+  Step 8: En el bloque cuatro, ¿qué operación se resuelve primero? -> Answer: Las operaciones internas
+  Step 9: En las operaciones internas del bloque cuatro, ¿qué operación se resuelve primero? -> Answer: La división
+  Step 10: El resultado de la división que consta en las operaciones internas del bloque cuatro -> Answer: 2
+  Step 11: En el bloque cinco, ¿cuál es el resultado de la operación interna? -> Answer: 16
+  Step 12: Selecciona los signos separadores que no constan en las operaciones internas. -> Answer: Seleccionar signos
+  Step 13: ¿En cuántos bloques queda dividida la expresión aritmética? -> Answer: 5
+  Step 14: ¿Qué se realiza en el primer bloque? -> Answer: Se conserva
+  Step 15: ¿Cuál es el resultado del segundo bloque? -> Answer: 32
+  Step 16: ¿Cuál es el resultado del tercer bloque? -> Answer: 49
+  Step 17: En el bloque cuatro, ¿qué se realiza primero? -> Answer: La operación interna
+  Step 18: ¿Cuál es el resultado de la operación interna del bloque cuatro? -> Answer: 7
+  Step 19: ¿Cuál es el resultado de la operación interna del bloque cinco? -> Answer: 4
+  Step 20: ¿Qué operación se realiza primero? -> Answer: La multiplicación
+  Step 21: ¿Cuál es el resultado de la multiplicación? -> Answer: 14
+  Step 22: Al resolver ordenadamente las sumas y restas de la expresión aritmética, se obtiene -> Answer: 18

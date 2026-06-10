@@ -1,0 +1,33 @@
+Page 1: 0.1 Complejidad Baja
+Page 1: I) 4×5−6÷3 = (Colocar esta expresión aritmética en un solo color)
+Page 3: II) 18+3×5 = (Colocar esta expresión aritmética en un solo color)
+Page 6: III) 8−3×2+1 = (Colocar esta expresión aritmética en un solo color)
+Page 8: IV) 10−3×2+23 = (Colocar esta expresión aritmética en un solo color)
+Page 11: V) 1+12÷4−1+23 = (Colocar esta expresión aritmética en un solo color)
+Page 15: VI) 3−2+[8−2×3] = (Colocar esta expresión aritmética en un solo color)
+Page 18: VII) √4+12−15÷5 = (Colocar esta expresión aritmética en un solo color)
+Page 23: VIII) 32+5×2−√30−5 = (Colocar esta expresión aritmética en un solo color)
+Page 27: IX) 4×(20÷4+1)+4×23 = (Colocar esta expresión aritmética en un solo color)
+Page 33: X) (2+10÷5)×22−3 = (Colocar esta expresión aritmética en un solo color)
+Page 39: 0.2 Complejidad Media
+Page 39: I) 36÷34−2×(5−2) = (Colocar esta expresión aritmética en un solo color)
+Page 44: II) [23 × 22 − 20] + [6 + 3 2] =
+Page 49: III) [34 : 3 2 + 7] − [7 + 23]
+Page 54: IV) [(2 × 3)2 − 30] + [18 : 3 + 10]
+Page 59: V) [(8 : 2) 2 − 12] + [52 − 4]
+Page 64: VI) [(22)3 − 50 ÷ 5] + [9 × 2 − 15]
+Page 70: VII) [15 − (7 − 4)2] + [3 × 5 + 20]
+Page 75: VIII) [
+Page 81: IX) [
+Page 87: X) [
+Page 94: 0.3 Complejidad Alta
+Page 94: I) 15×2+√4+5−(2×3−1) = (Colocar esta expresión aritmética en un solo color)
+Page 100: II) 30−76÷75+8÷2×4 = (Colocar esta expresión aritmética en un solo color)
+Page 103: III)
+Page 111: IV) 55−3×2+3×
+Page 116: V) 3×[33−16÷(5+3)] = (Colocar esta expresión aritmética en un solo color)
+Page 121: VI) 20+10÷5−
+Page 126: VII) (22 + 1)3+[10 − (9÷3+1)]−√9+40 = (Colocar esta expresión aritmética en un solo
+Page 136: VIII) 5+[15 − (3−1)2+23]+
+Page 143: IX) (92 + 2) × 3−
+Page 153: X) 52+8 × 22−78 ÷ 76+2 × (5+4 ÷ 2)−√15+1 = (Colocar esta expresión aritmética en

@@ -10,7 +10,6 @@ import '../providers/practice_notifier.dart';
 import '../widgets/interactive_equation.dart';
 import '../widgets/andean_progress_banner.dart';
 import '../widgets/math_notebook_line.dart';
-import '../widgets/latex_rich_text.dart';
 import '../../data/repositories/exercise_repository.dart';
 import '../../domain/entities/exercise_entity.dart';
 
@@ -106,10 +105,10 @@ class _PracticeScreenState extends ConsumerState<PracticeScreen> {
                   const Text('⚠️', style: TextStyle(fontSize: 18)),
                   const SizedBox(width: 10),
                   Expanded(
-                    child: LatexRichText(
-                      text: next.errorSnackMessage,
+                    child: Text(
+                      next.errorSnackMessage,
                       style: const TextStyle(
-                          fontWeight: FontWeight.w700, fontSize: 14, color: Colors.white),
+                          fontWeight: FontWeight.w700, fontSize: 14),
                     ),
                   ),
                 ],
@@ -1013,8 +1012,8 @@ class _InstructionCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Expanded(
-                  child: LatexRichText(
-                    text: instruction,
+                  child: Text(
+                    MathTokenWidget.formatMathText(instruction), // TAREA 4
                     style: const TextStyle(
                       fontSize: 15,
                       fontWeight: FontWeight.w700,
@@ -1074,11 +1073,6 @@ class _MultipleChoiceArea extends StatelessWidget {
   /// Detecta si una opción contiene notación matemática que deba
   /// renderizarse con LaTeX (potencias, raíces, operadores, etc.)
   static bool _isMathOption(String opt) {
-    // Si contiene letras del alfabeto de palabras en español, no es una opción puramente matemática
-    final cleanText = opt.replaceAll('sqrt', '').replaceAll(RegExp(r'root\d*'), '');
-    final hasSpanishLetters = RegExp(r'[a-zA-ZáéíóúÁÉÍÓÚñÑ]').hasMatch(cleanText);
-    if (hasSpanishLetters) return false;
-
     // Contiene potencias, raíces o operadores aritméticos
     if (opt.contains('^') || opt.contains('sqrt')) return true;
     // Es puramente numérico (un resultado)
@@ -1118,8 +1112,8 @@ class _MultipleChoiceArea extends StatelessWidget {
                           equation: opt,
                           showBoxesAndColors: false,
                         )
-                      : LatexRichText(
-                          text: opt,
+                      : Text(
+                          MathTokenWidget.formatMathText(opt),
                           textAlign: TextAlign.center,
                           style: const TextStyle(
                               fontSize: 16, fontWeight: FontWeight.w900, fontFamily: 'Nunito', height: 1.3),
@@ -1263,105 +1257,90 @@ class _EquationHistory extends ConsumerWidget {
 
   const _EquationHistory({required this.exerciseIndex});
 
-  bool _isPrefix(String a, String b) {
-    final cleanA = a.replaceAll(' ', '').replaceAll('____', '').replaceAll('?', '');
-    final cleanB = b.replaceAll(' ', '').replaceAll('____', '').replaceAll('?', '');
-    if (cleanA.isEmpty) return false;
-    return cleanB.startsWith(cleanA);
-  }
-
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final state = ref.watch(practiceProvider(exerciseIndex));
+    final history = state.equationHistory;
     final isInteractive = !state.currentStep.isMultipleChoice;
 
     List<Widget> lines = [];
 
-    // ── Historial unificado: usa equationHistory + workingLine directamente ──
-    {
-      final history = state.equationHistory;
-      final currentTokensStr = state.tokens.map((t) => t.value).join(' ');
+    // ── 1. Render all completed history lines ──
+    for (int i = 0; i < history.length; i++) {
+      final equationText = history[i];
 
-      final List<String> rawExpressions = [];
-      for (final h in history) {
-        if (h.trim().isNotEmpty) {
-          rawExpressions.add(h);
+      // For interactive steps, skip the last history entry if it matches
+      // current tokens (InteractiveEquation renders it instead)
+      if (isInteractive && i == history.length - 1) {
+        final currentTokensStr = state.tokens.map((t) => t.value).join(' ');
+        if (equationText.replaceAll(' ', '') == currentTokensStr.replaceAll(' ', '')) {
+          continue;
         }
       }
 
-      final workingLine = state.workingLine;
-      final currentOverride = state.currentStep.expressionOverride;
-      String? activeLine;
-      if (workingLine != null && workingLine.trim().isNotEmpty) {
-        activeLine = workingLine;
-      } else if (currentOverride != null && state.stepCompleted && currentOverride.trim().isNotEmpty) {
-        activeLine = currentOverride;
+      String formattedEquation = equationText;
+      if (i == 0) {
+        formattedEquation = '$equationText =';
+      } else {
+        formattedEquation = '= $equationText';
       }
 
-      if (activeLine != null) {
-        final cleanActive = activeLine.replaceAll(' ', '').replaceAll('____', '').replaceAll('\$', '');
-        final lastClean = rawExpressions.isEmpty ? '' : rawExpressions.last.replaceAll(' ', '').replaceAll('\$', '');
-        if (rawExpressions.isEmpty || lastClean != cleanActive) {
-          rawExpressions.add(activeLine);
-        }
-      }
+      lines.add(
+        Padding(
+          padding: const EdgeInsets.only(bottom: 10.0),
+          child: Center(
+            child: RepaintBoundary(
+              child: MathNotebookLine(
+                equation: formattedEquation,
+                showBoxesAndColors: state.showBlockBoxes,
+              ),
+            ),
+          ),
+        )
+      );
+    }
 
-      // Filter out prefixes (except index 0 which is the base expression, unless it matches currentTokensStr when interactive)
-      final List<String> filteredExpressions = [];
-      if (rawExpressions.isNotEmpty) {
-        final firstExpr = rawExpressions.first;
-        final isFirstDuplicate = isInteractive && firstExpr.replaceAll(' ', '') == currentTokensStr.replaceAll(' ', '');
-        if (!isFirstDuplicate) {
-          filteredExpressions.add(firstExpr);
-        }
+    // ── 2. Línea de trabajo progresiva ──
+    // Prioridad: workingLine (build progresivo) > expressionOverride (fallback)
+    final workingLine = state.workingLine;
+    final currentOverride = state.currentStep.expressionOverride;
 
-        for (int i = 1; i < rawExpressions.length; i++) {
-          final current = rawExpressions[i];
-
-          // Skip if interactive and it matches the interactive tokens to avoid duplicates
-          if (isInteractive && current.replaceAll(' ', '') == currentTokensStr.replaceAll(' ', '')) {
-            continue;
-          }
-
-          bool isPrefixOfLater = false;
-          for (int j = i + 1; j < rawExpressions.length; j++) {
-            if (_isPrefix(current, rawExpressions[j])) {
-              isPrefixOfLater = true;
-              break;
-            }
-          }
-          if (!isPrefixOfLater) {
-            filteredExpressions.add(current);
-          }
-        }
-      }
-
-      for (int i = 0; i < filteredExpressions.length; i++) {
-        final equationText = filteredExpressions[i];
-        final isBase = (equationText.replaceAll(' ', '') == state.exercise.baseExpression.replaceAll(' ', ''));
-
-        String formattedEquation;
-        if (isBase) {
-          formattedEquation = '$equationText =';
-        } else {
-          formattedEquation = '= $equationText';
-        }
-
-        final isActive = (activeLine != null && equationText == activeLine);
-        final showBoxes = isActive ? state.showBoxesOnCurrentStep : state.showBlockBoxes;
-
+    if (workingLine != null) {
+      // Mostrar la línea progresiva (puede contener ____ = blancos)
+      final lastInHistory = history.isNotEmpty ? history.last : state.exercise.baseExpression;
+      if (lastInHistory.replaceAll(' ', '') != workingLine.replaceAll('____', '').replaceAll(' ', '')) {
+        final displayExpr = workingLine.replaceAll('____', '?');
         lines.add(
           Padding(
             padding: const EdgeInsets.only(bottom: 10.0),
             child: Center(
               child: RepaintBoundary(
                 child: MathNotebookLine(
-                  equation: formattedEquation,
-                  showBoxesAndColors: showBoxes,
+                  equation: '= $displayExpr',
+                  showBoxesAndColors: state.showBoxesOnCurrentStep,
                 ),
               ),
             ),
-          ),
+          )
+        );
+      }
+    } else if (currentOverride != null && state.stepCompleted) {
+      // Fallback: ejercicios sin workingExpression — solo mostrar DESPUÉS
+      // de responder correctamente para no anticipar el resultado.
+      final lastInHistory = history.isNotEmpty ? history.last : state.exercise.baseExpression;
+      if (lastInHistory.replaceAll(' ', '') != currentOverride.replaceAll(' ', '')) {
+        lines.add(
+          Padding(
+            padding: const EdgeInsets.only(bottom: 10.0),
+            child: Center(
+              child: RepaintBoundary(
+                child: MathNotebookLine(
+                  equation: '= $currentOverride',
+                  showBoxesAndColors: state.showBoxesOnCurrentStep,
+                ),
+              ),
+            ),
+          )
         );
       }
     }
@@ -1372,410 +1351,4 @@ class _EquationHistory extends ConsumerWidget {
     );
   }
 }
-
-class _TokenSegment {
-  final List<String> base;
-  final List<String> current;
-  final List<int> baseIndices;
-
-  bool get isModified {
-    if (base.length != current.length) return true;
-    for (int k = 0; k < base.length; k++) {
-      if (base[k] != current[k]) return true;
-    }
-    return false;
-  }
-
-  _TokenSegment(this.base, this.current, this.baseIndices);
-}
-
-String getProgressiveExpression(
-  String baseExpr, 
-  String currentExpr, {
-  required bool isCompleted,
-  int? stepIndex,
-  required ExerciseEntity exercise,
-  int? activeStepIndex,
-  bool? activeStepCompleted,
-}) {
-  final baseTokens = baseExpr.trim().split(RegExp(r'\s+'));
-  final currentTokens = currentExpr.trim().split(RegExp(r'\s+'));
-
-  if (currentTokens.length <= 1) {
-    return isCompleted ? currentExpr : '';
-  }
-
-  // Calcular profundidades de paréntesis y corchetes en baseTokens
-  final depths = <int>[];
-  int currentDepth = 0;
-  for (final token in baseTokens) {
-    if (token == '(' || token == '[' || token == '{' || token.contains('(') || token.contains('[') || token.contains('{')) {
-      currentDepth++;
-    }
-    depths.add(currentDepth);
-    if (token == ')' || token == ']' || token == '}' || token.contains(')') || token.contains(']') || token.contains('}')) {
-      currentDepth--;
-    }
-  }
-
-  bool isOperatorAt(int idx) {
-    if (idx < 0 || idx >= baseTokens.length) return false;
-    final val = baseTokens[idx];
-    if (val == '(' || val == ')' || val == '[' || val == ']' || val == '{' || val == '}') {
-      return false;
-    }
-    if (['*', '/', '^', 'x', '×', '÷'].contains(val) || val.contains('sqrt') || val.contains('root')) {
-      return true;
-    }
-    return false;
-  }
-
-  // ignore: unused_element
-  bool isOperationToken(int idx) {
-    if (idx < 0 || idx >= baseTokens.length) return false;
-    final val = baseTokens[idx];
-    if (val == '(' || val == ')' || val == '[' || val == ']' || val == '{' || val == '}') {
-      return false;
-    }
-    if (isOperatorAt(idx)) return true;
-    if (idx > 0 && isOperatorAt(idx - 1)) return true;
-    if (idx < baseTokens.length - 1 && isOperatorAt(idx + 1)) return true;
-    return false;
-  }
-
-  // Helper para identificar el bloque (separados por + o - a profundidad 0) de cada token
-  int getBlockIndex(int tokenIdx) {
-    int block = 0;
-    for (int k = 0; k <= tokenIdx; k++) {
-      final val = baseTokens[k];
-      final depth = depths[k];
-      if (depth == 0 && (val == '+' || val == '-')) {
-        block++;
-      }
-    }
-    return block;
-  }
-
-  // Alineación LCS
-  final n = baseTokens.length;
-  final m = currentTokens.length;
-  final dp = List.generate(n + 1, (_) => List.filled(m + 1, 0));
-
-  for (int i = 1; i <= n; i++) {
-    for (int j = 1; j <= m; j++) {
-      if (baseTokens[i - 1] == currentTokens[j - 1]) {
-        dp[i][j] = dp[i - 1][j - 1] + 1;
-      } else {
-        dp[i][j] = dp[i - 1][j] > dp[i][j - 1] ? dp[i - 1][j] : dp[i][j - 1];
-      }
-    }
-  }
-
-  final baseMatched = List.filled(n, false);
-  final currentMatched = List.filled(m, false);
-  int i = n;
-  int j = m;
-  while (i > 0 && j > 0) {
-    if (baseTokens[i - 1] == currentTokens[j - 1]) {
-      baseMatched[i - 1] = true;
-      currentMatched[j - 1] = true;
-      i--;
-      j--;
-    } else if (dp[i - 1][j] >= dp[i][j - 1]) {
-      i--;
-    } else {
-      j--;
-    }
-  }
-
-  final segments = <_TokenSegment>[];
-  int basePtr = 0;
-  int currentPtr = 0;
-
-  while (basePtr < n || currentPtr < m) {
-    if (basePtr < n && currentPtr < m && baseMatched[basePtr] && currentMatched[currentPtr] && baseTokens[basePtr] == currentTokens[currentPtr]) {
-      segments.add(_TokenSegment([baseTokens[basePtr]], [currentTokens[currentPtr]], [basePtr]));
-      basePtr++;
-      currentPtr++;
-    } else {
-      int nextBaseMatch = basePtr;
-      while (nextBaseMatch < n && !baseMatched[nextBaseMatch]) {
-        nextBaseMatch++;
-      }
-      int nextCurrentMatch = currentPtr;
-      while (nextCurrentMatch < m && !currentMatched[nextCurrentMatch]) {
-        nextCurrentMatch++;
-      }
-
-      final baseSeg = baseTokens.sublist(basePtr, nextBaseMatch);
-      final currentSeg = currentTokens.sublist(currentPtr, nextCurrentMatch);
-      final baseIndices = List.generate(nextBaseMatch - basePtr, (k) => basePtr + k);
-      segments.add(_TokenSegment(baseSeg, currentSeg, baseIndices));
-
-      basePtr = nextBaseMatch;
-      currentPtr = nextCurrentMatch;
-    }
-  }
-
-  int lastModifiedIdx = -1;
-  if (isCompleted) {
-    for (int k = 0; k < segments.length; k++) {
-      if (segments[k].isModified) {
-        lastModifiedIdx = k;
-      }
-    }
-  } else {
-    for (int k = 0; k < segments.length; k++) {
-      if (segments[k].isModified) {
-        lastModifiedIdx = k;
-        break;
-      }
-    }
-  }
-
-  // Identificar cuál es el bloque de la modificación activa
-  int modifiedBlockIdx = 0;
-  if (lastModifiedIdx != -1) {
-    for (final idx in segments[lastModifiedIdx].baseIndices) {
-      final b = getBlockIndex(idx);
-      if (b > modifiedBlockIdx) {
-        modifiedBlockIdx = b;
-      }
-    }
-  }
-
-  int getSegmentBlock(int segIdx) {
-    final seg = segments[segIdx];
-    if (seg.baseIndices.isNotEmpty) {
-      return getBlockIndex(seg.baseIndices.first);
-    }
-    for (int k = segIdx - 1; k >= 0; k--) {
-      if (segments[k].baseIndices.isNotEmpty) {
-        return getBlockIndex(segments[k].baseIndices.last);
-      }
-    }
-    for (int k = segIdx + 1; k < segments.length; k++) {
-      if (segments[k].baseIndices.isNotEmpty) {
-        return getBlockIndex(segments[k].baseIndices.first);
-      }
-    }
-    return 0;
-  }
-
-  // ignore: unused_element
-  bool blockHasOperations(int bIdx) {
-    for (int k = 0; k < segments.length; k++) {
-      if (getSegmentBlock(k) == bIdx) {
-        for (final token in segments[k].current) {
-          if (['*', '/', '^', 'x', '×', '÷'].contains(token) || token.contains('sqrt') || token.contains('root')) {
-            return true;
-          }
-        }
-      }
-    }
-    return false;
-  }
-
-  int getModifiedBlockIdx(String bExpr, String cExpr) {
-    final bTokens = bExpr.trim().split(RegExp(r'\s+'));
-    final cTokens = cExpr.trim().split(RegExp(r'\s+'));
-
-    if (cTokens.length <= 1) return 0;
-
-    final dps = <int>[];
-    int cDepth = 0;
-    for (final token in bTokens) {
-      if (token == '(' || token == '[' || token == '{' || token.contains('(') || token.contains('[') || token.contains('{')) {
-        cDepth++;
-      }
-      dps.add(cDepth);
-      if (token == ')' || token == ']' || token == '}' || token.contains(')') || token.contains(']') || token.contains('}')) {
-        cDepth--;
-      }
-    }
-
-    int getBIndex(int tokenIdx) {
-      int block = 0;
-      for (int k = 0; k <= tokenIdx; k++) {
-        final val = bTokens[k];
-        final depth = dps[k];
-        if (depth == 0 && (val == '+' || val == '-')) {
-          block++;
-        }
-      }
-      return block;
-    }
-
-    final nL = bTokens.length;
-    final mL = cTokens.length;
-    final dpTable = List.generate(nL + 1, (_) => List.filled(mL + 1, 0));
-
-    for (int x = 1; x <= nL; x++) {
-      for (int y = 1; y <= mL; y++) {
-        if (bTokens[x - 1] == cTokens[y - 1]) {
-          dpTable[x][y] = dpTable[x - 1][y - 1] + 1;
-        } else {
-          dpTable[x][y] = dpTable[x - 1][y] > dpTable[x][y - 1] ? dpTable[x - 1][y] : dpTable[x][y - 1];
-        }
-      }
-    }
-
-    final bMatched = List.filled(nL, false);
-    final cMatched = List.filled(mL, false);
-    int x = nL;
-    int y = mL;
-    while (x > 0 && y > 0) {
-      if (bTokens[x - 1] == cTokens[y - 1]) {
-        bMatched[x - 1] = true;
-        cMatched[y - 1] = true;
-        x--;
-        y--;
-      } else if (dpTable[x - 1][y] >= dpTable[x][y - 1]) {
-        x--;
-      } else {
-        y--;
-      }
-    }
-
-    final segs = <_TokenSegment>[];
-    int bPtr = 0;
-    int cPtr = 0;
-
-    while (bPtr < nL || cPtr < mL) {
-      if (bPtr < nL && cPtr < mL && bMatched[bPtr] && cMatched[cPtr] && bTokens[bPtr] == cTokens[cPtr]) {
-        segs.add(_TokenSegment([bTokens[bPtr]], [cTokens[cPtr]], [bPtr]));
-        bPtr++;
-        cPtr++;
-      } else {
-        int nextBaseMatch = bPtr;
-        while (nextBaseMatch < nL && !bMatched[nextBaseMatch]) {
-          nextBaseMatch++;
-        }
-        int nextCurrentMatch = cPtr;
-        while (nextCurrentMatch < mL && !cMatched[nextCurrentMatch]) {
-          nextCurrentMatch++;
-        }
-
-        final baseSeg = bTokens.sublist(bPtr, nextBaseMatch);
-        final currentSeg = cTokens.sublist(cPtr, nextCurrentMatch);
-        final baseIndices = List.generate(nextBaseMatch - bPtr, (k) => bPtr + k);
-        segs.add(_TokenSegment(baseSeg, currentSeg, baseIndices));
-
-        bPtr = nextBaseMatch;
-        cPtr = nextCurrentMatch;
-      }
-    }
-
-    int lastModIdx = -1;
-    for (int k = 0; k < segs.length; k++) {
-      if (segs[k].isModified) {
-        lastModIdx = k;
-      }
-    }
-
-    int modBlockIdx = 0;
-    if (lastModIdx != -1) {
-      for (final idx in segs[lastModIdx].baseIndices) {
-        final b = getBIndex(idx);
-        if (b > modBlockIdx) {
-          modBlockIdx = b;
-        }
-      }
-    }
-    return modBlockIdx;
-  }
-
-  int getStepBlockIdxRelative(int j, String expr) {
-    for (int idx = j; idx < exercise.steps.length; idx++) {
-      final override = exercise.steps[idx].expressionOverride;
-      if (override != null) {
-        return getModifiedBlockIdx(expr, override);
-      }
-    }
-    return -1;
-  }
-
-  // ignore: unused_element
-  bool isBlockModifiedByPastSteps(int blockIdx) {
-    if (stepIndex == null) return false;
-    for (int j = 0; j <= stepIndex; j++) {
-      if (getStepBlockIdxRelative(j, baseExpr) == blockIdx) {
-        return true;
-      }
-    }
-    return false;
-  }
-
-  bool isBlockIdxHidden(int blockIdx) {
-    return false;
-  }
-
-  bool isGroupingSymbol(String token) {
-    return token == '(' || token == '[' || token == '{';
-  }
-
-  // ignore: unused_element
-  bool isOperandToken(String token) {
-    final clean = token.replaceAll(RegExp(r'[\(\)\[\]\{\}\+\-\*\/x×÷\^]'), '').trim();
-    return clean.isNotEmpty;
-  }
-
-  final output = <String>[];
-
-  void addSegmentTokens(List<String> tokens, List<int> baseIndices, int blockIdx) {
-    if (isBlockIdxHidden(blockIdx)) {
-      for (int j = 0; j < tokens.length; j++) {
-        final t = tokens[j];
-        final baseIdx = (j < baseIndices.length) ? baseIndices[j] : -1;
-        
-        bool show = false;
-        if (isGroupingSymbol(t)) {
-          show = true;
-        } else if (baseIdx != -1) {
-          final depth = depths[baseIdx];
-          if (depth == 0 && (t == '+' || t == '-')) {
-            show = true;
-          }
-        }
-        
-        if (show) {
-          output.add(t);
-        }
-      }
-    } else {
-      output.addAll(tokens);
-    }
-  }
-
-  for (int k = 0; k < segments.length; k++) {
-    final seg = segments[k];
-    final blockIdx = getSegmentBlock(k);
-
-    if (k < lastModifiedIdx) {
-      addSegmentTokens(seg.current, seg.baseIndices, blockIdx);
-    } else if (k == lastModifiedIdx) {
-      if (isCompleted) {
-        addSegmentTokens(seg.current, seg.baseIndices, blockIdx);
-      } else {
-        for (final token in seg.base) {
-          if (token == '(' || token == '[' || token == '{' || token.startsWith('sqrt(') || token.startsWith('root') || token.endsWith('(')) {
-            output.add(token);
-          } else {
-            break;
-          }
-        }
-        break;
-      }
-    } else {
-      addSegmentTokens(seg.current, seg.baseIndices, blockIdx);
-    }
-  }
-
-  while (output.isNotEmpty && output.last == '^') {
-    output.removeLast();
-  }
-
-  return output.join(' ');
-}
-
 

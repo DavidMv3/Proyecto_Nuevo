@@ -1,0 +1,1652 @@
+
+=== SECTION: 0.1 Complejidad Baja ===
+
+Exercise I: 4×5−6÷3
+  Line 26: expresión aritmética de la siguiente manera:
+    4×5 − 6÷3 =
+  Line 41: expresión aritmética de la siguiente manera:
+    4×5 − 6÷3 =
+    = 20−
+  Line 53: expresión aritmética de la siguiente manera:
+    4×5 − 6÷3 =
+    = 20 − 2
+  Line 67: Debe aparecer
+    4×5 − 6÷3 =
+    = 20 − 2
+    = 18
+    II) 18+3×5 = (Colocar esta expresión aritmética en un solo color)
+Exercise II: 18+3×5
+  Line 94: expresión aritmética de la siguiente manera:
+    18 + 3×5 =
+  Line 106: aritmética de la siguiente manera:
+    18 + 3×5 =
+  Line 118: aritmética de la siguiente manera:
+    18 + 3×5 =
+    = 18+
+  Line 131: expresión aritmética de la siguiente manera:
+    18 + 3×5 =
+    = 18 + 15
+  Line 143: Debe aparecer
+    18 + 3×5 =
+    = 18 + 15
+    = 33
+Exercise III: 8−3×2+1
+  Line 170: expresión aritmética de la siguiente manera:
+    8 − 3×2 + 1 =
+    con una voz que indique “Ahora vamos a analizar y resolver cada uno de los
+    bloques”
+  Line 186: expresión aritmética de la siguiente manera:
+    8 − 3×2 + 1 =
+  Line 198: expresión aritmética de la siguiente manera:
+    8 − 3×2 + 1 =
+    = 8 − 6 + 1
+  Line 212: Debe aparecer
+    8 − 3×2 + 1 =
+    = 8 − 6 + 1
+    = 3
+    IV) 10−3×2+23 = (Colocar esta expresión aritmética en un solo color)
+Exercise IV: 10−3×2+23
+  Line 239: expresión aritmética de la siguiente manera:
+    10 − 3×2 + 2 3 =
+    con una voz que indique “Ahora vamos a analizar y resolver cada uno de los
+    bloques”
+  Line 255: expresión aritmética de la siguiente manera:
+    10 − 3×2 + 2 3 =
+    = 10−
+  Line 273: expresión aritmética de la siguiente manera:
+    10 − 3×2 + 2 3 =
+    = 10−
+  Line 286: expresión aritmética de la siguiente manera:
+    10 − 3×2 + 2 3 =
+    = 10 − 6
+  Line 300: expresión aritmética de la siguiente manera:
+    10 − 3×2 + 2 3 =
+    = 10 − 6 + 8
+  Line 312: Debe aparecer
+    10 − 3×2 + 2 3 =
+    = 10 − 6 + 8
+    = 12
+    V) 1+12÷4−1+23 = (Colocar esta expresión aritmética en un solo color)
+Exercise V: 1+12÷4−1+23
+  Line 339: expresión aritmética de la siguiente manera:
+    1 + 12÷4 − 1 + 2 3 =
+    con una voz que indique “Ahora vamos a analizar y resolver cada uno de los
+    bloques”
+  Line 356: expresión aritmética de la siguiente manera:
+    1 + 12÷4 − 1 + 2 3 =
+    = 1+
+  Line 371: expresión aritmética de la siguiente manera:
+    1 + 12÷4 − 1 + 2 3 =
+    = 1+
+  Line 385: expresión aritmética de la siguiente manera:
+    1 + 12÷4 − 1 + 2 3 =
+    = 1 + 3 − 1+
+  Line 397: expresión aritmética de la siguiente manera:
+    1 + 12÷4 − 1 + 2 3 =
+    = 1 + 3 − 1 + 8
+  Line 409: Debe aparecer
+Exercise VI: 3−2+[8−2×3]
+  Line 437: expresión aritmética de la siguiente manera:
+  Line 449: Debe aparecer:
+    3 − 2 + [8−2×3] =
+  Line 460: Debe aparecer:
+    3 − 2 + [8−2×3] =
+    = 1 + [8 −2×3]
+  Line 472: Debe aparecer:
+    3 − 2 + [8−2×3] =
+    = 1 + [8 −2×3]
+  Line 483: Debe aparecer:
+    3 − 2 + [8−2×3] =
+    = 1 + [8 −2×3]
+    = 1 + [8 − 6]
+  Line 497: Debe aparecer:
+    3 − 2 + [8−2×3] =
+    = 1 + [8 −2×3]
+    = 1 + [8 − 6]
+    = 1 + [2]
+  Line 510: Debe aparecer:
+    3 − 2 + [8−2×3] =
+    = 1 + [8 −2×3]
+    = 1 + [8 − 6]
+    = 1 + [2]
+    = 3
+    VII) √4+12−15÷5 = (Colocar esta expresión aritmética en un solo color)
+Exercise VII: √4+12−15÷5
+  Line 541: expresión aritmética de la siguiente manera:
+    √
+    4+12 − 15÷5 =
+    con una voz que indique “Ahora vamos a analizar y resolver cada uno de los
+    bloques”.
+  Line 558: expresión aritmética de la siguiente manera:
+    √
+    4+12 − 15÷5 =
+  Line 571: expresión aritmética de la siguiente manera:
+    √
+    4+12 − 15÷5 =
+    =
+    √
+    16−
+  Line 588: expresión aritmética de la siguiente manera:
+  Line 606: expresión aritmética de la siguiente manera:
+    √
+    4+12 − 15÷5 =
+    =
+    √
+    16 − 3
+  Line 621: expresión aritmética de la siguiente manera:
+    √
+    4+12 − 15÷5 =
+    =
+    √
+    16 − 3
+  Line 641: expresión aritmética de la siguiente manera:
+    √
+    4+12 − 15÷5 =
+    =
+    √
+    16 − 3
+    = 4−
+  Line 657: expresión aritmética de la siguiente manera:
+    √
+    4+12 − 15÷5 =
+    =
+    √
+    16 − 3
+    = 4 − 3
+  Line 675: Debe aparecer:
+    √
+    4+12 − 15÷5 =
+    =
+    √
+    16 − 3
+    = 4 − 3
+    = 1
+    VIII) 32+5×2−√30−5 = (Colocar esta expresión aritmética en un solo color)
+Exercise VIII: 32+5×2−√30−5
+  Line 709: expresión aritmética de la siguiente manera:
+    32 + 5×2 −
+    √
+    30−5 =
+    con una voz que indique “Ahora vamos a analizar y resolver cada uno de los
+    bloques”.
+  Line 725: expresión aritmética de la siguiente manera:
+    32 + 5×2 −
+    √
+    30−5 =
+  Line 741: expresión aritmética de la siguiente manera:
+    32 + 5×2 −
+    √
+    30−5 =
+    = 9+
+  Line 756: expresión aritmética de la siguiente manera:
+    32 + 5×2 −
+    √
+    30−5 =
+    = 9 + 10 −
+  Line 773: expresión aritmética de la siguiente manera:
+    32 + 5×2 −
+    √
+    30−5 =
+    = 9 + 10 −
+  Line 788: expresión aritmética de la siguiente manera:
+    32 + 5×2 −
+    √
+    30−5 =
+    = 9 + 10 −
+    √
+    25
+  Line 809: expresión aritmética de la siguiente manera:
+    32 + 5×2 −
+    √
+    30−5 =
+    = 9 + 10 −
+    √
+    25
+    = 9 + 10 − 5
+  Line 826: Debe aparecer:
+    32 + 5×2 −
+    √
+    30−5 =
+    = 9 + 10 −
+    √
+    25
+    = 9 + 10 − 5
+    = 14
+    IX) 4×(20÷4+1)+4×23 = (Colocar esta expresión aritmética en un solo color)
+Exercise IX: 4×(20÷4+1)+4×23
+  Line 872: Debe aparecer:
+    4×(20÷4+1) + 4×23 =
+  Line 881: Debe aparecer:
+    4×(20÷4+1) + 4×23 =
+    = 4 × (
+  Line 892: Debe aparecer:
+    4×(20÷4+1) + 4×23 =
+    = 4 × (5 + 1)+
+  Line 906: Debe aparecer:
+    4×(20÷4+1) + 4×23 =
+    = 4 × (5 + 1) + 4×
+  Line 917: Debe aparecer:
+    4×(20÷4+1) + 4×23 =
+    = 4 × (5 + 1) + 4 × 8
+  Line 931: Debe aparecer:
+    4×(20÷4+1) + 4×23 =
+    = 4 × (5 + 1) + 4 × 8
+    = 4 × (
+  Line 943: Debe aparecer:
+    4×(20÷4+1) + 4×23 =
+    = 4 × (5 + 1) + 4 × 8
+    = 4 × (6)+
+  Line 958: Debe aparecer:
+    4×(20÷4+1) + 4×23 =
+    = 4 × (5 + 1) + 4 × 8
+    = 4 × (6) + 32
+  Line 971: Debe aparecer:
+    4×(20÷4+1) + 4×23 =
+    = 4 × (5 + 1) + 4 × 8
+    = 4 × (6) + 32
+  Line 986: Debe aparecer:
+    4×(20÷4+1) + 4×23 =
+    = 4 × (5 + 1) + 4 × 8
+    = 4 × (6) + 32
+    = 24 + 32
+  Line 999: Debe aparecer:
+    4×(20÷4+1)+4×23 =
+    = 4 × (5 + 1) + 4 × 8
+    = 4 × (6) + 32
+    = 24 + 32
+    = 56
+    X) (2+10÷5)×22−3 = (Colocar esta expresión aritmética en un solo color)
+Exercise X: (2+10÷5)×22−3
+  Line 1029: expresión aritmética de la siguiente manera:
+    (2+10÷5)×22 − 3 =
+    con una voz que indique “Ahora vamos a analizar y resolver cada uno de los
+    bloques”.
+  Line 1044: Debe aparecer:
+    (2+10÷5)×22 − 3 =
+  Line 1054: Debe aparecer:
+    (2+10÷5)×22 − 3 =
+    = (2 + 2) × 22 − 3
+  Line 1066: Debe aparecer:
+  Line 1079: Debe aparecer:
+    (2+10÷5)×22 − 3 =
+    = (2 + 2) × 22 − 3
+    = 4 × 22 − 3
+  Line 1092: Debe aparecer:
+    (2+10÷5)×22 − 3 =
+    = (2 + 2) × 22 − 3
+    = 4 × 22 − 3
+  Line 1106: Debe aparecer:
+    (2+10÷5)×22 − 3 =
+    = (2 + 2) × 22 − 3
+    = 4 × 22 − 3
+    = 4 × 4 − 3
+  Line 1119: Debe aparecer:
+    (2+10÷5)×22 − 3 =
+    = (2 + 2) × 22 − 3
+    = 4 × 22 − 3
+    = 4 × 4 − 3
+  Line 1134: Debe aparecer:
+    (2+10÷5)×22 − 3 =
+    = (2 + 2) × 22 − 3
+    = 4 × 22 − 3
+    = 4 × 4 − 3
+    = 16 − 3
+  Line 1148: Debe aparecer:
+    (2+10÷5)×22 − 3 =
+    = (2 + 2) × 22 − 3
+    = 4 × 22 − 3
+    = 4 × 4 − 3
+    = 16 − 3
+    = 13
+
+=== SECTION: 0.2 Complejidad Media ===
+
+Exercise I: 36÷34−2×(5−2)
+  Line 1181: expresión aritmética de la siguiente manera:
+  Line 1198: expresión aritmética de la siguiente manera:
+    36÷34 − 2×(5−2) =
+  Line 1213: expresión aritmética de la siguiente manera:
+    36÷34 − 2×(5−2) =
+    = 3 2−
+  Line 1226: expresión aritmética de la siguiente manera:
+    36÷34 − 2×(5−2) =
+    = 3 2−
+  Line 1239: expresión aritmética de la siguiente manera:
+  Line 1256: expresión aritmética de la siguiente manera:
+    36÷34 − 2×(5−2) =
+    = 3 2 − 2 × (3)
+  Line 1268: expresión aritmética de la siguiente manera:
+  Line 1284: expresión aritmética de la siguiente manera:
+    36÷34 − 2×(5−2) =
+    = 3 2 − 2 × (3)
+    = 9 − 6
+  Line 1297: Debe aparecer
+Exercise II: [23 × 22 − 20] + [6 + 3 2]
+  Line 1342: Debe aparecer:
+    [23 × 22 − 20] + [6 + 3 2] =
+  Line 1353: Debe aparecer:
+    :
+    [23 × 22 − 20] + [6 + 3 2] =
+    =[25−20] + [
+  Line 1369: Debe aparecer:
+    [23 × 22 − 20] + [6 + 3 2] =
+    =[25−20] + [
+  Line 1381: Debe aparecer:
+    [23 × 22 − 20] + [6 + 3 2] =
+    =[25−20] + [6 + 9]
+  Line 1396: Debe aparecer:
+    [23 × 22 − 20] + [6 + 3 2] =
+    =[25−20] + [6 + 9]
+    =[
+  Line 1409: Debe aparecer:
+    [23 × 22 − 20] + [6 + 3 2] =
+    =[25−20] + [6 + 9]
+    =[32−20] + [
+  Line 1424: Debe aparecer:
+    [23 × 22 − 20] + [6 + 3 2] =
+    =[25−20] + [6 + 9]
+    =[32−20] + [15]
+  Line 1437: Debe aparecer:
+    [23 × 22 − 20] + [6 + 3 2] =
+    =[25−20] + [6 + 9]
+    =[32−20] + [15]
+    =[12] + [15]
+  Line 1453: Debe aparecer:
+    [23 × 22 − 20] + [6 + 3 2]
+    = [2 5 − 20] + [6 + 3 2]
+    = [32 − 20] + [6 + 9]
+    = [12] + [15]
+    = 27
+    “‘
+    III) [34 : 3 2 + 7] − [7 + 23]
+  Line 1464: Debe aparecer:
+    [34:32+7]−[7+23]
+  Line 1474: Debe aparecer:
+    [34 : 3 2 + 7] − [7 + 23] =
+  Line 1487: Debe aparecer:
+    [34 : 3 2 + 7] − [7 + 23] =
+    = [
+  Line 1499: Debe aparecer:
+  Line 1514: Debe aparecer:
+    [34 : 3 2 + 7] − [7 + 23] =
+    =[32 + 7] − [7+
+  Line 1526: Debe aparecer:
+    [34 : 3 2 + 7] − [7 + 23] =
+    =[32 + 7] − [7 + 8]
+  Line 1541: Debe aparecer:
+    [34 : 3 2 + 7] − [7 + 23] =
+    =[32 + 7] − [7 + 8]
+    =[
+  Line 1554: Debe aparecer:
+    [34 : 3 2 + 7] − [7 + 23] =
+    =[32 + 7] − [7 + 8]
+    =[9 + 7]−
+  Line 1569: Debe aparecer:
+    [34 : 3 2 + 7] − [7 + 23] =
+    =[32 + 7] − [7 + 8]
+    =[9 + 7] − [15]
+  Line 1582: Debe aparecer:
+    [34 : 3 2 + 7] − [7 + 23] =
+    =[32 + 7] − [7 + 8]
+    =[9 + 7] − [15]
+    =[16] − [15]
+  Line 1598: Debe aparecer:
+    [34 : 3 2 + 7] − [7 + 23] =
+    =[32 + 7] − [7 + 8]
+    =[9 + 7] − [15]
+    =[16] − [15]
+    =1
+    IV) [(2 × 3)2 − 30] + [18 : 3 + 10]
+  Line 1608: Debe aparecer:
+    [(2×3)2−30]+[18:3+10]
+  Line 1618: Debe aparecer:
+    [(2 × 3)2 − 30] + [18 : 3 + 10] =
+  Line 1629: Debe aparecer:
+    [(2 × 3)2 − 30] + [18 : 3 + 10] =
+    = [(
+  Line 1641: Debe aparecer:
+    [(2 × 3)2 − 30] + [18 : 3 + 10] =
+    =[62 − 30] + [
+  Line 1656: Debe aparecer:
+    [(2 × 3)2 − 30] + [18 : 3 + 10] =
+    =[62 − 30] + [
+  Line 1668: Debe aparecer:
+    [(2 × 3)2 − 30] + [18 : 3 + 10] =
+    =[62 − 30] + [6 + 10]
+  Line 1683: Debe aparecer:
+    [(2 × 3)2 − 30] + [18 : 3 + 10] =
+    =[62 − 30] + [6 + 10]
+    =[
+  Line 1696: Debe aparecer:
+    [(2 × 3)2 − 30] + [18 : 3 + 10] =
+    =[62 − 30] + [6 + 10]
+    =[36 − 30] + [
+  Line 1711: Debe aparecer:
+    [(2 × 3)2 − 30] + [18 : 3 + 10] =
+    =
+    =[62 − 30] + [6 + 10]
+    =[36 − 30] + [16]
+  Line 1725: Debe aparecer:
+    [(2 × 3)2 − 30] + [18 : 3 + 10] =
+    =
+    =[62 − 30] + [6 + 10]
+    =[36 − 30] + [16]
+    =[6] + [16]
+  Line 1742: Debe aparecer:
+    [(2 × 3)2 − 30] + [18 : 3 + 10] =
+    =
+    =[62 − 30] + [6 + 10]
+    =[36 − 30] + [16]
+    =[6] + [16]
+    =22
+    V) [(8 : 2) 2 − 12] + [52 − 4]
+  Line 1753: Debe aparecer:
+    [(8:2)2−12]+[52−4]
+  Line 1763: Debe aparecer:
+    [(8 : 2) 2 − 12] + [5 2 − 4] =
+  Line 1774: Debe aparecer:
+    [(8 : 2) 2 − 12] + [5 2 − 4] =
+    =[(
+  Line 1786: Debe aparecer:
+    [(8 : 2) 2 − 12] + [5 2 − 4] =
+    =[(4)2 − 12] + [
+  Line 1801: Debe aparecer:
+    [(8 : 2) 2 − 12] + [5 2 − 4] =
+    =[(4)2 − 12] + [
+  Line 1813: Debe aparecer:
+    [(8 : 2) 2 − 12] + [5 2 − 4] =
+    =[(4)2 − 12] + [25 − 4]
+  Line 1828: Debe aparecer:
+    [(8 : 2) 2 − 12] + [5 2 − 4] =
+    =[(4)2 − 12] + [25 − 4]
+    =[
+  Line 1841: Debe aparecer:
+    [(8 : 2) 2 − 12] + [5 2 − 4] =
+    =[(4)2 − 12] + [25 − 4]
+    =[(16) − 12] + [
+  Line 1856: Debe aparecer:
+    [(8 : 2) 2 − 12] + [5 2 − 4] =
+    =[(4)2 − 12] + [25 − 4]
+    =[16 − 12] + [21]
+  Line 1869: Debe aparecer:
+    [(8 : 2) 2 − 12] + [5 2 − 4] =
+    =[(4)2 − 12] + [25 − 4]
+    =[16 − 12] + [21]
+    =[4] + [21]
+  Line 1885: Debe aparecer:
+    [(8 : 2) 2 − 12] + [5 2 − 4] =
+    =[(4)2 − 12] + [25 − 4]
+    =[16 − 12] + [21]
+    =[4] + [21]
+    =25
+    VI) [(22)3 − 50 ÷ 5] + [9 × 2 − 15]
+  Line 1895: Debe aparecer:
+    [(22)3−50÷5]+[9×2−15]
+  Line 1905: Debe aparecer:
+    [(22)3 − 50 ÷ 5] + [9 × 2 − 15] =
+  Line 1918: Debe aparecer:
+    [(22)3 − 50 ÷ 5] + [9 × 2 − 15] =
+    =[
+  Line 1931: Debe aparecer:
+  Line 1945: Debe aparecer:
+    [(22)3 − 50 ÷ 5] + [9 × 2 − 15] =
+    =[26 − 10] + [
+  Line 1958: Debe aparecer:
+    [(22)3 − 50 ÷ 5] + [9 × 2 − 15] =
+    =[26 − 10] + [
+  Line 1972: Debe aparecer:
+    [(22)3 − 50 ÷ 5] + [9 × 2 − 15] =
+    =[26 − 10] + [18 − 15]
+  Line 1985: Debe aparecer:
+    [(22)3 − 50 ÷ 5] + [9 × 2 − 15] =
+    =[26 − 10] + [18 − 15]
+    =[
+  Line 2000: Debe aparecer:
+    [(22)3 − 50 ÷ 5] + [9 × 2 − 15] =
+    =[26 − 10] + [18 − 15]
+    =[64 − 10] + [
+  Line 2013: Debe aparecer:
+    [(22)3 − 50 ÷ 5] + [9 × 2 − 15] =
+    =[26 − 10] + [18 − 15]
+    =[64 − 10] + [3]
+  Line 2028: Debe aparecer:
+    [(22)3 − 50 ÷ 5] + [9 × 2 − 15] =
+    =[(4)3 − 50 ÷ 5] + [18 − 15]
+    =[64 − 50 ÷ 5] + [3]
+    =[64 − 10] + [3]
+    =[54] + [3]
+  Line 2043: Debe aparecer:
+  Line 2056: Debe aparecer:
+    [15−(7−4)2]+[3×5+20]
+  Line 2064: Debe aparecer:
+    [15 − (7 − 4)2] + [3 × 5 + 20] =
+  Line 2077: Debe aparecer:
+    [15 − (7 − 4)2] + [3 × 5 + 20] =
+    =[15 − (
+  Line 2089: Debe aparecer:
+    [15 − (7 − 4)2] + [3 × 5 + 20] =
+    =[15 − (3)2] + [
+  Line 2104: Debe aparecer:
+    [15 − (7 − 4)2] + [3 × 5 + 20] =
+    =[15 − (3)2] + [
+  Line 2116: Debe aparecer:
+    [15 − (7 − 4)2] + [3 × 5 + 20] =
+    =[15 − (3)2] + [15 + 20]
+  Line 2129: Debe aparecer:
+  Line 2144: Debe aparecer:
+    [15 − (7 − 4)2] + [3 × 5 + 20] =
+    =[15 − (3)2] + [15 + 20]
+    =[15 − 9] + [
+  Line 2157: Debe aparecer:
+  Line 2172: Debe aparecer:
+    [15 − (7 − 4)2] + [3 × 5 + 20] =
+    =[15 − (3)2] + [15 + 20]
+    =[15 − 9] + [35]
+    =[6] + [35]
+  Line 2186: Debe aparecer:
+  Line 2202: Debe aparecer:
+    [
+    √
+    144÷
+    √
+    16+20]−[52−10]
+  Line 2214: Debe aparecer:
+    [
+    √
+    144 ÷
+    √
+    16 + 20] − [52 − 10] =
+  Line 2237: Debe aparecer:
+    [
+    √
+    144 ÷
+    √
+    16 + 20] − [52 − 10] =
+    =[
+  Line 2262: Debe aparecer:
+    [
+    √
+    144 ÷
+    √
+    16 + 20] − [52 − 10] =
+    =[
+    √
+    144 ÷ 16 + 20]−
+  Line 2283: Debe aparecer:
+    [
+    √
+    144 ÷
+    √
+    16 + 20] − [52 − 10] =
+    =[
+    √
+    144 ÷ 16 + 20] − [
+  Line 2301: Debe aparecer:
+    [
+    √
+    144 ÷
+    √
+    16 + 20] − [52 − 10] =
+    =[
+    √
+    144 ÷ 16 + 20] − [25 − 10]
+  Line 2321: Debe aparecer:
+    [
+    √
+    144 ÷
+    √
+    16 + 20] − [52 − 10] =
+    =[
+    √
+    144 ÷ 16 + 20] − [25 − 10]
+    =[√
+  Line 2340: Debe aparecer:
+    [
+    √
+    144 ÷
+    √
+    16 + 20] − [52 − 10] =
+    =[
+    √
+    144 ÷ 16 + 20] − [25 − 10]
+    =[
+  Line 2363: Debe aparecer:
+    [
+    √
+    144 ÷
+    √
+    16 + 20] − [52 − 10] =
+    =[
+    √
+    144 ÷ 16 + 20] − [25 − 10]
+    =[
+  Line 2390: Debe aparecer:
+    [
+    √
+    144 ÷
+    √
+    16 + 20] − [52 − 10] =
+    =[
+    √
+    144 ÷ 16 + 20] − [25 − 10]
+    =[
+  Line 2418: Debe aparecer:
+    [
+    √
+    144 ÷
+    √
+    16 + 20] − [52 − 10] =
+    =[
+    √
+    144 ÷ 16 + 20] − [25 − 10]
+    =[
+  Line 2440: Debe aparecer:
+    [
+    √
+    144 ÷
+    √
+    16 + 20] − [52 − 10] =
+    =[
+    √
+    144 ÷ 16 + 20] − [25 − 10]
+    =[
+  Line 2465: Debe aparecer:
+    [
+    √
+    144 ÷
+    √
+    16 + 20] − [52 − 10] =
+    =[
+    √
+    144 ÷ 16 + 20] − [25 − 10]
+    =[
+  Line 2486: Debe aparecer:
+    [
+    q√
+    81+42]−[30÷5−3]
+  Line 2496: Debe aparecer:
+    [
+    q√
+    81 + 42] − [30 ÷ 5 − 3] =
+  Line 2514: Debe aparecer:
+    [
+    q√
+    81 + 42] − [30 ÷ 5 − 3] =
+    =[
+  Line 2542: Debe aparecer:
+    [
+    q√
+    81 + 42] − [30 ÷ 5 − 3] =
+    =[
+    4√
+    81+
+  Line 2563: Debe aparecer:
+    [
+    q√
+    81 + 42] − [30 ÷ 5 − 3] =
+    =[
+    4√
+    81+
+  Line 2579: Debe aparecer:
+    [
+    q√
+    81 + 42] − [30 ÷ 5 − 3] =
+    =[
+    4√
+    81 + 16] − [
+  Line 2597: Debe aparecer:
+    [
+    q√
+    81 + 42] − [30 ÷ 5 − 3] =
+    =[
+    4√
+    81 + 16] − [
+  Line 2613: Debe aparecer:
+    [
+    q√
+    81 + 42] − [30 ÷ 5 − 3] =
+    =[
+    4√
+    81 + 16] − [6 − 3]
+  Line 2637: Debe aparecer:
+    [
+    q√
+    81 + 42] − [30 ÷ 5 − 3] =
+    =[
+    4√
+    81 + 16] − [6 − 3]
+    =[
+  Line 2658: Debe aparecer:
+    [
+    q√
+    81 + 42] − [30 ÷ 5 − 3] =
+    =[
+    4√
+    81 + 16] − [6 − 3]
+    =[3 + 16]−
+  Line 2677: Debe aparecer:
+    [
+    q√
+    81 + 42] − [30 ÷ 5 − 3] =
+    =[
+    4√
+    81 + 16] − [6 − 3]
+    =[3 + 16] − [3]
+  Line 2694: Debe aparecer:
+    [
+    q√
+    81 + 42] − [30 ÷ 5 − 3] =
+    =[
+    4√
+    81 + 16] − [6 − 3]
+    =[3 + 16] − [3]
+    =[19] − [3]
+  Line 2714: Debe aparecer:
+    [
+    q√
+    81 + 42] − [30 ÷ 5 − 3] =
+    =[
+    4√
+    81 + 16] − [6 − 3]
+    =[3 + 16] − [3]
+    =[19] − [3]
+    =16
+  Line 2730: Debe aparecer:
+    [
+    10√
+    620+24]−[
+    √
+    16+20−3]
+  Line 2742: Debe aparecer:
+    [
+    10√
+    620 + 24] − [
+    √
+    16 + 20 − 3] =
+  Line 2762: Debe aparecer:
+    [
+    10√
+    620 + 24] − [
+    √
+    16 + 20 − 3] =
+    =[
+  Line 2780: Debe aparecer:
+    [
+    10√
+    620 + 24] − [
+    √
+    16 + 20 − 3] =
+    =[62+
+  Line 2799: Debe aparecer:
+    [
+    10√
+    620 + 24] − [
+    √
+    16 + 20 − 3] =
+    =[62+
+  Line 2815: Debe aparecer:
+    [
+    10√
+    620 + 24] − [
+    √
+    16 + 20 − 3] =
+    =[62 + 16]−
+  Line 2833: Debe aparecer:
+    [
+    10√
+    620 + 24] − [
+    √
+    16 + 20 − 3] =
+    =[62 + 16] − [√
+  Line 2849: Debe aparecer:
+    [
+    10√
+    620 + 24] − [
+    √
+    16 + 20 − 3] =
+    =[62 + 16] − [
+    √
+    36 − 3]
+  Line 2869: Debe aparecer:
+  Line 2890: Debe aparecer:
+    [
+    10√
+    620 + 24] − [
+    √
+    16 + 20 − 3] =
+    =[62 + 16] − [
+    √
+    36 − 3]
+    =[36 + 16] − [
+  Line 2913: Debe aparecer:
+  Line 2938: Debe aparecer:
+    [
+    10√
+    620 + 24] − [
+    √
+    16 + 20 − 3] =
+    =[62 + 16] − [
+    √
+    36 − 3]
+    =[36 + 16] − [6 − 3]
+  Line 2957: Debe aparecer:
+  Line 2979: Debe aparecer:
+    [
+    10√
+    620 + 24] − [
+    √
+    16 + 20 − 3] =
+    =[62 + 16] − [
+    √
+    36 − 3]
+    =[36 + 16] − [6 − 3]
+  Line 3001: Debe aparecer:
+    [
+    10√
+    620 + 24] − [
+    √
+    16 + 20 − 3] =
+    =[62 + 16] − [
+    √
+    36 − 3]
+    =[36 + 16] − [6 − 3]
+
+=== SECTION: 0.3 Complejidad Alta ===
+
+Exercise I: 15×2+√4+5−(2×3−1)
+  Line 3040: expresión aritmética de la siguiente manera:
+    15×2 +
+    √
+    4+5 − (2×3−1) =
+    con una voz que indique “Ahora vamos a analizar y resolver cada uno de los
+    bloques”.
+  Line 3055: Debe aparecer:
+    15×2 +
+    √
+    4+5 − (2×3−1) =
+  Line 3070: Debe aparecer:
+    15×2 +
+    √
+    4+5 − (2×3−1) =
+    = 30+
+  Line 3084: Debe aparecer:
+    15×2 +
+    √
+    4+5 − (2×3−1) =
+    = 30+
+  Line 3098: Debe aparecer:
+    15×2 +
+    √
+    4+5 − (2×3−1) =
+    = 30 +
+    √
+    9−
+  Line 3116: Debe aparecer:
+    15×2 +
+    √
+    4+5 − (2×3−1) =
+    = 30 +
+    √
+    9−
+  Line 3132: Debe aparecer:
+    15×2 +
+    √
+    4+5 − (2×3−1) =
+    = 30 +
+    √
+    9 − (6 − 1)
+  Line 3150: Debe aparecer:
+    15×2 +
+    √
+    4+5 − (2×3−1) =
+    = 30 +
+    √
+    9 − (6 − 1)
+  Line 3168: Debe aparecer:
+    15×2 +
+    √
+    4+5 − (2×3−1) =
+    = 30 +
+    √
+    9 − (6 − 1)
+    = 30 + 3 −
+  Line 3187: Debe aparecer:
+    15×2 +
+    √
+    4+5 − (2×3−1) =
+    = 30 +
+    √
+    9 − (6 − 1)
+    = 30 + 3 − 5
+  Line 3204: Debe aparecer:
+    15×2 +
+    √
+    4+5 − (2×3−1) =
+    = 30 +
+    √
+    9 − (6 − 1)
+    = 30 + 3 − 5
+  Line 3223: Debe aparecer:
+    15×2 +
+    √
+    4+5 − (2×3−1) =
+    = 30 +
+    √
+    9 − (6 − 1)
+    = 30 + 3 − 5
+    = 28
+    II) 30−76÷75+8÷2×4 = (Colocar esta expresión aritmética en un solo color)
+Exercise II: 30−76÷75+8÷2×4
+  Line 3255: expresión aritmética de la siguiente manera:
+    30 − 76÷75 + 8÷2×4 =
+  Line 3266: Debe aparecer:
+    30 − 76÷75 + 8÷2×4 =
+    = 30−
+  Line 3278: Debe aparecer:
+  Line 3292: Debe aparecer:
+    30 − 76÷75 + 8÷2×4 =
+    = 30 − 7+
+  Line 3304: Debe aparecer:
+    30 − 76÷75 + 8÷2×4 =
+    = 30 − 7 + 4 × 4
+  Line 3318: Debe aparecer:
+    30 − 76÷75 + 8÷2×4 =
+    = 30 − 7 + 16
+  Line 3330: Debe aparecer:
+    30−76÷75+8÷2×4 =
+    = 30 − 7 + 16
+    = 39
+    III)
+    √
+    26+3×(5−2)÷(3−2) = (Colocar esta expresión aritmética en un solo color)
+  Line 3345: Debe aparecer:
+    √
+    26+3×(5−2)÷(3−2) =
+  Line 3358: Debe aparecer:
+    √
+    26 + 3×(5−2)÷(3−2) =
+  Line 3372: Debe aparecer:
+    √
+    26 + 3 × (5 − 2) ÷ (3 − 2) =
+  Line 3386: Debe aparecer:
+    √
+    26 + 3 × (5 − 2) ÷ (3 − 2) =
+    = 2 3+
+  Line 3399: Debe aparecer:
+    √
+    26 + 3×(5−2)÷(3−2) =
+    = 2 3 + 3 × (
+  Line 3415: Debe aparecer:
+    √
+    26 + 3×(5−2)÷(3−2) =
+    = 2 3 + 3 × (
+  Line 3427: Debe aparecer:
+    √
+    26 + 3×(5−2)÷(3−2) =
+    = 2 3 + 3 × 3 ÷ (
+  Line 3442: Debe aparecer:
+    √
+    26 + 3×(5−2)÷(3−2) =
+    = 2 3 + 3 × 3 ÷ (
+  Line 3454: Debe aparecer:
+    √
+    26 + 3×(5−2)÷(3−2) =
+    = 2 3 + 3 × 3 ÷ 1
+  Line 3469: Debe aparecer:
+    √
+    26 + 3×(5−2)÷(3−2) =
+    = 2 3 + 3 × 3 ÷ 1
+  Line 3481: Debe aparecer:
+    √
+    26 + 3×(5−2)÷(3−2) =
+    = 2 3 + 3 × 3 ÷ 1
+    = 8+
+  Line 3495: Debe aparecer:
+  Line 3511: Debe aparecer:
+    √
+    26 + 3×(5−2)÷(3−2) =
+    = 2 3 + 3 × 3 ÷ 1
+    = 8 + 9 ÷ 1
+  Line 3525: Debe aparecer:
+  Line 3540: Debe aparecer:
+    √
+    26 + 3×(5−2)÷(3−2) =
+    = 2 3 + 3 × 3 ÷ 1
+    = 8 + 9
+  Line 3554: Debe aparecer:
+  Line 3570: Debe aparecer:
+    55−3×2+3×
+    3√
+    56 =
+  Line 3583: Debe aparecer:
+    55 − 3×2 + 3×
+    3√
+    56 =
+  Line 3597: la primera operación disponible de izquierda a derecha. Debe aparecer:
+    55 − 3 × 2 + 3 ×
+    3√
+    56 =
+    = 55−
+  Line 3611: Debe aparecer:
+    55 − 3 × 2 + 3 ×
+    3√
+    56 =
+    = 55 − 6+
+  Line 3629: Debe aparecer:
+    55 − 3 × 2 + 3 ×
+    3√
+    56 =
+    = 55 − 6 + 3×
+  Line 3646: Debe aparecer:
+    55 − 3 × 2 + 3 ×
+    3√
+    56 =
+    = 55 − 6 + 3 × 52
+  Line 3659: Debe aparecer:
+  Line 3676: Debe aparecer:
+    55 − 3 × 2 + 3 ×
+    3√
+    56 =
+    = 55 − 6 + 3 × 52
+    = 55 − 6 + 3 × 25
+  Line 3690: Debe aparecer:
+  Line 3708: Debe aparecer:
+    55 − 3 × 2 + 3 ×
+    3√
+    56 =
+    = 55 − 6 + 3 × 52
+    = 55 − 6 + 3 × 25
+    = 55 − 6 + 75
+  Line 3726: Debe aparecer:
+    55 − 3 × 2 + 3 ×
+    3√
+    56 =
+    = 55 − 6 + 3 × 52
+    = 55 − 6 + 3 × 25
+    = 55 − 6 + 75
+    = 124
+    V) 3×[33−16÷(5+3)] = (Colocar esta expresión aritmética en un solo color)
+Exercise V: 3×[33−16÷(5+3)]
+  Line 3744: Debe aparecer:
+    3 × [33 − 16 ÷ (5 + 3)] =
+  Line 3758: Debe aparecer:
+    3 × [33 − 16 ÷ (5 + 3)] =
+  Line 3770: Debe aparecer:
+    3 × [33 − 16 ÷ (5 + 3)] =
+    = 3 × [
+  Line 3782: Debe aparecer:
+  Line 3797: Debe aparecer:
+    3 × [33 − 16 ÷ (5 + 3)] =
+    = 3 × [27 − 16 ÷ (
+  Line 3809: Debe aparecer:
+    3 × [33 − 16 ÷ (5 + 3)] =
+    = 3 × [27 − 16 ÷ (8)]
+  Line 3823: Debe aparecer:
+    3 × [33 − 16 ÷ (5 + 3)] =
+    = 3 × [27 − 16 ÷ (8)]
+    = 3 × [27−
+  Line 3836: Debe aparecer:
+    3 × [33 − 16 ÷ (5 + 3)] =
+    = 3 × [27 − 16 ÷ (8)]
+    = 3 × [27 − 2]
+  Line 3851: Debe aparecer:
+    3 × [33 − 16 ÷ (5 + 3)] =
+    = 3 × [27 − 16 ÷ (8)]
+    = 3 × [27 − 2]
+    = 3 × [25]
+  Line 3865: Debe aparecer:
+    3 × [33 − 16 ÷ (5 + 3)] =
+    = 3 × [27 − 16 ÷ (8)]
+    = 3 × [27 − 2]
+    = 3 × [25]
+    = 75
+  Line 3883: Debe aparecer:
+    20+10÷5−
+    2
+    q
+    3√
+    312+1 =
+  Line 3898: Debe aparecer:
+    20 + 10 ÷ 5 −
+    2
+    q
+    3√
+    312 + 1 =
+  Line 3915: Debe aparecer:
+    20 + 10 ÷ 5 −
+    2
+    q
+    3√
+    312 + 1 =
+    = 20+
+  Line 3931: Debe aparecer:
+    20 + 10 ÷ 5 −
+    2
+    q
+    3√
+    312 + 1 =
+    = 20 + 2
+  Line 3950: Debe aparecer:
+    20 + 10 ÷ 5 −
+    2
+    q
+    3√
+    312 + 1 =
+    = 20 + 2 −
+  Line 3970: Debe aparecer:
+    20 + 10 ÷ 5 −
+    2
+    q
+    3√
+    312 + 1 =
+    = 20 + 2 −
+    2√
+    34+
+  Line 3988: Debe aparecer:
+  Line 4009: Debe aparecer:
+    20 + 10 ÷ 5 −
+    2
+    q
+    3√
+    312 + 1 =
+    = 20 + 2 −
+    2√
+    34 + 1
+    = 20 + 2 −
+  Line 4032: Debe aparecer:
+  Line 4052: Debe aparecer:
+    20 + 10 ÷ 5 −
+    2
+    q
+    3√
+    312 + 1 =
+    = 20 + 2 −
+    2√
+    34 + 1
+    = 20 + 2 − 32 + 1
+  Line 4072: Debe aparecer:
+  Line 4094: Debe aparecer:
+    20 + 10 ÷ 5 −
+    2
+    q
+    3√
+    312 + 1 =
+    = 20 + 2 −
+    2√
+    34 + 1
+    = 20 + 2 − 32 + 1
+Exercise VII: (22 + 1)3+[10 − (9÷3+1)]−√9+40
+  Line 4116: Debe aparecer:
+    (22 + 1)3+[10 − (9÷3+1)]−
+    √
+    9+40 =
+  Line 4130: Debe aparecer:
+    (22 + 1)3 + [10 − (9 ÷ 3 + 1)] −
+    √
+    9 + 40 =
+  Line 4143: Debe aparecer:
+    (22 + 1)3 + [10 − (9 ÷ 3 + 1)] −
+    √
+    9 + 40 =
+    =
+  Line 4159: Debe aparecer:
+    (22 + 1)3 + [10 − (9 ÷ 3 + 1)] −
+    √
+    9 + 40 =
+    = (4 + 1) 3+
+  Line 4173: Debe aparecer:
+    (22 + 1)3 + [10 − (9 ÷ 3 + 1)] −
+    √
+    9 + 40 =
+    = (4 + 1) 3 + [10 − (
+  Line 4189: Debe aparecer:
+    (22 + 1)3 + [10 − (9 ÷ 3 + 1)] −
+    √
+    9 + 40 =
+    = (4 + 1) 3 + [10 − (
+  Line 4203: Debe aparecer:
+    (22 + 1)3 + [10 − (9 ÷ 3 + 1)] −
+    √
+    9 + 40 =
+    = (4 + 1) 3 + [10 − (3 + 1)]−
+  Line 4219: Debe aparecer:
+    (22 + 1)3 + [10 − (9 ÷ 3 + 1)] −
+    √
+    9 + 40 =
+    = (4 + 1) 3 + [10 − (3 + 1)] − √
+  Line 4233: Debe aparecer:
+    (22 + 1)3 + [10 − (9 ÷ 3 + 1)] −
+    √
+    9 + 40 =
+    = (4 + 1) 3 + [10 − (3 + 1)] −
+    √
+    49
+  Line 4252: Debe aparecer:
+    (22 + 1)3 + [10 − (9 ÷ 3 + 1)] −
+    √
+    9 + 40 =
+    = (4 + 1) 3 + [10 − (3 + 1)] −
+    √
+    49
+    =
+  Line 4269: Debe aparecer:
+    (22 + 1)3 + [10 − (9 ÷ 3 + 1)] −
+    √
+    9 + 40 =
+    = (4 + 1) 3 + [10 − (3 + 1)] −
+    √
+    49
+    = 5 3+
+  Line 4286: Debe aparecer:
+  Line 4305: Debe aparecer:
+    (22 + 1)3 + [10 − (9 ÷ 3 + 1)] −
+    √
+    9 + 40 =
+    = (4 + 1) 3 + [10 − (3 + 1)] −
+    √
+    49
+    = 5 3 + [10 − (4)]−
+  Line 4322: Debe aparecer:
+  Line 4343: Debe aparecer:
+    (22 + 1)3 + [10 − (9 ÷ 3 + 1)] −
+    √
+    9 + 40 =
+    = (4 + 1) 3 + [10 − (3 + 1)] −
+    √
+    49
+    = 5 3 + [10 − (4)] − 7
+  Line 4360: Debe aparecer:
+  Line 4379: Debe aparecer:
+    (22 + 1)3 + [10 − (9 ÷ 3 + 1)] −
+    √
+    9 + 40 =
+    = (4 + 1) 3 + [10 − (3 + 1)] −
+    √
+    49
+    = 5 3 + [10 − (4)] − 7
+    = 125+
+  Line 4397: Debe aparecer:
+  Line 4417: Debe aparecer:
+    (22 + 1)3 + [10 − (9 ÷ 3 + 1)] −
+    √
+    9 + 40 =
+    = (4 + 1) 3 + [10 − (3 + 1)] −
+    √
+    49
+    = 5 3 + [10 − (4)] − 7
+    = 125 + 6 − 7
+  Line 4437: Debe aparecer:
+    (22 + 1)3 + [10 − (9 ÷ 3 + 1)] −
+    √
+    9 + 40 =
+    = (4 + 1) 3 + [10 − (3 + 1)] −
+    √
+    49
+    = 5 3 + [10 − (4)] − 7
+    = 125 + 6 − 7
+    = 124
+  Line 4455: Debe aparecer:
+    5+[15 − (3−1)2+23]+
+    3√
+    7+1 =
+  Line 4468: Debe aparecer:
+    5 + [15 − (3 − 1)2 + 23] +
+    3√
+    7 + 1 =
+  Line 4483: Debe aparecer:
+    5 + [15 − (3 − 1)2 + 23] +
+    3√
+    7 + 1 =
+    = 5
+  Line 4497: Debe aparecer:
+    5 + [15 − (3 − 1)2 + 23] +
+    3√
+    7 + 1 =
+    = 5 + [15 − (
+  Line 4512: Debe aparecer:
+    5 + [15 − (3 − 1)2 + 23] +
+    3√
+    7 + 1 =
+    = 5 + [15 − (2)2+
+  Line 4526: Debe aparecer:
+    5 + [15 − (3 − 1)2 + 23] +
+    3√
+    7 + 1 =
+    = 5 + [15 − (2)2+
+  Line 4541: Debe aparecer:
+    5 + [15 − (3 − 1)2 + 23] +
+    3√
+    7 + 1 =
+    = 5 + [15 − (2)2 + 8
+  Line 4555: Debe aparecer:
+    5 + [15 − (3 − 1)2 + 23] +
+    3√
+    7 + 1 =
+    = 5 + [15 − (2)2 + 8] + 3
+    √
+  Line 4569: Debe aparecer:
+  Line 4587: Debe aparecer:
+    5 + [15 − (3 − 1)2 + 23] +
+    3√
+    7 + 1 =
+    = 5 + [15 − (2)2 + 8] +
+    3√
+    8
+    = 5 + [15 −
+  Line 4603: Debe aparecer:
+    5 + [15 − (3 − 1)2 + 23] +
+    3√
+    7 + 1 =
+    = 5 + [15 − (2)2 + 8] +
+    3√
+    8
+    = 5 + [15 − 4 + 8]+
+  Line 4622: Debe aparecer:
+    5 + [15 − (3 − 1)2 + 23] +
+    3√
+    7 + 1 =
+    = 5 + [15 − (2)2 + 8] +
+    3√
+    8
+    = 5 + [15 − 4 + 8]+
+  Line 4642: Debe aparecer:
+    5 + [15 − (3 − 1)2 + 23] +
+    3√
+    7 + 1 =
+    = 5 + [15 − (2)2 + 8] +
+    3√
+    8
+    = 5 + [15 − 4 + 8] + 2
+  Line 4661: Debe aparecer:
+    5 + [15 − (3 − 1)2 + 23] +
+    3√
+    7 + 1 =
+    = 5 + [15 − (2)2 + 8] +
+    3√
+    8
+    = 5 + [15 − 4 + 8] + 2
+    = 5 + [19] + 2
+  Line 4679: Debe aparecer:
+    5 + [15 − (3 − 1)2 + 23] +
+    3√
+    7 + 1 =
+    = 5 + [15 − (2)2 + 8] +
+    3√
+    8
+    = 5 + [15 − 4 + 8] + 2
+    = 5 + [19] + 2
+    = 26
+  Line 4701: Debe aparecer:
+    (92 + 2) × 3−
+    p
+    23+10÷(22+1)−(6+2)2 =
+  Line 4714: Debe aparecer:
+    (92 + 2) × 3 −
+    p
+    23 + 10 ÷ (22 + 1) − (6 + 2)2 =
+  Line 4729: Debe aparecer:
+    (92 + 2) × 3 −
+    p
+    23 + 10 ÷ (22 + 1) − (6 + 2)2 =
+  Line 4742: Debe aparecer:
+    (92 + 2) × 3 −
+    p
+    23 + 10 ÷ (22 + 1) − (6 + 2)2 =
+    = (81 + 2) × 3−
+  Line 4758: Debe aparecer:
+    (92 + 2) × 3 −
+    p
+    23 + 10 ÷ (22 + 1) − (6 + 2)2 =
+    = (81 + 2) × 3 −
+    p
+    23 + 10 ÷ (
+  Line 4774: Debe aparecer:
+    (92 + 2) × 3 −
+    p
+    23 + 10 ÷ (22 + 1) − (6 + 2)2 =
+    = (81 + 2) × 3 −
+    p
+    23 + 10 ÷ (
+  Line 4790: Debe aparecer:
+    (92 + 2) × 3 −
+    p
+    23 + 10 ÷ (22 + 1) − (6 + 2)2 =
+    = (81 + 2) × 3 −
+    p
+    23 + 10 ÷ (4 + 1)−
+  Line 4808: Debe aparecer:
+    (92 + 2) × 3 −
+    p
+    23 + 10 ÷ (22 + 1) − (6 + 2)2 =
+    = (81 + 2) × 3 −
+    p
+    23 + 10 ÷ (4 + 1)−
+  Line 4824: Debe aparecer:
+    (92 + 2) × 3 −
+    p
+    23 + 10 ÷ (22 + 1) − (6 + 2)2 =
+    = (81 + 2) × 3 −
+    p
+    23 + 10 ÷ (4 + 1) − (8)2
+  Line 4843: Debe aparecer:
+    (92 + 2) × 3 −
+    p
+    23 + 10 ÷ (22 + 1) − (6 + 2)2 =
+    = (81 + 2) × 3 −
+    p
+    23 + 10 ÷ (4 + 1) − (8)2
+  Line 4859: Debe aparecer:
+    (92 + 2) × 3 −
+    p
+    23 + 10 ÷ (22 + 1) − (6 + 2)2 =
+    = (81 + 2) × 3 −
+    p
+    23 + 10 ÷ (4 + 1) − (8)2
+    = (83) × 3−
+  Line 4878: Debe aparecer:
+    (92 + 2) × 3 −
+    p
+    23 + 10 ÷ (22 + 1) − (6 + 2)2 =
+    = (81 + 2) × 3 −
+    p
+    23 + 10 ÷ (4 + 1) − (8)2
+    = (83) × 3−
+  Line 4895: Debe aparecer:
+    (92 + 2) × 3 −
+    p
+    23 + 10 ÷ (22 + 1) − (6 + 2)2 =
+    = (81 + 2) × 3 −
+    p
+    23 + 10 ÷ (4 + 1) − (8)2
+    = (83) × 3 −
+    p
+    23 + 10 ÷ (5)−
+  Line 4916: Debe aparecer:
+    (92 + 2) × 3 −
+    p
+    23 + 10 ÷ (22 + 1) − (6 + 2)2 =
+    = (81 + 2) × 3 −
+    p
+    23 + 10 ÷ (4 + 1) − (8)2
+    = (83) × 3 −
+    p
+    23 + 10 ÷ (5)−
+  Line 4935: Debe aparecer:
+    (92 + 2) × 3 −
+    p
+    23 + 10 ÷ (22 + 1) − (6 + 2)2 =
+    = (81 + 2) × 3 −
+    p
+    23 + 10 ÷ (4 + 1) − (8)2
+    = (83) × 3 −
+    p
+    23 + 10 ÷ (5) − 64
+  Line 4956: Debe aparecer:
+    (92 + 2) × 3 −
+    p
+    23 + 10 ÷ (22 + 1) − (6 + 2)2 =
+    = (81 + 2) × 3 −
+    p
+    23 + 10 ÷ (4 + 1) − (8)2
+    = (83) × 3 −
+    p
+    23 + 10 ÷ (5) − 64
+  Line 4975: Debe aparecer:
+    (92 + 2) × 3 −
+    p
+    23 + 10 ÷ (22 + 1) − (6 + 2)2 =
+    = (81 + 2) × 3 −
+    p
+    23 + 10 ÷ (4 + 1) − (8)2
+    = (83) × 3 −
+    p
+    23 + 10 ÷ (5) − 64
+  Line 4997: Debe aparecer:
+    (92 + 2) × 3 −
+    p
+    23 + 10 ÷ (22 + 1) − (6 + 2)2 =
+    = (81 + 2) × 3 −
+    p
+    23 + 10 ÷ (4 + 1) − (8)2
+    = (83) × 3 −
+    p
+    23 + 10 ÷ (5) − 64
+  Line 5019: Debe aparecer:
+    (92 + 2) × 3 −
+    p
+    23 + 10 ÷ (22 + 1) − (6 + 2)2 =
+    = (81 + 2) × 3 −
+    p
+    23 + 10 ÷ (4 + 1) − (8)2
+    = (83) × 3 −
+    p
+    23 + 10 ÷ (5) − 64
+  Line 5043: Debe aparecer:
+    (92 + 2) × 3 −
+    p
+    23 + 10 ÷ (22 + 1) − (6 + 2)2 =
+    = (81 + 2) × 3 −
+    p
+    23 + 10 ÷ (4 + 1) − (8)2
+    = (83) × 3 −
+    p
+    23 + 10 ÷ (5) − 64
+  Line 5072: Debe aparecer:
+    (92 + 2) × 3 −
+    p
+    23 + 10 ÷ (22 + 1) − (6 + 2)2 =
+    = (81 + 2) × 3 −
+    p
+    23 + 10 ÷ (4 + 1) − (8)2
+    = (83) × 3 −
+    p
+    23 + 10 ÷ (5) − 64
+  Line 5100: Debe aparecer:
+    (92 + 2) × 3 −
+    p
+    23 + 10 ÷ (22 + 1) − (6 + 2)2 =
+    = (81 + 2) × 3 −
+    p
+    23 + 10 ÷ (4 + 1) − (8)2
+    = (83) × 3 −
+    p
+    23 + 10 ÷ (5) − 64
+Exercise X: 52+8 × 22−78 ÷ 76+2 × (5+4 ÷ 2)−√15+1
+  Line 5142: expresión aritmética de la siguiente manera:
+    52 + 8 × 22 − 78 ÷ 76 + 2 × (5+4 ÷ 2) −
+    √
+    15+1 =
+    con una voz que indique “Ahora vamos a resolver cada uno de los bloques”
+  Line 5156: Debe aparecer ahora lo siguiente:
+    52 + 8 × 22 − 78 ÷ 76 + 2 × (5+4 ÷ 2) −
+    √
+    15+1 =
+    = 25+
+  Line 5178: Debe aparecer ahora lo siguiente:
+    52 + 8 × 22 − 78 ÷ 76 + 2 × (5+4 ÷ 2) −
+    √
+    15+1 =
+    = 25 + 8 × 4−
+  Line 5205: Debe aparecer ahora lo siguiente:
+    52 + 8 × 22 − 78 ÷ 76 + 2 × (5+4 ÷ 2) −
+    √
+    15+1 =
+    = 25 + 8 × 4 − 72+
+  Line 5299: expresión aritmética de la siguiente manera:
+  Line 5317: expresión aritmética de la siguiente manera:
+    52+8 × 22−78 ÷ 76+2 × (5+4 ÷ 2)−
+    √
+    15+1 =
+    = 25 + 8 × 4 − 72 + 2 × (5+2) −
+    √
+    16
+    = 25+
+  Line 5333: expresión aritmética de la siguiente manera:
+    52+8 × 22−78 ÷ 76+2 × (5+4 ÷ 2)−
+    √
+    15+1 =
+    = 25 + 8 × 4 − 72 + 2 × (5+2) −
+    √
+    16
+    = 25 + 32 −
+  Line 5350: expresión aritmética de la siguiente manera:
+    52+8 × 22−78 ÷ 76+2 × (5+4 ÷ 2)−
+    √
+    15+1 =
+    = 25 + 8 × 4 − 72 + 2 × (5+2) −
+    √
+    16
+    = 25 + 32 − 49
+  Line 5366: expresión aritmética de la siguiente manera:
+    52+8 × 22−78 ÷ 76+2 × (5+4 ÷ 2)−
+    √
+    15+1 =
+    = 25 + 8 × 4 − 72 + 2 × (5+2) −
+    √
+    16
+    = 25 + 32 − 49 + 2 × (
+  Line 5383: expresión aritmética de la siguiente manera:
+    52+8 × 22−78 ÷ 76+2 × (5+4 ÷ 2)−
+    √
+    15+1 =
+    = 25 + 8 × 4 − 72 + 2 × (5+2) −
+    √
+    16
+    = 25 + 32 − 49 + 2 × (7)−
+  Line 5400: expresión aritmética de la siguiente manera:
+    52+8 × 22−78 ÷ 76+2 × (5+4 ÷ 2)−
+    √
+    15+1 =
+    = 25 + 8 × 4 − 72 + 2 × (5+2) −
+    √
+    16
+    = 25 + 32 − 49 + 2 × (7) − 4
+    =
+  Line 5421: expresión aritmética de la siguiente manera:
+    52+8 × 22−78 ÷ 76+2 × (5+4 ÷ 2)−
+    √
+    15+1 =
+    = 25 + 8 × 4 − 72 + 2 × (5+2) −
+    √
+    16
+    = 25 + 32 − 49 + 2 × (7) − 4
+    = 25 + 32 − 49+
+  Line 5437: expresión aritmética de la siguiente manera:
+    52+8 × 22−78 ÷ 76+2 × (5+4 ÷ 2)−
+    √
+    15+1 =
+    = 25 + 8 × 4 − 72 + 2 × (5+2) −
+    √
+    16
+    = 25 + 32 − 49 + 2 × (7) − 4
+    = 25 + 32 − 49 + 14 − 4
+  Line 5459: expresión aritmética de la siguiente manera:
+    52+8 × 22−78 ÷ 76+2 × (5+4 ÷ 2)−
+    √
+    15+1 =
+    = 25 + 8 × 4 − 72 + 2 × (5+2) −
+    √
+    16
+    = 25 + 32 − 49 + 2 × (7) − 4
+    = 25 + 32 − 49 + 14 − 4
+    = 18

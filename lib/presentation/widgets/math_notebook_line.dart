@@ -4,7 +4,17 @@ import 'interactive_equation.dart';
 
 /// Converts a raw math expression string to LaTeX format for rendering.
 String _toLatex(String expr) {
-  String output = expr;
+  String output = expr.replaceAll('\$', '');
+
+  // Handle rootN( ... ) → \sqrt[N]{ ... }
+  output = output.replaceAllMapped(
+    RegExp(r'root(\d+)\s*\(\s*(.*?)\s*\)'),
+    (match) => '\\sqrt[' + match.group(1)! + ']{' + match.group(2)! + '}',
+  );
+  output = output.replaceAllMapped(
+    RegExp(r'(?<!\\)root(\d+)'),
+    (match) => '\\sqrt[' + match.group(1)! + ']{\\ }',
+  );
 
   // Handle sqrt( ... ) → \sqrt{ ... }
   // First handle nested patterns: sqrt( ... )
@@ -24,11 +34,15 @@ String _toLatex(String expr) {
   // Multiplication and division
   output = output.replaceAll(' * ', r' \times ');
   output = output.replaceAll('*', r'\times ');
+  output = output.replaceAll(' x ', r' \times ');
+  output = output.replaceAll('×', r'\times ');
   output = output.replaceAll(' / ', r' \div ');
   output = output.replaceAll('/', r'\div ');
+  output = output.replaceAll(' ÷ ', r' \div ');
+  output = output.replaceAll('÷', r'\div ');
 
   // Handle blank placeholder
-  output = output.replaceAll('____', r'\boxed{?}');
+  output = output.replaceAll('____', r'\boxed{\phantom{0}}');
 
   return output;
 }
@@ -58,8 +72,20 @@ class MathNotebookLine extends StatelessWidget {
       if (t.contains('(')) {
         parenDepth += t.split('(').length - 1;
       }
+      if (t.contains('[')) {
+        parenDepth += t.split('[').length - 1;
+      }
+      if (t.contains('{')) {
+        parenDepth += t.split('{').length - 1;
+      }
       if (t.contains(')')) {
         parenDepth -= t.split(')').length - 1;
+      }
+      if (t.contains(']')) {
+        parenDepth -= t.split(']').length - 1;
+      }
+      if (t.contains('}')) {
+        parenDepth -= t.split('}').length - 1;
       }
 
       if (parenDepth < 0) parenDepth = 0;

@@ -1,0 +1,90 @@
+--- PAGE 44 ---
+36÷34 − 2×(5−2) =
+= 3 2 − 2 × (3)
+= 9 − 6
+= 3
+II) [23 × 22 − 20] + [6 + 3 2] =
+1) Selecciona los signos separadores que no constan en las operaciones internas.
+Solución. Son signos separadores los escritos en color azul, mientras que los de
+color rojo no lo son.
+En caso de que el estudiante seleccione los rojos, debe desplegarse la palabra
+incorrecto, junto con la retroalimentación: Este signo pertenece a una operación
+interna. Los signos separadores externos permiten dividir la expresión aritmética
+en bloques.
+Una vez que el estudiante ha seleccionado los signos separadores debe aparecer:
+[23×22−20]+[6+32] =
+2) ¿En cuántos bloques queda dividida la expresión aritmética?
+a) 1
+b) 2
+c) 3
+d) 4
+Solución. La respuesta correcta es b) 2.
+En caso de que el estudiante seleccione otra opción, debe desplegarse la palabra
+incorrecto, junto con la retroalimentación: Recuerda que los bloques se identifican
+a partir de los signos separadores que no están dentro de operaciones internas.
+Una vez que el estudiante ha seleccionado la opción correcta, debe aparecer la
+expresión aritmética dividida en bloques:
+[23×22−20] + [6+3 2] =
+
+
+--- PAGE 45 ---
+con una voz que indique “Ahora vamos a analizar y resolver cada uno de los
+bloques”.
+3) En el primer bloque, ¿qué operación se debe resolver primero?
+a) La resta 22 − 20
+b) La multiplicación 23 × 22
+c) La propiedad del producto de potencias de igual base
+d) La suma 23 + 22
+Solución. La respuesta correcta es c) La propiedad del producto de potencias de
+igual base.
+En caso de que el estudiante seleccione otra opción, debe desplegarse la palabra
+incorrecto, junto con la retroalimentación: Recuerda que en este bloque se debe
+respetar la jerarquía de las operaciones y de las propiedades de la potenciación.
+Primero se aplican las propiedades de la potenciación, luego se resuelven las
+potencias y finalmente las sumas o restas.
+Debe aparecer:
+[23 × 22 − 20] + [6 + 3 2] =
+4) Al aplicar el producto de potencias de igual base en23 · 22, el resultado queda:
+a) 26
+b) 25
+c) 45
+d) 21
+Solución. La respuesta correcta es b) 25
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: En el producto
+de potencias de igual base, se conserva la base y se suman los exponentes:3+2 = 5 .
+Debe aparecer:
+:
+[23 × 22 − 20] + [6 + 3 2] =
+=[25−20] + [
+
+
+--- PAGE 46 ---
+5) En el segundo bloque, ¿qué operación se debe resolver primero?
+a) La suma 6 + 3
+b) La potencia 32
+c) La resta 25 − 20
+d) La suma final
+Solución. La respuesta correcta es b) La potencia 32.
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: En el segundo
+bloque primero se debe resolver la potencia, porque la potenciación tiene mayor
+jerarquía que la suma.
+Debe aparecer:
+[23 × 22 − 20] + [6 + 3 2] =
+=[25−20] + [
+6) El resultado de la potencia32 es:
+a) 6
+b) 9
+c) 3
+d) 12
+Solución. La respuesta correcta es b) 9.
+En caso de que el estudiante seleccione cualquiera de las otras opciones, debe
+desplegarse la palabra incorrecto, junto con la retroalimentación: Recuerda que
+32 = 3 × 3 = 9.
+Debe aparecer:
+[23 × 22 − 20] + [6 + 3 2] =
+=[25−20] + [6 + 9]
+7) En el primer bloque, ¿qué operación se debe resolver primero?
+a) La resta 25 − 20
+
