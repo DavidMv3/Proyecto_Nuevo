@@ -2838,17 +2838,19 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'hard_6_s3',
-          instruction: 'En el primer bloque no hay operaciones internas, por lo tanto÷',
+          startsNewLine: true,
+          instruction: 'En el primer bloque no hay operaciones internas, por lo tanto:',
           options: ['Se conserva el número', 'Se elimina el número', 'Se divide', 'Se multiplica'],
           correctAnswer: 'Se conserva el número',
           correctIds: [],
           algorithmHint: 'Resuelve la operación indicada con cuidado.',
+          expressionOverride: '20 +',
           feedbackError: 'Cuando un bloque no tiene operaciones internas, el número se conserva',
         ),
         StepEntity(
           id: 'hard_6_s4',
           instruction: 'El resultado de la división del segundo bloque es:',
-          expressionOverride: '20 + 2 - sqrt( root3( 3 ^ 12 ) ) + 1',
+          expressionOverride: '20 + 2',
           options: ['2', '5', '10', '15'],
           correctAnswer: '2',
           correctIds: [],
@@ -2858,6 +2860,7 @@ class ExerciseRepository {
         StepEntity(
           id: 'hard_6_s5',
           instruction: 'En el tercer bloque, ¿qué se debe resolver primero?',
+          expressionOverride: '20 + 2 -',
           options: ['La raíz cuadrada exterior', 'La propiedad de la raíz cúbica de una potencia', 'La suma final', 'La resta'],
           correctAnswer: 'La propiedad de la raíz cúbica de una potencia',
           correctIds: [],
@@ -2866,8 +2869,8 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'hard_6_s6',
-          instruction: 'Al aplicar la propiedad \$\\sqrt[3]{3^{12}} = 3^{\\frac{12}{3}}\$ , el exponente queda÷',
-          expressionOverride: '20 + 2 - sqrt( 3 ^ 4 ) + 1',
+          instruction: 'Al aplicar la propiedad \$\\sqrt[3]{3^{12}} = 3^{\\frac{12}{3}}\$ , el exponente queda:',
+          expressionOverride: '20 + 2 - sqrt( 3 ^ 4 ) +',
           options: ['3', '4', '6', '12'],
           correctAnswer: '4',
           correctIds: [],
@@ -2876,7 +2879,8 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'hard_6_s7',
-          instruction: 'En el cuarto bloque no hay operaciones internas, por lo tanto÷',
+          instruction: 'En el cuarto bloque no hay operaciones internas, por lo tanto:',
+          expressionOverride: '20 + 2 - sqrt( 3 ^ 4 ) + 1',
           options: ['Se conserva el número 1', 'Se elimina el número 1', 'Se suma primero \$4 + 1\$', 'Se multiplica'],
           correctAnswer: 'Se conserva el número 1',
           correctIds: [],
@@ -2885,7 +2889,9 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'hard_6_s8',
+          startsNewLine: true,
           instruction: 'Entre las operaciones que quedaron ¿cuál tiene mayor jerarquía?',
+          expressionOverride: '20 + 2 -',
           options: ['La propiedad de la raíz cuadrada de una potencia', 'La suma \$20 + 2\$', 'La resta', 'La suma final'],
           correctAnswer: 'La propiedad de la raíz cuadrada de una potencia',
           correctIds: [],
@@ -2894,7 +2900,7 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'hard_6_s9',
-          instruction: 'Al aplicar la propiedad \$\\sqrt{3^4} = 3^{\\frac{4}{2}}\$, el exponente queda÷',
+          instruction: 'Al aplicar la propiedad \$\\sqrt{3^4} = 3^{\\frac{4}{2}}\$, el exponente queda:',
           expressionOverride: '20 + 2 - 3 ^ 2 + 1',
           options: ['2', '4', '6', '8'],
           correctAnswer: '2',
@@ -2904,7 +2910,9 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'hard_6_s10',
+          startsNewLine: true,
           instruction: 'La operación que se debe resolver ahora es:',
+          expressionOverride: '20 + 2 -',
           options: ['La potenciación', 'La suma', 'La resta'],
           correctAnswer: 'La potenciación',
           correctIds: [],
@@ -2923,6 +2931,7 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'hard_6_s12',
+          startsNewLine: true,
           instruction: 'El resultado de las últimas operaciones es:',
           expressionOverride: '14',
           options: ['14', '12', '20', '22'],
