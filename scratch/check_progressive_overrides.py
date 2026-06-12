@@ -2,6 +2,11 @@ import re
 
 def main():
     repo_path = r"lib/data/repositories/exercise_repository.dart"
+    import sys
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
     with open(repo_path, "r", encoding="utf-8") as f:
         content = f.read()
 

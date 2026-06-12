@@ -25,9 +25,9 @@ String _toLatex(String expr) {
   // Fallback for remaining sqrt
   output = output.replaceAll(RegExp(r'(?<!\\)sqrt'), r'\sqrt{\ }');
 
-  // Handle ^ for exponents: 3 ^ 2 → 3^{2}
+  // Handle ^ for exponents: 3 ^ 2 → 3^{2}, 2 ^ ____ → 2^{____}
   output = output.replaceAllMapped(
-    RegExp(r'(\d+)\s*\^\s*(\d+)'),
+    RegExp(r'(\d+)\s*\^\s*([a-zA-Z\d_\\\{\}\(\)]+|____)'),
     (match) => '${match.group(1)}^{${match.group(2)}}',
   );
 

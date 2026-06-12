@@ -33,6 +33,9 @@ class StepEntity extends Equatable {
   /// DESPUÉS de que el usuario responde este paso. Usa '____' para blancos.
   final String? workingExpression;
 
+  /// Indica si este paso inicia una nueva línea de evaluación en el cuaderno.
+  final bool startsNewLine;
+
   const StepEntity({
     required this.id,
     required this.instruction,
@@ -44,6 +47,7 @@ class StepEntity extends Equatable {
     this.specificErrorMessages = const {},
     this.expressionOverride,
     this.workingExpression,
+    this.startsNewLine = false,
   });
 
   /// Determina si este paso es de opción múltiple.
@@ -61,5 +65,6 @@ class StepEntity extends Equatable {
     specificErrorMessages,
     expressionOverride,
     workingExpression,
+    startsNewLine,
   ];
 }

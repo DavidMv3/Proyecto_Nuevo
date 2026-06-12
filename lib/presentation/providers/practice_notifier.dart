@@ -15,6 +15,29 @@ String getExpressionForStep(ExerciseEntity exercise, int stepIndex) {
   return exercise.baseExpression;
 }
 
+bool isExpressionComplete(String expr) {
+  final trimmed = expr.trim();
+  if (trimmed.isEmpty) return false;
+  if (trimmed.contains('____')) return false;
+  
+  // Check trailing operators
+  final lastChar = trimmed.substring(trimmed.length - 1);
+  if (lastChar == '+' || lastChar == '-' || lastChar == '*' || lastChar == '/' || lastChar == '(') {
+    return false;
+  }
+  
+  // Check parenthesis count
+  int openCount = 0;
+  int closeCount = 0;
+  for (int i = 0; i < trimmed.length; i++) {
+    if (trimmed[i] == '(') openCount++;
+    if (trimmed[i] == ')') closeCount++;
+  }
+  if (openCount > closeCount) return false;
+  
+  return true;
+}
+
 // ─────────────────────────────────────────────────────────────────────────────
 // ESTADO VISUAL DEL ROBOT GUARDIÁN
 // ─────────────────────────────────────────────────────────────────────────────
@@ -62,6 +85,9 @@ class PracticeState {
   final bool hintActive;
   final bool isProcessing;
 
+  // ── Respuestas Incorrectas del Paso Actual ───────────────────────────────
+  final Set<String> incorrectAnswers;
+
   // ── Historial Cuaderno ───────────────────────────────────────────────────
   final List<String> equationHistory;
 
@@ -79,6 +105,7 @@ class PracticeState {
     required this.hintTokenIds,
     required this.hintActive,
     required this.equationHistory,
+    required this.incorrectAnswers,
     this.newlyUnlockedAccessory,
     this.comboCount = 0,
     this.comboActive = false,
@@ -143,12 +170,12 @@ class PracticeState {
     }
     final history = [exercise.baseExpression];
     for (int i = 0; i < safeIndex; i++) {
-      final override = exercise.steps[i].expressionOverride;
-      if (override != null) {
-        final cleanOverride = override.replaceAll(' ', '');
-        final isSame = history.any((h) => h.replaceAll(' ', '') == cleanOverride);
+      if (i + 1 < exercise.steps.length && exercise.steps[i + 1].startsNewLine) {
+        final expr = getExpressionForStep(exercise, i);
+        final cleanExpr = expr.replaceAll(' ', '').replaceAll('\$', '');
+        final isSame = history.any((h) => h.replaceAll(' ', '').replaceAll('\$', '') == cleanExpr);
         if (!isSame) {
-          history.add(override);
+          history.add(expr);
         }
       }
     }
@@ -167,6 +194,7 @@ class PracticeState {
       equationHistory: history,
       shuffledOptions: initialOptions,
       workingLine: initialExpr,
+      incorrectAnswers: const {},
     );
   }
 
@@ -194,6 +222,7 @@ class PracticeState {
     String? workingLine,
     bool clearWorkingLine = false,
     List<String>? shuffledOptions,
+    Set<String>? incorrectAnswers,
   }) {
     return PracticeState(
       exercise: exercise,
@@ -220,6 +249,7 @@ class PracticeState {
       equationHistory: equationHistory ?? this.equationHistory,
       workingLine: clearWorkingLine ? null : (workingLine ?? this.workingLine),
       shuffledOptions: shuffledOptions ?? this.shuffledOptions,
+      incorrectAnswers: incorrectAnswers ?? this.incorrectAnswers,
     );
   }
 }
@@ -304,14 +334,7 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
       if (updated.containsAll(correctIds)) {
         final currentWorking = state.workingLine;
         final newWorking = state.currentStep.expressionOverride ?? currentWorking;
-        var newHistory = List<String>.from(state.equationHistory);
-        if (newWorking != currentWorking) {
-          final lineToPush = currentWorking ?? state.exercise.baseExpression;
-          final isSameAsLast = newHistory.isNotEmpty && newHistory.last.replaceAll(' ', '') == lineToPush.replaceAll(' ', '');
-          if (!isSameAsLast && !lineToPush.contains('____')) {
-            newHistory.add(lineToPush);
-          }
-        }
+        final newHistory = state.equationHistory;
 
         // Paso completado
         state = state.copyWith(
@@ -354,14 +377,7 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
         
         final currentWorking = state.workingLine;
         final newWorking = state.currentStep.expressionOverride ?? currentWorking;
-        var newHistory = List<String>.from(state.equationHistory);
-        if (newWorking != currentWorking) {
-          final lineToPush = currentWorking ?? state.exercise.baseExpression;
-          final isSameAsLast = newHistory.isNotEmpty && newHistory.last.replaceAll(' ', '') == lineToPush.replaceAll(' ', '');
-          if (!isSameAsLast && !lineToPush.contains('____')) {
-            newHistory.add(lineToPush);
-          }
-        }
+        final newHistory = state.equationHistory;
         
         state = state.copyWith(
           stepCompleted: true,
@@ -379,7 +395,7 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
           // Mostrar la respuesta final como nueva línea en el cuaderno
           final currentLine = state.workingLine;
           final finalHistory = List<String>.from(state.equationHistory);
-          if (currentLine != null && !currentLine.contains('____')) {
+          if (currentLine != null && isExpressionComplete(currentLine)) {
             final isSame = finalHistory.isNotEmpty &&
                 finalHistory.last.replaceAll(' ', '').replaceAll('\$', '') ==
                     currentLine.replaceAll(' ', '').replaceAll('\$', '');
@@ -398,6 +414,8 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
         final newLives = state.lives - 1;
         FeedbackService.instance.playError();
 
+        final updatedIncorrect = Set<String>.from(state.incorrectAnswers)..add(answer);
+
         if (newLives <= 0) {
           state = state.copyWith(
             llamaMood: LlamaMood.error,
@@ -405,6 +423,7 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
             comboActive: false,
             lives: 0,
             showGameOverDialog: true,
+            incorrectAnswers: updatedIncorrect,
           );
         } else {
           state = state.copyWith(
@@ -414,6 +433,7 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
             lives: newLives,
             errorSnackVersion: state.errorSnackVersion + 1,
             errorSnackMessage: 'incorrecto. ${state.currentStep.feedbackError}',
+            incorrectAnswers: updatedIncorrect,
           );
         }
       }
@@ -538,12 +558,25 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
       allExerciseIdsInThisLevel: allIdsInLevel,
     );
 
+    // Asegurar que la línea final de trabajo entre al historial al terminar el ejercicio
+    final finalHistory = List<String>.from(state.equationHistory);
+    final currentLine = state.workingLine;
+    if (currentLine != null) {
+      final isSame = finalHistory.isNotEmpty &&
+          finalHistory.last.replaceAll(' ', '').replaceAll('\$', '') ==
+              currentLine.replaceAll(' ', '').replaceAll('\$', '');
+      if (!isSame) {
+        finalHistory.add(currentLine);
+      }
+    }
+
     state = state.copyWith(
       exerciseFinished: true,
       llamaMood: LlamaMood.victory,
       newlyUnlockedAccessory: accessory,
       comboActive: false,
       showGameOverDialog: false,
+      equationHistory: finalHistory,
     );
     FeedbackService.instance.playVictory();
   }
@@ -566,13 +599,13 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
     }
 
     final newHistory = List<String>.from(state.equationHistory);
-    final currentWorkingLine = state.workingLine;
 
-    if (currentWorkingLine != null) {
-      final cleanWorking = currentWorkingLine.replaceAll(' ', '').replaceAll('\$', '');
+    if (nextStep.startsNewLine) {
+      final lastLineExpr = getExpressionForStep(state.exercise, state.currentStepIndex);
+      final cleanWorking = lastLineExpr.replaceAll(' ', '').replaceAll('\$', '');
       final isSameAsLast = newHistory.isNotEmpty && newHistory.last.replaceAll(' ', '').replaceAll('\$', '') == cleanWorking;
       if (!isSameAsLast) {
-        newHistory.add(currentWorkingLine);
+        newHistory.add(lastLineExpr);
       }
     }
 
@@ -590,6 +623,7 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
       workingLine: nextExpr,
       equationHistory: newHistory,
       shuffledOptions: nextOptions,
+      incorrectAnswers: const {},
     );
 
     _saveProgress();

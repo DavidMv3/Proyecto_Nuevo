@@ -380,6 +380,7 @@ class _PracticeScreenState extends ConsumerState<PracticeScreen> {
                                     onSelected: notifier.checkMultipleChoiceAnswer,
                                     isStepDone: state.stepCompleted,
                                     feedbackError: state.currentStep.feedbackError,
+                                    incorrectAnswers: state.incorrectAnswers,
                                   ),
                                 ),
                               ),
@@ -1063,12 +1064,14 @@ class _MultipleChoiceArea extends StatelessWidget {
   final ValueChanged<String> onSelected;
   final bool isStepDone;
   final String feedbackError;
+  final Set<String> incorrectAnswers;
 
   const _MultipleChoiceArea({
     required this.options,
     required this.onSelected,
     required this.isStepDone,
     required this.feedbackError,
+    required this.incorrectAnswers,
   });
 
   /// Detecta si una opción contiene notación matemática que deba
@@ -1092,38 +1095,64 @@ class _MultipleChoiceArea extends StatelessWidget {
       children: [
         ...options.map((opt) {
           final useMath = _isMathOption(opt);
+          final bool isIncorrect = incorrectAnswers.contains(opt);
+
           return Padding(
             padding: const EdgeInsets.only(bottom: 6),
             child: SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: isStepDone ? null : () => onSelected(opt),
+                onPressed: (isStepDone || isIncorrect) ? null : () => onSelected(opt),
                 style: ElevatedButton.styleFrom(
                   padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 14),
-                  backgroundColor: Colors.white,
-                  foregroundColor: AppTheme.textDark,
-                  elevation: 6,
-                  shadowColor: AppTheme.skyBlue.withValues(alpha: 0.3),
+                  backgroundColor: isIncorrect ? const Color(0xFFFFEBEE) : Colors.white,
+                  foregroundColor: isIncorrect ? const Color(0xFFC62828) : AppTheme.textDark,
+                  disabledBackgroundColor: isIncorrect ? const Color(0xFFFFEBEE) : null,
+                  disabledForegroundColor: isIncorrect ? const Color(0xFFC62828) : null,
+                  elevation: isIncorrect ? 2 : 6,
+                  shadowColor: isIncorrect
+                      ? Colors.transparent
+                      : AppTheme.skyBlue.withValues(alpha: 0.3),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20),
                     side: BorderSide(
-                        color: AppTheme.skyBlue.withValues(alpha: 0.2),
-                        width: 2),
+                      color: isIncorrect
+                          ? const Color(0xFFEF9A9A)
+                          : AppTheme.skyBlue.withValues(alpha: 0.2),
+                      width: 2,
+                    ),
                   ),
                 ),
                 child: Padding(
                   padding: const EdgeInsets.symmetric(vertical: 2.0),
-                  child: useMath
-                      ? MathNotebookLine(
-                          equation: opt,
-                          showBoxesAndColors: false,
-                        )
-                      : LatexRichText(
-                          text: opt,
-                          textAlign: TextAlign.center,
-                          style: const TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.w900, fontFamily: 'Nunito', height: 1.3),
-                        ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      if (isIncorrect) ...[
+                        const Text('❌', style: TextStyle(fontSize: 16)),
+                        const SizedBox(width: 6),
+                      ],
+                      Flexible(
+                        child: useMath
+                            ? MathNotebookLine(
+                                equation: opt,
+                                showBoxesAndColors: false,
+                              )
+                            : LatexRichText(
+                                text: opt,
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w900,
+                                  fontFamily: 'Nunito',
+                                  height: 1.3,
+                                  decoration: isIncorrect ? TextDecoration.lineThrough : null,
+                                ),
+                              ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
@@ -1263,12 +1292,6 @@ class _EquationHistory extends ConsumerWidget {
 
   const _EquationHistory({required this.exerciseIndex});
 
-  bool _isPrefix(String a, String b) {
-    final cleanA = a.replaceAll(' ', '').replaceAll('____', '').replaceAll('?', '');
-    final cleanB = b.replaceAll(' ', '').replaceAll('____', '').replaceAll('?', '');
-    if (cleanA.isEmpty) return false;
-    return cleanB.startsWith(cleanA);
-  }
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -1300,13 +1323,14 @@ class _EquationHistory extends ConsumerWidget {
 
       if (activeLine != null) {
         final cleanActive = activeLine.replaceAll(' ', '').replaceAll('____', '').replaceAll('\$', '');
-        final lastClean = rawExpressions.isEmpty ? '' : rawExpressions.last.replaceAll(' ', '').replaceAll('\$', '');
+        final lastClean = rawExpressions.isEmpty ? '' : rawExpressions.last.replaceAll(' ', '').replaceAll('____', '').replaceAll('\$', '');
         if (rawExpressions.isEmpty || lastClean != cleanActive) {
           rawExpressions.add(activeLine);
         }
       }
 
-      // Filter out prefixes (except index 0 which is the base expression, unless it matches currentTokensStr when interactive)
+      // Show all expressions from history — each was explicitly added as a meaningful step.
+      // Only skip lines that duplicate the currently-interactive token row.
       final List<String> filteredExpressions = [];
       if (rawExpressions.isNotEmpty) {
         final firstExpr = rawExpressions.first;
@@ -1323,16 +1347,7 @@ class _EquationHistory extends ConsumerWidget {
             continue;
           }
 
-          bool isPrefixOfLater = false;
-          for (int j = i + 1; j < rawExpressions.length; j++) {
-            if (_isPrefix(current, rawExpressions[j])) {
-              isPrefixOfLater = true;
-              break;
-            }
-          }
-          if (!isPrefixOfLater) {
-            filteredExpressions.add(current);
-          }
+          filteredExpressions.add(current);
         }
       }
 
