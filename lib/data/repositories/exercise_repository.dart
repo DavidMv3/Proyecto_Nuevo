@@ -2437,7 +2437,6 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'hard_3_s3',
-          expressionOverride: '2 ^ 3 +',
           instruction: 'En el primer bloque, ¿qué se debe resolver primero?',
           options: ['La potencia', 'La propiedad de la raíz de una potencia', 'La suma', 'La multiplicación'],
           correctAnswer: 'La propiedad de la raíz de una potencia',
@@ -2449,7 +2448,7 @@ class ExerciseRepository {
           id: 'hard_3_s4',
           startsNewLine: true,
           instruction: 'Al aplicar la propiedad \$\\sqrt{a^n} = a^{\\frac{n}{2}}\$, el exponente queda:',
-          expressionOverride: '2 ^ 3 + 3 * (',
+          expressionOverride: '2 ^ 3 +',
           options: ['6', '3', '2', '4'],
           correctAnswer: '3',
           correctIds: [],
@@ -2469,7 +2468,7 @@ class ExerciseRepository {
         StepEntity(
           id: 'hard_3_s6',
           instruction: 'En las operaciones internas del segundo bloque, ¿qué operación se resuelve primero?',
-          expressionOverride: '2 ^ 3 + 3 * 3 / (',
+          expressionOverride: '2 ^ 3 + 3 * (',
           options: ['La resta \$5 - 2\$', 'La resta \$3 - 2\$', 'La multiplicación', 'La división'],
           correctAnswer: 'La resta \$5 - 2\$',
           correctIds: [],
@@ -2509,7 +2508,7 @@ class ExerciseRepository {
         StepEntity(
           id: 'hard_3_s10',
           instruction: 'En el primer bloque, ¿qué operación se debe resolver ahora?',
-          expressionOverride: '8 + 3 * 3 / 1',
+          expressionOverride: '2 ^ 3 + 3 * 3 / 1',
           options: ['La potencia \$2^3\$', 'La suma', 'La multiplicación', 'La división'],
           correctAnswer: 'La potencia \$2^3\$',
           correctIds: [],
@@ -2520,7 +2519,7 @@ class ExerciseRepository {
           id: 'hard_3_s11',
           startsNewLine: true,
           instruction: 'El resultado de la potencia \$2^3\$ es:',
-          expressionOverride: '8 + 3 * 3 / 1',
+          expressionOverride: '8 +',
           options: ['6', '8', '4', '12'],
           correctAnswer: '8',
           correctIds: [],
@@ -2530,7 +2529,7 @@ class ExerciseRepository {
         StepEntity(
           id: 'hard_3_s12',
           instruction: 'En el segundo bloque, ¿qué operación se debe resolver ahora?',
-          expressionOverride: '8 + 9 / 1',
+          expressionOverride: '8 +',
           options: ['La multiplicación \$3 \\times 3\$', 'La división \$3 \\div 1\$', 'La suma', 'La resta'],
           correctAnswer: 'La multiplicación \$3 \\times 3\$',
           correctIds: [],
@@ -2550,7 +2549,7 @@ class ExerciseRepository {
         StepEntity(
           id: 'hard_3_s14',
           instruction: 'En el segundo bloque, ¿qué operación se debe resolver ahora?',
-          expressionOverride: '8 + 9',
+          expressionOverride: '8 + 9 / 1',
           options: ['La división \$9 \\div 1\$', 'La multiplicación', 'La suma', 'La resta'],
           correctAnswer: 'La división \$9 \\div 1\$',
           correctIds: [],
@@ -2559,8 +2558,9 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'hard_3_s15',
+          startsNewLine: true,
           instruction: 'El resultado de la división \$9 \\div 1\$ es:',
-          expressionOverride: '17',
+          expressionOverride: '8 + 9',
           options: ['9', '1', '8', '10'],
           correctAnswer: '9',
           correctIds: [],
@@ -2569,6 +2569,7 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'hard_3_s16',
+          startsNewLine: true,
           instruction: 'El resultado de las últimas operaciones es:',
           expressionOverride: '17',
           options: ['17', '16', '15', '14'],
@@ -2606,6 +2607,7 @@ class ExerciseRepository {
         StepEntity(
           id: 'hard_4_s3',
           instruction: 'Observando la expresión, ¿qué operación se debe resolver primero?',
+          expressionOverride: '55 -',
           options: ['La resta \$55 - 3\$', 'La multiplicación \$3 \\times 2\$', 'La suma', 'La raíz'],
           correctAnswer: 'La multiplicación \$3 \\times 2\$',
           correctIds: [],
@@ -2614,8 +2616,9 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'hard_4_s4',
+          startsNewLine: true,
           instruction: 'El resultado de la multiplicación \$3 \\times 2\$ es:',
-          expressionOverride: '55 - 6 + 3 * root3( 5 ^ 6 )',
+          expressionOverride: '55 - 6 +',
           options: ['5', '6', '3', '8'],
           correctAnswer: '6',
           correctIds: [],
@@ -2625,6 +2628,7 @@ class ExerciseRepository {
         StepEntity(
           id: 'hard_4_s5',
           instruction: 'Observando el tercer bloque, ¿qué operación se debe resolver ahora?',
+          expressionOverride: '55 - 6 + 3 *',
           options: ['La resta \$55 - 6\$', 'La multiplicación \$3 \\times \\sqrt[3]{5^6}\$', 'La potenciación \$5^6\$', 'La propiedad raíz de una potencia'],
           correctAnswer: 'La propiedad raíz de una potencia',
           correctIds: [],
@@ -2644,6 +2648,7 @@ class ExerciseRepository {
         StepEntity(
           id: 'hard_4_s7',
           instruction: 'La operación que se realiza primero es:',
+          expressionOverride: '55 - 6 + 3 *',
           options: ['La potencia \$5^2\$', 'La multiplicación \$3 \\times 5\$', 'La suma \$6 + 3\$'],
           correctAnswer: 'La potencia \$5^2\$',
           correctIds: [],
@@ -2652,6 +2657,7 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'hard_4_s8',
+          startsNewLine: true,
           instruction: 'El resultado de la potencia \$5^2\$ es:',
           expressionOverride: '55 - 6 + 3 * 25',
           options: ['10', '20', '25', '15'],
@@ -2663,6 +2669,7 @@ class ExerciseRepository {
         StepEntity(
           id: 'hard_4_s9',
           instruction: 'La operación que se realiza primero es:',
+          expressionOverride: '55 - 6 +',
           options: ['La multiplicación \$3 \\times 25\$', 'La suma \$6 + 3\$', 'La multiplicación \$6 \\times 25\$'],
           correctAnswer: 'La multiplicación \$3 \\times 25\$',
           correctIds: [],
@@ -2671,6 +2678,7 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'hard_4_s10',
+          startsNewLine: true,
           instruction: 'El resultado de la multiplicación \$3 \\times 25\$ es:',
           expressionOverride: '55 - 6 + 75',
           options: ['50', '75', '60', '65'],
@@ -2681,6 +2689,7 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'hard_4_s11',
+          startsNewLine: true,
           instruction: 'El resultado de las últimas operaciones es:',
           expressionOverride: '124',
           options: ['124', '130', '140', '120'],
@@ -2702,6 +2711,8 @@ class ExerciseRepository {
         StepEntity(
           id: 'hard_5_s1',
           instruction: 'En la expresión aritmética, ¿qué elemento se debe conservar inicialmente?',
+          options: ['El número 3 que está fuera del corchete', 'La resta', 'La división', 'La suma'],
+          correctAnswer: 'El número 3 que está fuera del corchete',
           correctIds: [],
           algorithmHint: 'Fíjate en los signos + y - que están sueltos; ellos dividen el ejercicio.',
           feedbackError: 'El número 3 se conserva porque multiplica a toda la expresión que está dentro del corchete',
@@ -2709,6 +2720,7 @@ class ExerciseRepository {
         StepEntity(
           id: 'hard_5_s2',
           instruction: '¿Qué parte de la expresión se debe analizar primero?',
+          expressionOverride: '3 * [',
           options: ['El contenido del corchete', 'La multiplicación externa', 'Solo el número 3', 'La resta final'],
           correctAnswer: 'El contenido del corchete',
           correctIds: [],
@@ -2728,7 +2740,7 @@ class ExerciseRepository {
         StepEntity(
           id: 'hard_5_s4',
           instruction: 'El resultado de la potencia \$3^3\$ es:',
-          expressionOverride: '3 * [ 27 - 16 / ( 5 + 3 ) ]',
+          expressionOverride: '3 * [ 27',
           options: ['9', '27', '6', '18'],
           correctAnswer: '27',
           correctIds: [],
@@ -2748,7 +2760,7 @@ class ExerciseRepository {
         StepEntity(
           id: 'hard_5_s6',
           instruction: 'El resultado de la operación interna \$5 + 3\$ es:',
-          expressionOverride: '3 * [ 27 - 16 / 8 ]',
+          expressionOverride: '3 * [ 27 - 16 / ( 8 ) ]',
           options: ['2', '8', '15', '6'],
           correctAnswer: '8',
           correctIds: [],
@@ -2758,6 +2770,7 @@ class ExerciseRepository {
         StepEntity(
           id: 'hard_5_s7',
           instruction: 'Dentro del corchete, ¿qué operación se debe resolver ahora?',
+          expressionOverride: '3 * [ 27 - 16 / ( 8 ) ]',
           options: ['La resta \$27 - 16\$', 'La división \$16 \\div 8\$', 'La multiplicación \$3 \\times 27\$', 'La suma'],
           correctAnswer: 'La división \$16 \\div 8\$',
           correctIds: [],
@@ -2766,6 +2779,7 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'hard_5_s8',
+          startsNewLine: true,
           instruction: 'El resultado de la división \$16 \\div 8\$ es:',
           expressionOverride: '3 * [ 27 - 2 ]',
           options: ['2', '8', '4', '16'],
@@ -2776,6 +2790,7 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'hard_5_s9',
+          startsNewLine: true,
           instruction: 'El resultado de la operación interna del corchete es:',
           expressionOverride: '3 * 25',
           options: ['25', '29', '20', '22'],
@@ -2786,6 +2801,7 @@ class ExerciseRepository {
         ),
         StepEntity(
           id: 'hard_5_s10',
+          startsNewLine: true,
           instruction: 'El resultado de la última operación es:',
           expressionOverride: '75',
           options: ['75', '28', '25', '72'],

@@ -334,7 +334,28 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
       if (updated.containsAll(correctIds)) {
         final currentWorking = state.workingLine;
         final newWorking = state.currentStep.expressionOverride ?? currentWorking;
-        final newHistory = state.equationHistory;
+        final newHistory = List<String>.from(state.equationHistory);
+
+        final nextIndex = state.currentStepIndex + 1;
+        if (nextIndex < state.exercise.steps.length) {
+          final nextStep = state.exercise.steps[nextIndex];
+          if (nextStep.startsNewLine && currentWorking != null && newWorking != null && currentWorking != newWorking && isExpressionComplete(currentWorking)) {
+             final cleanWorking = currentWorking.replaceAll(' ', '').replaceAll('\$', '');
+             final isSameAsLast = newHistory.isNotEmpty && newHistory.last.replaceAll(' ', '').replaceAll('\$', '') == cleanWorking;
+             if (!isSameAsLast) {
+               newHistory.add(currentWorking);
+             }
+          }
+        } else {
+          // If it's the last step, we should also add currentWorking to history before it gets overwritten
+          if (currentWorking != null && newWorking != null && currentWorking != newWorking && isExpressionComplete(currentWorking)) {
+             final cleanWorking = currentWorking.replaceAll(' ', '').replaceAll('\$', '');
+             final isSameAsLast = newHistory.isNotEmpty && newHistory.last.replaceAll(' ', '').replaceAll('\$', '') == cleanWorking;
+             if (!isSameAsLast) {
+               newHistory.add(currentWorking);
+             }
+          }
+        }
 
         // Paso completado
         state = state.copyWith(
@@ -348,6 +369,34 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
           equationHistory: newHistory,
         );
         FeedbackService.instance.playCorrect();
+
+        // Si es el último paso, procesar finalización después de 3s
+        if (state.isLastStep) {
+          final currentLine = state.workingLine;
+          final finalHistory = List<String>.from(state.equationHistory);
+          if (currentLine != null && isExpressionComplete(currentLine)) {
+            final isSame = finalHistory.isNotEmpty &&
+                finalHistory.last.replaceAll(' ', '').replaceAll('\$', '') ==
+                    currentLine.replaceAll(' ', '').replaceAll('\$', '');
+            if (!isSame) finalHistory.add(currentLine);
+          }
+          state = state.copyWith(
+            equationHistory: finalHistory,
+            llamaMood: LlamaMood.thinking,
+            clearErrorToken: true,
+          );
+          await Future.delayed(const Duration(seconds: 3));
+          if (mounted) {
+            await _finishExercise();
+          }
+        } else {
+          // Delay menor para la transición
+          await Future.delayed(const Duration(milliseconds: 500));
+          state = state.copyWith(
+            llamaMood: LlamaMood.thinking,
+            clearErrorToken: true,
+          );
+        }
       } else {
         FeedbackService.instance.playSelection();
         state = state.copyWith(
@@ -377,7 +426,28 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
         
         final currentWorking = state.workingLine;
         final newWorking = state.currentStep.expressionOverride ?? currentWorking;
-        final newHistory = state.equationHistory;
+        final newHistory = List<String>.from(state.equationHistory);
+        
+        final nextIndex = state.currentStepIndex + 1;
+        if (nextIndex < state.exercise.steps.length) {
+          final nextStep = state.exercise.steps[nextIndex];
+          if (nextStep.startsNewLine && currentWorking != null && newWorking != null && currentWorking != newWorking && isExpressionComplete(currentWorking)) {
+             final cleanWorking = currentWorking.replaceAll(' ', '').replaceAll('\$', '');
+             final isSameAsLast = newHistory.isNotEmpty && newHistory.last.replaceAll(' ', '').replaceAll('\$', '') == cleanWorking;
+             if (!isSameAsLast) {
+               newHistory.add(currentWorking);
+             }
+          }
+        } else {
+          // If it's the last step, we should also add currentWorking to history before it gets overwritten
+          if (currentWorking != null && newWorking != null && currentWorking != newWorking && isExpressionComplete(currentWorking)) {
+             final cleanWorking = currentWorking.replaceAll(' ', '').replaceAll('\$', '');
+             final isSameAsLast = newHistory.isNotEmpty && newHistory.last.replaceAll(' ', '').replaceAll('\$', '') == cleanWorking;
+             if (!isSameAsLast) {
+               newHistory.add(currentWorking);
+             }
+          }
+        }
         
         state = state.copyWith(
           stepCompleted: true,
@@ -601,7 +671,10 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
     final newHistory = List<String>.from(state.equationHistory);
 
     if (nextStep.startsNewLine) {
-      final lastLineExpr = getExpressionForStep(state.exercise, state.currentStepIndex);
+      String lastLineExpr = getExpressionForStep(state.exercise, state.currentStepIndex);
+      if (!isExpressionComplete(lastLineExpr)) {
+        lastLineExpr = state.workingLine ?? lastLineExpr;
+      }
       final cleanWorking = lastLineExpr.replaceAll(' ', '').replaceAll('\$', '');
       final isSameAsLast = newHistory.isNotEmpty && newHistory.last.replaceAll(' ', '').replaceAll('\$', '') == cleanWorking;
       if (!isSameAsLast) {

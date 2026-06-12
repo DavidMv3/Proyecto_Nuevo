@@ -1364,7 +1364,6 @@ class _EquationHistory extends ConsumerWidget {
 
         final isActive = (activeLine != null && equationText == activeLine);
         final showBoxes = isActive ? state.showBoxesOnCurrentStep : state.showBlockBoxes;
-
         lines.add(
           Padding(
             padding: const EdgeInsets.only(bottom: 10.0),
