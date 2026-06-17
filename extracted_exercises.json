@@ -1,0 +1,4951 @@
+[
+  {
+    "id": "tutorial_1",
+    "title": "Tutorial de MateAndina",
+    "baseExpression": "2 + 3 x 4",
+    "steps": [
+      {
+        "id": "tut1_s1",
+        "instruction": "¡Bienvenido a MateAndina! Vamos a aprender a jugar.\\nPrimero, selecciona todos los signos separadores (+) o (-).",
+        "options": [],
+        "correctAnswer": "",
+        "feedbackError": "¡Casi! Los signos separadores de bloques son el \"+\" y el \"-\". Inténtalo de nuevo.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "tut1_s2",
+        "instruction": "¡Excelente! Ahora veamos la jerarquía.\\nEntre sumar o multiplicar (3 x 4), ¿cuál tiene prioridad (se resuelve primero)?",
+        "options": [],
+        "correctAnswer": "",
+        "feedbackError": "Recuerda que las multiplicaciones y divisiones tienen más fuerza que sumas y restas.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "tut1_s3",
+        "instruction": "¡Muy bien! Ahora toca la respuesta correcta.\\n¿Cuál es el resultado de 3 x 4?",
+        "options": [
+          "7",
+          "12",
+          "14"
+        ],
+        "correctAnswer": "12",
+        "feedbackError": "Al multiplicar 3 veces 4 obtenemos 12.",
+        "expressionOverride": "2 + 12",
+        "startsNewLine": false
+      },
+      {
+        "id": "tut1_s4",
+        "instruction": "¡Último paso! Ahora nuestra ecuación es 2 + 12.\\n¿Cuál es el resultado final?",
+        "options": [
+          "10",
+          "24",
+          "14"
+        ],
+        "correctAnswer": "14",
+        "feedbackError": "Si sumas 2 + 12 el resultado es 14.",
+        "expressionOverride": "2 + 12",
+        "startsNewLine": false
+      }
+    ]
+  },
+  {
+    "id": "easy_1",
+    "title": "Nivel Fácil 1",
+    "baseExpression": "4 * 5 - 6 / 3",
+    "steps": [
+      {
+        "id": "easy_1_s1",
+        "instruction": "Selecciona los signos separadores de la expresión aritmética",
+        "options": [],
+        "correctAnswer": "",
+        "feedbackError": "Los signos separadores son únicamente los signos \\$+\\$ y \\$-\\$, ya que permiten dividir la expresión aritmética en bloques.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_1_s2",
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "3",
+          "4",
+          "5",
+          "2"
+        ],
+        "correctAnswer": "2",
+        "feedbackError": "Recuerda que los bloques se identifican a partir de los signos separadores (+, -).",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_1_s3",
+        "instruction": "El resultado de la multiplicación del primer bloque es:",
+        "options": [
+          "20",
+          "9",
+          "10",
+          "1"
+        ],
+        "correctAnswer": "20",
+        "feedbackError": "El resultado de la multiplicación \\$4 \\\\times 5\\$ es \\$20\\$.",
+        "expressionOverride": "20 -",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_1_s4",
+        "instruction": "El resultado de la división del segundo bloque es:",
+        "options": [
+          "5",
+          "3",
+          "2",
+          "6"
+        ],
+        "correctAnswer": "2",
+        "feedbackError": "El resultado de la división \\$6 \\\\div 3\\$ es \\$2\\$.",
+        "expressionOverride": "20 - 2",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_1_s5",
+        "instruction": "El resultado de la última operación es:",
+        "options": [
+          "10",
+          "18",
+          "22",
+          "11"
+        ],
+        "correctAnswer": "18",
+        "feedbackError": "El resultado de la última operación es \\$18\\$.",
+        "expressionOverride": "18",
+        "startsNewLine": false
+      }
+    ]
+  },
+  {
+    "id": "easy_2",
+    "title": "Nivel Fácil 2",
+    "baseExpression": "18 + 3 * 5",
+    "steps": [
+      {
+        "id": "easy_2_s1",
+        "instruction": "Selecciona los signos separadores de la expresión aritmética",
+        "options": [],
+        "correctAnswer": "",
+        "feedbackError": "Los signos separadores son únicamente los signos \\$+\\$ y \\$-\\$, ya que estos permiten dividir a la expresión aritmética en bloques.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_2_s2",
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "3",
+          "4",
+          "5",
+          "2"
+        ],
+        "correctAnswer": "2",
+        "feedbackError": "Recuerda que los bloques se identifican a partir de los signos separadores (+, -).",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_2_s3",
+        "instruction": "Es correcto afirmar que se resuelve primero:",
+        "options": [
+          "La suma \\$18 + 3\\$",
+          "La multiplicación \\$3 \\\\times 5\\$",
+          "La suma \\$18 + 5\\$",
+          "La multiplicación \\$18 \\\\times 3\\$"
+        ],
+        "correctAnswer": "La multiplicación \\$3 \\\\times 5\\$",
+        "feedbackError": "Recuerda que, entre la suma y la multiplicación, se resuelve primero la multiplicación.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_2_s4",
+        "instruction": "Cuando en un bloque no hay operaciones se debe:",
+        "options": [
+          "Conservar el número",
+          "Desaparecer el número"
+        ],
+        "correctAnswer": "Conservar el número",
+        "feedbackError": "Recuerda que cuando un bloque está compuesto por un solo número, este se conserva.",
+        "expressionOverride": "18 +",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_2_s5",
+        "instruction": "El resultado de la operación del segundo bloque es:",
+        "options": [
+          "20",
+          "9",
+          "15",
+          "12"
+        ],
+        "correctAnswer": "15",
+        "feedbackError": "El resultado de la multiplicación \\$3 \\\\times 5\\$ es \\$15\\$.",
+        "expressionOverride": "18 + 15",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_2_s6",
+        "instruction": "El resultado de la última operación es:",
+        "options": [
+          "3",
+          "33",
+          "32",
+          "23"
+        ],
+        "correctAnswer": "33",
+        "feedbackError": "El resultado de la última operación es \\$33\\$.",
+        "expressionOverride": "33",
+        "startsNewLine": false
+      }
+    ]
+  },
+  {
+    "id": "easy_3",
+    "title": "Nivel Fácil 3",
+    "baseExpression": "8 - 3 * 2 + 1",
+    "steps": [
+      {
+        "id": "easy_3_s1",
+        "instruction": "Selecciona los signos separadores de la expresión aritmética",
+        "options": [],
+        "correctAnswer": "",
+        "feedbackError": "Los signos separadores son únicamente los signos \\$+\\$ y \\$-\\$, ya que permiten separar la expresión aritmética en bloques.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_3_s2",
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "3",
+          "4",
+          "5",
+          "2"
+        ],
+        "correctAnswer": "3",
+        "feedbackError": "Recuerda que los bloques se identifican a partir de los signos separadores (+ y -).",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_3_s3",
+        "instruction": "Los bloques en los que se deben conservar los números son:",
+        "options": [
+          "El primero y el tercero",
+          "El primero y el segundo",
+          "El segundo y el tercero"
+        ],
+        "correctAnswer": "El primero y el tercero",
+        "feedbackError": "Los bloques que están compuestos por un solo número se conservan, ya que no requieren realizar operaciones.",
+        "expressionOverride": "8 -",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_3_s4",
+        "instruction": "El resultado de la operación del segundo bloque es:",
+        "options": [
+          "6",
+          "9",
+          "5",
+          "11"
+        ],
+        "correctAnswer": "6",
+        "feedbackError": "El resultado de la multiplicación \\$3 \\\\times 2\\$ es \\$6\\$.",
+        "expressionOverride": "8 - 6 + 1",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_3_s5",
+        "instruction": "El resultado de la última operación es:",
+        "options": [
+          "3",
+          "15",
+          "10",
+          "9"
+        ],
+        "correctAnswer": "3",
+        "feedbackError": "El resultado de la última operación es \\$3\\$.",
+        "expressionOverride": "3",
+        "startsNewLine": false
+      }
+    ]
+  },
+  {
+    "id": "easy_4",
+    "title": "Nivel Fácil 4",
+    "baseExpression": "10 - 3 * 2 + 2 ^ 3",
+    "steps": [
+      {
+        "id": "easy_4_s1",
+        "instruction": "Selecciona los signos separadores de la expresión aritmética",
+        "options": [],
+        "correctAnswer": "",
+        "feedbackError": "Los signos separadores son únicamente los signos \\$+\\$ y \\$-\\$, ya que permiten dividir la expresión aritmética en bloques.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_4_s2",
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "3",
+          "4",
+          "5",
+          "2"
+        ],
+        "correctAnswer": "3",
+        "feedbackError": "Recuerda que los bloques se identifican a partir de los signos separadores (+ y -).",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_4_s3",
+        "instruction": "En el primer bloque de la expresión aritmética no hay operaciones internas, por lo tanto:",
+        "options": [
+          "Se conserva el número",
+          "Se elimina el número",
+          "Se realiza primero la suma",
+          "Se debe multiplicar"
+        ],
+        "correctAnswer": "Se conserva el número",
+        "feedbackError": "Cuando un bloque no tiene operaciones internas, el número se conserva, ya que no es necesario realizar ningún cálculo en ese bloque.",
+        "expressionOverride": "10 -",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_4_s4",
+        "instruction": "Se pueden resolver la multiplicación y la potenciación sin importar el orden porque:",
+        "options": [
+          "Están en diferentes bloques",
+          "La multiplicación y la potenciación tienen la misma jerarquía",
+          "No importa la jerarquía al resolver multiplicaciones y potencias",
+          "Siempre se resuelve la primera operación que aparece en una expresión aritmética"
+        ],
+        "correctAnswer": "Están en diferentes bloques",
+        "feedbackError": "Las operaciones que se encuentran en un bloque se resuelven independientemente de las operaciones que constan en otros bloques.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_4_s5",
+        "instruction": "El resultado de la multiplicación del segundo bloque es:",
+        "options": [
+          "5",
+          "3",
+          "2",
+          "6"
+        ],
+        "correctAnswer": "6",
+        "feedbackError": "El resultado de la multiplicación \\$3 \\\\times 2\\$ es \\$6\\$.",
+        "expressionOverride": "10 - 6",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_4_s6",
+        "instruction": "El resultado de la potencia del tercer bloque es:",
+        "options": [
+          "5",
+          "3",
+          "8",
+          "4"
+        ],
+        "correctAnswer": "8",
+        "feedbackError": "El resultado de la potencia \\$2^3\\$ es \\$8\\$.",
+        "expressionOverride": "10 - 6 + 8",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_4_s7",
+        "instruction": "El resultado de la última operación es:",
+        "options": [
+          "12",
+          "10",
+          "4",
+          "8"
+        ],
+        "correctAnswer": "12",
+        "feedbackError": "El resultado de la última operación es \\$12\\$.",
+        "expressionOverride": "12",
+        "startsNewLine": false
+      }
+    ]
+  },
+  {
+    "id": "easy_5",
+    "title": "Nivel Fácil 5",
+    "baseExpression": "1 + 12 / 4 - 1 + 2 ^ 3",
+    "steps": [
+      {
+        "id": "easy_5_s1",
+        "instruction": "Selecciona los signos separadores de la expresión aritmética",
+        "options": [],
+        "correctAnswer": "",
+        "feedbackError": "Los signos separadores son únicamente los signos \\$+\\$ y \\$-\\$, ya que permiten dividir la expresión aritmética en bloques.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_5_s2",
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "3",
+          "4",
+          "5",
+          "2"
+        ],
+        "correctAnswer": "4",
+        "feedbackError": "Recuerda que los bloques se identifican a partir de los signos separadores (+ y -).",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_5_s3",
+        "instruction": "Los bloques en los que se deben conservar los números son:",
+        "options": [
+          "El primero y el tercero",
+          "El segundo y el cuarto",
+          "El primero y el segundo",
+          "El tercero y el cuarto"
+        ],
+        "correctAnswer": "El primero y el tercero",
+        "feedbackError": "Los bloques que están compuestos por un solo número se conservan, ya que no requieren realizar operaciones.",
+        "expressionOverride": "1 +",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_5_s4",
+        "instruction": "Se pueden resolver la división y la potenciación sin importar el orden porque:",
+        "options": [
+          "Están en diferentes bloques",
+          "La división y la potenciación tienen la misma jerarquía",
+          "No importa la jerarquía al resolver divisiones y potencias",
+          "Siempre se resuelve la primera operación que aparece en una expresión aritmética"
+        ],
+        "correctAnswer": "Están en diferentes bloques",
+        "feedbackError": "Las operaciones que se encuentran en un bloque se resuelven independientemente de las operaciones que constan en otros bloques.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_5_s5",
+        "instruction": "El resultado de la división del segundo bloque es:",
+        "options": [
+          "4",
+          "2",
+          "3",
+          "1"
+        ],
+        "correctAnswer": "3",
+        "feedbackError": "El resultado de la división \\$12 \\\\div 4\\$ es \\$3\\$.",
+        "expressionOverride": "1 + 3 - 1",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_5_s6",
+        "instruction": "El resultado de la potencia del cuarto bloque es:",
+        "options": [
+          "6",
+          "8",
+          "9",
+          "5"
+        ],
+        "correctAnswer": "8",
+        "feedbackError": "El resultado de la potencia \\$2^3\\$ es \\$8\\$.",
+        "expressionOverride": "1 + 3 - 1 + 8",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_5_s7",
+        "instruction": "El resultado de las últimas operaciones es:",
+        "options": [
+          "11",
+          "12",
+          "10",
+          "9"
+        ],
+        "correctAnswer": "11",
+        "feedbackError": "El resultado de las últimas operaciones es \\$11\\$.",
+        "expressionOverride": "11",
+        "startsNewLine": false
+      }
+    ]
+  },
+  {
+    "id": "easy_6",
+    "title": "Nivel Fácil 6",
+    "baseExpression": "3 - 2 + ( 8 - 2 * 3 )",
+    "steps": [
+      {
+        "id": "easy_6_s1",
+        "instruction": "Selecciona los signos separadores que no constan en las operaciones internas",
+        "options": [],
+        "correctAnswer": "",
+        "feedbackError": "Este es un signo separador de operaciones internas. Los signos separadores principales dividen la expresión en grandes bloques.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_6_s2",
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "3",
+          "4",
+          "5",
+          "2"
+        ],
+        "correctAnswer": "3",
+        "feedbackError": "Recuerda que los bloques se identifican a partir de los signos separadores que no están dentro de las operaciones internas.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_6_s3",
+        "instruction": "Se puede resolver la resta entre los dos primeros bloques",
+        "options": [
+          "Verdadero",
+          "Falso"
+        ],
+        "correctAnswer": "Verdadero",
+        "feedbackError": "Entre los dos primeros bloques aparece una resta, por lo tanto, se puede resolver \\$3 - 2\\$.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_6_s4",
+        "instruction": "El resultado de la resta entre los dos primeros bloques es:",
+        "options": [
+          "5",
+          "2",
+          "1",
+          "3"
+        ],
+        "correctAnswer": "1",
+        "feedbackError": "El resultado de la resta \\$3 - 2\\$ es \\$1\\$.",
+        "expressionOverride": "1 +",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_6_s5",
+        "instruction": "En el segundo bloque, ¿qué operación se resuelve primero?",
+        "options": [
+          "La multiplicación",
+          "La resta"
+        ],
+        "correctAnswer": "La multiplicación",
+        "feedbackError": "Entre la multiplicación y la resta, se resuelve primero la multiplicación.",
+        "expressionOverride": "1 + ( 8 -",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_6_s6",
+        "instruction": "¿Cuál es el resultado de la multiplicación?",
+        "options": [
+          "6",
+          "5",
+          "3"
+        ],
+        "correctAnswer": "6",
+        "feedbackError": "El resultado de la multiplicación \\$2 \\\\times 3\\$ es \\$6\\$.",
+        "expressionOverride": "1 + ( 8 - 6 )",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_6_s7",
+        "instruction": "El resultado de las operaciones internas es:",
+        "options": [
+          "2",
+          "9",
+          "5",
+          "4"
+        ],
+        "correctAnswer": "2",
+        "feedbackError": "El resultado de la resta \\$8 - 6\\$ es \\$2\\$.",
+        "expressionOverride": "1 + ( 2 )",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_6_s8",
+        "instruction": "El resultado de la última operación es:",
+        "options": [
+          "2",
+          "3",
+          "1",
+          "0"
+        ],
+        "correctAnswer": "3",
+        "feedbackError": "El resultado de la suma \\$1 + 2\\$ es \\$3\\$.",
+        "expressionOverride": "3",
+        "startsNewLine": false
+      }
+    ]
+  },
+  {
+    "id": "easy_7",
+    "title": "Nivel Fácil 7",
+    "baseExpression": "sqrt( 4 + 12 ) - 15 / 5",
+    "steps": [
+      {
+        "id": "easy_7_s1",
+        "instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+        "options": [],
+        "correctAnswer": "",
+        "feedbackError": "Este es un signo separador de operaciones internas.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_7_s2",
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "3",
+          "4",
+          "2",
+          "5"
+        ],
+        "correctAnswer": "2",
+        "feedbackError": "Recuerda que los bloques se identifican a partir de los signos separadores que no están dentro de las operaciones internas.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_7_s3",
+        "instruction": "En el primer bloque, ¿qué se debe realizar primero?",
+        "options": [
+          "La operación interna",
+          "La resta",
+          "La división",
+          "Conservar el número"
+        ],
+        "correctAnswer": "La operación interna",
+        "feedbackError": "En el primer bloque primero se resuelve la operación interna que está dentro del radical.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_7_s4",
+        "instruction": "El resultado de la operación interna del primer bloque es:",
+        "options": [
+          "8",
+          "16",
+          "12",
+          "4"
+        ],
+        "correctAnswer": "16",
+        "feedbackError": "El resultado de la suma \\$4 + 12\\$ es \\$16\\$.",
+        "expressionOverride": "sqrt( 16 ) -",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_7_s5",
+        "instruction": "Se pueden resolver la raíz cuadrada y la división sin importar el orden porque:",
+        "options": [
+          "Están en diferentes bloques",
+          "Tienen la misma jerarquía",
+          "Siempre se resuelve primero la división",
+          "Siempre se resuelve primero la resta"
+        ],
+        "correctAnswer": "Están en diferentes bloques",
+        "feedbackError": "Las operaciones que se encuentran en bloques diferentes se pueden resolver de manera independiente.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_7_s6",
+        "instruction": "El resultado de la división del segundo bloque es:",
+        "options": [
+          "3",
+          "5",
+          "12",
+          "18"
+        ],
+        "correctAnswer": "3",
+        "feedbackError": "El resultado de la división \\$15 \\\\div 5\\$ es \\$3\\$.",
+        "expressionOverride": "sqrt( 16 ) - 3",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_7_s7",
+        "instruction": "¿Qué se debe resolver primero?",
+        "options": [
+          "La resta",
+          "La raíz cuadrada",
+          "La suma"
+        ],
+        "correctAnswer": "La raíz cuadrada",
+        "feedbackError": "Entre la raíz cuadrada y la resta se debe resolver primero la raíz cuadrada.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_7_s8",
+        "instruction": "El resultado de la raíz cuadrada del primer bloque es:",
+        "options": [
+          "2",
+          "8",
+          "4",
+          "16"
+        ],
+        "correctAnswer": "4",
+        "feedbackError": "El resultado de la raíz cuadrada de \\$16\\$ es \\$4\\$.",
+        "expressionOverride": "4 -",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_7_s9",
+        "instruction": "¿Qué acción hacemos con el 3?",
+        "options": [
+          "Lo conservamos",
+          "Lo eliminamos",
+          "Lo introducimos en el radical"
+        ],
+        "correctAnswer": "Lo conservamos",
+        "feedbackError": "El número 3 está solo en un bloque, por lo tanto, lo conservamos.",
+        "expressionOverride": "4 - 3",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_7_s10",
+        "instruction": "El resultado de la última operación es:",
+        "options": [
+          "1",
+          "9",
+          "21",
+          "0"
+        ],
+        "correctAnswer": "1",
+        "feedbackError": "El resultado de la última operación \\$4 - 3\\$ es \\$1\\$.",
+        "expressionOverride": "1",
+        "startsNewLine": false
+      }
+    ]
+  },
+  {
+    "id": "easy_8",
+    "title": "Nivel Fácil 8",
+    "baseExpression": "3 ^ 2 + 5 * 2 - sqrt( 30 - 5 )",
+    "steps": [
+      {
+        "id": "easy_8_s1",
+        "instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+        "options": [],
+        "correctAnswer": "",
+        "feedbackError": "Este es un signo separador de operaciones internas.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_8_s2",
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "2",
+          "3"
+        ],
+        "correctAnswer": "3",
+        "feedbackError": "Recuerda que los bloques se identifican a partir de los signos separadores que no están dentro de operaciones internas.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_8_s3",
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver?",
+        "options": [
+          "La potenciación",
+          "La suma",
+          "La multiplicación",
+          "La resta"
+        ],
+        "correctAnswer": "La potenciación",
+        "feedbackError": "En el primer bloque aparece una potencia, por lo tanto, se debe resolver \\$3^2\\$.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_8_s4",
+        "instruction": "El resultado de la potenciación del primer bloque es:",
+        "options": [
+          "6",
+          "9",
+          "5",
+          "3"
+        ],
+        "correctAnswer": "9",
+        "feedbackError": "El resultado de la potencia \\$3^2\\$ es \\$9\\$.",
+        "expressionOverride": "9 +",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_8_s5",
+        "instruction": "El resultado de la multiplicación del segundo bloque es:",
+        "options": [
+          "7",
+          "10",
+          "12",
+          "5"
+        ],
+        "correctAnswer": "10",
+        "feedbackError": "El resultado de la multiplicación \\$5 \\\\times 2\\$ es \\$10\\$.",
+        "expressionOverride": "9 + 10 -",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_8_s6",
+        "instruction": "En el tercer bloque, ¿qué se debe resolver primero?",
+        "options": [
+          "La raíz cuadrada",
+          "La operación interna",
+          "La suma",
+          "La multiplicación"
+        ],
+        "correctAnswer": "La operación interna",
+        "feedbackError": "Se debe resolver primero la operación que está dentro del radical.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_8_s7",
+        "instruction": "El resultado de la operación interna del tercer bloque es:",
+        "options": [
+          "35",
+          "25",
+          "30",
+          "5"
+        ],
+        "correctAnswer": "25",
+        "feedbackError": "El resultado de la resta \\$30 - 5\\$ es \\$25\\$.",
+        "expressionOverride": "9 + 10 - sqrt( 25 )",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_8_s8",
+        "instruction": "¿Qué operación se realiza ahora?",
+        "options": [
+          "La suma",
+          "La resta",
+          "La raíz cuadrada"
+        ],
+        "correctAnswer": "La raíz cuadrada",
+        "feedbackError": "Luego de resolver la operación interna del tercer bloque, se debe resolver la raíz cuadrada.",
+        "expressionOverride": "9 + 10 -",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_8_s9",
+        "instruction": "El resultado de la raíz cuadrada del tercer bloque es:",
+        "options": [
+          "25",
+          "10",
+          "5",
+          "6"
+        ],
+        "correctAnswer": "5",
+        "feedbackError": "El resultado de la raíz cuadrada \\$\\\\sqrt{25}\\$ es \\$5\\$.",
+        "expressionOverride": "9 + 10 - 5",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_8_s10",
+        "instruction": "El resultado de las últimas operaciones es:",
+        "options": [
+          "12",
+          "14",
+          "15",
+          "24"
+        ],
+        "correctAnswer": "14",
+        "feedbackError": "El resultado de las últimas operaciones es \\$14\\$.",
+        "expressionOverride": "14",
+        "startsNewLine": false
+      }
+    ]
+  },
+  {
+    "id": "easy_9",
+    "title": "Nivel Fácil 9",
+    "baseExpression": "4 * ( 20 / 4 + 1 ) + 4 * 2 ^ 3",
+    "steps": [
+      {
+        "id": "easy_9_s1",
+        "instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+        "options": [],
+        "correctAnswer": "",
+        "feedbackError": "Este es un signo separador de operaciones internas.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_9_s2",
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "1"
+        ],
+        "correctAnswer": "2",
+        "feedbackError": "Los bloques se identifican a partir de los signos separadores que no están dentro de operaciones internas.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_9_s3",
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La multiplicación",
+          "La operación interna",
+          "La suma final",
+          "La potenciación"
+        ],
+        "correctAnswer": "La operación interna",
+        "feedbackError": "Dentro del paréntesis se resuelven primero las operaciones internas.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_9_s4",
+        "instruction": "En las operaciones internas del primer bloque, ¿qué se resuelve primero?",
+        "options": [
+          "La suma",
+          "La división"
+        ],
+        "correctAnswer": "La división",
+        "feedbackError": "Entre la suma y la división, se resuelve primero la división.",
+        "expressionOverride": "4 * (",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_9_s5",
+        "instruction": "El resultado de la división \\$20 \\\\div 4\\$ es:",
+        "options": [
+          "4",
+          "5",
+          "6",
+          "10"
+        ],
+        "correctAnswer": "5",
+        "feedbackError": "El resultado de la división \\$20 \\\\div 4\\$ es \\$5\\$.",
+        "expressionOverride": "4 * ( 5 + 1 )",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_9_s6",
+        "instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La multiplicación",
+          "La potenciación",
+          "La resta",
+          "La suma"
+        ],
+        "correctAnswer": "La potenciación",
+        "feedbackError": "Entre la multiplicación y la potenciación, se resuelve primero la potenciación.",
+        "expressionOverride": "4 * ( 5 + 1 ) + 4 *",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_9_s7",
+        "instruction": "El resultado de la potencia \\$2^3\\$ es:",
+        "options": [
+          "6",
+          "8",
+          "4",
+          "3"
+        ],
+        "correctAnswer": "8",
+        "feedbackError": "El resultado de la potencia \\$2^3\\$ es \\$8\\$.",
+        "expressionOverride": "4 * ( 5 + 1 ) + 4 * 8",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_9_s8",
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver ahora?",
+        "options": [
+          "La suma",
+          "La multiplicación",
+          "La resta"
+        ],
+        "correctAnswer": "La suma",
+        "feedbackError": "Luego de la división se resuelve la suma dentro del paréntesis.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_9_s9",
+        "instruction": "El resultado de la suma \\$5 + 1\\$ es:",
+        "options": [
+          "5",
+          "6",
+          "7",
+          "4"
+        ],
+        "correctAnswer": "6",
+        "feedbackError": "El resultado de la suma \\$5 + 1\\$ es \\$6\\$.",
+        "expressionOverride": "4 * ( 6 ) +",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_9_s10",
+        "instruction": "El resultado de la multiplicación del segundo bloque es:",
+        "options": [
+          "12",
+          "32",
+          "24",
+          "28"
+        ],
+        "correctAnswer": "32",
+        "feedbackError": "El resultado de la multiplicación \\$4 \\\\times 8\\$ es \\$32\\$.",
+        "expressionOverride": "4 * ( 6 ) + 32",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_9_s11",
+        "instruction": "Ahora se resuelve primero:",
+        "options": [
+          "La suma",
+          "La multiplicación",
+          "La resta",
+          "La división"
+        ],
+        "correctAnswer": "La multiplicación",
+        "feedbackError": "Entre la multiplicación y la suma, se resuelve primero la multiplicación.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_9_s12",
+        "instruction": "El resultado de \\$4 \\\\times 6\\$ es:",
+        "options": [
+          "24",
+          "20",
+          "18",
+          "12"
+        ],
+        "correctAnswer": "24",
+        "feedbackError": "El resultado de la multiplicación \\$4 \\\\times 6\\$ es \\$24\\$.",
+        "expressionOverride": "24 + 32",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_9_s13",
+        "instruction": "El resultado de la última operación es:",
+        "options": [
+          "8",
+          "56",
+          "60",
+          "50"
+        ],
+        "correctAnswer": "56",
+        "feedbackError": "El resultado de la suma \\$24 + 32\\$ es \\$56\\$.",
+        "expressionOverride": "56",
+        "startsNewLine": false
+      }
+    ]
+  },
+  {
+    "id": "easy_10",
+    "title": "Nivel Fácil 10",
+    "baseExpression": "( 2 + 10 / 5 ) * 2 ^ 2 - 3",
+    "steps": [
+      {
+        "id": "easy_10_s1",
+        "instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+        "options": [],
+        "correctAnswer": "",
+        "feedbackError": "Este es un signo separador de operaciones internas.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_10_s2",
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "1"
+        ],
+        "correctAnswer": "2",
+        "feedbackError": "Recuerda que los bloques se identifican a partir de los signos separadores que no están dentro de operaciones internas.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_10_s3",
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La suma",
+          "La división",
+          "La multiplicación",
+          "La potenciación"
+        ],
+        "correctAnswer": "La división",
+        "feedbackError": "Dentro del paréntesis se resuelve primero la división antes que la suma.",
+        "expressionOverride": "( 2 +",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_10_s4",
+        "instruction": "El resultado de la división \\$10 \\\\div 5\\$ es:",
+        "options": [
+          "5",
+          "2",
+          "10",
+          "15"
+        ],
+        "correctAnswer": "2",
+        "feedbackError": "El resultado de \\$10 \\\\div 5\\$ es \\$2\\$.",
+        "expressionOverride": "( 2 + 2 ) *",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_10_s5",
+        "instruction": "En el siguiente paso, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La suma",
+          "La multiplicación",
+          "La resta",
+          "La potenciación"
+        ],
+        "correctAnswer": "La potenciación",
+        "feedbackError": "Entre la multiplicación y la potenciación, primero se resuelve la potenciación.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_10_s6",
+        "instruction": "El resultado de la potencia \\$2^2\\$ es:",
+        "options": [
+          "4",
+          "2",
+          "8",
+          "6"
+        ],
+        "correctAnswer": "4",
+        "feedbackError": "El resultado de \\$2^2\\$ es \\$4\\$.",
+        "expressionOverride": "( 2 + 2 ) * 4 - 3",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_10_s7",
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver ahora?",
+        "options": [
+          "La suma",
+          "La multiplicación",
+          "La resta"
+        ],
+        "correctAnswer": "La suma",
+        "feedbackError": "Luego de resolver la división y la potencia, se debe resolver la suma dentro del paréntesis.",
+        "expressionOverride": "( ",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_10_s8",
+        "instruction": "El resultado de la suma \\$2 + 2\\$ es:",
+        "options": [
+          "4",
+          "2",
+          "0",
+          "6"
+        ],
+        "correctAnswer": "4",
+        "feedbackError": "El resultado de \\$2 + 2\\$ es \\$4\\$.",
+        "expressionOverride": "( 4 ) * 4 - 3",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_10_s9",
+        "instruction": "¿Qué operación se debe resolver ahora?",
+        "options": [
+          "La multiplicación",
+          "La resta"
+        ],
+        "correctAnswer": "La multiplicación",
+        "feedbackError": "La multiplicación se resuelve antes que la resta.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_10_s10",
+        "instruction": "El resultado de la multiplicación \\$4 \\\\times 4\\$ es:",
+        "options": [
+          "16",
+          "8",
+          "12",
+          "10"
+        ],
+        "correctAnswer": "16",
+        "feedbackError": "El resultado de \\$4 \\\\times 4\\$ es \\$16\\$.",
+        "expressionOverride": "16 - 3",
+        "startsNewLine": false
+      },
+      {
+        "id": "easy_10_s11",
+        "instruction": "El resultado de la última operación es:",
+        "options": [
+          "13",
+          "19",
+          "10",
+          "12"
+        ],
+        "correctAnswer": "13",
+        "feedbackError": "El resultado de \\$16 - 3\\$ es \\$13\\$.",
+        "expressionOverride": "13",
+        "startsNewLine": false
+      }
+    ]
+  },
+  {
+    "id": "medium_1",
+    "title": "Nivel Medio 1",
+    "baseExpression": "3 ^ 6 / 3 ^ 4 - 2 * ( 5 - 2 )",
+    "steps": [
+      {
+        "id": "medium_1_s1",
+        "instruction": "Selecciona los signos separadores que no constan en las operaciones internas",
+        "options": [],
+        "correctAnswer": "",
+        "feedbackError": "Son signos separadores aquellos que no están dentro de operaciones internas ni corresponden a multiplicaciones o divisiones.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_1_s2",
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "3",
+          "4",
+          "5",
+          "2"
+        ],
+        "correctAnswer": "2",
+        "feedbackError": "Recuerda que los bloques se identifican a partir de los signos separadores que no están dentro de operaciones internas.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_1_s3",
+        "instruction": "En el primer bloque se debe:",
+        "options": [
+          "Aplicar una propiedad de la potenciación",
+          "Resolver cada una de las potencias",
+          "Resolver la división directamente",
+          "Resolver una suma"
+        ],
+        "correctAnswer": "Aplicar una propiedad de la potenciación",
+        "feedbackError": "Cuando aparece una división de potencias de igual base, primero se aplica la propiedad correspondiente.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_1_s4",
+        "instruction": "Al aplicar la propiedad de división de potencias de igual base en el primer bloque, el resultado es:",
+        "options": [
+          "\\$3^2\\$",
+          "\\$3^10\\$",
+          "\\$3^4\\$",
+          "\\$3^3\\$"
+        ],
+        "correctAnswer": "\\$3^2\\$",
+        "feedbackError": "En la división de potencias de igual base, se conserva la base y se restan los exponentes.",
+        "expressionOverride": "3 ^ 2 -",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_1_s5",
+        "instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La multiplicación",
+          "La operación interna",
+          "La resta"
+        ],
+        "correctAnswer": "La operación interna",
+        "feedbackError": "Se debe resolver primero la operación interna dentro del paréntesis.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_1_s6",
+        "instruction": "El resultado de la resta \\$5 - 2\\$ es:",
+        "options": [
+          "3",
+          "7",
+          "2",
+          "4"
+        ],
+        "correctAnswer": "3",
+        "feedbackError": "El resultado de \\$5\\$ - 2 es \\$3\\$.",
+        "expressionOverride": "3 ^ 2 - 2 * ( 3 )",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_1_s7",
+        "instruction": "¿Cuánto es \\$3^2\\$?",
+        "options": [
+          "6",
+          "9",
+          "3",
+          "27"
+        ],
+        "correctAnswer": "9",
+        "feedbackError": "El resultado de \\$3^2\\$ es \\$9\\$.",
+        "expressionOverride": "9 -",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_1_s8",
+        "instruction": "En el segundo bloque, ¿qué operación se debe resolver ahora?",
+        "options": [
+          "La suma",
+          "La multiplicación",
+          "La resta"
+        ],
+        "correctAnswer": "La multiplicación",
+        "feedbackError": "Se debe resolver la multiplicación antes que la resta final.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_1_s9",
+        "instruction": "El resultado de la multiplicación \\$2 \\\\times 3\\$ es:",
+        "options": [
+          "5",
+          "6",
+          "8",
+          "4"
+        ],
+        "correctAnswer": "6",
+        "feedbackError": "El resultado de \\$2 \\\\times 3\\$ es \\$6\\$.",
+        "expressionOverride": "9 - 6",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_1_s10",
+        "instruction": "El resultado final es:",
+        "options": [
+          "3",
+          "15",
+          "6",
+          "2"
+        ],
+        "correctAnswer": "3",
+        "feedbackError": "El resultado de \\$9\\$ - 6 es \\$3\\$.",
+        "expressionOverride": "3",
+        "startsNewLine": false
+      }
+    ]
+  },
+  {
+    "id": "medium_2",
+    "title": "Nivel Medio 2",
+    "baseExpression": "[ 2 ^ 3 * 2 ^ 2 - 20 ] + [ 6 + 3 ^ 2 ]",
+    "steps": [
+      {
+        "id": "medium_2_s1",
+        "instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+        "options": [],
+        "correctAnswer": "",
+        "feedbackError": "Este signo pertenece a una operación interna",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_2_s2",
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "correctAnswer": "2",
+        "feedbackError": "Recuerda que los bloques se identifican a partir de los signos separadores que no están dentro de operaciones internas",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_2_s3",
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La resta \\$2^2 - 20\\$",
+          "La multiplicación \\$2^3 \\\\times 2^2\\$",
+          "La propiedad del producto de potencias de igual base",
+          "La suma \\$2^3 + 2^2\\$"
+        ],
+        "correctAnswer": "La propiedad del producto de potencias de igual base",
+        "feedbackError": "Recuerda que en este bloque se debe respetar la jerarquía de las operaciones y de las propiedades de la potenciación",
+        "expressionOverride": "[",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_2_s4",
+        "instruction": "Al aplicar el producto de potencias de igual base en \\$2^3 \\\\times 2^2\\$, el resultado queda÷",
+        "options": [
+          "\\$2^6\\$",
+          "\\$2^5\\$",
+          "\\$4^5\\$",
+          "\\$2^1\\$"
+        ],
+        "correctAnswer": "\\$2^5\\$",
+        "feedbackError": "En el producto de potencias de igual base, se conserva la base y se suman los exponentes: \\$3 + 2 = 5\\$.",
+        "expressionOverride": "[ 2 ^ 5 - 20 ] + [",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_2_s5",
+        "instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La suma \\$6 + 3\\$",
+          "La potencia \\$3^2\\$",
+          "La resta \\$2^5 - 20\\$",
+          "La suma final"
+        ],
+        "correctAnswer": "La potencia \\$3^2\\$",
+        "feedbackError": "En el segundo bloque primero se debe resolver la potencia, porque la potenciación tiene mayor jerarquía que la suma",
+        "expressionOverride": "[ 2 ^ 5 - 20 ] + [ 6 +",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_2_s6",
+        "instruction": "El resultado de la potencia \\$3^2\\$ es:",
+        "options": [
+          "6",
+          "9",
+          "3",
+          "12"
+        ],
+        "correctAnswer": "9",
+        "feedbackError": "Recuerda que \\$3^2\\$ = \\$3 \\\\times 3\\$ = 9",
+        "expressionOverride": "[ 2 ^ 5 - 20 ] + [ 6 + 9 ]",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_2_s7",
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La resta \\$2^5 - 20\\$",
+          "La potencia \\$2^5\\$",
+          "La suma \\$6 + 9\\$",
+          "La suma final"
+        ],
+        "correctAnswer": "La potencia \\$2^5\\$",
+        "feedbackError": "En el primer bloque primero se debe resolver la potencia, porque la potenciación tiene mayor jerarquía que la resta",
+        "expressionOverride": "[",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_2_s8",
+        "instruction": "El resultado de la potencia \\$2^5\\$ es:",
+        "options": [
+          "10",
+          "16",
+          "32",
+          "25"
+        ],
+        "correctAnswer": "32",
+        "feedbackError": "Recuerda que \\$2^5\\$ = \\$2 \\\\times 2 \\\\times 2 \\\\times 2 \\\\times 2\\$ = 32",
+        "expressionOverride": "[ 32 - 20 ] + [",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_2_s9",
+        "instruction": "El resultado de las operaciones internas del segundo bloque es:",
+        "options": [
+          "12",
+          "15",
+          "9",
+          "18"
+        ],
+        "correctAnswer": "15",
+        "feedbackError": "El resultado de la suma \\$6 + 9\\$ es \\$15\\$",
+        "expressionOverride": "[ 32 - 20 ] + [ 15 ]",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_2_s10",
+        "instruction": "El resultado de las operaciones internas del primer bloque es:",
+        "options": [
+          "12",
+          "52",
+          "22",
+          "20"
+        ],
+        "correctAnswer": "12",
+        "feedbackError": "El resultado de la resta \\$32 - 20\\$ es \\$12\\$",
+        "expressionOverride": "[ 12 ] + [ 15 ]",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_2_s11",
+        "instruction": "El resultado de la última operación es:",
+        "options": [
+          "25",
+          "26",
+          "27",
+          "28"
+        ],
+        "correctAnswer": "27",
+        "feedbackError": "El resultado de la suma \\$12 + 15\\$ es \\$27\\$.",
+        "expressionOverride": "27",
+        "startsNewLine": false
+      }
+    ]
+  },
+  {
+    "id": "medium_3",
+    "title": "Nivel Medio 3",
+    "baseExpression": "[ 3 ^ 4 / 3 ^ 2 + 7 ] - [ 7 + 2 ^ 3 ]",
+    "steps": [
+      {
+        "id": "medium_3_s1",
+        "instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+        "options": [],
+        "correctAnswer": "",
+        "feedbackError": "Los signos separadores son únicamente los signos \\$+\\$ y \\$-\\$, ya que estos permiten dividir a la expresión aritmética en bloques.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_3_s2",
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "correctAnswer": "2",
+        "feedbackError": "Recuerda que los bloques se identifican a partir de los signos separadores (+ y -).",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_3_s3",
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La suma \\$32 + 7\\$",
+          "La división \\$34 \\\\div 3\\$ 2",
+          "La propiedad de división de potencias de igual base",
+          "La resta entre bloques"
+        ],
+        "correctAnswer": "La propiedad de división de potencias de igual base",
+        "feedbackError": "Primero se aplican las propiedades de la potenciación, luego se resuelven las potencias y finalmente las sumas o restas",
+        "expressionOverride": "[",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_3_s4",
+        "instruction": "Al aplicar la división de potencias de igual base en \\$3^4\\$ \\\\div \\$3^2\\$, el resultado queda÷",
+        "options": [
+          "36",
+          "32",
+          "38",
+          "34"
+        ],
+        "correctAnswer": "32",
+        "feedbackError": "En la división de potencias de igual base, se conserva la base y se restan los exponentes: \\$4 - 2 = 2\\$.",
+        "expressionOverride": "[ 3 ^ 2 + 7 ] - [",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_3_s5",
+        "instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La suma \\$7 + 2\\$",
+          "La potencia \\$2^3\\$",
+          "La resta entre bloques",
+          "La suma final"
+        ],
+        "correctAnswer": "La potencia \\$2^3\\$",
+        "feedbackError": "En el segundo bloque primero se debe resolver la potencia, porque la potenciación tiene mayor jerarquía que la suma",
+        "expressionOverride": "[ 3 ^ 2 + 7 ] - [ 7 +",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_3_s6",
+        "instruction": "El resultado de la potencia \\$2^3\\$ es:",
+        "options": [
+          "6",
+          "8",
+          "9",
+          "12"
+        ],
+        "correctAnswer": "8",
+        "feedbackError": "Recuerda que \\$2^3\\$ = \\$2 \\\\times 2 \\\\times 2\\$ = 8",
+        "expressionOverride": "[ 3 ^ 2 + 7 ] - [ 7 + 8 ]",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_3_s7",
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La suma \\$32 + 7\\$",
+          "La potencia \\$3^2\\$",
+          "La resta entre bloques",
+          "La suma \\$7 + 8\\$"
+        ],
+        "correctAnswer": "La potencia \\$3^2\\$",
+        "feedbackError": "En el primer bloque primero se debe resolver la potencia, porque la potenciación tiene mayor jerarquía que la suma",
+        "expressionOverride": "[",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_3_s8",
+        "instruction": "El resultado de la potencia \\$3^2\\$ es:",
+        "options": [
+          "6",
+          "9",
+          "3",
+          "12"
+        ],
+        "correctAnswer": "9",
+        "feedbackError": "Recuerda que \\$3^2\\$ = \\$3 \\\\times 3\\$ = 9",
+        "expressionOverride": "[ 9 + 7 ] - [",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_3_s9",
+        "instruction": "El resultado de las operaciones internas del segundo bloque es:",
+        "options": [
+          "14",
+          "15",
+          "16",
+          "13"
+        ],
+        "correctAnswer": "15",
+        "feedbackError": "El resultado de la suma \\$7 + 8\\$ es \\$15\\$",
+        "expressionOverride": "[ 9 + 7 ] - [ 15 ]",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_3_s10",
+        "instruction": "El resultado de las operaciones internas del primer bloque es:",
+        "options": [
+          "16",
+          "14",
+          "15",
+          "9"
+        ],
+        "correctAnswer": "16",
+        "feedbackError": "El resultado de la suma \\$9 + 7\\$ es \\$16\\$",
+        "expressionOverride": "[ 16 ] - [ 15 ]",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_3_s11",
+        "instruction": "El resultado de la última operación es:",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "31"
+        ],
+        "correctAnswer": "1",
+        "feedbackError": "El resultado de la resta \\$16 - 15\\$ es \\$1\\$.",
+        "expressionOverride": "1",
+        "startsNewLine": false
+      }
+    ]
+  },
+  {
+    "id": "medium_4",
+    "title": "Nivel Medio 4",
+    "baseExpression": "[ ( 2 * 3 ) ^ 2 - 30 ] + [ 18 / 3 + 10 ]",
+    "steps": [
+      {
+        "id": "medium_4_s1",
+        "instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+        "options": [],
+        "correctAnswer": "",
+        "feedbackError": "Los signos separadores son únicamente los signos \\$+\\$ y \\$-\\$, ya que estos permiten dividir a la expresión aritmética en bloques.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_4_s2",
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "correctAnswer": "2",
+        "feedbackError": "Recuerda que los bloques se identifican a partir de los signos separadores (+ y -).",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_4_s3",
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La resta \\$(2 \\\\times 3)^2 - 30\\$",
+          "La potencia \\$(2 \\\\times 3)^2\\$",
+          "La multiplicación \\$2 \\\\times 3\\$",
+          "La suma entre bloques"
+        ],
+        "correctAnswer": "La multiplicación \\$2 \\\\times 3\\$",
+        "feedbackError": "Primero se resuelven las operaciones que se encuentran dentro de los paréntesis",
+        "expressionOverride": "[ (",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_4_s4",
+        "instruction": "El resultado de la multiplicación \\$2 \\\\times 3\\$ es:",
+        "options": [
+          "5",
+          "6",
+          "8",
+          "9"
+        ],
+        "correctAnswer": "6",
+        "feedbackError": "El resultado de la multiplicación \\$2 \\\\times 3\\$ es \\$6\\$",
+        "expressionOverride": "[ ( 6 ) ^ 2 - 30 ] + [",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_4_s5",
+        "instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La suma \\$3 + 10\\$",
+          "La división \\$18 \\\\div 3\\$",
+          "La potencia \\$6^2\\$",
+          "La suma final"
+        ],
+        "correctAnswer": "La división \\$18 \\\\div 3\\$",
+        "feedbackError": "En el segundo bloque primero se debe resolver la división, porque tiene mayor jerarquía que la suma",
+        "expressionOverride": "[ ( 6 ) ^ 2 - 30 ] + [",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_4_s6",
+        "instruction": "El resultado de la división \\$18 \\\\div 3\\$ es:",
+        "options": [
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "correctAnswer": "6",
+        "feedbackError": "El resultado de la división \\$18 \\\\div 3\\$ es \\$6\\$",
+        "expressionOverride": "[ ( 6 ) ^ 2 - 30 ] + [ 6 + 10 ]",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_4_s7",
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La resta \\$62 - 30\\$",
+          "La potencia \\$6^2\\$",
+          "La suma \\$6 + 10\\$",
+          "La suma final"
+        ],
+        "correctAnswer": "La potencia \\$6^2\\$",
+        "feedbackError": "En el primer bloque primero se debe resolver la potencia, porque la potenciación tiene mayor jerarquía que la resta",
+        "expressionOverride": "[",
+        "startsNewLine": true
+      },
+      {
+        "id": "medium_4_s8",
+        "instruction": "El resultado de la potencia \\$6^2\\$ es:",
+        "options": [
+          "12",
+          "24",
+          "36",
+          "42"
+        ],
+        "correctAnswer": "36",
+        "feedbackError": "Recuerda que \\$6^2\\$ = \\$6 \\\\times 6\\$ = 36",
+        "expressionOverride": "[ 36 - 30 ] + [",
+        "startsNewLine": true
+      },
+      {
+        "id": "medium_4_s9",
+        "instruction": "El resultado de las operaciones internas del segundo bloque es:",
+        "options": [
+          "14",
+          "15",
+          "16",
+          "17"
+        ],
+        "correctAnswer": "16",
+        "feedbackError": "El resultado de la suma \\$6 + 10\\$ es \\$16\\$",
+        "expressionOverride": "[ 36 - 30 ] + [ 16 ]",
+        "startsNewLine": true
+      },
+      {
+        "id": "medium_4_s10",
+        "instruction": "El resultado de las operaciones internas del primer bloque es:",
+        "options": [
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "correctAnswer": "6",
+        "feedbackError": "El resultado de la resta \\$36 - 30\\$ es \\$6\\$",
+        "expressionOverride": "[ 6 ] + [ 16 ]",
+        "startsNewLine": true
+      },
+      {
+        "id": "medium_4_s11",
+        "instruction": "El resultado de la última operación es:",
+        "options": [
+          "20",
+          "21",
+          "22",
+          "23"
+        ],
+        "correctAnswer": "22",
+        "feedbackError": "El resultado de la suma \\$6 + 16\\$ es \\$22\\$.",
+        "expressionOverride": "22",
+        "startsNewLine": true
+      }
+    ]
+  },
+  {
+    "id": "medium_5",
+    "title": "Nivel Medio 5",
+    "baseExpression": "[ ( 8 / 2 ) ^ 2 - 12 ] + [ 5 ^ 2 - 4 ]",
+    "steps": [
+      {
+        "id": "medium_5_s1",
+        "instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+        "options": [],
+        "correctAnswer": "",
+        "feedbackError": "Los signos separadores son únicamente los signos \\$+\\$ y \\$-\\$, ya que estos permiten dividir a la expresión aritmética en bloques.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_5_s2",
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "correctAnswer": "2",
+        "feedbackError": "Recuerda que los bloques se identifican a partir de los signos separadores (+ y -).",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_5_s3",
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La potencia \\$(8 \\\\div 2)^2\\$",
+          "La división \\$8 \\\\div 2\\$",
+          "La resta \\$(8 \\\\div 2)^2 - 12\\$",
+          "La suma entre bloques"
+        ],
+        "correctAnswer": "La división \\$8 \\\\div 2\\$",
+        "feedbackError": "Primero se resuelven las operaciones internas que están dentro de los paréntesis",
+        "expressionOverride": "[ (",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_5_s4",
+        "instruction": "El resultado de la división \\$8 \\\\div 2\\$ es:",
+        "options": [
+          "2",
+          "4",
+          "6",
+          "8"
+        ],
+        "correctAnswer": "4",
+        "feedbackError": "El resultado de la división \\$8 \\\\div 2\\$ es \\$4\\$",
+        "expressionOverride": "[ ( 4 ) ^ 2 - 12 ] + [",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_5_s5",
+        "instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La resta \\$52 - 4\\$",
+          "La potencia \\$5^2\\$",
+          "La suma entre bloques",
+          "La división"
+        ],
+        "correctAnswer": "La potencia \\$5^2\\$",
+        "feedbackError": "En el segundo bloque primero se debe resolver la potencia, porque la potenciación tiene mayor jerarquía que la resta",
+        "expressionOverride": "[ ( 4 ) ^ 2 - 12 ] + [",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_5_s6",
+        "instruction": "El resultado de la potencia \\$5^2\\$ es:",
+        "options": [
+          "10",
+          "20",
+          "25",
+          "30"
+        ],
+        "correctAnswer": "25",
+        "feedbackError": "Recuerda que \\$5^2\\$ = \\$5 \\\\times 5\\$ = 25",
+        "expressionOverride": "[ ( 4 ) ^ 2 - 12 ] + [ 25 - 4 ]",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_5_s7",
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver ahora?",
+        "options": [
+          "La resta (4)\\$2 - 12\\$",
+          "La potencia \\$4^2\\$",
+          "La resta \\$25 - 4\\$",
+          "La suma final"
+        ],
+        "correctAnswer": "La potencia \\$4^2\\$",
+        "feedbackError": "En el primer bloque primero se debe resolver la potencia, porque la potenciación tiene mayor jerarquía que la resta",
+        "expressionOverride": "[",
+        "startsNewLine": true
+      },
+      {
+        "id": "medium_5_s8",
+        "instruction": "El resultado de la potencia \\$4^2\\$ es:",
+        "options": [
+          "8",
+          "12",
+          "16",
+          "24"
+        ],
+        "correctAnswer": "16",
+        "feedbackError": "Recuerda que \\$4^2\\$ = \\$4 \\\\times 4\\$ = 16",
+        "expressionOverride": "[ 16 - 12 ] + [",
+        "startsNewLine": true
+      },
+      {
+        "id": "medium_5_s9",
+        "instruction": "El resultado de las operaciones internas del segundo bloque es:",
+        "options": [
+          "19",
+          "20",
+          "21",
+          "22"
+        ],
+        "correctAnswer": "21",
+        "feedbackError": "El resultado de la resta \\$25 - 4\\$ es \\$21\\$",
+        "expressionOverride": "[ 16 - 12 ] + [ 21 ]",
+        "startsNewLine": true
+      },
+      {
+        "id": "medium_5_s10",
+        "instruction": "El resultado de las operaciones internas del primer bloque es:",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "correctAnswer": "4",
+        "feedbackError": "El resultado de la resta \\$16 - 12\\$ es \\$4\\$",
+        "expressionOverride": "[ 4 ] + [ 21 ]",
+        "startsNewLine": true
+      },
+      {
+        "id": "medium_5_s11",
+        "instruction": "El resultado de la última operación es:",
+        "options": [
+          "23",
+          "24",
+          "25",
+          "26"
+        ],
+        "correctAnswer": "25",
+        "feedbackError": "El resultado de la suma \\$4 + 21\\$ es \\$25\\$.",
+        "expressionOverride": "25",
+        "startsNewLine": true
+      }
+    ]
+  },
+  {
+    "id": "medium_6",
+    "title": "Nivel Medio 6",
+    "baseExpression": "[ ( 2 ^ 2 ) ^ 3 - 50 / 5 ] + [ 9 * 2 - 15 ]",
+    "steps": [
+      {
+        "id": "medium_6_s1",
+        "instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+        "options": [],
+        "correctAnswer": "",
+        "feedbackError": "Los signos separadores son únicamente los signos \\$+\\$ y \\$-\\$, ya que estos permiten dividir a la expresión aritmética en bloques.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_6_s2",
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "correctAnswer": "2",
+        "feedbackError": "Recuerda que los bloques se identifican a partir de los signos separadores (+ y -).",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_6_s3",
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La potencia exterior \\$(2^2)^3\\$",
+          "La propiedad de potencia de potencia",
+          "La división \\$50 \\\\div 5\\$",
+          "La resta"
+        ],
+        "correctAnswer": "La propiedad de potencia de potencia",
+        "feedbackError": "En el orden jerárquico primero se resuelven las propiedades de la potenciación y radicación; luego las potencias; después las multiplicaciones y divisiones; y finalmente las sumas y restas",
+        "expressionOverride": "[",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_6_s4",
+        "instruction": "Al aplicar la propiedad de potencia de potencia en \\$(2^2)^3\\$, el resultado queda÷",
+        "options": [
+          "\\$2^5\\$",
+          "\\$2^6\\$",
+          "\\$4^3\\$",
+          "\\$2^9\\$"
+        ],
+        "correctAnswer": "\\$2^6\\$",
+        "feedbackError": "En la propiedad de potencia de potencia, se conserva la base y se multiplican los exponentes: \\$2 \\\\times 3\\$ = 6",
+        "expressionOverride": "[ 2 ^ 6 - ",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_6_s5",
+        "instruction": "En el primer bloque, ¿cuál es el resultado de la división \\$50 \\\\div 5\\$?",
+        "options": [
+          "5",
+          "10",
+          "15",
+          "20"
+        ],
+        "correctAnswer": "10",
+        "feedbackError": "El resultado de la división \\$50 \\\\div 5\\$ es \\$10\\$",
+        "expressionOverride": "[ 2 ^ 6 - 10 ] + [",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_6_s6",
+        "instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La resta \\$2 - 15\\$",
+          "La multiplicación \\$9 \\\\times 2\\$",
+          "La suma entre bloques",
+          "La potencia \\$2^6\\$"
+        ],
+        "correctAnswer": "La multiplicación \\$9 \\\\times 2\\$",
+        "feedbackError": "En el segundo bloque primero se resuelve la multiplicación, porque tiene mayor jerarquía que la resta",
+        "expressionOverride": "[ 2 ^ 6 - 10 ] + [",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_6_s7",
+        "instruction": "El resultado de la multiplicación \\$9 \\\\times 2\\$ es:",
+        "options": [
+          "16",
+          "18",
+          "20",
+          "22"
+        ],
+        "correctAnswer": "18",
+        "feedbackError": "El resultado de la multiplicación \\$9 \\\\times 2\\$ es \\$18\\$",
+        "expressionOverride": "[ 2 ^ 6 - 10 ] + [ 18 - 15 ]",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_6_s8",
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La resta \\$26 - 10\\$",
+          "La potencia \\$2^6\\$",
+          "La resta \\$18 - 15\\$",
+          "La suma final"
+        ],
+        "correctAnswer": "La potencia \\$2^6\\$",
+        "feedbackError": "En el primer bloque primero se debe resolver la potencia, porque la potenciación tiene mayor jerarquía que la resta",
+        "expressionOverride": "[",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_6_s9",
+        "instruction": "El resultado de la potencia \\$2^6\\$ es:",
+        "options": [
+          "32",
+          "48",
+          "64",
+          "128"
+        ],
+        "correctAnswer": "64",
+        "feedbackError": "Recuerda que \\$2^6\\$ = \\$2 \\\\times 2 \\\\times 2 \\\\times 2 \\\\times 2 \\\\times 2\\$ = 64",
+        "expressionOverride": "[ 64 - 10 ] + [",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_6_s10",
+        "instruction": "El resultado de las operaciones internas del segundo bloque es:",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "correctAnswer": "3",
+        "feedbackError": "El resultado de la resta \\$18 - 15\\$ es \\$3\\$",
+        "expressionOverride": "[ 64 - 10 ] + [ 3 ]",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_6_s11",
+        "instruction": "El resultado de las operaciones internas del primer bloque es:",
+        "options": [
+          "54",
+          "55",
+          "56",
+          "57"
+        ],
+        "correctAnswer": "54",
+        "feedbackError": "El resultado de la resta \\$64 - 10\\$ es \\$54\\$",
+        "expressionOverride": "[ 54 ] + [ 3 ]",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_6_s12",
+        "instruction": "El resultado de la última operación es:",
+        "options": [
+          "55",
+          "56",
+          "57",
+          "58"
+        ],
+        "correctAnswer": "57",
+        "feedbackError": "El resultado de la suma \\$54 + 3\\$ es \\$57\\$",
+        "expressionOverride": "57",
+        "startsNewLine": false
+      }
+    ]
+  },
+  {
+    "id": "medium_7",
+    "title": "Nivel Medio 7",
+    "baseExpression": "[ 15 - ( 7 - 4 ) ^ 2 ] + [ 3 * 5 + 20 ]",
+    "steps": [
+      {
+        "id": "medium_7_s1",
+        "instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+        "options": [],
+        "correctAnswer": "",
+        "feedbackError": "Los signos separadores son únicamente los signos \\$+\\$ y \\$-\\$, ya que estos permiten dividir a la expresión aritmética en bloques.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_7_s2",
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "correctAnswer": "2",
+        "feedbackError": "Recuerda que los bloques se identifican a partir de los signos separadores (+ y -).",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_7_s3",
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La resta \\$15 - (7 - 4)^2\\$",
+          "La operación interna \\$7 - 4\\$",
+          "La potencia \\$(7 - 4)^2\\$",
+          "La suma entre bloques"
+        ],
+        "correctAnswer": "La operación interna \\$7 - 4\\$",
+        "feedbackError": "Primero se resuelven las operaciones internas que están dentro de los paréntesis",
+        "expressionOverride": "[ 15 - (",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_7_s4",
+        "instruction": "El resultado de la operación interna \\$7 - 4\\$ es:",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "11"
+        ],
+        "correctAnswer": "3",
+        "feedbackError": "El resultado de la resta \\$7 - 4\\$ es \\$3\\$",
+        "expressionOverride": "[ 15 - ( 3 ) ^ 2 ] + [",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_7_s5",
+        "instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La suma \\$5 + 20\\$",
+          "La multiplicación \\$3 \\\\times 5\\$",
+          "La resta del primer bloque",
+          "La suma entre bloques"
+        ],
+        "correctAnswer": "La multiplicación \\$3 \\\\times 5\\$",
+        "feedbackError": "En el segundo bloque primero se resuelve la multiplicación, porque tiene mayor jerarquía que la suma",
+        "expressionOverride": "[ 15 - ( 3 ) ^ 2 ] + [",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_7_s6",
+        "instruction": "El resultado de la multiplicación \\$3 \\\\times 5\\$ es:",
+        "options": [
+          "8",
+          "12",
+          "15",
+          "20"
+        ],
+        "correctAnswer": "15",
+        "feedbackError": "El resultado de la multiplicación \\$3 \\\\times 5\\$ es \\$15\\$",
+        "expressionOverride": "[ 15 - ( 3 ) ^ 2 ] + [ 15 + 20 ]",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_7_s7",
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver ahora?",
+        "options": [
+          "La resta \\$15 - (3)^2\\$",
+          "La potencia \\$3^2\\$",
+          "La suma \\$15 + 20\\$",
+          "La suma final"
+        ],
+        "correctAnswer": "La potencia \\$3^2\\$",
+        "feedbackError": "En el primer bloque primero se debe resolver la potencia, porque la potenciación tiene mayor jerarquía que la resta",
+        "expressionOverride": "[ 15 - ",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_7_s8",
+        "instruction": "El resultado de la potencia \\$3^2\\$ es:",
+        "options": [
+          "6",
+          "9",
+          "12",
+          "15"
+        ],
+        "correctAnswer": "9",
+        "feedbackError": "Recuerda que \\$3^2\\$ = \\$3 \\\\times 3\\$ = 9",
+        "expressionOverride": "[ 15 - 9 ] + [",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_7_s9",
+        "instruction": "El resultado de las operaciones internas del segundo bloque es:",
+        "options": [
+          "25",
+          "30",
+          "35",
+          "40"
+        ],
+        "correctAnswer": "35",
+        "feedbackError": "El resultado de la suma \\$15 + 20\\$ es \\$35\\$",
+        "expressionOverride": "[ 15 - 9 ] + [ 35 ]",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_7_s10",
+        "instruction": "El resultado de las operaciones internas del primer bloque es:",
+        "options": [
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "correctAnswer": "6",
+        "feedbackError": "El resultado de la resta \\$15 - 9\\$ es \\$6\\$",
+        "expressionOverride": "[ 6 ] + [ 35 ]",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_7_s11",
+        "instruction": "El resultado de la última operación es:",
+        "options": [
+          "39",
+          "40",
+          "41",
+          "42"
+        ],
+        "correctAnswer": "41",
+        "feedbackError": "El resultado de la suma \\$6 + 35\\$ es \\$41\\$",
+        "expressionOverride": "41",
+        "startsNewLine": false
+      }
+    ]
+  },
+  {
+    "id": "medium_8",
+    "title": "Nivel Medio 8",
+    "baseExpression": "[ sqrt( 144 ) / sqrt( 16 ) + 20 ] - [ 5 ^ 2 - 10 ]",
+    "steps": [
+      {
+        "id": "medium_8_s1",
+        "instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+        "options": [],
+        "correctAnswer": "",
+        "feedbackError": "Los signos separadores son únicamente los signos \\$+\\$ y \\$-\\$, ya que estos permiten dividir a la expresión aritmética en bloques.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_8_s2",
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "correctAnswer": "2",
+        "feedbackError": "Recuerda que los bloques se identifican a partir de los signos separadores (+ y -).",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_8_s3",
+        "instruction": "En el primer bloque, ¿qué se debe resolver primero?",
+        "options": [
+          "La división \\$\\\\sqrt{144} \\\\div \\\\sqrt{16}\\$",
+          "La propiedad de división de raíces con el mismo índice",
+          "La suma con 20",
+          "La resta entre bloques"
+        ],
+        "correctAnswer": "La propiedad de división de raíces con el mismo índice",
+        "feedbackError": "Primero se aplican las propiedades de la radicación",
+        "expressionOverride": "[",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_8_s4",
+        "instruction": "Al aplicar la propiedad de división de raíces con el mismo índice en \\$\\\\sqrt{144} \\\\div \\\\sqrt{16}\\$, el resultado queda÷",
+        "options": [
+          "\\$\\\\sqrt{144 + 16}\\$",
+          "\\$\\\\sqrt{144 \\\\div 16}\\$",
+          "\\$\\\\sqrt{144 - 16}\\$",
+          "\\$\\\\sqrt{144 \\\\times 16}\\$"
+        ],
+        "correctAnswer": "\\$\\\\sqrt{144 \\\\div 16}\\$",
+        "feedbackError": "En la división de raíces con el mismo índice, se conserva la raíz y se dividen los radicandos÷ \\$\\\\sqrt{144} \\\\div \\\\sqrt{16}\\$ = \\$\\\\sqrt{144 \\\\div 16}\\$",
+        "expressionOverride": "[ sqrt( 144 / 16 ) + 20 ] -",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_8_s5",
+        "instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La resta \\$52 - 10\\$",
+          "La potencia \\$5^2\\$",
+          "La resta entre bloques",
+          "La suma del primer bloque"
+        ],
+        "correctAnswer": "La potencia \\$5^2\\$",
+        "feedbackError": "En el segundo bloque primero se resuelve la potencia, porque la potenciación tiene mayor jerarquía que la resta",
+        "expressionOverride": "[ sqrt( 144 / 16 ) + 20 ] - [",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_8_s6",
+        "instruction": "El resultado de la potencia \\$5^2\\$ es:",
+        "options": [
+          "10",
+          "15",
+          "20",
+          "25"
+        ],
+        "correctAnswer": "25",
+        "feedbackError": "Recuerda que \\$5^2\\$ = \\$5 \\\\times 5\\$ = 25",
+        "expressionOverride": "[ sqrt( 144 / 16 ) + 20 ] - [ 25 - 10 ]",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_8_s7",
+        "instruction": "En el primer bloque, ¿qué se debe resolver ahora?",
+        "options": [
+          "La operación interna \\$144 \\\\div 16\\$",
+          "La raíz cuadrada",
+          "La suma con 20",
+          "La resta entre bloques"
+        ],
+        "correctAnswer": "La operación interna \\$144 \\\\div 16\\$",
+        "feedbackError": "Antes de resolver la raíz, se debe resolver la operación interna que quedó en el radicando",
+        "expressionOverride": "[ sqrt(",
+        "startsNewLine": true
+      },
+      {
+        "id": "medium_8_s8",
+        "instruction": "El resultado de la división \\$144 \\\\div 16\\$ es:",
+        "options": [
+          "8",
+          "9",
+          "12",
+          "16"
+        ],
+        "correctAnswer": "9",
+        "feedbackError": "El resultado de la división \\$144 \\\\div 16\\$ es \\$9\\$",
+        "expressionOverride": "[ sqrt( 9 ) + 20 ] -",
+        "startsNewLine": true
+      },
+      {
+        "id": "medium_8_s9",
+        "instruction": "El resultado de las operaciones internas del segundo bloque es:",
+        "options": [
+          "10",
+          "15",
+          "20",
+          "25"
+        ],
+        "correctAnswer": "15",
+        "feedbackError": "El resultado de la resta \\$25 - 10\\$ es \\$15\\$",
+        "expressionOverride": "[ sqrt( 9 ) + 20 ] - [ 15 ]",
+        "startsNewLine": true
+      },
+      {
+        "id": "medium_8_s10",
+        "instruction": "En el primer bloque, ¿qué se debe resolver ahora?",
+        "options": [
+          "La suma \\$\\\\sqrt{9} + 20\\$",
+          "La raíz cuadrada \\$\\\\sqrt{9}\\$",
+          "La resta entre bloques",
+          "La división \\$144 \\\\div 16\\$"
+        ],
+        "correctAnswer": "La raíz cuadrada \\$\\\\sqrt{9}\\$",
+        "feedbackError": "Luego de resolver la operación interna del radicando, se resuelve la raíz cuadrada antes que la suma",
+        "expressionOverride": "[",
+        "startsNewLine": true
+      },
+      {
+        "id": "medium_8_s11",
+        "instruction": "El resultado de la raíz cuadrada \\$\\\\sqrt{9}\\$ es:",
+        "options": [
+          "2",
+          "3",
+          "6",
+          "9"
+        ],
+        "correctAnswer": "3",
+        "feedbackError": "El resultado de la raíz cuadrada \\$\\\\sqrt{9}\\$ es \\$3\\$",
+        "expressionOverride": "[ 3 + 20 ] - [ 15 ]",
+        "startsNewLine": true
+      },
+      {
+        "id": "medium_8_s12",
+        "instruction": "El resultado de las operaciones internas del primer bloque es:",
+        "options": [
+          "20",
+          "21",
+          "22",
+          "23"
+        ],
+        "correctAnswer": "23",
+        "feedbackError": "El resultado de la suma \\$3 + 20\\$ es \\$23\\$",
+        "expressionOverride": "[ 23 ] - [ 15 ]",
+        "startsNewLine": true
+      },
+      {
+        "id": "medium_8_s13",
+        "instruction": "El resultado de la última operación es:",
+        "options": [
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "correctAnswer": "8",
+        "feedbackError": "El resultado de la resta \\$23 - 15\\$ es \\$8\\$.",
+        "expressionOverride": "8",
+        "startsNewLine": true
+      }
+    ]
+  },
+  {
+    "id": "medium_9",
+    "title": "Nivel Medio 9",
+    "baseExpression": "[ sqrt( sqrt( 81 ) ) + 4 ^ 2 ] - [ 30 / 5 - 3 ]",
+    "steps": [
+      {
+        "id": "medium_9_s1",
+        "instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+        "options": [],
+        "correctAnswer": "",
+        "feedbackError": "Los signos separadores son únicamente los signos \\$+\\$ y \\$-\\$, ya que estos permiten dividir a la expresión aritmética en bloques.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_9_s2",
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "correctAnswer": "2",
+        "feedbackError": "Recuerda que los bloques se identifican a partir de los signos separadores (+ y -).",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_9_s3",
+        "instruction": "En el primer bloque, ¿qué se debe resolver primero?",
+        "options": [
+          "La raíz cuadrada interior \\$\\\\sqrt{81}\\$",
+          "La propiedad raíz de raíz",
+          "La potencia \\$4^2\\$",
+          "La resta entre bloques"
+        ],
+        "correctAnswer": "La propiedad raíz de raíz",
+        "feedbackError": "Recuerda que primero se aplican las propiedades de la potenciación y radicación; luego se resuelven las potencias o raíces, y finalmente las sumas o restas",
+        "expressionOverride": "[",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_9_s4",
+        "instruction": "Al aplicar la propiedad raíz de raíz en \\$\\\\sqrt{\\\\sqrt{81}}\\$, el resultado queda÷",
+        "options": [
+          "\\$\\\\sqrt[4]{81}\\$",
+          "\\$\\\\sqrt{81}\\$",
+          "3\\$\\\\sqrt{81}\\$",
+          "\\$81^2\\$"
+        ],
+        "correctAnswer": "\\$\\\\sqrt[4]{81}\\$",
+        "feedbackError": "En una raíz dentro de otra raíz, se multiplican los índices",
+        "expressionOverride": "[ root4( 81 ) +",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_9_s5",
+        "instruction": "En el primer bloque, ¿qué se debe resolver ahora?",
+        "options": [
+          "La raíz cuarta \\$\\\\sqrt[4]{81}\\$",
+          "La potencia \\$4^2\\$",
+          "La suma del primer bloque",
+          "La división del segundo bloque"
+        ],
+        "correctAnswer": "La potencia \\$4^2\\$",
+        "feedbackError": "Luego de aplicar las propiedades de la radicación, se resuelven las potencias antes que las raíces y sumas",
+        "expressionOverride": "[ root4( 81 ) +",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_9_s6",
+        "instruction": "El resultado de la potencia \\$4^2\\$ es:",
+        "options": [
+          "8",
+          "12",
+          "16",
+          "20"
+        ],
+        "correctAnswer": "16",
+        "feedbackError": "Recuerda que \\$4^2\\$ = \\$4 \\\\times 4\\$ = 16",
+        "expressionOverride": "[ root4( 81 ) + 16 ] - [",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_9_s7",
+        "instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La resta \\$5 - 3\\$",
+          "La división \\$30 \\\\div 5\\$",
+          "La raíz cuarta",
+          "La suma entre bloques"
+        ],
+        "correctAnswer": "La división \\$30 \\\\div 5\\$",
+        "feedbackError": "En el segundo bloque primero se resuelve la división, porque tiene mayor jerarquía que la resta",
+        "expressionOverride": "[ root4( 81 ) + 16 ] - [",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_9_s8",
+        "instruction": "El resultado de la división \\$30 \\\\div 5\\$ es:",
+        "options": [
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "correctAnswer": "6",
+        "feedbackError": "El resultado de la división \\$30 \\\\div 5\\$ es \\$6\\$",
+        "expressionOverride": "[ root4( 81 ) + 16 ] - [ 6 - 3 ]",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_9_s9",
+        "instruction": "En el primer bloque, ¿qué se debe resolver ahora?",
+        "options": [
+          "La raíz cuarta \\$\\\\sqrt[4]{81}\\$",
+          "La suma \\$\\\\sqrt[4]{81} + 16\\$",
+          "La resta del segundo bloque",
+          "La suma entre bloques"
+        ],
+        "correctAnswer": "La raíz cuarta \\$\\\\sqrt[4]{81}\\$",
+        "feedbackError": "Luego de resolver las potencias, se resuelven las raíces antes que las sumas o restas",
+        "expressionOverride": "[",
+        "startsNewLine": true
+      },
+      {
+        "id": "medium_9_s10",
+        "instruction": "El resultado de la raíz cuarta \\$\\\\sqrt[4]{81}\\$ es:",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "9"
+        ],
+        "correctAnswer": "3",
+        "feedbackError": "Como \\$3^4 = 81\\$, entonces \\$\\\\sqrt[4]{81}\\$ = 3",
+        "expressionOverride": "[ 3 + 16 ] -",
+        "startsNewLine": true
+      },
+      {
+        "id": "medium_9_s11",
+        "instruction": "El resultado de las operaciones internas del segundo bloque es:",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "correctAnswer": "3",
+        "feedbackError": "El resultado de la resta \\$6 - 3\\$ es \\$3\\$",
+        "expressionOverride": "[ 3 + 16 ] - [ 3 ]",
+        "startsNewLine": true
+      },
+      {
+        "id": "medium_9_s12",
+        "instruction": "El resultado de las operaciones internas del primer bloque es:",
+        "options": [
+          "18",
+          "19",
+          "20",
+          "21"
+        ],
+        "correctAnswer": "19",
+        "feedbackError": "El resultado de la suma \\$3 + 16\\$ es \\$19\\$",
+        "expressionOverride": "[ 19 ] - [ 3 ]",
+        "startsNewLine": true
+      },
+      {
+        "id": "medium_9_s13",
+        "instruction": "El resultado de la última operación es:",
+        "options": [
+          "15",
+          "16",
+          "17",
+          "18"
+        ],
+        "correctAnswer": "16",
+        "feedbackError": "El resultado correcto de esta operación es \\$16\\$.",
+        "expressionOverride": "16",
+        "startsNewLine": true
+      }
+    ]
+  },
+  {
+    "id": "medium_10",
+    "title": "Nivel Medio 10",
+    "baseExpression": "[ root10( 6 ^ 20 ) + 2 ^ 4 ] - [ sqrt( 16 + 20 ) - 3 ]",
+    "steps": [
+      {
+        "id": "medium_10_s1",
+        "instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+        "options": [],
+        "correctAnswer": "",
+        "feedbackError": "Los signos separadores son únicamente los signos \\$+\\$ y \\$-\\$, ya que estos permiten dividir a la expresión aritmética en bloques.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_10_s2",
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "correctAnswer": "2",
+        "feedbackError": "Recuerda que los bloques se identifican a partir de los signos separadores (+ y -).",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_10_s3",
+        "instruction": "En el primer bloque, ¿qué se debe resolver primero?",
+        "options": [
+          "La raíz \\$\\\\sqrt[10]{6^{20}}\\$",
+          "La propiedad de la raíz de una potencia",
+          "La potencia \\$2^4\\$",
+          "La resta entre bloques"
+        ],
+        "correctAnswer": "La propiedad de la raíz de una potencia",
+        "feedbackError": "Recuerda que primero se aplican las propiedades de la potenciación y radicación; luego se resuelven las potencias o raíces, y finalmente las sumas o restas",
+        "expressionOverride": "[",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_10_s4",
+        "instruction": "Al aplicar la propiedad de la raíz de una potencia en \\$\\\\sqrt[10]{6^{20}}\\$, el resultado queda÷",
+        "options": [
+          "\\$6^{10}\\$",
+          "\\$6^2\\$",
+          "\\$6^{30}\\$",
+          "\\$6^{20}\\$"
+        ],
+        "correctAnswer": "\\$6^2\\$",
+        "feedbackError": "En la raíz de una potencia, el exponente se divide para el índice de la raíz; por eso,\\$20 \\\\div 10\\$ = 2",
+        "expressionOverride": "[ 6 ^ 2 +",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_10_s5",
+        "instruction": "En el primer bloque, ¿qué se debe resolver ahora?",
+        "options": [
+          "La potencia \\$6^2\\$",
+          "La potencia \\$2^4\\$",
+          "La suma del primer bloque",
+          "La operación interna del segundo bloque"
+        ],
+        "correctAnswer": "La potencia \\$2^4\\$",
+        "feedbackError": "Luego de aplicar la propiedad de la raíz de una potencia, se resuelven las potencias antes que las raíces, multiplicaciones, divisiones, sumas o restas",
+        "expressionOverride": "[ 6 ^ 2 +",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_10_s6",
+        "instruction": "El resultado de la potencia \\$2^4\\$ es:",
+        "options": [
+          "8",
+          "12",
+          "16",
+          "24"
+        ],
+        "correctAnswer": "16",
+        "feedbackError": "Recuerda que \\$2^4\\$ = \\$2 \\\\times 2 \\\\times 2 \\\\times 2\\$ = 16",
+        "expressionOverride": "[ 6 ^ 2 + 16 ] -",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_10_s7",
+        "instruction": "En el segundo bloque, ¿qué se debe resolver primero?",
+        "options": [
+          "La raíz cuadrada",
+          "La operación interna \\$16 + 20\\$",
+          "La resta",
+          "La potencia \\$6^2\\$"
+        ],
+        "correctAnswer": "La operación interna \\$16 + 20\\$",
+        "feedbackError": "Antes de resolver la raíz, se debe resolver la operación interna que está dentro del radical",
+        "expressionOverride": "[ 6 ^ 2 + 16 ] - [ sqrt(",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_10_s8",
+        "instruction": "El resultado de la operación interna \\$16 + 20\\$ es:",
+        "options": [
+          "34",
+          "35",
+          "36",
+          "40"
+        ],
+        "correctAnswer": "36",
+        "feedbackError": "El resultado de la suma \\$16 + 20\\$ es \\$36\\$",
+        "expressionOverride": "[ 6 ^ 2 + 16 ] - [ sqrt( 36 ) - 3 ]",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_10_s9",
+        "instruction": "En el primer bloque, ¿qué se debe resolver ahora?",
+        "options": [
+          "La potencia \\$6^2\\$",
+          "La suma \\$6^2 + 16\\$",
+          "La raíz cuadrada \\$\\\\sqrt{36}\\$",
+          "La resta entre bloques"
+        ],
+        "correctAnswer": "La potencia \\$6^2\\$",
+        "feedbackError": "En el primer bloque todavía queda una potencia; por jerarquía, se resuelve antes que la suma",
+        "expressionOverride": "[",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_10_s10",
+        "instruction": "El resultado de la potencia \\$6^2\\$ es:",
+        "options": [
+          "12",
+          "36",
+          "18",
+          "62"
+        ],
+        "correctAnswer": "36",
+        "feedbackError": "Recuerda que \\$6^2\\$ = \\$6 \\\\times 6\\$ = 36",
+        "expressionOverride": "[ 36 + 16 ] - [",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_10_s11",
+        "instruction": "En el segundo bloque, ¿qué se debe resolver ahora?",
+        "options": [
+          "La resta \\$36 - 3\\$",
+          "La raíz cuadrada \\$\\\\sqrt{36}\\$",
+          "La suma \\$36 + 16\\$",
+          "La resta entre bloques"
+        ],
+        "correctAnswer": "La raíz cuadrada \\$\\\\sqrt{36}\\$",
+        "feedbackError": "Luego de resolver la operación interna del radical, se resuelve la raíz cuadrada antes que la resta",
+        "expressionOverride": "[ 36 + 16 ] - [",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_10_s12",
+        "instruction": "El resultado de la raíz cuadrada \\$\\\\sqrt{36}\\$ es:",
+        "options": [
+          "4",
+          "5",
+          "6",
+          "9"
+        ],
+        "correctAnswer": "6",
+        "feedbackError": "El resultado de la raíz cuadrada \\$\\\\sqrt{36}\\$ es \\$6\\$",
+        "expressionOverride": "[ 36 + 16 ] - [ 6 - 3 ]",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_10_s13",
+        "instruction": "El resultado de las operaciones internas del primer bloque es:",
+        "options": [
+          "48",
+          "50",
+          "52",
+          "54"
+        ],
+        "correctAnswer": "52",
+        "feedbackError": "El resultado de la suma \\$36 + 16\\$ es \\$52\\$",
+        "expressionOverride": "[ 52 ] - [",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_10_s14",
+        "instruction": "El resultado de las operaciones internas del segundo bloque es:",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "correctAnswer": "3",
+        "feedbackError": "El resultado de la resta \\$6 - 3\\$ es \\$3\\$",
+        "expressionOverride": "[ 52 ] - [ 3 ]",
+        "startsNewLine": false
+      },
+      {
+        "id": "medium_10_s15",
+        "instruction": "El resultado de la última operación es:",
+        "options": [
+          "47",
+          "48",
+          "49",
+          "50"
+        ],
+        "correctAnswer": "49",
+        "feedbackError": "El resultado de la resta \\$52 - 3\\$ es \\$49\\$",
+        "expressionOverride": "49",
+        "startsNewLine": false
+      }
+    ]
+  },
+  {
+    "id": "hard_1",
+    "title": "Nivel Difícil 1",
+    "baseExpression": "15 * 2 + sqrt( 4 + 5 ) - ( 2 * 3 - 1 )",
+    "steps": [
+      {
+        "id": "hard_1_s1",
+        "instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+        "options": [],
+        "correctAnswer": "",
+        "feedbackError": "Este es un signo separador de operaciones internas",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_1_s2",
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "correctAnswer": "3",
+        "feedbackError": "Recuerda que los bloques se identifican a partir de los signos separadores que no están dentro de operaciones internas",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_1_s3",
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver?",
+        "options": [
+          "La multiplicación",
+          "La suma",
+          "La resta",
+          "La raíz cuadrada"
+        ],
+        "correctAnswer": "La multiplicación",
+        "feedbackError": "En el primer bloque aparece una multiplicación, por lo tanto, se debe resolver \\$15 \\\\times 2\\$",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_1_s4",
+        "instruction": "El resultado de la multiplicación del primer bloque es:",
+        "options": [
+          "17",
+          "30",
+          "13",
+          "25"
+        ],
+        "correctAnswer": "30",
+        "feedbackError": "El resultado de la multiplicación \\$15 \\\\times 2\\$ es \\$30\\$",
+        "expressionOverride": "30 +",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_1_s5",
+        "instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La raíz cuadrada",
+          "La operación interna",
+          "La multiplicación",
+          "La resta"
+        ],
+        "correctAnswer": "La operación interna",
+        "feedbackError": "En el segundo bloque primero se resuelve la operación interna que está dentro del radical",
+        "expressionOverride": "30 + sqrt(",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_1_s6",
+        "instruction": "El resultado de la operación interna del segundo bloque es:",
+        "options": [
+          "9",
+          "1",
+          "20",
+          "5"
+        ],
+        "correctAnswer": "9",
+        "feedbackError": "El resultado de la suma \\$4 + 5\\$ es \\$9\\$",
+        "expressionOverride": "30 + sqrt( 9 ) -",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_1_s7",
+        "instruction": "En el tercer bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La resta",
+          "La multiplicación",
+          "La suma",
+          "La raíz cuadrada"
+        ],
+        "correctAnswer": "La multiplicación",
+        "feedbackError": "En el tercer bloque, entre la multiplicación y la resta, se resuelve primero la multiplicación",
+        "expressionOverride": "30 + sqrt( 9 ) - (",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_1_s8",
+        "instruction": "El resultado de la multiplicación del tercer bloque es:",
+        "options": [
+          "5",
+          "6",
+          "4",
+          "9"
+        ],
+        "correctAnswer": "6",
+        "feedbackError": "El resultado de la multiplicación \\$2 \\\\times 3\\$ es \\$6\\$",
+        "expressionOverride": "30 + sqrt( 9 ) - ( 6 - 1 )",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_1_s9",
+        "instruction": "En el segundo bloque, ¿qué operación se debe resolver ahora?",
+        "options": [
+          "La suma",
+          "La raíz cuadrada",
+          "La resta",
+          "La multiplicación"
+        ],
+        "correctAnswer": "La raíz cuadrada",
+        "feedbackError": "Luego de resolver la operación interna del segundo bloque, se debe resolver la raíz cuadrada",
+        "expressionOverride": "30 +",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_1_s10",
+        "instruction": "El resultado de la raíz cuadrada del segundo bloque es:",
+        "options": [
+          "9",
+          "6",
+          "3",
+          "4"
+        ],
+        "correctAnswer": "3",
+        "feedbackError": "El resultado de la raíz cuadrada \\$\\\\sqrt{9}\\$ es \\$3\\$",
+        "expressionOverride": "30 + 3 -",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_1_s11",
+        "instruction": "El resultado de la resta del tercer bloque es:",
+        "options": [
+          "7",
+          "6",
+          "5",
+          "4"
+        ],
+        "correctAnswer": "5",
+        "feedbackError": "El resultado de la resta \\$6 - 1\\$ es \\$5\\$",
+        "expressionOverride": "30 + 3 - ( 5 )",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_1_s12",
+        "instruction": "¿Qué operación se debe resolver primero en 30 + \\$3 - 5\\$?",
+        "options": [
+          "La suma \\$30 + 3\\$",
+          "La resta \\$3 - 5\\$",
+          "La resta \\$30 - 5\\$",
+          "La multiplicación"
+        ],
+        "correctAnswer": "La suma \\$30 + 3\\$",
+        "feedbackError": "Al quedar solamente sumas y restas, se resuelve de izquierda a derecha",
+        "expressionOverride": "33 - 5",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_1_s13",
+        "instruction": "El resultado de las últimas operaciones es:",
+        "options": [
+          "35",
+          "\\$3^3\\$",
+          "28",
+          "30"
+        ],
+        "correctAnswer": "28",
+        "feedbackError": "El resultado correcto de esta operación es \\$28\\$.",
+        "expressionOverride": "28",
+        "startsNewLine": false
+      }
+    ]
+  },
+  {
+    "id": "hard_2",
+    "title": "Nivel Difícil 2",
+    "baseExpression": "30 - 7 ^ 6 / 7 ^ 5 + 8 / 2 * 4",
+    "steps": [
+      {
+        "id": "hard_2_s1",
+        "instruction": "Selecciona los signos separadores.",
+        "options": [],
+        "correctAnswer": "",
+        "feedbackError": "Este no es un signo separador",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_2_s2",
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "correctAnswer": "3",
+        "feedbackError": "Recuerda que los bloques se identifican a partir de los signos separadores que no están dentro de operaciones internas",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_2_s3",
+        "instruction": "En el segundo bloque, ¿qué se debe hacer primero?",
+        "options": [
+          "La potenciación",
+          "La propiedad de división de potencias de igual base",
+          "La suma",
+          "La resta"
+        ],
+        "correctAnswer": "La propiedad de división de potencias de igual base",
+        "feedbackError": "Mayor jerarquía tiene la aplicación de propiedades de la potenciación y radicación que la división.",
+        "expressionOverride": "30 -",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_2_s4",
+        "instruction": "El resultado de \\$7^6 \\\\div 7^5\\$ es:",
+        "options": [
+          "7",
+          "49",
+          "1",
+          "14"
+        ],
+        "correctAnswer": "7",
+        "feedbackError": "Al dividir potencias de igual base se restan los exponentes: \\$6 - 5 = 1\\$ (obteniendo \\$7^1 = 7\\$).",
+        "expressionOverride": "30 - 7 ^ 1 +",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_2_s5",
+        "instruction": "En el tercer bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La multiplicación",
+          "La división",
+          "La suma",
+          "La resta"
+        ],
+        "correctAnswer": "La división",
+        "feedbackError": "Entre la división y la multiplicación se resuelve la que aparece primero de izquierda a derecha.",
+        "expressionOverride": "30 - 7 ^ 1 +",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_2_s6",
+        "instruction": "El resultado de la división \\$8 \\\\div 2\\$ es:",
+        "options": [
+          "2",
+          "4",
+          "6",
+          "8"
+        ],
+        "correctAnswer": "4",
+        "feedbackError": "El resultado de la división \\$8 \\\\div 2\\$ es \\$4\\$",
+        "expressionOverride": "30 - 7 ^ 1 + 4 * 4",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_2_s7",
+        "instruction": "El resultado de la multiplicación del tercer bloque es:",
+        "options": [
+          "8",
+          "16",
+          "12",
+          "24"
+        ],
+        "correctAnswer": "16",
+        "feedbackError": "El resultado de la multiplicación \\$4 \\\\times 4\\$ es \\$16\\$",
+        "expressionOverride": "30 - 7 + 16",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_2_s8",
+        "instruction": "El resultado de las últimas operaciones es:",
+        "options": [
+          "39",
+          "41",
+          "37",
+          "35"
+        ],
+        "correctAnswer": "39",
+        "feedbackError": "El resultado de la suma \\$30 - 7 + 16\\$ es \\$39\\$",
+        "expressionOverride": "39",
+        "startsNewLine": false
+      }
+    ]
+  },
+  {
+    "id": "hard_3",
+    "title": "Nivel Difícil 3",
+    "baseExpression": "sqrt( 2 ^ 6 ) + 3 * ( 5 - 2 ) / ( 3 - 2 )",
+    "steps": [
+      {
+        "id": "hard_3_s1",
+        "instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+        "options": [],
+        "correctAnswer": "",
+        "feedbackError": "Este es un signo separador de operaciones internas",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_3_s2",
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "1"
+        ],
+        "correctAnswer": "2",
+        "feedbackError": "Recuerda que los bloques se identifican a partir de los signos separadores que no están dentro de operaciones internas",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_3_s3",
+        "instruction": "En el primer bloque, ¿qué se debe resolver primero?",
+        "options": [
+          "La potencia",
+          "La propiedad de la raíz de una potencia",
+          "La suma",
+          "La multiplicación"
+        ],
+        "correctAnswer": "La propiedad de la raíz de una potencia",
+        "feedbackError": "Antes de desarrollar la potencia, se aplica la propiedad de la raíz de una potencia",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_3_s4",
+        "instruction": "Al aplicar la propiedad \\$\\\\sqrt{a^n} = a^{\\\\frac{n}{2}}\\$, el exponente queda:",
+        "options": [
+          "6",
+          "3",
+          "2",
+          "4"
+        ],
+        "correctAnswer": "3",
+        "feedbackError": "Al dividir el exponente 6 entre 2, se obtiene 3",
+        "expressionOverride": "2 ^ 3 +",
+        "startsNewLine": true
+      },
+      {
+        "id": "hard_3_s5",
+        "instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La multiplicación",
+          "Las operaciones internas",
+          "La división",
+          "La suma"
+        ],
+        "correctAnswer": "Las operaciones internas",
+        "feedbackError": "Primero se resuelven las operaciones que están dentro de los paréntesis",
+        "expressionOverride": "2 ^ 3 + 3 * (",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_3_s6",
+        "instruction": "En las operaciones internas del segundo bloque, ¿qué operación se resuelve primero?",
+        "options": [
+          "La resta \\$5 - 2\\$",
+          "La resta \\$3 - 2\\$",
+          "La multiplicación",
+          "La división"
+        ],
+        "correctAnswer": "La resta \\$5 - 2\\$",
+        "feedbackError": "Al observar el segundo bloque de izquierda a derecha, primero se resuelve la operación interna \\$5 - 2\\$",
+        "expressionOverride": "2 ^ 3 + 3 * (",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_3_s7",
+        "instruction": "El resultado de la operación interna \\$5 - 2\\$ es:",
+        "options": [
+          "2",
+          "3",
+          "5",
+          "1"
+        ],
+        "correctAnswer": "3",
+        "feedbackError": "El resultado de la resta \\$5 - 2\\$ es \\$3\\$",
+        "expressionOverride": "2 ^ 3 + 3 * 3 / (",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_3_s8",
+        "instruction": "En las operaciones internas del segundo bloque, ¿qué operación se resuelve ahora?",
+        "options": [
+          "La multiplicación \\$3 \\\\times 3\\$",
+          "La resta \\$3 - 2\\$",
+          "La división",
+          "La suma final"
+        ],
+        "correctAnswer": "La resta \\$3 - 2\\$",
+        "feedbackError": "Luego de resolver la primera operación interna, queda pendiente la operación interna\\$3 - 2\\$",
+        "expressionOverride": "2 ^ 3 + 3 * 3 / (",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_3_s9",
+        "instruction": "El resultado de la operación interna\\$3 - 2\\$ es:",
+        "options": [
+          "2",
+          "3",
+          "1",
+          "4"
+        ],
+        "correctAnswer": "1",
+        "feedbackError": "El resultado de la resta\\$3 - 2\\$ es \\$1\\$",
+        "expressionOverride": "2 ^ 3 + 3 * 3 / 1",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_3_s10",
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver ahora?",
+        "options": [
+          "La potencia \\$2^3\\$",
+          "La suma",
+          "La multiplicación",
+          "La división"
+        ],
+        "correctAnswer": "La potencia \\$2^3\\$",
+        "feedbackError": "Al volver a analizar la expresión de izquierda a derecha, en el primer bloque queda pendiente resolver la potencia \\$2^3\\$",
+        "expressionOverride": "2 ^ 3 + 3 * 3 / 1",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_3_s11",
+        "instruction": "El resultado de la potencia \\$2^3\\$ es:",
+        "options": [
+          "6",
+          "8",
+          "4",
+          "12"
+        ],
+        "correctAnswer": "8",
+        "feedbackError": "El resultado de la potencia \\$2^3\\$ es \\$8\\$",
+        "expressionOverride": "8 +",
+        "startsNewLine": true
+      },
+      {
+        "id": "hard_3_s12",
+        "instruction": "En el segundo bloque, ¿qué operación se debe resolver ahora?",
+        "options": [
+          "La multiplicación \\$3 \\\\times 3\\$",
+          "La división \\$3 \\\\div 1\\$",
+          "La suma",
+          "La resta"
+        ],
+        "correctAnswer": "La multiplicación \\$3 \\\\times 3\\$",
+        "feedbackError": "Entre la multiplicación y la división se resuelve de izquierda a derecha; por eso primero se resuelve \\$3 \\\\times 3\\$",
+        "expressionOverride": "8 +",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_3_s13",
+        "instruction": "El resultado de la multiplicación \\$3 \\\\times 3\\$ es:",
+        "options": [
+          "6",
+          "9",
+          "12",
+          "3"
+        ],
+        "correctAnswer": "9",
+        "feedbackError": "El resultado de la multiplicación \\$3 \\\\times 3\\$ es \\$9\\$",
+        "expressionOverride": "8 + 9 / 1",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_3_s14",
+        "instruction": "En el segundo bloque, ¿qué operación se debe resolver ahora?",
+        "options": [
+          "La división \\$9 \\\\div 1\\$",
+          "La multiplicación",
+          "La suma",
+          "La resta"
+        ],
+        "correctAnswer": "La división \\$9 \\\\div 1\\$",
+        "feedbackError": "Luego de resolver la multiplicación, queda pendiente la división \\$9 \\\\div 1\\$",
+        "expressionOverride": "8 + 9 / 1",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_3_s15",
+        "instruction": "El resultado de la división \\$9 \\\\div 1\\$ es:",
+        "options": [
+          "9",
+          "1",
+          "8",
+          "10"
+        ],
+        "correctAnswer": "9",
+        "feedbackError": "El resultado de la división \\$9 \\\\div 1\\$ es \\$9\\$",
+        "expressionOverride": "8 + 9",
+        "startsNewLine": true
+      },
+      {
+        "id": "hard_3_s16",
+        "instruction": "El resultado de las últimas operaciones es:",
+        "options": [
+          "17",
+          "16",
+          "15",
+          "14"
+        ],
+        "correctAnswer": "17",
+        "feedbackError": "El resultado de las últimas operaciones es \\$17\\$",
+        "expressionOverride": "17",
+        "startsNewLine": true
+      }
+    ]
+  },
+  {
+    "id": "hard_4",
+    "title": "Nivel Difícil 4",
+    "baseExpression": "55 - 3 * 2 + 3 * root3( 5 ^ 6 )",
+    "steps": [
+      {
+        "id": "hard_4_s1",
+        "instruction": "Selecciona los signos separadores.",
+        "options": [],
+        "correctAnswer": "",
+        "feedbackError": "Este es un signo de multiplicación",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_4_s2",
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "1"
+        ],
+        "correctAnswer": "3",
+        "feedbackError": "Recuerda que los bloques se identifican a partir de los signos separadores",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_4_s3",
+        "instruction": "Observando la expresión, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La resta \\$55 - 3\\$",
+          "La multiplicación \\$3 \\\\times 2\\$",
+          "La suma",
+          "La raíz"
+        ],
+        "correctAnswer": "La multiplicación \\$3 \\\\times 2\\$",
+        "feedbackError": "Se debe resolver la primera operación disponible de izquierda a derecha",
+        "expressionOverride": "55 -",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_4_s4",
+        "instruction": "El resultado de la multiplicación \\$3 \\\\times 2\\$ es:",
+        "options": [
+          "5",
+          "6",
+          "3",
+          "8"
+        ],
+        "correctAnswer": "6",
+        "feedbackError": "El resultado de multiplicar 3 y 2 es \\$6\\$",
+        "expressionOverride": "55 - 6 +",
+        "startsNewLine": true
+      },
+      {
+        "id": "hard_4_s5",
+        "instruction": "Observando el tercer bloque, ¿qué operación se debe resolver ahora?",
+        "options": [
+          "La resta \\$55 - 6\\$",
+          "La multiplicación \\$3 \\\\times \\\\sqrt[3]{5^6}\\$",
+          "La potenciación \\$5^6\\$",
+          "La propiedad raíz de una potencia"
+        ],
+        "correctAnswer": "La propiedad raíz de una potencia",
+        "feedbackError": "Antes de realizar operaciones, se deben aplicar las propiedades de la potenciación y radicación",
+        "expressionOverride": "55 - 6 + 3 *",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_4_s6",
+        "instruction": "Al aplicar la propiedad \\$\\\\sqrt[3]{a^n} = a^{\\\\frac{n}{3}}\\$, el exponente queda÷",
+        "options": [
+          "6",
+          "3",
+          "2",
+          "9"
+        ],
+        "correctAnswer": "2",
+        "feedbackError": "El resultado de dividir el exponente 6, para el índice 3, es \\$2\\$",
+        "expressionOverride": "55 - 6 + 3 * 5 ^ 2",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_4_s7",
+        "instruction": "La operación que se realiza primero es:",
+        "options": [
+          "La potencia \\$5^2\\$",
+          "La multiplicación \\$3 \\\\times 5\\$",
+          "La suma \\$6 + 3\\$"
+        ],
+        "correctAnswer": "La potencia \\$5^2\\$",
+        "feedbackError": "Recuerda que la potenciación se resuelve antes que las multiplicaciones, sumas y restas",
+        "expressionOverride": "55 - 6 + 3 *",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_4_s8",
+        "instruction": "El resultado de la potencia \\$5^2\\$ es:",
+        "options": [
+          "10",
+          "20",
+          "25",
+          "15"
+        ],
+        "correctAnswer": "25",
+        "feedbackError": "El resultado de la potencia \\$5^2\\$ es \\$25\\$",
+        "expressionOverride": "55 - 6 + 3 * 25",
+        "startsNewLine": true
+      },
+      {
+        "id": "hard_4_s9",
+        "instruction": "La operación que se realiza primero es:",
+        "options": [
+          "La multiplicación \\$3 \\\\times 25\\$",
+          "La suma \\$6 + 3\\$",
+          "La multiplicación \\$6 \\\\times 25\\$"
+        ],
+        "correctAnswer": "La multiplicación \\$3 \\\\times 25\\$",
+        "feedbackError": "Las multiplicaciones se resuelven antes que las sumas y restas",
+        "expressionOverride": "55 - 6 +",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_4_s10",
+        "instruction": "El resultado de la multiplicación \\$3 \\\\times 25\\$ es:",
+        "options": [
+          "50",
+          "75",
+          "60",
+          "65"
+        ],
+        "correctAnswer": "75",
+        "feedbackError": "El resultado de la multiplicación \\$3 \\\\times 25\\$ es \\$75\\$",
+        "expressionOverride": "55 - 6 + 75",
+        "startsNewLine": true
+      },
+      {
+        "id": "hard_4_s11",
+        "instruction": "El resultado de las últimas operaciones es:",
+        "options": [
+          "124",
+          "130",
+          "140",
+          "120"
+        ],
+        "correctAnswer": "124",
+        "feedbackError": "El resultado de las operaciones \\$55 - 6 + 75\\$ es \\$124\\$",
+        "expressionOverride": "124",
+        "startsNewLine": true
+      }
+    ]
+  },
+  {
+    "id": "hard_5",
+    "title": "Nivel Difícil 5",
+    "baseExpression": "3 * [ 3 ^ 3 - 16 / ( 5 + 3 ) ]",
+    "steps": [
+      {
+        "id": "hard_5_s1",
+        "instruction": "En la expresión aritmética, ¿qué elemento se debe conservar inicialmente?",
+        "options": [
+          "El número 3 que está fuera del corchete",
+          "La resta",
+          "La división",
+          "La suma"
+        ],
+        "correctAnswer": "El número 3 que está fuera del corchete",
+        "feedbackError": "El número 3 se conserva porque multiplica a toda la expresión que está dentro del corchete",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_5_s2",
+        "instruction": "¿Qué parte de la expresión se debe analizar primero?",
+        "options": [
+          "El contenido del corchete",
+          "La multiplicación externa",
+          "Solo el número 3",
+          "La resta final"
+        ],
+        "correctAnswer": "El contenido del corchete",
+        "feedbackError": "Primero se analiza el contenido del corchete porque agrupa las operaciones que deben resolverse antes de multiplicar por el número externo",
+        "expressionOverride": "3 * [",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_5_s3",
+        "instruction": "Dentro del corchete, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La potencia \\$3^3\\$",
+          "La resta",
+          "La división",
+          "La suma"
+        ],
+        "correctAnswer": "La potencia \\$3^3\\$",
+        "feedbackError": "Al analizar el corchete de izquierda a derecha, la primera operación disponible de mayor jerarquía es la potencia \\$3^3\\$",
+        "expressionOverride": "3 * [",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_5_s4",
+        "instruction": "El resultado de la potencia \\$3^3\\$ es:",
+        "options": [
+          "9",
+          "27",
+          "6",
+          "18"
+        ],
+        "correctAnswer": "27",
+        "feedbackError": "El resultado de la potencia \\$3^3\\$ = \\$3 \\\\times 3 \\\\times 3\\$ es \\$27\\$",
+        "expressionOverride": "3 * [ 27",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_5_s5",
+        "instruction": "Dentro del corchete, ¿qué operación se debe resolver ahora?",
+        "options": [
+          "La resta \\$27 - 16\\$",
+          "La operación interna del paréntesis",
+          "La multiplicación externa",
+          "La resta \\$5 - 3\\$"
+        ],
+        "correctAnswer": "La operación interna del paréntesis",
+        "feedbackError": "Dentro del corchete queda una operación interna en el paréntesis; esta debe resolverse antes de la división y de la resta",
+        "expressionOverride": "3 * [ 27 - 16 / (",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_5_s6",
+        "instruction": "El resultado de la operación interna \\$5 + 3\\$ es:",
+        "options": [
+          "2",
+          "8",
+          "15",
+          "6"
+        ],
+        "correctAnswer": "8",
+        "feedbackError": "El resultado de la suma \\$5 + 3\\$ es \\$8\\$",
+        "expressionOverride": "3 * [ 27 - 16 / ( 8 ) ]",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_5_s7",
+        "instruction": "Dentro del corchete, ¿qué operación se debe resolver ahora?",
+        "options": [
+          "La resta \\$27 - 16\\$",
+          "La división \\$16 \\\\div 8\\$",
+          "La multiplicación \\$3 \\\\times 27\\$",
+          "La suma"
+        ],
+        "correctAnswer": "La división \\$16 \\\\div 8\\$",
+        "feedbackError": "Entre la resta y la división, se resuelve primero la división",
+        "expressionOverride": "3 * [ 27 - 16 / ( 8 ) ]",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_5_s8",
+        "instruction": "El resultado de la división \\$16 \\\\div 8\\$ es:",
+        "options": [
+          "2",
+          "8",
+          "4",
+          "16"
+        ],
+        "correctAnswer": "2",
+        "feedbackError": "El resultado de la división \\$16 \\\\div 8\\$ es \\$2\\$",
+        "expressionOverride": "3 * [ 27 - 2 ]",
+        "startsNewLine": true
+      },
+      {
+        "id": "hard_5_s9",
+        "instruction": "El resultado de la operación interna del corchete es:",
+        "options": [
+          "25",
+          "29",
+          "20",
+          "22"
+        ],
+        "correctAnswer": "25",
+        "feedbackError": "El resultado de la resta \\$27 - 2\\$ es \\$25\\$",
+        "expressionOverride": "3 * 25",
+        "startsNewLine": true
+      },
+      {
+        "id": "hard_5_s10",
+        "instruction": "El resultado de la última operación es:",
+        "options": [
+          "75",
+          "28",
+          "25",
+          "72"
+        ],
+        "correctAnswer": "75",
+        "feedbackError": "El resultado de la multiplicación \\$3 \\\\times 25\\$ es \\$75\\$",
+        "expressionOverride": "75",
+        "startsNewLine": true
+      }
+    ]
+  },
+  {
+    "id": "hard_6",
+    "title": "Nivel Difícil 6",
+    "baseExpression": "20 + 10 / 5 - sqrt( root3( 3 ^ 12 ) ) + 1",
+    "steps": [
+      {
+        "id": "hard_6_s1",
+        "instruction": "Selecciona los signos separadores.",
+        "options": [],
+        "correctAnswer": "",
+        "feedbackError": "Los signos separadores son el+ y el \\$-\\$",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_6_s2",
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "correctAnswer": "4",
+        "feedbackError": "Los bloques se identifican a partir de los signos separadores",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_6_s3",
+        "instruction": "En el primer bloque no hay operaciones internas, por lo tanto:",
+        "options": [
+          "Se conserva el número",
+          "Se elimina el número",
+          "Se divide",
+          "Se multiplica"
+        ],
+        "correctAnswer": "Se conserva el número",
+        "feedbackError": "Cuando un bloque no tiene operaciones internas, el número se conserva",
+        "expressionOverride": "20 +",
+        "startsNewLine": true
+      },
+      {
+        "id": "hard_6_s4",
+        "instruction": "El resultado de la división del segundo bloque es:",
+        "options": [
+          "2",
+          "5",
+          "10",
+          "15"
+        ],
+        "correctAnswer": "2",
+        "feedbackError": "El resultado de la división \\$10 \\\\div 5\\$ es \\$2\\$",
+        "expressionOverride": "20 + 2",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_6_s5",
+        "instruction": "En el tercer bloque, ¿qué se debe resolver primero?",
+        "options": [
+          "La raíz cuadrada exterior",
+          "La propiedad de la raíz cúbica de una potencia",
+          "La suma final",
+          "La resta"
+        ],
+        "correctAnswer": "La propiedad de la raíz cúbica de una potencia",
+        "feedbackError": "Primero se analiza la raíz interna y se aplica la propiedad de la raíz de una potencia",
+        "expressionOverride": "20 + 2 -",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_6_s6",
+        "instruction": "Al aplicar la propiedad \\$\\\\sqrt[3]{3^{12}} = 3^{\\\\frac{12}{3}}\\$ , el exponente queda:",
+        "options": [
+          "3",
+          "4",
+          "6",
+          "12"
+        ],
+        "correctAnswer": "4",
+        "feedbackError": "El resultado de dividir el exponente 12 para el índice 3 es \\$4\\$",
+        "expressionOverride": "20 + 2 - sqrt( 3 ^ 4 ) +",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_6_s7",
+        "instruction": "En el cuarto bloque no hay operaciones internas, por lo tanto:",
+        "options": [
+          "Se conserva el número 1",
+          "Se elimina el número 1",
+          "Se suma primero \\$4 + 1\\$",
+          "Se multiplica"
+        ],
+        "correctAnswer": "Se conserva el número 1",
+        "feedbackError": "El número 1 está solo en un bloque, por lo tanto, se conserva",
+        "expressionOverride": "20 + 2 - sqrt( 3 ^ 4 ) + 1",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_6_s8",
+        "instruction": "Entre las operaciones que quedaron ¿cuál tiene mayor jerarquía?",
+        "options": [
+          "La propiedad de la raíz cuadrada de una potencia",
+          "La suma \\$20 + 2\\$",
+          "La resta",
+          "La suma final"
+        ],
+        "correctAnswer": "La propiedad de la raíz cuadrada de una potencia",
+        "feedbackError": "Antes de realizar sumas o restas, se debe resolver la raíz cuadrada de la potencia",
+        "expressionOverride": "20 + 2 -",
+        "startsNewLine": true
+      },
+      {
+        "id": "hard_6_s9",
+        "instruction": "Al aplicar la propiedad \\$\\\\sqrt{3^4} = 3^{\\\\frac{4}{2}}\\$, el exponente queda:",
+        "options": [
+          "2",
+          "4",
+          "6",
+          "8"
+        ],
+        "correctAnswer": "2",
+        "feedbackError": "El resultado de dividir el exponente 4 para el índice 2 es \\$2\\$",
+        "expressionOverride": "20 + 2 - 3 ^ 2 + 1",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_6_s10",
+        "instruction": "La operación que se debe resolver ahora es:",
+        "options": [
+          "La potenciación",
+          "La suma",
+          "La resta"
+        ],
+        "correctAnswer": "La potenciación",
+        "feedbackError": "La potenciación tiene mayor jerarquía que las sumas y restas",
+        "expressionOverride": "20 + 2 -",
+        "startsNewLine": true
+      },
+      {
+        "id": "hard_6_s11",
+        "instruction": "El resultado de la potencia \\$3^2\\$ es:",
+        "options": [
+          "6",
+          "9",
+          "3",
+          "12"
+        ],
+        "correctAnswer": "9",
+        "feedbackError": "El resultado de la potencia \\$3^2\\$ es \\$9\\$",
+        "expressionOverride": "20 + 2 - 9 + 1",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_6_s12",
+        "instruction": "El resultado de las últimas operaciones es:",
+        "options": [
+          "14",
+          "12",
+          "20",
+          "22"
+        ],
+        "correctAnswer": "14",
+        "feedbackError": "Al resolver de izquierda a derecha 20 + \\$2 - 9 + 1\\$, se obtiene 14",
+        "expressionOverride": "14",
+        "startsNewLine": true
+      }
+    ]
+  },
+  {
+    "id": "hard_7",
+    "title": "Nivel Difícil 7",
+    "baseExpression": "( 2 ^ 2 + 1 ) ^ 3 + [ 10 - ( 9 / 3 + 1 ) ] - sqrt( 9 + 40 )",
+    "steps": [
+      {
+        "id": "hard_7_s1",
+        "instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+        "options": [],
+        "correctAnswer": "",
+        "feedbackError": "Este es un signo separador de operaciones internas",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_7_s2",
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "correctAnswer": "3",
+        "feedbackError": "Los bloques se identifican a partir de los signos separadores que no están dentro de operaciones internas",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_7_s3",
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La suma",
+          "La potencia \\$2^2\\$",
+          "La potencia exterior",
+          "La resta"
+        ],
+        "correctAnswer": "La potencia \\$2^2\\$",
+        "feedbackError": "Dentro del paréntesis, entre la potencia y la suma, se resuelve primero la potencia",
+        "expressionOverride": "(",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_7_s4",
+        "instruction": "El resultado de la potencia \\$2^2\\$ es:",
+        "options": [
+          "2",
+          "4",
+          "6",
+          "8"
+        ],
+        "correctAnswer": "4",
+        "feedbackError": "El resultado de la potencia \\$2^2\\$ es \\$4\\$",
+        "expressionOverride": "( 4 + 1 ) ^ 3 + [ 10 - ( 9 / 3 + 1 ) ] - sqrt( 9 + 40 )",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_7_s5",
+        "instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La resta \\$10 - 9\\$",
+          "La operación interna del paréntesis",
+          "La suma exterior",
+          "La raíz cuadrada"
+        ],
+        "correctAnswer": "La operación interna del paréntesis",
+        "feedbackError": "Dentro del corchete primero se resuelve la operación interna que está dentro del paréntesis",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_7_s6",
+        "instruction": "En la operación interna del segundo bloque, ¿qué se debe resolver primero?",
+        "options": [
+          "La división \\$9 \\\\div 3\\$",
+          "La suma \\$3 + 1\\$",
+          "La resta",
+          "La potencia"
+        ],
+        "correctAnswer": "La división \\$9 \\\\div 3\\$",
+        "feedbackError": "Entre la división y la suma, se resuelve primero la división",
+        "expressionOverride": "( 4 + 1 ) ^ 3 + [ 10 - (",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_7_s7",
+        "instruction": "El resultado de la división \\$9 \\\\div 3\\$ es:",
+        "options": [
+          "2",
+          "3",
+          "6",
+          "9"
+        ],
+        "correctAnswer": "3",
+        "feedbackError": "El resultado de la división \\$9 \\\\div 3\\$ es \\$3\\$",
+        "expressionOverride": "( 4 + 1 ) ^ 3 + [ 10 - ( 3 + 1 ) ] - sqrt( 9 + 40 )",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_7_s8",
+        "instruction": "En el tercer bloque, ¿qué se debe resolver primero?",
+        "options": [
+          "La raíz cuadrada",
+          "La operación interna del radical",
+          "La resta",
+          "La suma final"
+        ],
+        "correctAnswer": "La operación interna del radical",
+        "feedbackError": "Antes de resolver la raíz cuadrada, se resuelve la operación interna que está dentro del radical",
+        "expressionOverride": "( 4 + 1 ) ^ 3 + [ 10 - ( 3 + 1 ) ] - sqrt(",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_7_s9",
+        "instruction": "El resultado de la operación interna del tercer bloque es:",
+        "options": [
+          "49",
+          "41",
+          "50",
+          "45"
+        ],
+        "correctAnswer": "49",
+        "feedbackError": "El resultado de la suma \\$9 + 40\\$ es \\$49\\$",
+        "expressionOverride": "( 4 + 1 ) ^ 3 + [ 10 - ( 3 + 1 ) ] - sqrt( 49 )",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_7_s10",
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver ahora?",
+        "options": [
+          "La suma \\$4 + 1\\$",
+          "La potencia exterior",
+          "La resta",
+          "La raíz cuadrada"
+        ],
+        "correctAnswer": "La suma \\$4 + 1\\$",
+        "feedbackError": "Al volver a analizar la expresión de izquierda a derecha, en el primer bloque queda pendiente la suma interna \\$4 + 1\\$",
+        "expressionOverride": null,
+        "startsNewLine": true
+      },
+      {
+        "id": "hard_7_s11",
+        "instruction": "El resultado de la suma \\$4 + 1\\$ es:",
+        "options": [
+          "5",
+          "4",
+          "6",
+          "3"
+        ],
+        "correctAnswer": "5",
+        "feedbackError": "El resultado de la suma \\$4 + 1\\$ es \\$5\\$",
+        "expressionOverride": "5 ^ 3 + [ 10 - ( 3 + 1 ) ] - sqrt( 49 )",
+        "startsNewLine": true
+      },
+      {
+        "id": "hard_7_s12",
+        "instruction": "En el segundo bloque, ¿qué operación se debe resolver ahora?",
+        "options": [
+          "La resta \\$10 - 3\\$",
+          "La suma \\$3 + 1\\$",
+          "La raíz cuadrada",
+          "La potencia"
+        ],
+        "correctAnswer": "La suma \\$3 + 1\\$",
+        "feedbackError": "Luego de resolver la división, queda pendiente la suma interna \\$3 + 1\\$",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_7_s13",
+        "instruction": "El resultado de la suma \\$3 + 1\\$ es:",
+        "options": [
+          "4",
+          "3",
+          "5",
+          "2"
+        ],
+        "correctAnswer": "4",
+        "feedbackError": "El resultado de la suma \\$3 + 1\\$ es \\$4\\$",
+        "expressionOverride": "5 ^ 3 + [ 10 - 4 ] - sqrt( 49 )",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_7_s14",
+        "instruction": "En el tercer bloque, ¿qué operación se debe resolver ahora?",
+        "options": [
+          "La raíz cuadrada de \\$49\\$",
+          "La resta",
+          "La suma",
+          "La multiplicación"
+        ],
+        "correctAnswer": "La raíz cuadrada de \\$49\\$",
+        "feedbackError": "Luego de resolver la operación interna del radical, se debe resolver la raíz cuadrada",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_7_s15",
+        "instruction": "El resultado de la raíz cuadrada del tercer bloque es:",
+        "options": [
+          "6",
+          "7",
+          "8",
+          "5"
+        ],
+        "correctAnswer": "7",
+        "feedbackError": "El resultado de la raíz cuadrada \\$\\\\sqrt{49}\\$ es \\$7\\$",
+        "expressionOverride": "5 ^ 3 + [ 10 - 4 ] - 7",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_7_s16",
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver ahora?",
+        "options": [
+          "La potencia \\$5^3\\$",
+          "La suma",
+          "La resta",
+          "La raíz cuadrada"
+        ],
+        "correctAnswer": "La potencia \\$5^3\\$",
+        "feedbackError": "Al volver a observar de izquierda a derecha, queda pendiente resolver la potencia \\$5^3\\$",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_7_s17",
+        "instruction": "El resultado de la potencia \\$5^3\\$ es:",
+        "options": [
+          "25",
+          "125",
+          "15",
+          "20"
+        ],
+        "correctAnswer": "125",
+        "feedbackError": "El resultado de la potencia \\$5^3\\$ es \\$125\\$",
+        "expressionOverride": "125 + [ 10 - 4 ] - 7",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_7_s18",
+        "instruction": "En el segundo bloque, ¿qué operación se debe resolver ahora?",
+        "options": [
+          "La resta \\$10 - 4\\$",
+          "La suma",
+          "La potencia",
+          "La multiplicación"
+        ],
+        "correctAnswer": "La resta \\$10 - 4\\$",
+        "feedbackError": "En el segundo bloque queda pendiente resolver la resta \\$10 - 4\\$",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_7_s19",
+        "instruction": "El resultado de la resta \\$10 - 4\\$ es:",
+        "options": [
+          "6",
+          "4",
+          "5",
+          "3"
+        ],
+        "correctAnswer": "6",
+        "feedbackError": "El resultado de la resta \\$10 - 4\\$ es \\$6\\$",
+        "expressionOverride": "125 + 6 - 7",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_7_s20",
+        "instruction": "El resultado de las últimas operaciones es:",
+        "options": [
+          "124",
+          "125",
+          "126",
+          "122"
+        ],
+        "correctAnswer": "124",
+        "feedbackError": "Al resolver de izquierda a derecha 125 + \\$6 - 7\\$, se obtiene 124",
+        "expressionOverride": "124",
+        "startsNewLine": false
+      }
+    ]
+  },
+  {
+    "id": "hard_8",
+    "title": "Nivel Difícil 8",
+    "baseExpression": "5 + [ 15 - ( 3 - 1 ) ^ 2 + 2 ^ 3 ] + root3( 7 + 1 )",
+    "steps": [
+      {
+        "id": "hard_8_s1",
+        "instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+        "options": [],
+        "correctAnswer": "",
+        "feedbackError": "Este signo forma parte de una operación interna",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_8_s2",
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "correctAnswer": "3",
+        "feedbackError": "Los bloques se identifican por los signos separadores externos",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_8_s3",
+        "instruction": "En el primer bloque no hay operaciones internas, por lo tanto:",
+        "options": [
+          "Se conserva el número 5",
+          "Se conserva el número 5",
+          "Se realiza la suma \\$5 + 15\\$",
+          "Se multiplica"
+        ],
+        "correctAnswer": "Se conserva el número 5",
+        "feedbackError": "Cuando un bloque no tiene operaciones internas, el número se conserva",
+        "expressionOverride": "5",
+        "startsNewLine": true
+      },
+      {
+        "id": "hard_8_s4",
+        "instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La resta \\$15 - 3\\$",
+          "La operación interna del paréntesis",
+          "La suma \\$2^3\\$",
+          "La suma final"
+        ],
+        "correctAnswer": "La operación interna del paréntesis",
+        "feedbackError": "Primero se resuelve la operación interna (\\$3 - 1\\$)",
+        "expressionOverride": "5 + [ 15 - (",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_8_s5",
+        "instruction": "El resultado de la operación interna \\$3 - 1\\$ es:",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "correctAnswer": "2",
+        "feedbackError": "\\$3 - 1\\$ = 2",
+        "expressionOverride": "5 + [ 15 - ( 2 ) ^ 2 +",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_8_s6",
+        "instruction": "En el segundo bloque, ¿qué operación se resuelve ahora?",
+        "options": [
+          "La resta \\$15 - 2\\$",
+          "La potenciación \\$2^2\\$",
+          "La potenciación \\$2^3\\$",
+          "La suma final"
+        ],
+        "correctAnswer": "La potenciación \\$2^3\\$",
+        "feedbackError": "Estamos resolviendo el segundo bloque de izquierda a derecha, ahora se debe resolver la potenciación \\$2^3\\$",
+        "expressionOverride": "5 + [ 15 - ( 2 ) ^ 2 +",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_8_s7",
+        "instruction": "El resultado de la potencia \\$2^3\\$ es:",
+        "options": [
+          "6",
+          "8",
+          "4",
+          "2"
+        ],
+        "correctAnswer": "8",
+        "feedbackError": "\\$2^3 = 8\\$",
+        "expressionOverride": "5 + [ 15 - ( 2 ) ^ 2 + 8 ] +",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_8_s8",
+        "instruction": "En el tercer bloque, ¿qué se debe resolver primero?",
+        "options": [
+          "La raíz cúbica",
+          "La operación interna \\$7 + 1\\$",
+          "La suma final",
+          "Ninguna"
+        ],
+        "correctAnswer": "La operación interna \\$7 + 1\\$",
+        "feedbackError": "Primero se resuelve lo que está dentro del radical",
+        "expressionOverride": "5 + [ 15 - ( 2 ) ^ 2 + 8 ] + root3",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_8_s9",
+        "instruction": "El resultado de la operación interna del tercer bloque es:",
+        "options": [
+          "8",
+          "7",
+          "9",
+          "6"
+        ],
+        "correctAnswer": "8",
+        "feedbackError": "\\$7 + 1\\$ = 8",
+        "expressionOverride": "5 + [ 15 - ( 2 ) ^ 2 + 8 ] + root3( 8 )",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_8_s10",
+        "instruction": "En el segundo bloque, ¿qué operación se debe resolver ahora?",
+        "options": [
+          "La potencia \\$(2)^2\\$",
+          "La suma final",
+          "La resta"
+        ],
+        "correctAnswer": "La potencia \\$(2)^2\\$",
+        "feedbackError": "Entre las operaciones pendientes, la potencia tiene mayor jerarquía",
+        "expressionOverride": "5 + [ 15 -",
+        "startsNewLine": true
+      },
+      {
+        "id": "hard_8_s11",
+        "instruction": "El resultado de la potencia \\$(2)^2\\$ es:",
+        "options": [
+          "2",
+          "4",
+          "6",
+          "8"
+        ],
+        "correctAnswer": "4",
+        "feedbackError": "\\$2^2 = 4\\$",
+        "expressionOverride": "5 + [ 15 - 4 + 8 ] +",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_8_s12",
+        "instruction": "En el tercer bloque, ¿qué operación se debe resolver ahora?",
+        "options": [
+          "La raíz cúbica",
+          "La suma",
+          "La resta",
+          "Se conserva la raíz"
+        ],
+        "correctAnswer": "La raíz cúbica",
+        "feedbackError": "Luego de resolver la operación interna, se resuelve la raíz",
+        "expressionOverride": "5 + [ 15 - 4 + 8 ] +",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_8_s13",
+        "instruction": "El resultado de \\$\\\\sqrt[3]{8}\\$ es:",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "8"
+        ],
+        "correctAnswer": "2",
+        "feedbackError": "\\$\\\\sqrt[3]{8} = 2\\$",
+        "expressionOverride": "5 + [ 15 - 4 + 8 ] + 2",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_8_s14",
+        "instruction": "El resultado de las operaciones en el segundo bloque es",
+        "options": [
+          "19",
+          "18",
+          "20",
+          "27"
+        ],
+        "correctAnswer": "19",
+        "feedbackError": "El resultado de \\$15\\$ - \\$4 + 8\\$ es \\$19\\$",
+        "expressionOverride": "5 + [ 19 ] + 2",
+        "startsNewLine": true
+      },
+      {
+        "id": "hard_8_s15",
+        "instruction": "El resultado de las operaciones finales es",
+        "options": [
+          "24",
+          "26",
+          "22",
+          "23"
+        ],
+        "correctAnswer": "26",
+        "feedbackError": "El resultado de las operaciones finales es \\$26\\$",
+        "expressionOverride": "26",
+        "startsNewLine": true
+      }
+    ]
+  },
+  {
+    "id": "hard_9",
+    "title": "Nivel Difícil 9",
+    "baseExpression": "( 9 ^ 2 + 2 ) * 3 - sqrt( 23 + 10 / ( 2 ^ 2 + 1 ) ) - ( 6 + 2 ) ^ 2",
+    "steps": [
+      {
+        "id": "hard_9_s1",
+        "instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+        "options": [],
+        "correctAnswer": "",
+        "feedbackError": "Este signo forma parte de una operación interna",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_9_s2",
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "correctAnswer": "3",
+        "feedbackError": "Los bloques se identifican por los signos separadores externos",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_9_s3",
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La suma \\$9 + 2\\$",
+          "La potencia \\$9^2\\$",
+          "La multiplicación por 3",
+          "La resta"
+        ],
+        "correctAnswer": "La potencia \\$9^2\\$",
+        "feedbackError": "Dentro del paréntesis, entre la potencia y la suma, se resuelve primero la potencia",
+        "expressionOverride": "(",
+        "startsNewLine": true
+      },
+      {
+        "id": "hard_9_s4",
+        "instruction": "El resultado de la potencia \\$9^2\\$ es:",
+        "options": [
+          "18",
+          "81",
+          "27",
+          "72"
+        ],
+        "correctAnswer": "81",
+        "feedbackError": "El resultado de la potencia \\$9^2\\$ es \\$81\\$",
+        "expressionOverride": "( 81 + 2 ) * 3 -",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_9_s5",
+        "instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+        "options": [
+          "La raíz cuadrada",
+          "La suma \\$23 + 10\\$",
+          "La operación interna del paréntesis",
+          "La resta"
+        ],
+        "correctAnswer": "La operación interna del paréntesis",
+        "feedbackError": "En el segundo bloque primero se analiza la operación interna que está dentro del paréntesis",
+        "expressionOverride": "( 81 + 2 ) * 3 - sqrt( 23 + 10 / (",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_9_s6",
+        "instruction": "En la operación interna del segundo bloque, ¿qué se debe resolver primero?",
+        "options": [
+          "La potencia \\$2^2\\$",
+          "La suma \\$2 + 1\\$",
+          "La división",
+          "La raíz"
+        ],
+        "correctAnswer": "La potencia \\$2^2\\$",
+        "feedbackError": "Dentro del paréntesis, entre la potencia y la suma, se resuelve primero la potencia",
+        "expressionOverride": "( 81 + 2 ) * 3 - sqrt( 23 + 10 / (",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_9_s7",
+        "instruction": "El resultado de la potencia \\$2^2\\$ es:",
+        "options": [
+          "2",
+          "4",
+          "6",
+          "8"
+        ],
+        "correctAnswer": "4",
+        "feedbackError": "El resultado de la potencia \\$2^2\\$ es \\$4\\$",
+        "expressionOverride": "( 81 + 2 ) * 3 - sqrt( 23 + 10 / ( 4 + 1 ) ) -",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_9_s8",
+        "instruction": "En el tercer bloque, ¿qué se debe resolver primero?",
+        "options": [
+          "La potencia exterior",
+          "La operación interna del paréntesis",
+          "La resta",
+          "La multiplicación"
+        ],
+        "correctAnswer": "La operación interna del paréntesis",
+        "feedbackError": "En el tercer bloque primero se resuelve la operación interna que está dentro del paréntesis",
+        "expressionOverride": "( 81 + 2 ) * 3 - sqrt( 23 + 10 / ( 4 + 1 ) ) -",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_9_s9",
+        "instruction": "El resultado de la operación interna \\$6 + 2\\$ es:",
+        "options": [
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "correctAnswer": "8",
+        "feedbackError": "El resultado de la suma \\$6 + 2\\$ es \\$8\\$",
+        "expressionOverride": "( 81 + 2 ) * 3 - sqrt( 23 + 10 / ( 4 + 1 ) ) - ( 8 ) ^ 2",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_9_s10",
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver ahora?",
+        "options": [
+          "La suma \\$81 + 2\\$",
+          "La multiplicación",
+          "La resta",
+          "La raíz cuadrada"
+        ],
+        "correctAnswer": "La suma \\$81 + 2\\$",
+        "feedbackError": "Al volver a observar de izquierda a derecha, en el primer bloque queda pendiente la suma interna \\$81 + 2\\$.",
+        "expressionOverride": "(",
+        "startsNewLine": true
+      },
+      {
+        "id": "hard_9_s11",
+        "instruction": "El resultado de la suma \\$81 + 2\\$ es:",
+        "options": [
+          "81",
+          "82",
+          "83",
+          "84"
+        ],
+        "correctAnswer": "83",
+        "feedbackError": "El resultado de la suma \\$81 + 2\\$ es \\$83\\$.",
+        "expressionOverride": "( 83 ) * 3 -",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_9_s12",
+        "instruction": "En el segundo bloque, ¿qué operación se debe resolver ahora?",
+        "options": [
+          "La suma \\$4 + 1\\$",
+          "La división \\$10 \\\\div 4\\$",
+          "La suma \\$23 + 10\\$",
+          "La raíz cuadrada"
+        ],
+        "correctAnswer": "La suma \\$4 + 1\\$",
+        "feedbackError": "Luego de resolver la potencia, queda pendiente la suma interna \\$4 + 1\\$",
+        "expressionOverride": "( 83 ) * 3 - sqrt( 23 + 10 / (",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_9_s13",
+        "instruction": "El resultado de la suma \\$4 + 1\\$ es:",
+        "options": [
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "correctAnswer": "5",
+        "feedbackError": "El resultado de la suma \\$4 + 1\\$ es \\$5\\$",
+        "expressionOverride": "( 83 ) * 3 - sqrt( 23 + 10 / ( 5 ) ) -",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_9_s14",
+        "instruction": "En el tercer bloque, ¿qué operación se debe resolver ahora?",
+        "options": [
+          "La potencia \\$8^2\\$",
+          "La suma",
+          "La resta",
+          "La raíz"
+        ],
+        "correctAnswer": "La potencia \\$8^2\\$",
+        "feedbackError": "Luego de resolver la operación interna del paréntesis, se resuelve la potencia",
+        "expressionOverride": "( 83 ) * 3 - sqrt( 23 + 10 / ( 5 ) ) -",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_9_s15",
+        "instruction": "El resultado de la potencia \\$8^2\\$ es:",
+        "options": [
+          "16",
+          "32",
+          "64",
+          "81"
+        ],
+        "correctAnswer": "64",
+        "feedbackError": "El resultado de la potencia \\$8^2\\$ es \\$64\\$",
+        "expressionOverride": "( 83 ) * 3 - sqrt( 23 + 10 / ( 5 ) ) - 64",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_9_s16",
+        "instruction": "En el primer bloque, ¿qué operación se debe resolver ahora?",
+        "options": [
+          "La multiplicación \\$83 \\\\times 3\\$",
+          "La resta",
+          "La división",
+          "La raíz"
+        ],
+        "correctAnswer": "La multiplicación \\$83 \\\\times 3\\$",
+        "feedbackError": "En el primer bloque queda pendiente la multiplicación \\$83 \\\\times 3\\$",
+        "expressionOverride": "( 83 ) * 3 - sqrt( 23 + 10 / ( 5 ) ) - 64",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_9_s17",
+        "instruction": "El resultado de la multiplicación \\$83 \\\\times 3\\$ es:",
+        "options": [
+          "246",
+          "249",
+          "250",
+          "253"
+        ],
+        "correctAnswer": "249",
+        "feedbackError": "El resultado de la multiplicación \\$83 \\\\times 3\\$ es \\$249\\$",
+        "expressionOverride": "249 -",
+        "startsNewLine": true
+      },
+      {
+        "id": "hard_9_s18",
+        "instruction": "En el segundo bloque, ¿qué operación se debe resolver ahora?",
+        "options": [
+          "La división \\$10 \\\\div 5\\$",
+          "La suma \\$23 + 10\\$",
+          "La resta",
+          "La potencia"
+        ],
+        "correctAnswer": "La división \\$10 \\\\div 5\\$",
+        "feedbackError": "Dentro del radical, entre la suma y la división, se resuelve primero la división",
+        "expressionOverride": "249 - sqrt( 23 +",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_9_s19",
+        "instruction": "El resultado de la división \\$10 \\\\div 5\\$ es:",
+        "options": [
+          "2",
+          "3",
+          "5",
+          "10"
+        ],
+        "correctAnswer": "2",
+        "feedbackError": "El resultado de la división \\$10 \\\\div 5\\$ es \\$2\\$",
+        "expressionOverride": "249 - sqrt( 23 + 2 ) - 64",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_9_s20",
+        "instruction": "El resultado de la operación interna del radical es:",
+        "options": [
+          "20",
+          "23",
+          "25",
+          "30"
+        ],
+        "correctAnswer": "25",
+        "feedbackError": "El resultado de la suma \\$23 + 2\\$ es \\$25\\$",
+        "expressionOverride": "249 - sqrt( 25 ) - 64",
+        "startsNewLine": true
+      },
+      {
+        "id": "hard_9_s21",
+        "instruction": "El resultado de la raíz cuadrada \\$\\\\sqrt{25}\\$ es:",
+        "options": [
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "correctAnswer": "5",
+        "feedbackError": "El resultado de la raíz cuadrada \\$\\\\sqrt{25}\\$ es \\$5\\$",
+        "expressionOverride": "249 - 5 - 64",
+        "startsNewLine": true
+      },
+      {
+        "id": "hard_9_s22",
+        "instruction": "El resultado de las operaciones finales es:",
+        "options": [
+          "170",
+          "180"
+        ],
+        "correctAnswer": "180",
+        "feedbackError": "El resultado de las operaciones \\$249 - 5 - 64\\$ es \\$180\\$.",
+        "expressionOverride": "180",
+        "startsNewLine": true
+      }
+    ]
+  },
+  {
+    "id": "hard_10",
+    "title": "Nivel Difícil 10",
+    "baseExpression": "5 ^ 2 + 8 * 2 ^ 2 - 7 ^ 8 / 7 ^ 6 + 2 * ( 5 + 4 / 2 ) - sqrt ( 15 + 1 )",
+    "steps": [
+      {
+        "id": "hard_10_s1",
+        "instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+        "options": [],
+        "correctAnswer": "",
+        "feedbackError": "Este es un signo separador de operaciones internas.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_10_s2",
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "3",
+          "4",
+          "5",
+          "2"
+        ],
+        "correctAnswer": "5",
+        "feedbackError": "Recuerda que los bloques se identifican a partir de los signos separadores que no están dentro de las operaciones internas.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_10_s3",
+        "instruction": "El resultado del primer bloque es:",
+        "options": [
+          "10",
+          "7",
+          "15",
+          "25"
+        ],
+        "correctAnswer": "25",
+        "feedbackError": "El resultado de la potencia \\$5^2\\$ es \\$25\\$.",
+        "expressionOverride": "25 + 8",
+        "startsNewLine": true
+      },
+      {
+        "id": "hard_10_s4",
+        "instruction": "En el segundo bloque, ¿qué operación se debe realizar primero?",
+        "options": [
+          "La multiplicación",
+          "La potenciación"
+        ],
+        "correctAnswer": "La potenciación",
+        "feedbackError": "Entre la multiplicación y la potenciación, primero se resuelve la potenciación.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_10_s5",
+        "instruction": "El resultado de la potencia \\$2^2\\$ es:",
+        "options": [
+          "2",
+          "4",
+          "8",
+          "1"
+        ],
+        "correctAnswer": "4",
+        "feedbackError": "El resultado de la potencia \\$2^2\\$ es \\$4\\$.",
+        "expressionOverride": "25 + 8 * 4 -",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_10_s6",
+        "instruction": "En el tercer bloque, ¿qué se debe realizar primero?",
+        "options": [
+          "Las potencias",
+          "La división",
+          "La propiedad de la división de potencias de igual base"
+        ],
+        "correctAnswer": "La propiedad de la división de potencias de igual base",
+        "feedbackError": "Cuando se presenta una división de potencias de igual base, primero se aplica la propiedad correspondiente: se conserva la base y se restan los exponentes.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_10_s7",
+        "instruction": "El resultado de la propiedad en \\$7^8 / 7^6\\$ es:",
+        "options": [
+          "\\$7^{14}\\$",
+          "\\$7^2\\$",
+          "7",
+          "2"
+        ],
+        "correctAnswer": "\\$7^2\\$",
+        "feedbackError": "En la división de potencias de igual base, se conserva la base y se restan los exponentes: \\$8 - 6 = 2\\$ (obteniendo \\$7^2\\$).",
+        "expressionOverride": "25 + 8 * 4 - 7 ^ 2 +",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_10_s8",
+        "instruction": "En el bloque cuatro, ¿qué operación se resuelve primero?",
+        "options": [
+          "La multiplicación",
+          "La suma",
+          "Las operaciones internas"
+        ],
+        "correctAnswer": "Las operaciones internas",
+        "feedbackError": "Entre las operaciones internas y otras operaciones, primero se resuelven las operaciones internas.",
+        "expressionOverride": "25 + 8 * 4 - 7 ^ 2 + 2 * (",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_10_s9",
+        "instruction": "En las operaciones internas del bloque cuatro, ¿qué operación se resuelve primero?",
+        "options": [
+          "La suma",
+          "La división"
+        ],
+        "correctAnswer": "La división",
+        "feedbackError": "Entre la suma y la división, se resuelve primero la división.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_10_s10",
+        "instruction": "El resultado de la división que consta en las operaciones internas del bloque cuatro es:",
+        "options": [
+          "9",
+          "2",
+          "7",
+          "1"
+        ],
+        "correctAnswer": "2",
+        "feedbackError": "El resultado de la división \\$4 \\\\div 2\\$ es \\$2\\$.",
+        "expressionOverride": "25 + 8 * 4 - 7 ^ 2 + 2 * ( 5 + 2 ) -",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_10_s11",
+        "instruction": "En el bloque cinco, ¿cuál es el resultado de la operación interna?",
+        "options": [
+          "4",
+          "16",
+          "15",
+          "14"
+        ],
+        "correctAnswer": "16",
+        "feedbackError": "La suma \\$15 + 1\\$ es \\$16\\$.",
+        "expressionOverride": "25 + 8 * 4 - 7 ^ 2 + 2 * ( 5 + 2 ) - sqrt ( 16 )",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_10_s12",
+        "instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+        "options": [],
+        "correctAnswer": "",
+        "feedbackError": "Este es un signo separador de operaciones internas.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_10_s13",
+        "instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+        "options": [
+          "3",
+          "4",
+          "5",
+          "2"
+        ],
+        "correctAnswer": "5",
+        "feedbackError": "Recuerda que los bloques se identifican a partir de los signos separadores que no están dentro de las operaciones internas.",
+        "expressionOverride": null,
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_10_s14",
+        "instruction": "¿Qué se realiza en el primer bloque?",
+        "options": [
+          "Se conserva el número",
+          "Se elimina el número"
+        ],
+        "correctAnswer": "Se conserva el número",
+        "feedbackError": "En el primer bloque no hay operaciones, por lo que el número \\$25\\$ se conserva.",
+        "expressionOverride": "25 +",
+        "startsNewLine": true
+      },
+      {
+        "id": "hard_10_s15",
+        "instruction": "¿Cuál es el resultado del segundo bloque?",
+        "options": [
+          "32",
+          "12"
+        ],
+        "correctAnswer": "32",
+        "feedbackError": "El resultado de la multiplicación \\$8 \\\\times 4\\$ es \\$32\\$.",
+        "expressionOverride": "25 + 32 -",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_10_s16",
+        "instruction": "¿Cuál es el resultado del tercer bloque?",
+        "options": [
+          "49",
+          "14"
+        ],
+        "correctAnswer": "49",
+        "feedbackError": "El resultado de la potencia \\$7^2\\$ es \\$49\\$.",
+        "expressionOverride": "25 + 32 - 49 +",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_10_s17",
+        "instruction": "En el bloque cuatro, ¿qué se realiza primero?",
+        "options": [
+          "La operación interna",
+          "La multiplicación"
+        ],
+        "correctAnswer": "La operación interna",
+        "feedbackError": "Entre las operaciones internas y otras operaciones, primero se resuelven las operaciones internas.",
+        "expressionOverride": "25 + 32 - 49 + 2 * (",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_10_s18",
+        "instruction": "¿Cuál es el resultado de la operación interna del bloque cuatro?",
+        "options": [
+          "7",
+          "10"
+        ],
+        "correctAnswer": "7",
+        "feedbackError": "La suma \\$5 + 2 = 7\\$.",
+        "expressionOverride": "25 + 32 - 49 + 2 * ( 7 ) -",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_10_s19",
+        "instruction": "¿Cuál es el resultado de la operación interna del bloque cinco?",
+        "options": [
+          "8",
+          "4"
+        ],
+        "correctAnswer": "4",
+        "feedbackError": "El resultado de la raíz cuadrada \\$\\\\sqrt{16}\\$ es \\$4\\$.",
+        "expressionOverride": "25 + 32 - 49 + 2 * ( 7 ) - 4",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_10_s20",
+        "instruction": "¿Qué operación se realiza primero?",
+        "options": [
+          "La multiplicación",
+          "Las sumas",
+          "Las restas"
+        ],
+        "correctAnswer": "La multiplicación",
+        "feedbackError": "Entre sumas, restas y multiplicación, se resuelve primero la multiplicación; mientras tanto, los demás números se conservan.",
+        "expressionOverride": "25 + 32 - 49 +",
+        "startsNewLine": true
+      },
+      {
+        "id": "hard_10_s21",
+        "instruction": "¿Cuál es el resultado de la multiplicación?",
+        "options": [
+          "9",
+          "14"
+        ],
+        "correctAnswer": "14",
+        "feedbackError": "El resultado de la multiplicación \\$2 \\\\times 7\\$ es \\$14\\$.",
+        "expressionOverride": "25 + 32 - 49 + 14 - 4",
+        "startsNewLine": false
+      },
+      {
+        "id": "hard_10_s22",
+        "instruction": "Al resolver ordenadamente las sumas y restas de la expresión aritmética, se obtiene el siguiente resultado:",
+        "options": [
+          "18",
+          "22",
+          "50",
+          "21"
+        ],
+        "correctAnswer": "18",
+        "feedbackError": "El resultado de la operación \\$25 + 32 - 49 + 14 - 4\\$ es \\$18\\$.",
+        "expressionOverride": "18",
+        "startsNewLine": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,1018 @@
+Total mismatches: 113
+
+--- 1 ---
+Ex: easy_1, Step Num: 1
+  Dart Inst: Selecciona los signos separadores de la expresión aritmética
+  PDF Inst:  Selecciona los signos separadores de la expresión aritmética
+  Dart Opts: []
+  PDF Opts:  ['Selecciona los signos separadores de la expresión aritmética']
+  Dart Correct: 
+  PDF Correct:  
+
+--- 2 ---
+Ex: easy_2, Step Num: 1
+  Dart Inst: Selecciona los signos separadores de la expresión aritmética
+  PDF Inst:  Selecciona los signos separadores de la expresión aritmética
+  Dart Opts: []
+  PDF Opts:  ['Selecciona los signos separadores de la expresión aritmética']
+  Dart Correct: 
+  PDF Correct:  
+
+--- 3 ---
+Ex: easy_2, Step Num: 3
+  Dart Inst: Es correcto afirmar que se resuelve primero:
+  PDF Inst:  Es correcto afirmar que se resuelve primero:
+  Dart Opts: ['La suma \\$18 + 3\\$', 'La multiplicación \\$3 \\\\times 5\\$', 'La suma \\$18 + 5\\$', 'La multiplicación \\$18 \\\\times 3\\$']
+  PDF Opts:  ['Es correcto afirmar que se resuelve primero:', 'La suma 18 + 3', 'La multiplicación 3 × 5', 'La suma 18 + 5']
+  Dart Correct: La multiplicación \$3 \\times 5\$
+  PDF Correct:  
+
+--- 4 ---
+Ex: easy_2, Step Num: 4
+  Dart Inst: Cuando en un bloque no hay operaciones se debe:
+  PDF Inst:  La multiplicación 18 × 3
+  Dart Opts: ['Conservar el número', 'Desaparecer el número']
+  PDF Opts:  ['La multiplicación 18 × 3']
+  Dart Correct: Conservar el número
+  PDF Correct:  
+
+--- 5 ---
+Ex: easy_3, Step Num: 1
+  Dart Inst: Selecciona los signos separadores de la expresión aritmética
+  PDF Inst:  Selecciona los signos separadores de la expresión aritmética
+  Dart Opts: []
+  PDF Opts:  ['Selecciona los signos separadores de la expresión aritmética']
+  Dart Correct: 
+  PDF Correct:  
+
+--- 6 ---
+Ex: easy_3, Step Num: 3
+  Dart Inst: Los bloques en los que se deben conservar los números son:
+  PDF Inst:  Los bloques en los que se deben conservar los números son:
+  Dart Opts: ['El primero y el tercero', 'El primero y el segundo', 'El segundo y el tercero']
+  PDF Opts:  ['Los bloques en los que se deben conservar los números son:', 'El primero y el tercero', 'El primero y el segundo', 'El segundo y el tercero']
+  Dart Correct: El primero y el tercero
+  PDF Correct:  El primero y el tercero
+
+--- 7 ---
+Ex: easy_4, Step Num: 1
+  Dart Inst: Selecciona los signos separadores de la expresión aritmética
+  PDF Inst:  Selecciona los signos separadores de la expresión aritmética
+  Dart Opts: []
+  PDF Opts:  ['Selecciona los signos separadores de la expresión aritmética']
+  Dart Correct: 
+  PDF Correct:  
+
+--- 8 ---
+Ex: easy_4, Step Num: 6
+  Dart Inst: El resultado de la potencia del tercer bloque es:
+  PDF Inst:  El resultado de la potencia del tercer bloque es:
+  Dart Opts: ['5', '3', '8', '4']
+  PDF Opts:  ['5', '3', '8', '6']
+  Dart Correct: 8
+  PDF Correct:  8
+
+--- 9 ---
+Ex: easy_4, Step Num: 7
+  Dart Inst: El resultado de la última operación es:
+  PDF Inst:  El resultado de las últimas operaciones es:
+  Dart Opts: ['12', '10', '4', '8']
+  PDF Opts:  ['11', '12', '10', '9']
+  Dart Correct: 12
+  PDF Correct:  12
+
+--- 10 ---
+Ex: easy_5, Step Num: 1
+  Dart Inst: Selecciona los signos separadores de la expresión aritmética
+  PDF Inst:  Selecciona los signos separadores de la expresión aritmética
+  Dart Opts: []
+  PDF Opts:  ['Selecciona los signos separadores de la expresión aritmética']
+  Dart Correct: 
+  PDF Correct:  
+
+--- 11 ---
+Ex: easy_6, Step Num: 1
+  Dart Inst: Selecciona los signos separadores que no constan en las operaciones internas
+  PDF Inst:  Selecciona los signos separadores que no constan en las operaciones internas
+  Dart Opts: []
+  PDF Opts:  ['Selecciona los signos separadores que no constan en las operaciones internas']
+  Dart Correct: 
+  PDF Correct:  
+
+--- 12 ---
+Ex: easy_7, Step Num: 1
+  Dart Inst: Selecciona los signos separadores que no constan en las operaciones internas.
+  PDF Inst:  Selecciona los signos separadores que no constan en las operaciones internas.
+  Dart Opts: []
+  PDF Opts:  ['Selecciona los signos separadores que no constan en las operaciones internas.']
+  Dart Correct: 
+  PDF Correct:  
+
+--- 13 ---
+Ex: easy_7, Step Num: 5
+  Dart Inst: Se pueden resolver la raíz cuadrada y la división sin importar el orden porque:
+  PDF Inst:  El resultado de la división del segundo bloque es:
+  Dart Opts: ['Están en diferentes bloques', 'Tienen la misma jerarquía', 'Siempre se resuelve primero la división', 'Siempre se resuelve primero la resta']
+  PDF Opts:  ['3', '5', '12', '18']
+  Dart Correct: Están en diferentes bloques
+  PDF Correct:  3
+
+--- 14 ---
+Ex: easy_7, Step Num: 6
+  Dart Inst: El resultado de la división del segundo bloque es:
+  PDF Inst:  ¿Qué se debe resolver primero?
+  Dart Opts: ['3', '5', '12', '18']
+  PDF Opts:  ['La resta', 'La raíz cuadrada de16', 'La suma']
+  Dart Correct: 3
+  PDF Correct:  La raíz cuadrada de 16
+
+--- 15 ---
+Ex: easy_7, Step Num: 7
+  Dart Inst: ¿Qué se debe resolver primero?
+  PDF Inst:  El resultado de la raíz cuadrada del primer bloque es:
+  Dart Opts: ['La resta', 'La raíz cuadrada', 'La suma']
+  PDF Opts:  ['2', '8', '4', '16']
+  Dart Correct: La raíz cuadrada
+  PDF Correct:  4
+
+--- 16 ---
+Ex: easy_7, Step Num: 8
+  Dart Inst: El resultado de la raíz cuadrada del primer bloque es:
+  PDF Inst:  ¿Qué acción hacemos con el 3?
+  Dart Opts: ['2', '8', '4', '16']
+  PDF Opts:  ['Lo conservamos', 'Lo eliminamos', 'Lo introducimos en el radical']
+  Dart Correct: 4
+  PDF Correct:  Lo conservamos
+
+--- 17 ---
+Ex: easy_7, Step Num: 9
+  Dart Inst: ¿Qué acción hacemos con el 3?
+  PDF Inst:  El resultado de la resta es:
+  Dart Opts: ['Lo conservamos', 'Lo eliminamos', 'Lo introducimos en el radical']
+  PDF Opts:  ['1', '9', '21', '0']
+  Dart Correct: Lo conservamos
+  PDF Correct:  1
+
+--- 18 ---
+Ex: easy_8, Step Num: 1
+  Dart Inst: Selecciona los signos separadores que no constan en las operaciones internas.
+  PDF Inst:  Selecciona los signos separadores que no constan en las operaciones internas.
+  Dart Opts: []
+  PDF Opts:  ['Selecciona los signos separadores que no constan en las operaciones internas.']
+  Dart Correct: 
+  PDF Correct:  
+
+--- 19 ---
+Ex: easy_8, Step Num: 2
+  Dart Inst: ¿En cuántos bloques queda dividida la expresión aritmética?
+  PDF Inst:  ¿En cuántos bloques queda dividida la expresión aritmética?
+  Dart Opts: ['2', '3']
+  PDF Opts:  ['2', '3', '4', '5']
+  Dart Correct: 3
+  PDF Correct:  3
+
+--- 20 ---
+Ex: easy_9, Step Num: 1
+  Dart Inst: Selecciona los signos separadores que no constan en las operaciones internas.
+  PDF Inst:  Selecciona los signos separadores que no constan en las operaciones internas.
+  Dart Opts: []
+  PDF Opts:  ['Selecciona los signos separadores que no constan en las operaciones internas.']
+  Dart Correct: 
+  PDF Correct:  
+
+--- 21 ---
+Ex: easy_9, Step Num: 3
+  Dart Inst: En el primer bloque, ¿qué operación se debe resolver primero?
+  PDF Inst:  En el primer bloque, ¿qué operación se debe resolver primero?
+  Dart Opts: ['La multiplicación', 'La operación interna', 'La suma final', 'La potenciación']
+  PDF Opts:  ['La multiplicación', 'La operación interna', 'La suma final']
+  Dart Correct: La operación interna
+  PDF Correct:  La operación interna
+
+--- 22 ---
+Ex: easy_9, Step Num: 4
+  Dart Inst: En las operaciones internas del primer bloque, ¿qué se resuelve primero?
+  PDF Inst:  En las operaciones internas del primer bloque, ¿qué se resuelve primero?
+  Dart Opts: ['La suma', 'La división']
+  PDF Opts:  ['La suma', 'La división', 'La multiplicación']
+  Dart Correct: La división
+  PDF Correct:  La división
+
+--- 23 ---
+Ex: easy_9, Step Num: 8
+  Dart Inst: En el primer bloque, ¿qué operación se debe resolver ahora?
+  PDF Inst:  En el primer bloque, ¿qué operación se debe resolver ahora?
+  Dart Opts: ['La suma', 'La multiplicación', 'La resta']
+  PDF Opts:  ['La suma', 'La multiplicación', 'La división']
+  Dart Correct: La suma
+  PDF Correct:  La suma
+
+--- 24 ---
+Ex: easy_10, Step Num: 1
+  Dart Inst: Selecciona los signos separadores que no constan en las operaciones internas.
+  PDF Inst:  Selecciona los signos separadores que no constan en las operaciones internas.
+  Dart Opts: []
+  PDF Opts:  ['Selecciona los signos separadores que no constan en las operaciones internas.']
+  Dart Correct: 
+  PDF Correct:  
+
+--- 25 ---
+Ex: easy_10, Step Num: 6
+  Dart Inst: El resultado de la potencia \$2^2\$ es:
+  PDF Inst:  El resultado de la potencia22 es
+  Dart Opts: ['4', '2', '8', '6']
+  PDF Opts:  ['4', '5', '3', '0']
+  Dart Correct: 4
+  PDF Correct:  La potenciación 4
+
+--- 26 ---
+Ex: easy_10, Step Num: 7
+  Dart Inst: En el primer bloque, ¿qué operación se debe resolver ahora?
+  PDF Inst:  En el primer bloque ¿qué se debe resolver ahora?
+  Dart Opts: ['La suma', 'La multiplicación', 'La resta']
+  PDF Opts:  ['La operación interna2 + 2', 'La multiplicación 2 × 4', 'La resta 4 − 3']
+  Dart Correct: La suma
+  PDF Correct:  La operación interna 2 + 2
+
+--- 27 ---
+Ex: easy_10, Step Num: 8
+  Dart Inst: El resultado de la suma \$2 + 2\$ es:
+  PDF Inst:  El resultado de la suma2 + 2 es:
+  Dart Opts: ['4', '2', '0', '6']
+  PDF Opts:  ['4', '2', '5', '3']
+  Dart Correct: 4
+  PDF Correct:  4
+
+--- 28 ---
+Ex: easy_10, Step Num: 9
+  Dart Inst: ¿Qué operación se debe resolver ahora?
+  PDF Inst:  En el siguiente paso, ¿qué operación se debe resolver?
+  Dart Opts: ['La multiplicación', 'La resta']
+  PDF Opts:  ['La multiplicación', 'La resta', 'La suma', 'Ninguna']
+  Dart Correct: La multiplicación
+  PDF Correct:  La multiplicación
+
+--- 29 ---
+Ex: easy_10, Step Num: 10
+  Dart Inst: El resultado de la multiplicación \$4 \\times 4\$ es:
+  PDF Inst:  El resultado de la multiplicación(
+  Dart Opts: ['16', '8', '12', '10']
+  PDF Opts:  ['8', '16', '12', '4']
+  Dart Correct: 16
+  PDF Correct:  16
+
+--- 30 ---
+Ex: easy_10, Step Num: 11
+  Dart Inst: El resultado de la última operación es:
+  PDF Inst:  El resultado de la resta es:
+  Dart Opts: ['13', '19', '10', '12']
+  PDF Opts:  ['13', '19', '12', '9']
+  Dart Correct: 13
+  PDF Correct:  13
+
+--- 31 ---
+Ex: medium_1, Step Num: 1
+  Dart Inst: Selecciona los signos separadores que no constan en las operaciones internas
+  PDF Inst:  Selecciona los signos separadores que no constan en las operaciones internas
+  Dart Opts: []
+  PDF Opts:  ['Selecciona los signos separadores que no constan en las operaciones internas']
+  Dart Correct: 
+  PDF Correct:  
+
+--- 32 ---
+Ex: medium_1, Step Num: 5
+  Dart Inst: En el segundo bloque, ¿qué operación se debe resolver primero?
+  PDF Inst:  En el segundo bloque, se resuelve primero:
+  Dart Opts: ['La multiplicación', 'La operación interna', 'La resta']
+  PDF Opts:  ['La resta', 'La multiplicación', 'La suma', 'La división']
+  Dart Correct: La operación interna
+  PDF Correct:  La resta
+
+--- 33 ---
+Ex: medium_1, Step Num: 6
+  Dart Inst: El resultado de la resta \$5 - 2\$ es:
+  PDF Inst:  El resultado de la resta5 − 2 es:
+  Dart Opts: ['3', '7', '2', '4']
+  PDF Opts:  ['3', '5', '2', '7']
+  Dart Correct: 3
+  PDF Correct:  3
+
+--- 34 ---
+Ex: medium_1, Step Num: 7
+  Dart Inst: ¿Cuánto es \$3^2\$?
+  PDF Inst:  En el siguiente paso se pueden resolver dos operaciones: la potencia y la
+  Dart Opts: ['6', '9', '3', '27']
+  PDF Opts:  ['Están en diferentes bloques', 'Tienen la misma jerarquía', 'Se resuelve primero la resta', 'No importa el orden en ningún caso']
+  Dart Correct: 9
+  PDF Correct:  Están en diferentes bloques
+
+--- 35 ---
+Ex: medium_1, Step Num: 8
+  Dart Inst: En el segundo bloque, ¿qué operación se debe resolver ahora?
+  PDF Inst:  El resultado de la potencia32 es:
+  Dart Opts: ['La suma', 'La multiplicación', 'La resta']
+  PDF Opts:  ['9', '6', '5', '1']
+  Dart Correct: La multiplicación
+  PDF Correct:  9
+
+--- 36 ---
+Ex: medium_1, Step Num: 9
+  Dart Inst: El resultado de la multiplicación \$2 \\times 3\$ es:
+  PDF Inst:  El resultado de la multiplicación2 × 3 es:
+  Dart Opts: ['5', '6', '8', '4']
+  PDF Opts:  ['9', '6', '5', '1']
+  Dart Correct: 6
+  PDF Correct:  6
+
+--- 37 ---
+Ex: medium_1, Step Num: 10
+  Dart Inst: El resultado final es:
+  PDF Inst:  El resultado de la resta es:
+  Dart Opts: ['3', '15', '6', '2']
+  PDF Opts:  ['9', '6', '3', '1']
+  Dart Correct: 3
+  PDF Correct:  3
+
+--- 38 ---
+Ex: medium_2, Step Num: 1
+  Dart Inst: Selecciona los signos separadores que no constan en las operaciones internas.
+  PDF Inst:  Selecciona los signos separadores que no constan en las operaciones internas.
+  Dart Opts: []
+  PDF Opts:  ['Selecciona los signos separadores que no constan en las operaciones internas.']
+  Dart Correct: 
+  PDF Correct:  
+
+--- 39 ---
+Ex: medium_2, Step Num: 3
+  Dart Inst: En el primer bloque, ¿qué operación se debe resolver primero?
+  PDF Inst:  En el primer bloque, ¿qué operación se debe resolver primero?
+  Dart Opts: ['La resta \\$2^2 - 20\\$', 'La multiplicación \\$2^3 \\\\times 2^2\\$', 'La propiedad del producto de potencias de igual base', 'La suma \\$2^3 + 2^2\\$']
+  PDF Opts:  ['La resta 22 − 20', 'La multiplicación 23 × 22', 'La propiedad del producto de potencias de igual base', 'La suma 23 + 22']
+  Dart Correct: La propiedad del producto de potencias de igual base
+  PDF Correct:  La propiedad del producto de potencias de
+
+--- 40 ---
+Ex: medium_2, Step Num: 5
+  Dart Inst: En el segundo bloque, ¿qué operación se debe resolver primero?
+  PDF Inst:  En el segundo bloque, ¿qué operación se debe resolver primero?
+  Dart Opts: ['La suma \\$6 + 3\\$', 'La potencia \\$3^2\\$', 'La resta \\$2^5 - 20\\$', 'La suma final']
+  PDF Opts:  ['La suma 6 + 3', 'La potencia 32', 'La resta 25 − 20', 'La suma final']
+  Dart Correct: La potencia \$3^2\$
+  PDF Correct:  La potencia 32
+
+--- 41 ---
+Ex: medium_2, Step Num: 7
+  Dart Inst: En el primer bloque, ¿qué operación se debe resolver primero?
+  PDF Inst:  En el primer bloque, ¿qué operación se debe resolver primero?
+  Dart Opts: ['La resta \\$2^5 - 20\\$', 'La potencia \\$2^5\\$', 'La suma \\$6 + 9\\$', 'La suma final']
+  PDF Opts:  ['La resta 25 − 20', 'La potencia 25', 'La suma 6 + 9', 'La suma final']
+  Dart Correct: La potencia \$2^5\$
+  PDF Correct:  La potencia 25
+
+--- 42 ---
+Ex: medium_3, Step Num: 1
+  Dart Inst: Selecciona los signos separadores que no constan en las operaciones internas.
+  PDF Inst:  Selecciona los signos separadores que no constan en las operaciones internas.
+  Dart Opts: []
+  PDF Opts:  ['Selecciona los signos separadores que no constan en las operaciones internas.']
+  Dart Correct: 
+  PDF Correct:  
+
+--- 43 ---
+Ex: medium_3, Step Num: 3
+  Dart Inst: En el primer bloque, ¿qué operación se debe resolver primero?
+  PDF Inst:  En el primer bloque, ¿qué operación se debe resolver primero?
+  Dart Opts: ['La suma \\$3^2 + 7\\$', 'La división \\$3^4 \\\\div 3^2\\$', 'La propiedad de división de potencias de igual base', 'La resta entre bloques']
+  PDF Opts:  ['La suma 32 + 7', 'La división 34 : 3 2', 'La propiedad de división de potencias de igual base', 'La resta entre bloques']
+  Dart Correct: La propiedad de división de potencias de igual base
+  PDF Correct:  La propiedad de división de potencias de
+
+--- 44 ---
+Ex: medium_4, Step Num: 1
+  Dart Inst: Selecciona los signos separadores que no constan en las operaciones internas.
+  PDF Inst:  Selecciona los signos separadores que no constan en las operaciones internas.
+  Dart Opts: []
+  PDF Opts:  ['Selecciona los signos separadores que no constan en las operaciones internas.']
+  Dart Correct: 
+  PDF Correct:  
+
+--- 45 ---
+Ex: medium_4, Step Num: 3
+  Dart Inst: En el primer bloque, ¿qué operación se debe resolver primero?
+  PDF Inst:  En el primer bloque, ¿qué operación se debe resolver primero?
+  Dart Opts: ['La resta \\$(2 \\\\times 3)^2 - 30\\$', 'La potencia \\$(2 \\\\times 3)^2\\$', 'La multiplicación \\$2 \\\\times 3\\$', 'La suma entre bloques']
+  PDF Opts:  ['La resta (2 × 3)2 − 30', 'La potencia (2 × 3)2', 'La multiplicación 2 × 3', 'La suma entre bloques']
+  Dart Correct: La multiplicación \$2 \\times 3\$
+  PDF Correct:  La multiplicación 2 × 3
+
+--- 46 ---
+Ex: medium_4, Step Num: 5
+  Dart Inst: En el segundo bloque, ¿qué operación se debe resolver primero?
+  PDF Inst:  En el segundo bloque, ¿qué operación se debe resolver primero?
+  Dart Opts: ['La suma \\$3 + 10\\$', 'La división \\$18 \\\\div 3\\$', 'La potencia \\$6^2\\$', 'La suma final']
+  PDF Opts:  ['La suma 3 + 10', 'La división 18 : 3', 'La potencia 18 + 3', 'La suma final']
+  Dart Correct: La división \$18 \\div 3\$
+  PDF Correct:  La división 18 : 3
+
+--- 47 ---
+Ex: medium_4, Step Num: 7
+  Dart Inst: En el primer bloque, ¿qué operación se debe resolver primero?
+  PDF Inst:  En el primer bloque, ¿qué operación se debe resolver primero?
+  Dart Opts: ['La resta \\$6^2 - 30\\$', 'La potencia \\$6^2\\$', 'La suma \\$6 + 10\\$', 'La suma final']
+  PDF Opts:  ['La resta (6)2 − 30', 'La potencia (6)2', 'La suma 6 + 10']
+  Dart Correct: La potencia \$6^2\$
+  PDF Correct:  La potencia 62
+
+--- 48 ---
+Ex: medium_5, Step Num: 1
+  Dart Inst: Selecciona los signos separadores que no constan en las operaciones internas.
+  PDF Inst:  Selecciona los signos separadores que no constan en las operaciones internas.
+  Dart Opts: []
+  PDF Opts:  ['Selecciona los signos separadores que no constan en las operaciones internas.']
+  Dart Correct: 
+  PDF Correct:  
+
+--- 49 ---
+Ex: medium_5, Step Num: 3
+  Dart Inst: En el primer bloque, ¿qué operación se debe resolver primero?
+  PDF Inst:  En el primer bloque, ¿qué operación se debe resolver primero?
+  Dart Opts: ['La potencia \\$(8 \\\\div 2)^2\\$', 'La división \\$8 \\\\div 2\\$', 'La resta \\$(8 \\\\div 2)^2 - 12\\$', 'La suma entre bloques']
+  PDF Opts:  ['La potencia (8 : 2) 2', 'La división 8 : 2', 'La resta (8 : 2) 2 − 12', 'La suma entre bloques']
+  Dart Correct: La división \$8 \\div 2\$
+  PDF Correct:  La división 8 : 2
+
+--- 50 ---
+Ex: medium_5, Step Num: 5
+  Dart Inst: En el segundo bloque, ¿qué operación se debe resolver primero?
+  PDF Inst:  En el segundo bloque, ¿qué operación se debe resolver primero?
+  Dart Opts: ['La resta \\$5^2 - 4\\$', 'La potencia \\$5^2\\$', 'La suma entre bloques', 'La división']
+  PDF Opts:  ['La resta 52 − 4', 'La potencia 52', 'La suma entre bloques', 'La división']
+  Dart Correct: La potencia \$5^2\$
+  PDF Correct:  La potencia 52
+
+--- 51 ---
+Ex: medium_5, Step Num: 7
+  Dart Inst: En el primer bloque, ¿qué operación se debe resolver ahora?
+  PDF Inst:  En el primer bloque, ¿qué operación se debe resolver ahora?
+  Dart Opts: ['La resta \\$4^2 - 12\\$', 'La potencia \\$4^2\\$', 'La resta \\$25 - 4\\$', 'La suma final']
+  PDF Opts:  ['La resta (4)2 − 12', 'La potencia (4)2', 'La resta 25 − 4', 'La suma final']
+  Dart Correct: La potencia \$4^2\$
+  PDF Correct:  La potencia (4)2
+
+--- 52 ---
+Ex: medium_6, Step Num: 1
+  Dart Inst: Selecciona los signos separadores que no constan en las operaciones internas.
+  PDF Inst:  Selecciona los signos separadores que no constan en las operaciones internas.
+  Dart Opts: []
+  PDF Opts:  ['Selecciona los signos separadores que no constan en las operaciones internas.']
+  Dart Correct: 
+  PDF Correct:  
+
+--- 53 ---
+Ex: medium_6, Step Num: 3
+  Dart Inst: En el primer bloque, ¿qué operación se debe resolver primero?
+  PDF Inst:  En el primer bloque, ¿qué operación se debe resolver primero?
+  Dart Opts: ['La potencia exterior \\$(2^2)^3\\$', 'La propiedad de potencia de potencia', 'La división \\$50 \\\\div 5\\$', 'La resta']
+  PDF Opts:  ['La potencia exterior(22)3', 'La propiedad de potencia de potencia', 'La división 50 ÷ 5', 'La resta']
+  Dart Correct: La propiedad de potencia de potencia
+  PDF Correct:  La propiedad de potencia de potencia
+
+--- 54 ---
+Ex: medium_6, Step Num: 6
+  Dart Inst: En el segundo bloque, ¿qué operación se debe resolver primero?
+  PDF Inst:  En el segundo bloque, ¿qué operación se debe resolver primero?
+  Dart Opts: ['La resta \\$18 - 15\\$', 'La multiplicación \\$9 \\\\times 2\\$', 'La suma entre bloques', 'La potencia \\$2^6\\$']
+  PDF Opts:  ['La resta 2 − 15', 'La multiplicación 9 × 2', 'La suma entre bloques', 'La potencia 26']
+  Dart Correct: La multiplicación \$9 \\times 2\$
+  PDF Correct:  La multiplicación 9 × 2
+
+--- 55 ---
+Ex: medium_6, Step Num: 8
+  Dart Inst: En el primer bloque, ¿qué operación se debe resolver primero?
+  PDF Inst:  En el primer bloque, ¿qué operación se debe resolver primero?
+  Dart Opts: ['La resta \\$64 - 10\\$', 'La potencia \\$2^6\\$', 'La resta \\$18 - 15\\$', 'La suma final']
+  PDF Opts:  ['La resta 26 − 10', 'La potencia 26', 'La resta 18 − 15', 'La suma final']
+  Dart Correct: La potencia \$2^6\$
+  PDF Correct:  La potencia 26
+
+--- 56 ---
+Ex: medium_7, Step Num: 1
+  Dart Inst: Selecciona los signos separadores que no constan en las operaciones internas.
+  PDF Inst:  Selecciona los signos separadores que no constan en las operaciones internas.
+  Dart Opts: []
+  PDF Opts:  ['Selecciona los signos separadores que no constan en las operaciones internas.']
+  Dart Correct: 
+  PDF Correct:  
+
+--- 57 ---
+Ex: medium_7, Step Num: 3
+  Dart Inst: En el primer bloque, ¿qué operación se debe resolver primero?
+  PDF Inst:  En el primer bloque, ¿qué operación se debe resolver primero?
+  Dart Opts: ['La resta \\$15 - (7 - 4)^2\\$', 'La operación interna \\$7 - 4\\$', 'La potencia \\$(7 - 4)^2\\$', 'La suma entre bloques']
+  PDF Opts:  ['La resta 15 − (7 − 4)', 'La operación interna7 − 4', 'La potencia (7 − 4)2', 'La suma entre bloques']
+  Dart Correct: La operación interna \$7 - 4\$
+  PDF Correct:  La operación interna 7 − 4
+
+--- 58 ---
+Ex: medium_7, Step Num: 5
+  Dart Inst: En el segundo bloque, ¿qué operación se debe resolver primero?
+  PDF Inst:  En el segundo bloque, ¿qué operación se debe resolver primero?
+  Dart Opts: ['La suma \\$15 + 20\\$', 'La multiplicación \\$3 \\\\times 5\\$', 'La resta del primer bloque', 'La suma entre bloques']
+  PDF Opts:  ['La suma 5 + 20', 'La multiplicación 3 × 5', 'La suma entre bloques']
+  Dart Correct: La multiplicación \$3 \\times 5\$
+  PDF Correct:  La multiplicación 3 × 5
+
+--- 59 ---
+Ex: medium_7, Step Num: 7
+  Dart Inst: En el primer bloque, ¿qué operación se debe resolver ahora?
+  PDF Inst:  En el primer bloque, ¿qué operación se debe resolver ahora?
+  Dart Opts: ['La resta \\$15 - 3^2\\$', 'La potencia \\$3^2\\$', 'La suma \\$15 + 20\\$', 'La suma final']
+  PDF Opts:  ['La resta 15 − (3)', 'La potencia (3)2', 'La suma 15 + 20', 'La suma final']
+  Dart Correct: La potencia \$3^2\$
+  PDF Correct:  La potencia (3)2
+
+--- 60 ---
+Ex: medium_8, Step Num: 1
+  Dart Inst: Selecciona los signos separadores que no constan en las operaciones internas.
+  PDF Inst:  Selecciona los signos separadores que no constan en las operaciones internas.
+  Dart Opts: []
+  PDF Opts:  ['Selecciona los signos separadores que no constan en las operaciones internas.']
+  Dart Correct: 
+  PDF Correct:  
+
+--- 61 ---
+Ex: medium_8, Step Num: 4
+  Dart Inst: Al aplicar la propiedad de división de raíces con el mismo índice en \$\\sqrt{144} \\div \\sqrt{16}\$, el resultado queda÷
+  PDF Inst:  Al aplicar la propiedad de división de raíces con el mismo índice en
+  Dart Opts: ['\\$\\\\sqrt{144 + 16}\\$', '\\$\\\\sqrt{144 \\\\div 16}\\$', '\\$\\\\sqrt{144 - 16}\\$', '\\$\\\\sqrt{144 \\\\times 16}\\$']
+  PDF Opts:  ['√144 + 16', '√144 ÷ 16', '√144 − 16', '√144 × 16']
+  Dart Correct: \$\\sqrt{144 \\div 16}\$
+  PDF Correct:  √144 ÷ 16
+
+--- 62 ---
+Ex: medium_8, Step Num: 5
+  Dart Inst: En el segundo bloque, ¿qué operación se debe resolver primero?
+  PDF Inst:  En el segundo bloque, ¿qué operación se debe resolver primero?
+  Dart Opts: ['La resta \\$5^2 - 10\\$', 'La potencia \\$5^2\\$', 'La resta entre bloques', 'La suma del primer bloque']
+  PDF Opts:  ['La resta 52 − 10', 'La potencia 52', 'La resta entre bloques', 'La suma del primer bloque']
+  Dart Correct: La potencia \$5^2\$
+  PDF Correct:  La potencia 52
+
+--- 63 ---
+Ex: medium_8, Step Num: 7
+  Dart Inst: En el primer bloque, ¿qué se debe resolver ahora?
+  PDF Inst:  En el primer bloque, ¿qué se debe resolver ahora?
+  Dart Opts: ['La operación interna \\$144 \\\\div 16\\$', 'La raíz cuadrada', 'La suma con 20', 'La resta entre bloques']
+  PDF Opts:  ['La operación interna144 ÷ 16', 'La raíz cuadrada', 'La suma con20', 'La resta entre bloques']
+  Dart Correct: La operación interna \$144 \\div 16\$
+  PDF Correct:  La operación interna 144 ÷ 16
+
+--- 64 ---
+Ex: medium_8, Step Num: 10
+  Dart Inst: En el primer bloque, ¿qué se debe resolver ahora?
+  PDF Inst:  En el primer bloque, ¿qué se debe resolver ahora?
+  Dart Opts: ['La suma \\$\\\\sqrt{9} + 20\\$', 'La raíz cuadrada \\$\\\\sqrt{9}\\$', 'La resta entre bloques', 'La división \\$144 \\\\div 16\\$']
+  PDF Opts:  ['La suma', 'La raíz cuadrada', 'La resta entre bloques']
+  Dart Correct: La raíz cuadrada \$\\sqrt{9}\$
+  PDF Correct:  La raíz cuadrada
+
+--- 65 ---
+Ex: medium_9, Step Num: 1
+  Dart Inst: Selecciona los signos separadores que no constan en las operaciones internas.
+  PDF Inst:  Selecciona los signos separadores que no constan en las operaciones internas.
+  Dart Opts: []
+  PDF Opts:  ['Selecciona los signos separadores que no constan en las operaciones internas.']
+  Dart Correct: 
+  PDF Correct:  
+
+--- 66 ---
+Ex: medium_9, Step Num: 3
+  Dart Inst: En el primer bloque, ¿qué se debe resolver primero?
+  PDF Inst:  En el primer bloque, ¿qué se debe resolver primero?
+  Dart Opts: ['La raíz cuadrada interior \\$\\\\sqrt{81}\\$', 'La propiedad raíz de raíz', 'La potencia \\$4^2\\$', 'La resta entre bloques']
+  PDF Opts:  ['La propiedad raíz de raíz', 'La potencia 42', 'La resta entre bloques']
+  Dart Correct: La propiedad raíz de raíz
+  PDF Correct:  La propiedad raíz de raíz
+
+--- 67 ---
+Ex: medium_9, Step Num: 4
+  Dart Inst: Al aplicar la propiedad raíz de raíz en \$\\sqrt{\\sqrt{81}}\$, el resultado queda÷
+  PDF Inst:  Al aplicar la propiedad raíz de raíz en
+  Dart Opts: ['\\$\\\\sqrt[4]{81}\\$', '\\$\\\\sqrt{81}\\$', '3\\$\\\\sqrt{81}\\$', '\\$81^2\\$']
+  PDF Opts:  ['4√', '√', '3√', '812']
+  Dart Correct: \$\\sqrt[4]{81}\$
+  PDF Correct:  4√
+
+--- 68 ---
+Ex: medium_9, Step Num: 7
+  Dart Inst: En el segundo bloque, ¿qué operación se debe resolver primero?
+  PDF Inst:  En el segundo bloque, ¿qué operación se debe resolver primero?
+  Dart Opts: ['La resta \\$5 - 3\\$', 'La división \\$30 \\\\div 5\\$', 'La raíz cuarta', 'La suma entre bloques']
+  PDF Opts:  ['La resta 5 − 3', 'La división 30 ÷ 5', 'La raíz cuarta', 'La suma entre bloques']
+  Dart Correct: La división \$30 \\div 5\$
+  PDF Correct:  La división 30 ÷ 5
+
+--- 69 ---
+Ex: medium_10, Step Num: 1
+  Dart Inst: Selecciona los signos separadores que no constan en las operaciones internas.
+  PDF Inst:  Selecciona los signos separadores que no constan en las operaciones internas.
+  Dart Opts: []
+  PDF Opts:  ['Selecciona los signos separadores que no constan en las operaciones internas.']
+  Dart Correct: 
+  PDF Correct:  
+
+--- 70 ---
+Ex: medium_10, Step Num: 11
+  Dart Inst: En el segundo bloque, ¿qué se debe resolver ahora?
+  PDF Inst:  En el segundo bloque, ¿qué se debe resolver ahora?
+  Dart Opts: ['La resta \\$36 - 3\\$', 'La raíz cuadrada \\$\\\\sqrt{36}\\$', 'La suma \\$36 + 16\\$', 'La resta entre bloques']
+  PDF Opts:  ['La resta 36 − 3', 'La raíz cuadrada', 'La suma 36 + 16', 'La resta entre bloques']
+  Dart Correct: La raíz cuadrada \$\\sqrt{36}\$
+  PDF Correct:  La raíz cuadrada
+
+--- 71 ---
+Ex: hard_1, Step Num: 1
+  Dart Inst: Selecciona los signos separadores que no constan en las operaciones internas.
+  PDF Inst:  Selecciona los signos separadores que no constan en las operaciones internas.
+  Dart Opts: []
+  PDF Opts:  ['Selecciona los signos separadores que no constan en las operaciones internas.']
+  Dart Correct: 
+  PDF Correct:  
+
+--- 72 ---
+Ex: hard_1, Step Num: 9
+  Dart Inst: En el segundo bloque, ¿qué operación se debe resolver ahora?
+  PDF Inst:  El primer bloque se conserva porque no existen operaciones.
+  Dart Opts: ['La suma', 'La raíz cuadrada', 'La resta', 'La multiplicación']
+  PDF Opts:  ['Verdadero', 'Falso']
+  Dart Correct: La raíz cuadrada
+  PDF Correct:  Verdadero
+
+--- 73 ---
+Ex: hard_1, Step Num: 10
+  Dart Inst: El resultado de la raíz cuadrada del segundo bloque es:
+  PDF Inst:  En el segundo bloque, ¿qué operación se debe resolver ahora?
+  Dart Opts: ['9', '6', '3', '4']
+  PDF Opts:  ['La suma', 'La raíz cuadrada', 'La resta', 'La multiplicación']
+  Dart Correct: 3
+  PDF Correct:  La raíz cuadrada
+
+--- 74 ---
+Ex: hard_1, Step Num: 11
+  Dart Inst: El resultado de la resta del tercer bloque es:
+  PDF Inst:  El resultado de la raíz cuadrada del segundo bloque es:
+  Dart Opts: ['7', '6', '5', '4']
+  PDF Opts:  ['9', '6', '3', '4']
+  Dart Correct: 5
+  PDF Correct:  3
+
+--- 75 ---
+Ex: hard_1, Step Num: 12
+  Dart Inst: ¿Qué operación se debe resolver primero en 30 + \$3 - 5\$?
+  PDF Inst:  El resultado de la resta del tercer bloque es:
+  Dart Opts: ['La suma \\$30 + 3\\$', 'La resta \\$3 - 5\\$', 'La resta \\$30 - 5\\$', 'La multiplicación']
+  PDF Opts:  ['7', '6', '5', '4']
+  Dart Correct: La suma \$30 + 3\$
+  PDF Correct:  5
+
+--- 76 ---
+Ex: hard_2, Step Num: 1
+  Dart Inst: Selecciona los signos separadores que no constan en las operaciones internas.
+  PDF Inst:  Selecciona los signos separadores.
+  Dart Opts: []
+  PDF Opts:  ['Selecciona los signos separadores.']
+  Dart Correct: 
+  PDF Correct:  
+
+--- 77 ---
+Ex: hard_2, Step Num: 7
+  Dart Inst: El resultado de la multiplicación del tercer bloque es:
+  PDF Inst:  El resultado de operación del segundo bloque es:
+  Dart Opts: ['8', '16', '12', '24']
+  PDF Opts:  ['1', '0', '7', '49']
+  Dart Correct: 16
+  PDF Correct:  1
+
+--- 78 ---
+Ex: hard_2, Step Num: 8
+  Dart Inst: El resultado de las últimas operaciones es:
+  PDF Inst:  El resultado de la multiplicación del tercer bloque es:
+  Dart Opts: ['39', '41', '37', '35']
+  PDF Opts:  ['8', '16', '12', '20']
+  Dart Correct: 39
+  PDF Correct:  16
+
+--- 79 ---
+Ex: hard_3, Step Num: 1
+  Dart Inst: Selecciona los signos separadores que no constan en las operaciones internas.
+  PDF Inst:  Selecciona los signos separadores que no constan en las operaciones internas.
+  Dart Opts: []
+  PDF Opts:  ['Selecciona los signos separadores que no constan en las operaciones internas.']
+  Dart Correct: 
+  PDF Correct:  
+
+--- 80 ---
+Ex: hard_3, Step Num: 6
+  Dart Inst: En las operaciones internas del segundo bloque, ¿qué operación se resuelve primero?
+  PDF Inst:  En las operaciones internas del segundo bloque, ¿qué operación se resuelve
+  Dart Opts: ['La resta \\$5 - 2\\$', 'La resta \\$3 - 2\\$', 'La multiplicación', 'La división']
+  PDF Opts:  ['La resta 5 − 2', 'La resta 3 − 2', 'La multiplicación', 'La división']
+  Dart Correct: La resta \$5 - 2\$
+  PDF Correct:  La resta 5 − 2
+
+--- 81 ---
+Ex: hard_3, Step Num: 8
+  Dart Inst: En las operaciones internas del segundo bloque, ¿qué operación se resuelve ahora?
+  PDF Inst:  En las operaciones internas del segundo bloque, ¿qué operación se resuelve ahora?
+  Dart Opts: ['La multiplicación \\$3 \\\\times 3\\$', 'La resta \\$3 - 2\\$', 'La división', 'La suma final']
+  PDF Opts:  ['La multiplicación 3 × 3', 'La resta 3 − 2', 'La división', 'La suma final']
+  Dart Correct: La resta \$3 - 2\$
+  PDF Correct:  La resta 3 − 2
+
+--- 82 ---
+Ex: hard_3, Step Num: 12
+  Dart Inst: En el segundo bloque, ¿qué operación se debe resolver ahora?
+  PDF Inst:  En el segundo bloque, ¿qué operación se debe resolver ahora?
+  Dart Opts: ['La multiplicación \\$3 \\\\times 3\\$', 'La división \\$3 \\\\div 1\\$', 'La suma', 'La resta']
+  PDF Opts:  ['La multiplicación 3 × 3', 'La división 3 ÷ 1', 'La suma', 'La resta']
+  Dart Correct: La multiplicación \$3 \\times 3\$
+  PDF Correct:  La multiplicación 3 × 3
+
+--- 83 ---
+Ex: hard_3, Step Num: 14
+  Dart Inst: En el segundo bloque, ¿qué operación se debe resolver ahora?
+  PDF Inst:  En el segundo bloque, ¿qué operación se debe resolver ahora?
+  Dart Opts: ['La división \\$9 \\\\div 1\\$', 'La multiplicación', 'La suma', 'La resta']
+  PDF Opts:  ['La división 9 ÷ 1', 'La multiplicación', 'La suma', 'La resta']
+  Dart Correct: La división \$9 \\div 1\$
+  PDF Correct:  La división 9 ÷ 1
+
+--- 84 ---
+Ex: hard_4, Step Num: 1
+  Dart Inst: Selecciona los signos separadores que no constan en las operaciones internas.
+  PDF Inst:  Selecciona los signos separadores.
+  Dart Opts: []
+  PDF Opts:  ['Selecciona los signos separadores.']
+  Dart Correct: 
+  PDF Correct:  
+
+--- 85 ---
+Ex: hard_4, Step Num: 3
+  Dart Inst: Observando la expresión, ¿qué operación se debe resolver primero?
+  PDF Inst:  Observando la expresión, ¿qué operación se debe resolver primero?
+  Dart Opts: ['La resta \\$55 - 3\\$', 'La multiplicación \\$3 \\\\times 2\\$', 'La suma', 'La raíz']
+  PDF Opts:  ['La resta 55 − 3', 'La multiplicación 3 × 2', 'La suma', 'La raíz']
+  Dart Correct: La multiplicación \$3 \\times 2\$
+  PDF Correct:  La multiplicación 3 × 2
+
+--- 86 ---
+Ex: hard_4, Step Num: 5
+  Dart Inst: Observando el tercer bloque, ¿qué operación se debe resolver ahora?
+  PDF Inst:  Observando el tercer bloque, ¿qué operación se debe resolver ahora?
+  Dart Opts: ['La resta \\$55 - 6\\$', 'La multiplicación \\$3 \\\\times \\\\sqrt[3]{5^6}\\$', 'La potenciación \\$5^6\\$', 'La propiedad raíz de una potencia']
+  PDF Opts:  ['La resta 55 − 6', 'La multiplicación 3 ×', 'La potenciación 56', 'La propiedad raíz de una potencia']
+  Dart Correct: La propiedad raíz de una potencia
+  PDF Correct:  La propiedad raíz de una potencia
+
+--- 87 ---
+Ex: hard_4, Step Num: 7
+  Dart Inst: La operación que se realiza primero es:
+  PDF Inst:  La operación que se realiza primero en el tercer bloque es:
+  Dart Opts: ['La potencia \\$5^2\\$', 'La multiplicación \\$3 \\\\times 5\\$', 'La suma \\$6 + 3\\$']
+  PDF Opts:  ['La potencia 52', 'La multiplicación 3 × 5', 'La suma 6 + 3']
+  Dart Correct: La potencia \$5^2\$
+  PDF Correct:  La potencia 52
+
+--- 88 ---
+Ex: hard_4, Step Num: 9
+  Dart Inst: La operación que se realiza primero es:
+  PDF Inst:  La operación que se realiza primero es:
+  Dart Opts: ['La multiplicación \\$3 \\\\times 25\\$', 'La suma \\$6 + 3\\$', 'La multiplicación \\$6 \\\\times 25\\$']
+  PDF Opts:  ['La multiplicación 3 × 25', 'La suma 6 + 3', 'La multiplicación 6 × 25']
+  Dart Correct: La multiplicación \$3 \\times 25\$
+  PDF Correct:  La multiplicación 3 × 25
+
+--- 89 ---
+Ex: hard_5, Step Num: 5
+  Dart Inst: Dentro del corchete, ¿qué operación se debe resolver ahora?
+  PDF Inst:  Dentro del corchete, ¿qué operación se debe resolver ahora?
+  Dart Opts: ['La resta \\$27 - 16\\$', 'La operación interna del paréntesis', 'La multiplicación externa', 'La resta \\$5 - 3\\$']
+  PDF Opts:  ['La resta 27 − 16', 'La operación interna del paréntesis', 'La multiplicación externa', 'La resta 5 − 3']
+  Dart Correct: La operación interna del paréntesis
+  PDF Correct:  La operación interna del paréntesis
+
+--- 90 ---
+Ex: hard_5, Step Num: 7
+  Dart Inst: Dentro del corchete, ¿qué operación se debe resolver ahora?
+  PDF Inst:  Dentro del corchete, ¿qué operación se debe resolver ahora?
+  Dart Opts: ['La resta \\$27 - 16\\$', 'La división \\$16 \\\\div 8\\$', 'La multiplicación \\$3 \\\\times 27\\$', 'La suma']
+  PDF Opts:  ['La resta 27 − 16', 'La división 16 ÷ 8', 'La multiplicación 3 × 27', 'La suma']
+  Dart Correct: La división \$16 \\div 8\$
+  PDF Correct:  La división 16 ÷ 8
+
+--- 91 ---
+Ex: hard_6, Step Num: 1
+  Dart Inst: Selecciona los signos separadores que no constan en las operaciones internas.
+  PDF Inst:  Selecciona los signos separadores.
+  Dart Opts: []
+  PDF Opts:  ['Selecciona los signos separadores.']
+  Dart Correct: 
+  PDF Correct:  
+
+--- 92 ---
+Ex: hard_6, Step Num: 5
+  Dart Inst: En el tercer bloque, ¿qué se debe resolver primero?
+  PDF Inst:  En el tercer bloque, ¿qué se debe resolver primero?
+  Dart Opts: ['La raíz cuadrada exterior', 'La propiedad de la raíz cúbica de una potencia', 'La suma final', 'La resta']
+  PDF Opts:  ['La raíz cuadrada exterior', 'La propiedad de la raíz de una potencia', 'La suma final', 'La resta']
+  Dart Correct: La propiedad de la raíz cúbica de una potencia
+  PDF Correct:  La propiedad de la raíz cúbica de una
+
+--- 93 ---
+Ex: hard_7, Step Num: 1
+  Dart Inst: Selecciona los signos separadores que no constan en las operaciones internas.
+  PDF Inst:  Selecciona los signos separadores que no constan en las operaciones internas.
+  Dart Opts: []
+  PDF Opts:  ['Selecciona los signos separadores que no constan en las operaciones internas.']
+  Dart Correct: 
+  PDF Correct:  
+
+--- 94 ---
+Ex: hard_7, Step Num: 5
+  Dart Inst: En el segundo bloque, ¿qué operación se debe resolver primero?
+  PDF Inst:  En el segundo bloque, ¿qué operación se debe resolver primero?
+  Dart Opts: ['La resta \\$10 - 9\\$', 'La operación interna del paréntesis', 'La suma exterior', 'La raíz cuadrada']
+  PDF Opts:  ['La resta 10 − 9', 'La operación interna del paréntesis', 'La suma exterior', 'La raíz cuadrada']
+  Dart Correct: La operación interna del paréntesis
+  PDF Correct:  La operación interna del paréntesis
+
+--- 95 ---
+Ex: hard_7, Step Num: 6
+  Dart Inst: En la operación interna del segundo bloque, ¿qué se debe resolver primero?
+  PDF Inst:  En la operación interna del segundo bloque, ¿qué se debe resolver primero?
+  Dart Opts: ['La división \\$9 \\\\div 3\\$', 'La suma \\$3 + 1\\$', 'La resta', 'La potencia']
+  PDF Opts:  ['La división 9 ÷ 3', 'La suma 3 + 1', 'La resta', 'La potencia']
+  Dart Correct: La división \$9 \\div 3\$
+  PDF Correct:  La división 9 ÷ 3
+
+--- 96 ---
+Ex: hard_7, Step Num: 12
+  Dart Inst: En el segundo bloque, ¿qué operación se debe resolver ahora?
+  PDF Inst:  En el segundo bloque, ¿qué operación se debe resolver ahora?
+  Dart Opts: ['La resta \\$10 - 3\\$', 'La suma \\$3 + 1\\$', 'La raíz cuadrada', 'La potencia']
+  PDF Opts:  ['La resta 10 − 3', 'La suma 3 + 1', 'La raíz cuadrada', 'La potencia']
+  Dart Correct: La suma \$3 + 1\$
+  PDF Correct:  La suma 3 + 1
+
+--- 97 ---
+Ex: hard_7, Step Num: 18
+  Dart Inst: En el segundo bloque, ¿qué operación se debe resolver ahora?
+  PDF Inst:  En el segundo bloque, ¿qué operación se debe resolver ahora?
+  Dart Opts: ['La resta \\$10 - 4\\$', 'La suma', 'La potencia', 'La multiplicación']
+  PDF Opts:  ['La resta 10 − (4)', 'La suma', 'La potencia', 'La multiplicación']
+  Dart Correct: La resta \$10 - 4\$
+  PDF Correct:  La resta 10 − (4)
+
+--- 98 ---
+Ex: hard_8, Step Num: 1
+  Dart Inst: Selecciona los signos separadores que no constan en las operaciones internas.
+  PDF Inst:  Selecciona los signos separadores que no constan en las operaciones internas.
+  Dart Opts: []
+  PDF Opts:  ['Selecciona los signos separadores que no constan en las operaciones internas.']
+  Dart Correct: 
+  PDF Correct:  
+
+--- 99 ---
+Ex: hard_8, Step Num: 4
+  Dart Inst: En el segundo bloque, ¿qué operación se debe resolver primero?
+  PDF Inst:  En el segundo bloque, ¿qué operación se debe resolver primero?
+  Dart Opts: ['La resta \\$15 - 3\\$', 'La operación interna del paréntesis', 'La suma \\$2^3\\$', 'La suma final']
+  PDF Opts:  ['La resta 15 − 3', 'La operación interna del paréntesis', 'La suma 23', 'La suma final']
+  Dart Correct: La operación interna del paréntesis
+  PDF Correct:  La operación interna del paréntesis
+
+--- 100 ---
+Ex: hard_8, Step Num: 6
+  Dart Inst: En el segundo bloque, ¿qué operación se resuelve ahora?
+  PDF Inst:  En el segundo bloque, ¿qué operación se resuelve ahora?
+  Dart Opts: ['La resta \\$15 - 2\\$', 'La potenciación \\$2^2\\$', 'La potenciación \\$2^3\\$', 'La suma final']
+  PDF Opts:  ['La resta 15 − 2', 'La potenciación 22', 'La potenciación 23', 'La suma final']
+  Dart Correct: La potenciación \$2^3\$
+  PDF Correct:  La potenciación 23
+
+--- 101 ---
+Ex: hard_8, Step Num: 10
+  Dart Inst: En el segundo bloque, ¿qué operación se debe resolver ahora?
+  PDF Inst:  En el segundo bloque, ¿qué operación se debe resolver ahora?
+  Dart Opts: ['La potencia \\$2^2\\$', 'La suma final', 'La resta']
+  PDF Opts:  ['La potencia (2)2', 'La suma final', 'La resta']
+  Dart Correct: La potencia \$2^2\$
+  PDF Correct:  La potencia (2)2
+
+--- 102 ---
+Ex: hard_9, Step Num: 1
+  Dart Inst: Selecciona los signos separadores que no constan en las operaciones internas.
+  PDF Inst:  Selecciona los signos separadores que no constan en las operaciones internas.
+  Dart Opts: []
+  PDF Opts:  ['Selecciona los signos separadores que no constan en las operaciones internas.']
+  Dart Correct: 
+  PDF Correct:  
+
+--- 103 ---
+Ex: hard_9, Step Num: 12
+  Dart Inst: En el segundo bloque, ¿qué operación se debe resolver ahora?
+  PDF Inst:  En el segundo bloque, ¿qué operación se debe resolver ahora?
+  Dart Opts: ['La suma \\$4 + 1\\$', 'La división \\$10 \\\\div 4\\$', 'La suma \\$23 + 10\\$', 'La raíz cuadrada']
+  PDF Opts:  ['La suma 4 + 1', 'La división 10 ÷ 4', 'La suma 23 + 10', 'La raíz cuadrada']
+  Dart Correct: La suma \$4 + 1\$
+  PDF Correct:  La suma 4 + 1
+
+--- 104 ---
+Ex: hard_9, Step Num: 14
+  Dart Inst: En el tercer bloque, ¿qué operación se debe resolver ahora?
+  PDF Inst:  En el tercer bloque, ¿qué operación se debe resolver ahora?
+  Dart Opts: ['La potencia \\$8^2\\$', 'La suma', 'La resta', 'La raíz']
+  PDF Opts:  ['La potencia (8)2', 'La suma', 'La resta', 'La raíz']
+  Dart Correct: La potencia \$8^2\$
+  PDF Correct:  La potencia (8)2
+
+--- 105 ---
+Ex: hard_9, Step Num: 16
+  Dart Inst: En el primer bloque, ¿qué operación se debe resolver ahora?
+  PDF Inst:  En el primer bloque, ¿qué operación se debe resolver ahora?
+  Dart Opts: ['La multiplicación \\$83 \\\\times 3\\$', 'La resta', 'La división', 'La raíz']
+  PDF Opts:  ['La multiplicación 83 × 3', 'La resta', 'La división', 'La raíz']
+  Dart Correct: La multiplicación \$83 \\times 3\$
+  PDF Correct:  La multiplicación 83 × 3
+
+--- 106 ---
+Ex: hard_9, Step Num: 18
+  Dart Inst: En el segundo bloque, ¿qué operación se debe resolver ahora?
+  PDF Inst:  En el segundo bloque, ¿qué operación se debe resolver ahora?
+  Dart Opts: ['La división \\$10 \\\\div 5\\$', 'La suma \\$23 + 10\\$', 'La resta', 'La potencia']
+  PDF Opts:  ['La división 10 ÷ 5', 'La suma 23 + 10', 'La resta', 'La potencia']
+  Dart Correct: La división \$10 \\div 5\$
+  PDF Correct:  La división 10 ÷ 5
+
+--- 107 ---
+Ex: hard_10, Step Num: 1
+  Dart Inst: Selecciona los signos separadores que no constan en las operaciones internas.
+  PDF Inst:  Selecciona los signos separadores que no constan en las operaciones internas.
+  Dart Opts: []
+  PDF Opts:  ['Selecciona los signos separadores que no constan en las operaciones internas.']
+  Dart Correct: 
+  PDF Correct:  
+
+--- 108 ---
+Ex: hard_10, Step Num: 9
+  Dart Inst: En las operaciones internas del bloque cuatro, ¿qué operación se resuelve primero?
+  PDF Inst:  En las operaciones internas del bloque cuatro, ¿qué operación se resuelve primero?
+  Dart Opts: ['La suma', 'La división']
+  PDF Opts:  ['La suma', 'La división', 'La multiplicación']
+  Dart Correct: La división
+  PDF Correct:  La división
+
+--- 109 ---
+Ex: hard_10, Step Num: 14
+  Dart Inst: ¿Qué se realiza en el primer bloque?
+  PDF Inst:  ¿Qué se realiza en el primer bloque?
+  Dart Opts: ['Se conserva el número 25', 'La suma 25+8']
+  PDF Opts:  ['Se conserva', 'Se elimina']
+  Dart Correct: Se conserva el número 25
+  PDF Correct:  Se conserva
+
+--- 110 ---
+Ex: hard_10, Step Num: 17
+  Dart Inst: ¿Cuál es el resultado de la operación interna del bloque cuatro?
+  PDF Inst:  En el bloque cuatro, ¿qué se realiza primero?
+  Dart Opts: ['7', '10']
+  PDF Opts:  ['La operación interna', 'La multiplicación']
+  Dart Correct: 7
+  PDF Correct:  La operación interna
+
+--- 111 ---
+Ex: hard_10, Step Num: 18
+  Dart Inst: ¿Cuál es el resultado de la operación interna del bloque cinco?
+  PDF Inst:  ¿Cuál es el resultado de la operación interna del bloque cuatro?
+  Dart Opts: ['8', '4']
+  PDF Opts:  ['7', '10']
+  Dart Correct: 4
+  PDF Correct:  7
+
+--- 112 ---
+Ex: hard_10, Step Num: 20
+  Dart Inst: ¿Cuál es el resultado de la multiplicación?
+  PDF Inst:  ¿Qué operación se realiza primero?
+  Dart Opts: ['9', '14']
+  PDF Opts:  ['La multiplicación', 'Las sumas', 'Las restas']
+  Dart Correct: 14
+  PDF Correct:  La multiplicación
+
+--- 113 ---
+Ex: hard_10, Step Num: 21
+  Dart Inst: Al resolver ordenadamente las sumas y restas de la expresión aritmética, se obtiene el siguiente resultado:
+  PDF Inst:  ¿Cuál es el resultado de la multiplicación?
+  Dart Opts: ['18', '22', '50', '21']
+  PDF Opts:  ['9', '14']
+  Dart Correct: 18
+  PDF Correct:  14

@@ -22,42 +22,31 @@ bool isExpressionComplete(String expr) {
   
   // Check trailing operators
   final lastChar = trimmed.substring(trimmed.length - 1);
-  if (lastChar == '+' || lastChar == '-' || lastChar == '*' || lastChar == '/' || lastChar == '(' || lastChar == '[' || lastChar == '^') {
-    return false;
-  }
-  
-  // Check if it ends with root/sqrt operator
-  final lastWord = trimmed.split(' ').last;
-  if (lastWord.contains('sqrt') || lastWord.contains('root')) {
+  if (lastChar == '+' || lastChar == '-' || lastChar == '*' || lastChar == '/' || lastChar == '(') {
     return false;
   }
   
   // Check parenthesis count
   int openCount = 0;
   int closeCount = 0;
-  int openBracketCount = 0;
-  int closeBracketCount = 0;
   for (int i = 0; i < trimmed.length; i++) {
     if (trimmed[i] == '(') openCount++;
     if (trimmed[i] == ')') closeCount++;
-    if (trimmed[i] == '[') openBracketCount++;
-    if (trimmed[i] == ']') closeBracketCount++;
   }
   if (openCount > closeCount) return false;
-  if (openBracketCount > closeBracketCount) return false;
   
   return true;
 }
 
-// ─────────────────────────────────────────────────────────────────────────────
-// ESTADO VISUAL DEL ROBOT GUARDIÁN
-// ─────────────────────────────────────────────────────────────────────────────
+// -----------------------------------------------------------------------------
+// ESTADO VISUAL DEL ROBOT GUARDI�N
+// -----------------------------------------------------------------------------
 
 enum LlamaMood { idle, happy, error, thinking, victory }
 
-// ─────────────────────────────────────────────────────────────────────────────
+// -----------------------------------------------------------------------------
 // ESTADO DEL JUEGO
-// ─────────────────────────────────────────────────────────────────────────────
+// -----------------------------------------------------------------------------
 
 class PracticeState {
   final ExerciseEntity exercise;
@@ -69,37 +58,37 @@ class PracticeState {
   final LlamaMood llamaMood;
   final RobotAccessoryEntity? newlyUnlockedAccessory;
 
-  // ── Combos ────────────────────────────────────────────────────────────────
+  // -- Combos ----------------------------------------------------------------
   final int comboCount;
   final bool comboActive;
 
-  // ── RF04 / RF06: Sistema de Vidas ─────────────────────────────────────────
-  /// Vidas restantes para el paso actual (3 → 2 → 1 → 0).
+  // -- RF04 / RF06: Sistema de Vidas -----------------------------------------
+  /// Vidas restantes para el paso actual (3 ? 2 ? 1 ? 0).
   final int lives;
 
-  /// true cuando lives == 0 → la UI debe mostrar el Game Over Dialog.
+  /// true cuando lives == 0 ? la UI debe mostrar el Game Over Dialog.
   final bool showGameOverDialog;
 
-  // ── Feedback de error silencioso (flash en token) ─────────────────────────
-  /// ID del último token incorrecto. Pasa a InteractiveEquation para el flash.
+  // -- Feedback de error silencioso (flash en token) -------------------------
+  /// ID del �ltimo token incorrecto. Pasa a InteractiveEquation para el flash.
   final String? lastErrorTokenId;
 
-  // ── SnackBar genérico (TAREA 1) ──────────────────────────────────────────
-  /// Mensaje corto GENÉRICO para mostrar en un SnackBar cuando lives > 0.
+  // -- SnackBar gen�rico (TAREA 1) ------------------------------------------
+  /// Mensaje corto GEN�RICO para mostrar en un SnackBar cuando lives > 0.
   /// Es un counter que se incrementa en cada error para que el listener
   /// de la UI lo distinga aunque el texto sea el mismo.
   final int errorSnackVersion;
   final String errorSnackMessage;
   
-  // ── SISTEMA DE PISTAS (TAREA 4) ──────────────────────────────────────────
+  // -- SISTEMA DE PISTAS (TAREA 4) ------------------------------------------
   final Set<String> hintTokenIds;
   final bool hintActive;
   final bool isProcessing;
 
-  // ── Respuestas Incorrectas del Paso Actual ───────────────────────────────
+  // -- Respuestas Incorrectas del Paso Actual -------------------------------
   final Set<String> incorrectAnswers;
 
-  // ── Historial Cuaderno ───────────────────────────────────────────────────
+  // -- Historial Cuaderno ---------------------------------------------------
   final List<String> equationHistory;
 
   final String? workingLine;
@@ -136,7 +125,7 @@ class PracticeState {
   int get totalSteps => exercise.steps.length;
   int get displayStep => currentStepIndex + 1;
 
-  /// Valores reales de los tokens correctos para el diálogo de solución.
+  /// Valores reales de los tokens correctos para el di�logo de soluci�n.
   /// Usa la lista ordenada de correctIds (NO el Set) para preservar el orden.
   List<String> get correctTokenValues {
     if (currentStep.isMultipleChoice && currentStep.correctAnswer != null) {
@@ -265,9 +254,9 @@ class PracticeState {
   }
 }
 
-// ─────────────────────────────────────────────────────────────────────────────
+// -----------------------------------------------------------------------------
 // NOTIFIER
-// ─────────────────────────────────────────────────────────────────────────────
+// -----------------------------------------------------------------------------
 
 class PracticeNotifier extends StateNotifier<PracticeState> {
   final Ref _ref;
@@ -276,13 +265,13 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
   PracticeNotifier(this._ref, ExerciseEntity exercise, {int initialStepIndex = 0})
       : super(PracticeState.fromExercise(exercise, initialStepIndex: initialStepIndex));
 
-  // ── 1. El niño toca un token ──────────────────────────────────────────────
+  // -- 1. El ni�o toca un token ----------------------------------------------
 
   Future<void> onTokenTapped(String tokenId) async {
     if (_isProcessing) return;
     if (state.stepCompleted || state.exerciseFinished) return;
     if (state.showGameOverDialog) return;
-    // Si el paso es de opción múltiple, ignoramos toques en la ecuación
+    // Si el paso es de opci�n m�ltiple, ignoramos toques en la ecuaci�n
     if (state.currentStep.isMultipleChoice) return;
 
     _isProcessing = true;
@@ -295,7 +284,7 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
 
       final correctIds = state.correctIds;
 
-      // Deselección
+      // Deselecci�n
       if (state.selectedTokenIds.contains(tokenId)) {
         final updated = Set<String>.from(state.selectedTokenIds)
           ..remove(tokenId);
@@ -303,13 +292,13 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
         return;
       }
 
-      // ── TOQUE INCORRECTO ─────────────────────────────────────────────────
+      // -- TOQUE INCORRECTO -------------------------------------------------
       if (!correctIds.contains(tokenId)) {
         final newLives = state.lives - 1;
         FeedbackService.instance.playError();
 
         if (newLives <= 0) {
-          // ── Vida 0 → mostrar diálogo de Game Over ──────────
+          // -- Vida 0 ? mostrar di�logo de Game Over ----------
           state = state.copyWith(
             llamaMood: LlamaMood.error,
             comboCount: 0,
@@ -319,7 +308,7 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
             lastErrorTokenId: tokenId,
           );
         } else {
-          // ── Vidas > 0 → SnackBar GENÉRICO + flash en token (TAREA 1) ─────
+          // -- Vidas > 0 ? SnackBar GEN�RICO + flash en token (TAREA 1) -----
           state = state.copyWith(
             llamaMood: LlamaMood.error,
             comboCount: 0,
@@ -337,7 +326,7 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
         return;
       }
 
-      // ── TOQUE CORRECTO ────────────────────────────────────────────────────
+      // -- TOQUE CORRECTO ----------------------------------------------------
       final newCombo = state.comboCount + 1;
       final isCombo = newCombo >= 3;
       final updated = Set<String>.from(state.selectedTokenIds)..add(tokenId);
@@ -345,22 +334,26 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
       if (updated.containsAll(correctIds)) {
         final currentWorking = state.workingLine;
         final newWorking = state.currentStep.expressionOverride ?? currentWorking;
-        var newHistory = List<String>.from(state.equationHistory);
+        final newHistory = List<String>.from(state.equationHistory);
 
-        // Si la expresión cambia, añadir la anterior al historial (resolución progresiva)
-        // Solo se guarda si la expresión anterior era COMPLETA (sin operadores colgantes ni paréntesis abiertos)
-        if (newWorking != null && currentWorking != null && newWorking != currentWorking) {
-          final lineToPush = currentWorking;
-          final cleanLine = lineToPush.replaceAll(' ', '').replaceAll('\$', '');
-          final isSameAsLast = newHistory.isNotEmpty &&
-              newHistory.last.replaceAll(' ', '').replaceAll('\$', '') == cleanLine;
-          if (!isSameAsLast && !lineToPush.contains('____') && isExpressionComplete(lineToPush)) {
-            final nextIndex = state.currentStepIndex + 1;
-            final nextStepStartsNewLine = nextIndex < state.exercise.steps.length &&
-                state.exercise.steps[nextIndex].startsNewLine;
-            if (nextStepStartsNewLine) {
-              newHistory = List<String>.from(newHistory)..add(lineToPush);
-            }
+        final nextIndex = state.currentStepIndex + 1;
+        if (nextIndex < state.exercise.steps.length) {
+          final nextStep = state.exercise.steps[nextIndex];
+          if (nextStep.startsNewLine && currentWorking != null && newWorking != null && currentWorking != newWorking && isExpressionComplete(currentWorking)) {
+             final cleanWorking = currentWorking.replaceAll(' ', '').replaceAll('\$', '');
+             final isSameAsLast = newHistory.isNotEmpty && newHistory.last.replaceAll(' ', '').replaceAll('\$', '') == cleanWorking;
+             if (!isSameAsLast) {
+               newHistory.add(currentWorking);
+             }
+          }
+        } else {
+          // If it's the last step, we should also add currentWorking to history before it gets overwritten
+          if (currentWorking != null && newWorking != null && currentWorking != newWorking && isExpressionComplete(currentWorking)) {
+             final cleanWorking = currentWorking.replaceAll(' ', '').replaceAll('\$', '');
+             final isSameAsLast = newHistory.isNotEmpty && newHistory.last.replaceAll(' ', '').replaceAll('\$', '') == cleanWorking;
+             if (!isSameAsLast) {
+               newHistory.add(currentWorking);
+             }
           }
         }
 
@@ -377,7 +370,7 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
         );
         FeedbackService.instance.playCorrect();
 
-        // Si es el último paso, procesar finalización después de 3s
+        // Si es el �ltimo paso, procesar finalizaci�n despu�s de 3s
         if (state.isLastStep) {
           final currentLine = state.workingLine;
           final finalHistory = List<String>.from(state.equationHistory);
@@ -397,7 +390,7 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
             await _finishExercise();
           }
         } else {
-          // Delay menor para la transición
+          // Delay menor para la transici�n
           await Future.delayed(const Duration(milliseconds: 500));
           state = state.copyWith(
             llamaMood: LlamaMood.thinking,
@@ -413,13 +406,13 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
         );
       }
     } finally {
-      // Cooldown mínimo anti doble-tap (100ms)
+      // Cooldown m�nimo anti doble-tap (100ms)
       await Future.delayed(const Duration(milliseconds: 100));
       _isProcessing = false;
     }
   }
 
-  // ── 1.2 Validación de Opción Múltiple ────────────────────────────────────
+  // -- 1.2 Validaci�n de Opci�n M�ltiple ------------------------------------
 
   Future<void> checkMultipleChoiceAnswer(String answer) async {
     if (_isProcessing || state.stepCompleted || state.exerciseFinished) return;
@@ -433,22 +426,26 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
         
         final currentWorking = state.workingLine;
         final newWorking = state.currentStep.expressionOverride ?? currentWorking;
-        var newHistory = List<String>.from(state.equationHistory);
-
-        // Si la expresión cambia, añadir la anterior al historial (resolución progresiva)
-        // Solo se guarda si la expresión anterior era COMPLETA (sin operadores colgantes ni paréntesis abiertos)
-        if (newWorking != null && currentWorking != null && newWorking != currentWorking) {
-          final lineToPush = currentWorking;
-          final cleanLine = lineToPush.replaceAll(' ', '').replaceAll('\$', '');
-          final isSameAsLast = newHistory.isNotEmpty &&
-              newHistory.last.replaceAll(' ', '').replaceAll('\$', '') == cleanLine;
-          if (!isSameAsLast && !lineToPush.contains('____') && isExpressionComplete(lineToPush)) {
-            final nextIndex = state.currentStepIndex + 1;
-            final nextStepStartsNewLine = nextIndex < state.exercise.steps.length &&
-                state.exercise.steps[nextIndex].startsNewLine;
-            if (nextStepStartsNewLine) {
-              newHistory = List<String>.from(newHistory)..add(lineToPush);
-            }
+        final newHistory = List<String>.from(state.equationHistory);
+        
+        final nextIndex = state.currentStepIndex + 1;
+        if (nextIndex < state.exercise.steps.length) {
+          final nextStep = state.exercise.steps[nextIndex];
+          if (nextStep.startsNewLine && currentWorking != null && newWorking != null && currentWorking != newWorking && isExpressionComplete(currentWorking)) {
+             final cleanWorking = currentWorking.replaceAll(' ', '').replaceAll('\$', '');
+             final isSameAsLast = newHistory.isNotEmpty && newHistory.last.replaceAll(' ', '').replaceAll('\$', '') == cleanWorking;
+             if (!isSameAsLast) {
+               newHistory.add(currentWorking);
+             }
+          }
+        } else {
+          // If it's the last step, we should also add currentWorking to history before it gets overwritten
+          if (currentWorking != null && newWorking != null && currentWorking != newWorking && isExpressionComplete(currentWorking)) {
+             final cleanWorking = currentWorking.replaceAll(' ', '').replaceAll('\$', '');
+             final isSameAsLast = newHistory.isNotEmpty && newHistory.last.replaceAll(' ', '').replaceAll('\$', '') == cleanWorking;
+             if (!isSameAsLast) {
+               newHistory.add(currentWorking);
+             }
           }
         }
         
@@ -462,10 +459,10 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
         );
         FeedbackService.instance.playCorrect();
 
-        // Si es el último paso, mostrar el resultado final 3 segundos
+        // Si es el �ltimo paso, mostrar el resultado final 3 segundos
         // y luego auto-completar el ejercicio.
         if (state.isLastStep) {
-          // Mostrar la respuesta final como nueva línea en el cuaderno
+          // Mostrar la respuesta final como nueva l�nea en el cuaderno
           final currentLine = state.workingLine;
           final finalHistory = List<String>.from(state.equationHistory);
           if (currentLine != null && isExpressionComplete(currentLine)) {
@@ -515,7 +512,7 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
     }
   }
 
-  // ── 1.5 SISTEMA DE PISTAS (TAREA 1) ──────────────────────────────────────
+  // -- 1.5 SISTEMA DE PISTAS (TAREA 1) --------------------------------------
   
   Future<void> buyHint() async {
     if (_isProcessing || state.stepCompleted || state.exerciseFinished || state.hintActive) return;
@@ -532,7 +529,7 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
       if (!success) {
         state = state.copyWith(
           errorSnackVersion: state.errorSnackVersion + 1,
-          errorSnackMessage: '¡Necesitas 20 monedas para una pista! Sigue intentando.',
+          errorSnackMessage: '�Necesitas 20 monedas para una pista! Sigue intentando.',
         );
         return;
       }
@@ -541,7 +538,7 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
       if (state.currentStep.isMultipleChoice) {
         state = state.copyWith(
           errorSnackVersion: state.errorSnackVersion + 1,
-          errorSnackMessage: '💡 PISTA: ${state.currentStep.algorithmHint}',
+          errorSnackMessage: '?? PISTA: ${state.currentStep.algorithmHint}',
           hintActive: true,
           llamaMood: LlamaMood.thinking,
         );
@@ -554,7 +551,7 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
         );
       }
 
-      // Desactivar después de 3 segundos
+      // Desactivar despu�s de 3 segundos
       await Future.delayed(const Duration(seconds: 3));
       
       if (mounted) {
@@ -572,10 +569,10 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
     }
   }
 
-  // ── 2. Avanzar al siguiente paso (con recompensa) ─────────────────────────
+  // -- 2. Avanzar al siguiente paso (con recompensa) -------------------------
 
   Future<void> advanceStep() async {
-    // CONDICIÓN DE SEGURIDAD CRÍTICA (TAREA 2)
+    // CONDICI�N DE SEGURIDAD CR�TICA (TAREA 2)
     if (state.isLastStep) {
       await _finishExercise();
     } else {
@@ -583,20 +580,20 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
     }
   }
 
-  // ── 3. Autocomplete (vida 0): cerrar diálogo + avanzar sin puntos ─────────
+  // -- 3. Autocomplete (vida 0): cerrar di�logo + avanzar sin puntos ---------
   //
-  // TAREA 2: el Navigator.pop() lo hace la UI antes de llamar este método.
-  // Aquí solo avanzamos o terminamos con la validación de seguridad.
+  // TAREA 2: el Navigator.pop() lo hace la UI antes de llamar este m�todo.
+  // Aqu� solo avanzamos o terminamos con la validaci�n de seguridad.
 
   /// TAREA 1: Avance forzado (blindado) tras perder las vidas.
   Future<void> forceNextStep() async {
     final isLastStep = state.currentStepIndex >= state.exercise.steps.length - 1;
 
     if (isLastStep) {
-      // Si es el último, finalizamos el ejercicio (lanza el diálogo de victoria)
+      // Si es el �ltimo, finalizamos el ejercicio (lanza el di�logo de victoria)
       await _finishExercise(withComboBonus: false);
     } else {
-      // Si hay más, avanzamos al siguiente snapshot
+      // Si hay m�s, avanzamos al siguiente snapshot
       state = state.copyWith(
         showGameOverDialog: false,
         clearErrorToken: true,
@@ -605,7 +602,7 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
     }
   }
 
-  // ── 4. Terminar ejercicio ─────────────────────────────────────────────────
+  // -- 4. Terminar ejercicio -------------------------------------------------
 
   Future<void> _finishExercise({bool withComboBonus = true}) async {
     if (state.exerciseFinished) return;
@@ -618,7 +615,7 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
 
     await profileNotifier.addCoins(earned);
     
-    // Obtener todos los IDs del nivel actual para la progresión estricta
+    // Obtener todos los IDs del nivel actual para la progresi�n estricta
     final currentDifficulty = state.exercise.difficulty;
     final allInLevel = currentDifficulty == 1 
         ? repo.easyExercises 
@@ -631,7 +628,7 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
       allExerciseIdsInThisLevel: allIdsInLevel,
     );
 
-    // Asegurar que la línea final de trabajo entre al historial al terminar el ejercicio
+    // Asegurar que la l�nea final de trabajo entre al historial al terminar el ejercicio
     final finalHistory = List<String>.from(state.equationHistory);
     final currentLine = state.workingLine;
     if (currentLine != null) {
@@ -654,7 +651,7 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
     FeedbackService.instance.playVictory();
   }
 
-  // ── Helper: ir al siguiente paso ─────────────────────────────────────────
+  // -- Helper: ir al siguiente paso -----------------------------------------
 
   void _goToNextStep() {
     final nextIndex = state.currentStepIndex + 1;
@@ -674,14 +671,14 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
     final newHistory = List<String>.from(state.equationHistory);
 
     if (nextStep.startsNewLine) {
-      String lastLineExpr = state.workingLine ?? getExpressionForStep(state.exercise, state.currentStepIndex);
-      // Solo añadir al historial si la expresión está completa
-      if (isExpressionComplete(lastLineExpr)) {
-        final cleanWorking = lastLineExpr.replaceAll(' ', '').replaceAll('\$', '');
-        final isSameAsLast = newHistory.isNotEmpty && newHistory.last.replaceAll(' ', '').replaceAll('\$', '') == cleanWorking;
-        if (!isSameAsLast) {
-          newHistory.add(lastLineExpr);
-        }
+      String lastLineExpr = getExpressionForStep(state.exercise, state.currentStepIndex);
+      if (!isExpressionComplete(lastLineExpr)) {
+        lastLineExpr = state.workingLine ?? lastLineExpr;
+      }
+      final cleanWorking = lastLineExpr.replaceAll(' ', '').replaceAll('\$', '');
+      final isSameAsLast = newHistory.isNotEmpty && newHistory.last.replaceAll(' ', '').replaceAll('\$', '') == cleanWorking;
+      if (!isSameAsLast) {
+        newHistory.add(lastLineExpr);
       }
     }
 
@@ -714,7 +711,7 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
     );
   }
 
-  // ── 5. Reiniciar ejercicio ────────────────────────────────────────────────
+  // -- 5. Reiniciar ejercicio ------------------------------------------------
 
   void restart() {
     _isProcessing = false;
@@ -741,7 +738,7 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
       
       if (pool.isEmpty) return;
 
-      // Nueva lógica: Elegir el siguiente ejercicio en orden secuencial
+      // Nueva l�gica: Elegir el siguiente ejercicio en orden secuencial
       final profile = _ref.read(playerProfileProvider);
       final uncompleted = pool.where((e) => !profile.completedExerciseIds.contains(e.id)).toList();
       
@@ -749,7 +746,7 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
       if (uncompleted.isNotEmpty) {
         newEx = uncompleted.first; // Toma el primero disponible (en orden)
       } else {
-        // Si ya completó todos, elige uno al azar para repasar (que no sea el mismo que acaba de hacer)
+        // Si ya complet� todos, elige uno al azar para repasar (que no sea el mismo que acaba de hacer)
         var available = pool.where((e) => e.id != state.exercise.id).toList();
         if (available.isEmpty) available = pool;
         newEx = available[DateTime.now().millisecond % available.length];
@@ -768,9 +765,9 @@ class PracticeNotifier extends StateNotifier<PracticeState> {
   }
 }
 
-// ─────────────────────────────────────────────────────────────────────────────
+// -----------------------------------------------------------------------------
 // PROVIDER family
-// ─────────────────────────────────────────────────────────────────────────────
+// -----------------------------------------------------------------------------
 
 final practiceProvider = StateNotifierProvider.autoDispose
     .family<PracticeNotifier, PracticeState, int>((ref, exerciseIndex) {
@@ -783,7 +780,7 @@ final practiceProvider = StateNotifierProvider.autoDispose
     return PracticeNotifier(ref, repo.tutorialExercise);
   }
 
-  // Seguridad ante índice fuera de rango (causante del crash reportado)
+  // Seguridad ante �ndice fuera de rango (causante del crash reportado)
   if (exerciseIndex < 0 || exerciseIndex >= allExercises.length) {
     return PracticeNotifier(ref, allExercises.first);
   }

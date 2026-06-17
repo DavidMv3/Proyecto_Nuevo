@@ -1,0 +1,2200 @@
+[
+  {
+    "ex_id": "easy_1",
+    "step_id": "easy_1_s1",
+    "step_num": "1",
+    "dart_instruction": "Selecciona los signos separadores de la expresión aritmética",
+    "pdf_instruction": "Selecciona los signos separadores de la expresión aritmética",
+    "dart_options": [],
+    "pdf_options": [
+      "Selecciona los signos separadores de la expresión aritmética"
+    ],
+    "dart_correct": "",
+    "pdf_correct": "",
+    "pdf_correct_opt": ""
+  },
+  {
+    "ex_id": "easy_2",
+    "step_id": "easy_2_s1",
+    "step_num": "1",
+    "dart_instruction": "Selecciona los signos separadores de la expresión aritmética",
+    "pdf_instruction": "Selecciona los signos separadores de la expresión aritmética",
+    "dart_options": [],
+    "pdf_options": [
+      "Selecciona los signos separadores de la expresión aritmética"
+    ],
+    "dart_correct": "",
+    "pdf_correct": "",
+    "pdf_correct_opt": ""
+  },
+  {
+    "ex_id": "easy_2",
+    "step_id": "easy_2_s3",
+    "step_num": "3",
+    "dart_instruction": "Es correcto afirmar que se resuelve primero:",
+    "pdf_instruction": "Es correcto afirmar que se resuelve primero:",
+    "dart_options": [
+      "La suma \\$18 + 3\\$",
+      "La multiplicación \\$3 \\\\times 5\\$",
+      "La suma \\$18 + 5\\$",
+      "La multiplicación \\$18 \\\\times 3\\$"
+    ],
+    "pdf_options": [
+      "Es correcto afirmar que se resuelve primero:",
+      "La suma 18 + 3",
+      "La multiplicación 3 × 5",
+      "La suma 18 + 5"
+    ],
+    "dart_correct": "La multiplicación \\$3 \\\\times 5\\$",
+    "pdf_correct": "",
+    "pdf_correct_opt": ""
+  },
+  {
+    "ex_id": "easy_2",
+    "step_id": "easy_2_s4",
+    "step_num": "4",
+    "dart_instruction": "Cuando en un bloque no hay operaciones se debe:",
+    "pdf_instruction": "La multiplicación 18 × 3",
+    "dart_options": [
+      "Conservar el número",
+      "Desaparecer el número"
+    ],
+    "pdf_options": [
+      "La multiplicación 18 × 3"
+    ],
+    "dart_correct": "Conservar el número",
+    "pdf_correct": "",
+    "pdf_correct_opt": ""
+  },
+  {
+    "ex_id": "easy_3",
+    "step_id": "easy_3_s1",
+    "step_num": "1",
+    "dart_instruction": "Selecciona los signos separadores de la expresión aritmética",
+    "pdf_instruction": "Selecciona los signos separadores de la expresión aritmética\n--- PAGE 6 ---",
+    "dart_options": [],
+    "pdf_options": [
+      "Selecciona los signos separadores de la expresión aritmética"
+    ],
+    "dart_correct": "",
+    "pdf_correct": "",
+    "pdf_correct_opt": ""
+  },
+  {
+    "ex_id": "easy_3",
+    "step_id": "easy_3_s3",
+    "step_num": "3",
+    "dart_instruction": "Los bloques en los que se deben conservar los números son:",
+    "pdf_instruction": "Los bloques en los que se deben conservar los números son:",
+    "dart_options": [
+      "El primero y el tercero",
+      "El primero y el segundo",
+      "El segundo y el tercero"
+    ],
+    "pdf_options": [
+      "Los bloques en los que se deben conservar los números son:",
+      "El primero y el tercero",
+      "El primero y el segundo",
+      "El segundo y el tercero"
+    ],
+    "dart_correct": "El primero y el tercero",
+    "pdf_correct": "El primero y el tercero",
+    "pdf_correct_opt": "a"
+  },
+  {
+    "ex_id": "easy_4",
+    "step_id": "easy_4_s1",
+    "step_num": "1",
+    "dart_instruction": "Selecciona los signos separadores de la expresión aritmética",
+    "pdf_instruction": "Selecciona los signos separadores de la expresión aritmética",
+    "dart_options": [],
+    "pdf_options": [
+      "Selecciona los signos separadores de la expresión aritmética"
+    ],
+    "dart_correct": "",
+    "pdf_correct": "",
+    "pdf_correct_opt": ""
+  },
+  {
+    "ex_id": "easy_4",
+    "step_id": "easy_4_s6",
+    "step_num": "6",
+    "dart_instruction": "El resultado de la potencia del tercer bloque es:",
+    "pdf_instruction": "El resultado de la potencia del tercer bloque es:",
+    "dart_options": [
+      "5",
+      "3",
+      "8",
+      "4"
+    ],
+    "pdf_options": [
+      "5",
+      "3",
+      "8",
+      "6"
+    ],
+    "dart_correct": "8",
+    "pdf_correct": "8",
+    "pdf_correct_opt": "c"
+  },
+  {
+    "ex_id": "easy_4",
+    "step_id": "easy_4_s7",
+    "step_num": "7",
+    "dart_instruction": "El resultado de la última operación es:",
+    "pdf_instruction": "El resultado de las últimas operaciones es:",
+    "dart_options": [
+      "12",
+      "10",
+      "4",
+      "8"
+    ],
+    "pdf_options": [
+      "11",
+      "12",
+      "10",
+      "9"
+    ],
+    "dart_correct": "12",
+    "pdf_correct": "12",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "easy_5",
+    "step_id": "easy_5_s1",
+    "step_num": "1",
+    "dart_instruction": "Selecciona los signos separadores de la expresión aritmética",
+    "pdf_instruction": "Selecciona los signos separadores de la expresión aritmética",
+    "dart_options": [],
+    "pdf_options": [
+      "Selecciona los signos separadores de la expresión aritmética"
+    ],
+    "dart_correct": "",
+    "pdf_correct": "",
+    "pdf_correct_opt": ""
+  },
+  {
+    "ex_id": "easy_6",
+    "step_id": "easy_6_s1",
+    "step_num": "1",
+    "dart_instruction": "Selecciona los signos separadores que no constan en las operaciones internas",
+    "pdf_instruction": "Selecciona los signos separadores que no constan en las operaciones internas\n--- PAGE 15 ---",
+    "dart_options": [],
+    "pdf_options": [
+      "Selecciona los signos separadores que no constan en las operaciones internas"
+    ],
+    "dart_correct": "",
+    "pdf_correct": "",
+    "pdf_correct_opt": ""
+  },
+  {
+    "ex_id": "easy_7",
+    "step_id": "easy_7_s1",
+    "step_num": "1",
+    "dart_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "pdf_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "dart_options": [],
+    "pdf_options": [
+      "Selecciona los signos separadores que no constan en las operaciones internas."
+    ],
+    "dart_correct": "",
+    "pdf_correct": "",
+    "pdf_correct_opt": ""
+  },
+  {
+    "ex_id": "easy_7",
+    "step_id": "easy_7_s5",
+    "step_num": "5",
+    "dart_instruction": "Se pueden resolver la raíz cuadrada y la división sin importar el orden porque:",
+    "pdf_instruction": "El resultado de la división del segundo bloque es:",
+    "dart_options": [
+      "Están en diferentes bloques",
+      "Tienen la misma jerarquía",
+      "Siempre se resuelve primero la división",
+      "Siempre se resuelve primero la resta"
+    ],
+    "pdf_options": [
+      "3",
+      "5",
+      "12",
+      "18"
+    ],
+    "dart_correct": "Están en diferentes bloques",
+    "pdf_correct": "3",
+    "pdf_correct_opt": "a"
+  },
+  {
+    "ex_id": "easy_7",
+    "step_id": "easy_7_s6",
+    "step_num": "6",
+    "dart_instruction": "El resultado de la división del segundo bloque es:",
+    "pdf_instruction": "¿Qué se debe resolver primero?",
+    "dart_options": [
+      "3",
+      "5",
+      "12",
+      "18"
+    ],
+    "pdf_options": [
+      "La resta",
+      "La raíz cuadrada de16",
+      "La suma"
+    ],
+    "dart_correct": "3",
+    "pdf_correct": "La raíz cuadrada de 16",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "easy_7",
+    "step_id": "easy_7_s7",
+    "step_num": "7",
+    "dart_instruction": "¿Qué se debe resolver primero?",
+    "pdf_instruction": "El resultado de la raíz cuadrada del primer bloque es:",
+    "dart_options": [
+      "La resta",
+      "La raíz cuadrada",
+      "La suma"
+    ],
+    "pdf_options": [
+      "2",
+      "8",
+      "4",
+      "16"
+    ],
+    "dart_correct": "La raíz cuadrada",
+    "pdf_correct": "4",
+    "pdf_correct_opt": "c"
+  },
+  {
+    "ex_id": "easy_7",
+    "step_id": "easy_7_s8",
+    "step_num": "8",
+    "dart_instruction": "El resultado de la raíz cuadrada del primer bloque es:",
+    "pdf_instruction": "¿Qué acción hacemos con el 3?",
+    "dart_options": [
+      "2",
+      "8",
+      "4",
+      "16"
+    ],
+    "pdf_options": [
+      "Lo conservamos",
+      "Lo eliminamos",
+      "Lo introducimos en el radical"
+    ],
+    "dart_correct": "4",
+    "pdf_correct": "Lo conservamos",
+    "pdf_correct_opt": "a"
+  },
+  {
+    "ex_id": "easy_7",
+    "step_id": "easy_7_s9",
+    "step_num": "9",
+    "dart_instruction": "¿Qué acción hacemos con el 3?",
+    "pdf_instruction": "El resultado de la resta es:",
+    "dart_options": [
+      "Lo conservamos",
+      "Lo eliminamos",
+      "Lo introducimos en el radical"
+    ],
+    "pdf_options": [
+      "1",
+      "9",
+      "21",
+      "0"
+    ],
+    "dart_correct": "Lo conservamos",
+    "pdf_correct": "1",
+    "pdf_correct_opt": "a"
+  },
+  {
+    "ex_id": "easy_8",
+    "step_id": "easy_8_s1",
+    "step_num": "1",
+    "dart_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "pdf_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "dart_options": [],
+    "pdf_options": [
+      "Selecciona los signos separadores que no constan en las operaciones internas."
+    ],
+    "dart_correct": "",
+    "pdf_correct": "",
+    "pdf_correct_opt": ""
+  },
+  {
+    "ex_id": "easy_8",
+    "step_id": "easy_8_s2",
+    "step_num": "2",
+    "dart_instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+    "pdf_instruction": "¿En cuántos bloques queda dividida la expresión aritmética?",
+    "dart_options": [
+      "2",
+      "3"
+    ],
+    "pdf_options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "dart_correct": "3",
+    "pdf_correct": "3",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "easy_9",
+    "step_id": "easy_9_s1",
+    "step_num": "1",
+    "dart_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "pdf_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "dart_options": [],
+    "pdf_options": [
+      "Selecciona los signos separadores que no constan en las operaciones internas."
+    ],
+    "dart_correct": "",
+    "pdf_correct": "",
+    "pdf_correct_opt": ""
+  },
+  {
+    "ex_id": "easy_9",
+    "step_id": "easy_9_s3",
+    "step_num": "3",
+    "dart_instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+    "pdf_instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+    "dart_options": [
+      "La multiplicación",
+      "La operación interna",
+      "La suma final",
+      "La potenciación"
+    ],
+    "pdf_options": [
+      "La multiplicación",
+      "La operación interna",
+      "La suma final"
+    ],
+    "dart_correct": "La operación interna",
+    "pdf_correct": "La operación interna",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "easy_9",
+    "step_id": "easy_9_s4",
+    "step_num": "4",
+    "dart_instruction": "En las operaciones internas del primer bloque, ¿qué se resuelve primero?",
+    "pdf_instruction": "En las operaciones internas del primer bloque, ¿qué se resuelve primero?",
+    "dart_options": [
+      "La suma",
+      "La división"
+    ],
+    "pdf_options": [
+      "La suma",
+      "La división",
+      "La multiplicación"
+    ],
+    "dart_correct": "La división",
+    "pdf_correct": "La división",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "easy_9",
+    "step_id": "easy_9_s8",
+    "step_num": "8",
+    "dart_instruction": "En el primer bloque, ¿qué operación se debe resolver ahora?",
+    "pdf_instruction": "En el primer bloque, ¿qué operación se debe resolver ahora?",
+    "dart_options": [
+      "La suma",
+      "La multiplicación",
+      "La resta"
+    ],
+    "pdf_options": [
+      "La suma",
+      "La multiplicación",
+      "La división"
+    ],
+    "dart_correct": "La suma",
+    "pdf_correct": "La suma",
+    "pdf_correct_opt": "a"
+  },
+  {
+    "ex_id": "easy_10",
+    "step_id": "easy_10_s1",
+    "step_num": "1",
+    "dart_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "pdf_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "dart_options": [],
+    "pdf_options": [
+      "Selecciona los signos separadores que no constan en las operaciones internas."
+    ],
+    "dart_correct": "",
+    "pdf_correct": "",
+    "pdf_correct_opt": ""
+  },
+  {
+    "ex_id": "easy_10",
+    "step_id": "easy_10_s6",
+    "step_num": "6",
+    "dart_instruction": "El resultado de la potencia \\$2^2\\$ es:",
+    "pdf_instruction": "El resultado de la potencia22 es",
+    "dart_options": [
+      "4",
+      "2",
+      "8",
+      "6"
+    ],
+    "pdf_options": [
+      "4",
+      "5",
+      "3",
+      "0"
+    ],
+    "dart_correct": "4",
+    "pdf_correct": "La potenciación 4",
+    "pdf_correct_opt": "a"
+  },
+  {
+    "ex_id": "easy_10",
+    "step_id": "easy_10_s7",
+    "step_num": "7",
+    "dart_instruction": "En el primer bloque, ¿qué operación se debe resolver ahora?",
+    "pdf_instruction": "En el primer bloque ¿qué se debe resolver ahora?",
+    "dart_options": [
+      "La suma",
+      "La multiplicación",
+      "La resta"
+    ],
+    "pdf_options": [
+      "La operación interna2 + 2",
+      "La multiplicación 2 × 4",
+      "La resta 4 − 3"
+    ],
+    "dart_correct": "La suma",
+    "pdf_correct": "La operación interna 2 + 2",
+    "pdf_correct_opt": "a"
+  },
+  {
+    "ex_id": "easy_10",
+    "step_id": "easy_10_s8",
+    "step_num": "8",
+    "dart_instruction": "El resultado de la suma \\$2 + 2\\$ es:",
+    "pdf_instruction": "El resultado de la suma2 + 2 es:",
+    "dart_options": [
+      "4",
+      "2",
+      "0",
+      "6"
+    ],
+    "pdf_options": [
+      "4",
+      "2",
+      "5",
+      "3"
+    ],
+    "dart_correct": "4",
+    "pdf_correct": "4",
+    "pdf_correct_opt": "a"
+  },
+  {
+    "ex_id": "easy_10",
+    "step_id": "easy_10_s9",
+    "step_num": "9",
+    "dart_instruction": "¿Qué operación se debe resolver ahora?",
+    "pdf_instruction": "En el siguiente paso, ¿qué operación se debe resolver?",
+    "dart_options": [
+      "La multiplicación",
+      "La resta"
+    ],
+    "pdf_options": [
+      "La multiplicación",
+      "La resta",
+      "La suma",
+      "Ninguna"
+    ],
+    "dart_correct": "La multiplicación",
+    "pdf_correct": "La multiplicación",
+    "pdf_correct_opt": "a"
+  },
+  {
+    "ex_id": "easy_10",
+    "step_id": "easy_10_s10",
+    "step_num": "10",
+    "dart_instruction": "El resultado de la multiplicación \\$4 \\\\times 4\\$ es:",
+    "pdf_instruction": "El resultado de la multiplicación(",
+    "dart_options": [
+      "16",
+      "8",
+      "12",
+      "10"
+    ],
+    "pdf_options": [
+      "8",
+      "16",
+      "12",
+      "4"
+    ],
+    "dart_correct": "16",
+    "pdf_correct": "16",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "easy_10",
+    "step_id": "easy_10_s11",
+    "step_num": "11",
+    "dart_instruction": "El resultado de la última operación es:",
+    "pdf_instruction": "El resultado de la resta es:",
+    "dart_options": [
+      "13",
+      "19",
+      "10",
+      "12"
+    ],
+    "pdf_options": [
+      "13",
+      "19",
+      "12",
+      "9"
+    ],
+    "dart_correct": "13",
+    "pdf_correct": "13",
+    "pdf_correct_opt": "a"
+  },
+  {
+    "ex_id": "medium_1",
+    "step_id": "medium_1_s1",
+    "step_num": "1",
+    "dart_instruction": "Selecciona los signos separadores que no constan en las operaciones internas",
+    "pdf_instruction": "Selecciona los signos separadores que no constan en las operaciones internas",
+    "dart_options": [],
+    "pdf_options": [
+      "Selecciona los signos separadores que no constan en las operaciones internas"
+    ],
+    "dart_correct": "",
+    "pdf_correct": "",
+    "pdf_correct_opt": ""
+  },
+  {
+    "ex_id": "medium_1",
+    "step_id": "medium_1_s5",
+    "step_num": "5",
+    "dart_instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+    "pdf_instruction": "En el segundo bloque, se resuelve primero:",
+    "dart_options": [
+      "La multiplicación",
+      "La operación interna",
+      "La resta"
+    ],
+    "pdf_options": [
+      "La resta",
+      "La multiplicación",
+      "La suma",
+      "La división"
+    ],
+    "dart_correct": "La operación interna",
+    "pdf_correct": "La resta",
+    "pdf_correct_opt": "a"
+  },
+  {
+    "ex_id": "medium_1",
+    "step_id": "medium_1_s6",
+    "step_num": "6",
+    "dart_instruction": "El resultado de la resta \\$5 - 2\\$ es:",
+    "pdf_instruction": "El resultado de la resta5 − 2 es:",
+    "dart_options": [
+      "3",
+      "7",
+      "2",
+      "4"
+    ],
+    "pdf_options": [
+      "3",
+      "5",
+      "2",
+      "7"
+    ],
+    "dart_correct": "3",
+    "pdf_correct": "3",
+    "pdf_correct_opt": "a"
+  },
+  {
+    "ex_id": "medium_1",
+    "step_id": "medium_1_s7",
+    "step_num": "7",
+    "dart_instruction": "¿Cuánto es \\$3^2\\$?",
+    "pdf_instruction": "En el siguiente paso se pueden resolver dos operaciones: la potencia y la\nmultiplicación, porque:\n--- PAGE 42 ---",
+    "dart_options": [
+      "6",
+      "9",
+      "3",
+      "27"
+    ],
+    "pdf_options": [
+      "Están en diferentes bloques",
+      "Tienen la misma jerarquía",
+      "Se resuelve primero la resta",
+      "No importa el orden en ningún caso"
+    ],
+    "dart_correct": "9",
+    "pdf_correct": "Están en diferentes bloques",
+    "pdf_correct_opt": "a"
+  },
+  {
+    "ex_id": "medium_1",
+    "step_id": "medium_1_s8",
+    "step_num": "8",
+    "dart_instruction": "En el segundo bloque, ¿qué operación se debe resolver ahora?",
+    "pdf_instruction": "El resultado de la potencia32 es:",
+    "dart_options": [
+      "La suma",
+      "La multiplicación",
+      "La resta"
+    ],
+    "pdf_options": [
+      "9",
+      "6",
+      "5",
+      "1"
+    ],
+    "dart_correct": "La multiplicación",
+    "pdf_correct": "9",
+    "pdf_correct_opt": "a"
+  },
+  {
+    "ex_id": "medium_1",
+    "step_id": "medium_1_s9",
+    "step_num": "9",
+    "dart_instruction": "El resultado de la multiplicación \\$2 \\\\times 3\\$ es:",
+    "pdf_instruction": "El resultado de la multiplicación2 × 3 es:",
+    "dart_options": [
+      "5",
+      "6",
+      "8",
+      "4"
+    ],
+    "pdf_options": [
+      "9",
+      "6",
+      "5",
+      "1"
+    ],
+    "dart_correct": "6",
+    "pdf_correct": "6",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "medium_1",
+    "step_id": "medium_1_s10",
+    "step_num": "10",
+    "dart_instruction": "El resultado final es:",
+    "pdf_instruction": "El resultado de la resta es:",
+    "dart_options": [
+      "3",
+      "15",
+      "6",
+      "2"
+    ],
+    "pdf_options": [
+      "9",
+      "6",
+      "3",
+      "1"
+    ],
+    "dart_correct": "3",
+    "pdf_correct": "3",
+    "pdf_correct_opt": "c"
+  },
+  {
+    "ex_id": "medium_2",
+    "step_id": "medium_2_s1",
+    "step_num": "1",
+    "dart_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "pdf_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "dart_options": [],
+    "pdf_options": [
+      "Selecciona los signos separadores que no constan en las operaciones internas."
+    ],
+    "dart_correct": "",
+    "pdf_correct": "",
+    "pdf_correct_opt": ""
+  },
+  {
+    "ex_id": "medium_2",
+    "step_id": "medium_2_s3",
+    "step_num": "3",
+    "dart_instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+    "pdf_instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+    "dart_options": [
+      "La resta \\$2^2 - 20\\$",
+      "La multiplicación \\$2^3 \\\\times 2^2\\$",
+      "La propiedad del producto de potencias de igual base",
+      "La suma \\$2^3 + 2^2\\$"
+    ],
+    "pdf_options": [
+      "La resta 22 − 20",
+      "La multiplicación 23 × 22",
+      "La propiedad del producto de potencias de igual base",
+      "La suma 23 + 22"
+    ],
+    "dart_correct": "La propiedad del producto de potencias de igual base",
+    "pdf_correct": "La propiedad del producto de potencias de",
+    "pdf_correct_opt": "c"
+  },
+  {
+    "ex_id": "medium_2",
+    "step_id": "medium_2_s5",
+    "step_num": "5",
+    "dart_instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+    "pdf_instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+    "dart_options": [
+      "La suma \\$6 + 3\\$",
+      "La potencia \\$3^2\\$",
+      "La resta \\$2^5 - 20\\$",
+      "La suma final"
+    ],
+    "pdf_options": [
+      "La suma 6 + 3",
+      "La potencia 32",
+      "La resta 25 − 20",
+      "La suma final"
+    ],
+    "dart_correct": "La potencia \\$3^2\\$",
+    "pdf_correct": "La potencia 32",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "medium_2",
+    "step_id": "medium_2_s7",
+    "step_num": "7",
+    "dart_instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+    "pdf_instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+    "dart_options": [
+      "La resta \\$2^5 - 20\\$",
+      "La potencia \\$2^5\\$",
+      "La suma \\$6 + 9\\$",
+      "La suma final"
+    ],
+    "pdf_options": [
+      "La resta 25 − 20",
+      "La potencia 25",
+      "La suma 6 + 9",
+      "La suma final"
+    ],
+    "dart_correct": "La potencia \\$2^5\\$",
+    "pdf_correct": "La potencia 25",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "medium_3",
+    "step_id": "medium_3_s1",
+    "step_num": "1",
+    "dart_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "pdf_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "dart_options": [],
+    "pdf_options": [
+      "Selecciona los signos separadores que no constan en las operaciones internas."
+    ],
+    "dart_correct": "",
+    "pdf_correct": "",
+    "pdf_correct_opt": ""
+  },
+  {
+    "ex_id": "medium_3",
+    "step_id": "medium_3_s3",
+    "step_num": "3",
+    "dart_instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+    "pdf_instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+    "dart_options": [
+      "La suma \\$3^2 + 7\\$",
+      "La división \\$3^4 \\\\div 3^2\\$",
+      "La propiedad de división de potencias de igual base",
+      "La resta entre bloques"
+    ],
+    "pdf_options": [
+      "La suma 32 + 7",
+      "La división 34 : 3 2",
+      "La propiedad de división de potencias de igual base",
+      "La resta entre bloques"
+    ],
+    "dart_correct": "La propiedad de división de potencias de igual base",
+    "pdf_correct": "La propiedad de división de potencias de",
+    "pdf_correct_opt": "c"
+  },
+  {
+    "ex_id": "medium_4",
+    "step_id": "medium_4_s1",
+    "step_num": "1",
+    "dart_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "pdf_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "dart_options": [],
+    "pdf_options": [
+      "Selecciona los signos separadores que no constan en las operaciones internas."
+    ],
+    "dart_correct": "",
+    "pdf_correct": "",
+    "pdf_correct_opt": ""
+  },
+  {
+    "ex_id": "medium_4",
+    "step_id": "medium_4_s3",
+    "step_num": "3",
+    "dart_instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+    "pdf_instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+    "dart_options": [
+      "La resta \\$(2 \\\\times 3)^2 - 30\\$",
+      "La potencia \\$(2 \\\\times 3)^2\\$",
+      "La multiplicación \\$2 \\\\times 3\\$",
+      "La suma entre bloques"
+    ],
+    "pdf_options": [
+      "La resta (2 × 3)2 − 30",
+      "La potencia (2 × 3)2",
+      "La multiplicación 2 × 3",
+      "La suma entre bloques"
+    ],
+    "dart_correct": "La multiplicación \\$2 \\\\times 3\\$",
+    "pdf_correct": "La multiplicación 2 × 3",
+    "pdf_correct_opt": "c"
+  },
+  {
+    "ex_id": "medium_4",
+    "step_id": "medium_4_s5",
+    "step_num": "5",
+    "dart_instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+    "pdf_instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+    "dart_options": [
+      "La suma \\$3 + 10\\$",
+      "La división \\$18 \\\\div 3\\$",
+      "La potencia \\$6^2\\$",
+      "La suma final"
+    ],
+    "pdf_options": [
+      "La suma 3 + 10",
+      "La división 18 : 3",
+      "La potencia 18 + 3",
+      "La suma final"
+    ],
+    "dart_correct": "La división \\$18 \\\\div 3\\$",
+    "pdf_correct": "La división 18 : 3",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "medium_4",
+    "step_id": "medium_4_s7",
+    "step_num": "7",
+    "dart_instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+    "pdf_instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+    "dart_options": [
+      "La resta \\$6^2 - 30\\$",
+      "La potencia \\$6^2\\$",
+      "La suma \\$6 + 10\\$",
+      "La suma final"
+    ],
+    "pdf_options": [
+      "La resta (6)2 − 30",
+      "La potencia (6)2",
+      "La suma 6 + 10"
+    ],
+    "dart_correct": "La potencia \\$6^2\\$",
+    "pdf_correct": "La potencia 62",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "medium_5",
+    "step_id": "medium_5_s1",
+    "step_num": "1",
+    "dart_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "pdf_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "dart_options": [],
+    "pdf_options": [
+      "Selecciona los signos separadores que no constan en las operaciones internas."
+    ],
+    "dart_correct": "",
+    "pdf_correct": "",
+    "pdf_correct_opt": ""
+  },
+  {
+    "ex_id": "medium_5",
+    "step_id": "medium_5_s3",
+    "step_num": "3",
+    "dart_instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+    "pdf_instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+    "dart_options": [
+      "La potencia \\$(8 \\\\div 2)^2\\$",
+      "La división \\$8 \\\\div 2\\$",
+      "La resta \\$(8 \\\\div 2)^2 - 12\\$",
+      "La suma entre bloques"
+    ],
+    "pdf_options": [
+      "La potencia (8 : 2) 2",
+      "La división 8 : 2",
+      "La resta (8 : 2) 2 − 12",
+      "La suma entre bloques"
+    ],
+    "dart_correct": "La división \\$8 \\\\div 2\\$",
+    "pdf_correct": "La división 8 : 2",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "medium_5",
+    "step_id": "medium_5_s5",
+    "step_num": "5",
+    "dart_instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+    "pdf_instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+    "dart_options": [
+      "La resta \\$5^2 - 4\\$",
+      "La potencia \\$5^2\\$",
+      "La suma entre bloques",
+      "La división"
+    ],
+    "pdf_options": [
+      "La resta 52 − 4",
+      "La potencia 52",
+      "La suma entre bloques",
+      "La división"
+    ],
+    "dart_correct": "La potencia \\$5^2\\$",
+    "pdf_correct": "La potencia 52",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "medium_5",
+    "step_id": "medium_5_s7",
+    "step_num": "7",
+    "dart_instruction": "En el primer bloque, ¿qué operación se debe resolver ahora?",
+    "pdf_instruction": "En el primer bloque, ¿qué operación se debe resolver ahora?",
+    "dart_options": [
+      "La resta \\$4^2 - 12\\$",
+      "La potencia \\$4^2\\$",
+      "La resta \\$25 - 4\\$",
+      "La suma final"
+    ],
+    "pdf_options": [
+      "La resta (4)2 − 12",
+      "La potencia (4)2",
+      "La resta 25 − 4",
+      "La suma final"
+    ],
+    "dart_correct": "La potencia \\$4^2\\$",
+    "pdf_correct": "La potencia (4)2",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "medium_6",
+    "step_id": "medium_6_s1",
+    "step_num": "1",
+    "dart_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "pdf_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "dart_options": [],
+    "pdf_options": [
+      "Selecciona los signos separadores que no constan en las operaciones internas."
+    ],
+    "dart_correct": "",
+    "pdf_correct": "",
+    "pdf_correct_opt": ""
+  },
+  {
+    "ex_id": "medium_6",
+    "step_id": "medium_6_s3",
+    "step_num": "3",
+    "dart_instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+    "pdf_instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+    "dart_options": [
+      "La potencia exterior \\$(2^2)^3\\$",
+      "La propiedad de potencia de potencia",
+      "La división \\$50 \\\\div 5\\$",
+      "La resta"
+    ],
+    "pdf_options": [
+      "La potencia exterior(22)3",
+      "La propiedad de potencia de potencia",
+      "La división 50 ÷ 5",
+      "La resta"
+    ],
+    "dart_correct": "La propiedad de potencia de potencia",
+    "pdf_correct": "La propiedad de potencia de potencia",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "medium_6",
+    "step_id": "medium_6_s6",
+    "step_num": "6",
+    "dart_instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+    "pdf_instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+    "dart_options": [
+      "La resta \\$18 - 15\\$",
+      "La multiplicación \\$9 \\\\times 2\\$",
+      "La suma entre bloques",
+      "La potencia \\$2^6\\$"
+    ],
+    "pdf_options": [
+      "La resta 2 − 15",
+      "La multiplicación 9 × 2",
+      "La suma entre bloques",
+      "La potencia 26"
+    ],
+    "dart_correct": "La multiplicación \\$9 \\\\times 2\\$",
+    "pdf_correct": "La multiplicación 9 × 2",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "medium_6",
+    "step_id": "medium_6_s8",
+    "step_num": "8",
+    "dart_instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+    "pdf_instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+    "dart_options": [
+      "La resta \\$64 - 10\\$",
+      "La potencia \\$2^6\\$",
+      "La resta \\$18 - 15\\$",
+      "La suma final"
+    ],
+    "pdf_options": [
+      "La resta 26 − 10",
+      "La potencia 26",
+      "La resta 18 − 15",
+      "La suma final"
+    ],
+    "dart_correct": "La potencia \\$2^6\\$",
+    "pdf_correct": "La potencia 26",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "medium_7",
+    "step_id": "medium_7_s1",
+    "step_num": "1",
+    "dart_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "pdf_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "dart_options": [],
+    "pdf_options": [
+      "Selecciona los signos separadores que no constan en las operaciones internas."
+    ],
+    "dart_correct": "",
+    "pdf_correct": "",
+    "pdf_correct_opt": ""
+  },
+  {
+    "ex_id": "medium_7",
+    "step_id": "medium_7_s3",
+    "step_num": "3",
+    "dart_instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+    "pdf_instruction": "En el primer bloque, ¿qué operación se debe resolver primero?",
+    "dart_options": [
+      "La resta \\$15 - (7 - 4)^2\\$",
+      "La operación interna \\$7 - 4\\$",
+      "La potencia \\$(7 - 4)^2\\$",
+      "La suma entre bloques"
+    ],
+    "pdf_options": [
+      "La resta 15 − (7 − 4)",
+      "La operación interna7 − 4",
+      "La potencia (7 − 4)2",
+      "La suma entre bloques"
+    ],
+    "dart_correct": "La operación interna \\$7 - 4\\$",
+    "pdf_correct": "La operación interna 7 − 4",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "medium_7",
+    "step_id": "medium_7_s5",
+    "step_num": "5",
+    "dart_instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+    "pdf_instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+    "dart_options": [
+      "La suma \\$15 + 20\\$",
+      "La multiplicación \\$3 \\\\times 5\\$",
+      "La resta del primer bloque",
+      "La suma entre bloques"
+    ],
+    "pdf_options": [
+      "La suma 5 + 20",
+      "La multiplicación 3 × 5",
+      "La suma entre bloques"
+    ],
+    "dart_correct": "La multiplicación \\$3 \\\\times 5\\$",
+    "pdf_correct": "La multiplicación 3 × 5",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "medium_7",
+    "step_id": "medium_7_s7",
+    "step_num": "7",
+    "dart_instruction": "En el primer bloque, ¿qué operación se debe resolver ahora?",
+    "pdf_instruction": "En el primer bloque, ¿qué operación se debe resolver ahora?",
+    "dart_options": [
+      "La resta \\$15 - 3^2\\$",
+      "La potencia \\$3^2\\$",
+      "La suma \\$15 + 20\\$",
+      "La suma final"
+    ],
+    "pdf_options": [
+      "La resta 15 − (3)",
+      "La potencia (3)2",
+      "La suma 15 + 20",
+      "La suma final"
+    ],
+    "dart_correct": "La potencia \\$3^2\\$",
+    "pdf_correct": "La potencia (3)2",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "medium_8",
+    "step_id": "medium_8_s1",
+    "step_num": "1",
+    "dart_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "pdf_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "dart_options": [],
+    "pdf_options": [
+      "Selecciona los signos separadores que no constan en las operaciones internas."
+    ],
+    "dart_correct": "",
+    "pdf_correct": "",
+    "pdf_correct_opt": ""
+  },
+  {
+    "ex_id": "medium_8",
+    "step_id": "medium_8_s4",
+    "step_num": "4",
+    "dart_instruction": "Al aplicar la propiedad de división de raíces con el mismo índice en \\$\\\\sqrt{144} \\\\div \\\\sqrt{16}\\$, el resultado queda÷",
+    "pdf_instruction": "Al aplicar la propiedad de división de raíces con el mismo índice en\n√\n144 ÷\n√\n16,\nel resultado queda:",
+    "dart_options": [
+      "\\$\\\\sqrt{144 + 16}\\$",
+      "\\$\\\\sqrt{144 \\\\div 16}\\$",
+      "\\$\\\\sqrt{144 - 16}\\$",
+      "\\$\\\\sqrt{144 \\\\times 16}\\$"
+    ],
+    "pdf_options": [
+      "√144 + 16",
+      "√144 ÷ 16",
+      "√144 − 16",
+      "√144 × 16"
+    ],
+    "dart_correct": "\\$\\\\sqrt{144 \\\\div 16}\\$",
+    "pdf_correct": "√144 ÷ 16",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "medium_8",
+    "step_id": "medium_8_s5",
+    "step_num": "5",
+    "dart_instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+    "pdf_instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+    "dart_options": [
+      "La resta \\$5^2 - 10\\$",
+      "La potencia \\$5^2\\$",
+      "La resta entre bloques",
+      "La suma del primer bloque"
+    ],
+    "pdf_options": [
+      "La resta 52 − 10",
+      "La potencia 52",
+      "La resta entre bloques",
+      "La suma del primer bloque"
+    ],
+    "dart_correct": "La potencia \\$5^2\\$",
+    "pdf_correct": "La potencia 52",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "medium_8",
+    "step_id": "medium_8_s7",
+    "step_num": "7",
+    "dart_instruction": "En el primer bloque, ¿qué se debe resolver ahora?",
+    "pdf_instruction": "En el primer bloque, ¿qué se debe resolver ahora?",
+    "dart_options": [
+      "La operación interna \\$144 \\\\div 16\\$",
+      "La raíz cuadrada",
+      "La suma con 20",
+      "La resta entre bloques"
+    ],
+    "pdf_options": [
+      "La operación interna144 ÷ 16",
+      "La raíz cuadrada",
+      "La suma con20",
+      "La resta entre bloques"
+    ],
+    "dart_correct": "La operación interna \\$144 \\\\div 16\\$",
+    "pdf_correct": "La operación interna 144 ÷ 16",
+    "pdf_correct_opt": "a"
+  },
+  {
+    "ex_id": "medium_8",
+    "step_id": "medium_8_s10",
+    "step_num": "10",
+    "dart_instruction": "En el primer bloque, ¿qué se debe resolver ahora?",
+    "pdf_instruction": "En el primer bloque, ¿qué se debe resolver ahora?",
+    "dart_options": [
+      "La suma \\$\\\\sqrt{9} + 20\\$",
+      "La raíz cuadrada \\$\\\\sqrt{9}\\$",
+      "La resta entre bloques",
+      "La división \\$144 \\\\div 16\\$"
+    ],
+    "pdf_options": [
+      "La suma",
+      "La raíz cuadrada",
+      "La resta entre bloques"
+    ],
+    "dart_correct": "La raíz cuadrada \\$\\\\sqrt{9}\\$",
+    "pdf_correct": "La raíz cuadrada",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "medium_9",
+    "step_id": "medium_9_s1",
+    "step_num": "1",
+    "dart_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "pdf_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "dart_options": [],
+    "pdf_options": [
+      "Selecciona los signos separadores que no constan en las operaciones internas."
+    ],
+    "dart_correct": "",
+    "pdf_correct": "",
+    "pdf_correct_opt": ""
+  },
+  {
+    "ex_id": "medium_9",
+    "step_id": "medium_9_s3",
+    "step_num": "3",
+    "dart_instruction": "En el primer bloque, ¿qué se debe resolver primero?",
+    "pdf_instruction": "En el primer bloque, ¿qué se debe resolver primero?",
+    "dart_options": [
+      "La raíz cuadrada interior \\$\\\\sqrt{81}\\$",
+      "La propiedad raíz de raíz",
+      "La potencia \\$4^2\\$",
+      "La resta entre bloques"
+    ],
+    "pdf_options": [
+      "La propiedad raíz de raíz",
+      "La potencia 42",
+      "La resta entre bloques"
+    ],
+    "dart_correct": "La propiedad raíz de raíz",
+    "pdf_correct": "La propiedad raíz de raíz",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "medium_9",
+    "step_id": "medium_9_s4",
+    "step_num": "4",
+    "dart_instruction": "Al aplicar la propiedad raíz de raíz en \\$\\\\sqrt{\\\\sqrt{81}}\\$, el resultado queda÷",
+    "pdf_instruction": "Al aplicar la propiedad raíz de raíz en\np√\n81, el resultado queda:",
+    "dart_options": [
+      "\\$\\\\sqrt[4]{81}\\$",
+      "\\$\\\\sqrt{81}\\$",
+      "3\\$\\\\sqrt{81}\\$",
+      "\\$81^2\\$"
+    ],
+    "pdf_options": [
+      "4√",
+      "√",
+      "3√",
+      "812"
+    ],
+    "dart_correct": "\\$\\\\sqrt[4]{81}\\$",
+    "pdf_correct": "4√",
+    "pdf_correct_opt": "a"
+  },
+  {
+    "ex_id": "medium_9",
+    "step_id": "medium_9_s7",
+    "step_num": "7",
+    "dart_instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+    "pdf_instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+    "dart_options": [
+      "La resta \\$5 - 3\\$",
+      "La división \\$30 \\\\div 5\\$",
+      "La raíz cuarta",
+      "La suma entre bloques"
+    ],
+    "pdf_options": [
+      "La resta 5 − 3",
+      "La división 30 ÷ 5",
+      "La raíz cuarta",
+      "La suma entre bloques"
+    ],
+    "dart_correct": "La división \\$30 \\\\div 5\\$",
+    "pdf_correct": "La división 30 ÷ 5",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "medium_10",
+    "step_id": "medium_10_s1",
+    "step_num": "1",
+    "dart_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "pdf_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "dart_options": [],
+    "pdf_options": [
+      "Selecciona los signos separadores que no constan en las operaciones internas."
+    ],
+    "dart_correct": "",
+    "pdf_correct": "",
+    "pdf_correct_opt": ""
+  },
+  {
+    "ex_id": "medium_10",
+    "step_id": "medium_10_s11",
+    "step_num": "11",
+    "dart_instruction": "En el segundo bloque, ¿qué se debe resolver ahora?",
+    "pdf_instruction": "En el segundo bloque, ¿qué se debe resolver ahora?",
+    "dart_options": [
+      "La resta \\$36 - 3\\$",
+      "La raíz cuadrada \\$\\\\sqrt{36}\\$",
+      "La suma \\$36 + 16\\$",
+      "La resta entre bloques"
+    ],
+    "pdf_options": [
+      "La resta 36 − 3",
+      "La raíz cuadrada",
+      "La suma 36 + 16",
+      "La resta entre bloques"
+    ],
+    "dart_correct": "La raíz cuadrada \\$\\\\sqrt{36}\\$",
+    "pdf_correct": "La raíz cuadrada",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "hard_1",
+    "step_id": "hard_1_s1",
+    "step_num": "1",
+    "dart_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "pdf_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "dart_options": [],
+    "pdf_options": [
+      "Selecciona los signos separadores que no constan en las operaciones internas."
+    ],
+    "dart_correct": "",
+    "pdf_correct": "",
+    "pdf_correct_opt": ""
+  },
+  {
+    "ex_id": "hard_1",
+    "step_id": "hard_1_s9",
+    "step_num": "9",
+    "dart_instruction": "En el segundo bloque, ¿qué operación se debe resolver ahora?",
+    "pdf_instruction": "El primer bloque se conserva porque no existen operaciones.",
+    "dart_options": [
+      "La suma",
+      "La raíz cuadrada",
+      "La resta",
+      "La multiplicación"
+    ],
+    "pdf_options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "dart_correct": "La raíz cuadrada",
+    "pdf_correct": "Verdadero",
+    "pdf_correct_opt": "a"
+  },
+  {
+    "ex_id": "hard_1",
+    "step_id": "hard_1_s10",
+    "step_num": "10",
+    "dart_instruction": "El resultado de la raíz cuadrada del segundo bloque es:",
+    "pdf_instruction": "En el segundo bloque, ¿qué operación se debe resolver ahora?",
+    "dart_options": [
+      "9",
+      "6",
+      "3",
+      "4"
+    ],
+    "pdf_options": [
+      "La suma",
+      "La raíz cuadrada",
+      "La resta",
+      "La multiplicación"
+    ],
+    "dart_correct": "3",
+    "pdf_correct": "La raíz cuadrada",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "hard_1",
+    "step_id": "hard_1_s11",
+    "step_num": "11",
+    "dart_instruction": "El resultado de la resta del tercer bloque es:",
+    "pdf_instruction": "El resultado de la raíz cuadrada del segundo bloque es:",
+    "dart_options": [
+      "7",
+      "6",
+      "5",
+      "4"
+    ],
+    "pdf_options": [
+      "9",
+      "6",
+      "3",
+      "4"
+    ],
+    "dart_correct": "5",
+    "pdf_correct": "3",
+    "pdf_correct_opt": "c"
+  },
+  {
+    "ex_id": "hard_1",
+    "step_id": "hard_1_s12",
+    "step_num": "12",
+    "dart_instruction": "¿Qué operación se debe resolver primero en 30 + \\$3 - 5\\$?",
+    "pdf_instruction": "El resultado de la resta del tercer bloque es:",
+    "dart_options": [
+      "La suma \\$30 + 3\\$",
+      "La resta \\$3 - 5\\$",
+      "La resta \\$30 - 5\\$",
+      "La multiplicación"
+    ],
+    "pdf_options": [
+      "7",
+      "6",
+      "5",
+      "4"
+    ],
+    "dart_correct": "La suma \\$30 + 3\\$",
+    "pdf_correct": "5",
+    "pdf_correct_opt": "c"
+  },
+  {
+    "ex_id": "hard_2",
+    "step_id": "hard_2_s1",
+    "step_num": "1",
+    "dart_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "pdf_instruction": "Selecciona los signos separadores.",
+    "dart_options": [],
+    "pdf_options": [
+      "Selecciona los signos separadores."
+    ],
+    "dart_correct": "",
+    "pdf_correct": "",
+    "pdf_correct_opt": ""
+  },
+  {
+    "ex_id": "hard_2",
+    "step_id": "hard_2_s7",
+    "step_num": "7",
+    "dart_instruction": "El resultado de la multiplicación del tercer bloque es:",
+    "pdf_instruction": "El resultado de operación del segundo bloque es:",
+    "dart_options": [
+      "8",
+      "16",
+      "12",
+      "24"
+    ],
+    "pdf_options": [
+      "1",
+      "0",
+      "7",
+      "49"
+    ],
+    "dart_correct": "16",
+    "pdf_correct": "1",
+    "pdf_correct_opt": "c"
+  },
+  {
+    "ex_id": "hard_2",
+    "step_id": "hard_2_s8",
+    "step_num": "8",
+    "dart_instruction": "El resultado de las últimas operaciones es:",
+    "pdf_instruction": "El resultado de la multiplicación del tercer bloque es:",
+    "dart_options": [
+      "39",
+      "41",
+      "37",
+      "35"
+    ],
+    "pdf_options": [
+      "8",
+      "16",
+      "12",
+      "20"
+    ],
+    "dart_correct": "39",
+    "pdf_correct": "16",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "hard_3",
+    "step_id": "hard_3_s1",
+    "step_num": "1",
+    "dart_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "pdf_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "dart_options": [],
+    "pdf_options": [
+      "Selecciona los signos separadores que no constan en las operaciones internas."
+    ],
+    "dart_correct": "",
+    "pdf_correct": "",
+    "pdf_correct_opt": ""
+  },
+  {
+    "ex_id": "hard_3",
+    "step_id": "hard_3_s6",
+    "step_num": "6",
+    "dart_instruction": "En las operaciones internas del segundo bloque, ¿qué operación se resuelve primero?",
+    "pdf_instruction": "En las operaciones internas del segundo bloque, ¿qué operación se resuelve\nprimero?",
+    "dart_options": [
+      "La resta \\$5 - 2\\$",
+      "La resta \\$3 - 2\\$",
+      "La multiplicación",
+      "La división"
+    ],
+    "pdf_options": [
+      "La resta 5 − 2",
+      "La resta 3 − 2",
+      "La multiplicación",
+      "La división"
+    ],
+    "dart_correct": "La resta \\$5 - 2\\$",
+    "pdf_correct": "La resta 5 − 2",
+    "pdf_correct_opt": "a"
+  },
+  {
+    "ex_id": "hard_3",
+    "step_id": "hard_3_s8",
+    "step_num": "8",
+    "dart_instruction": "En las operaciones internas del segundo bloque, ¿qué operación se resuelve ahora?",
+    "pdf_instruction": "En las operaciones internas del segundo bloque, ¿qué operación se resuelve ahora?",
+    "dart_options": [
+      "La multiplicación \\$3 \\\\times 3\\$",
+      "La resta \\$3 - 2\\$",
+      "La división",
+      "La suma final"
+    ],
+    "pdf_options": [
+      "La multiplicación 3 × 3",
+      "La resta 3 − 2",
+      "La división",
+      "La suma final"
+    ],
+    "dart_correct": "La resta \\$3 - 2\\$",
+    "pdf_correct": "La resta 3 − 2",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "hard_3",
+    "step_id": "hard_3_s12",
+    "step_num": "12",
+    "dart_instruction": "En el segundo bloque, ¿qué operación se debe resolver ahora?",
+    "pdf_instruction": "En el segundo bloque, ¿qué operación se debe resolver ahora?",
+    "dart_options": [
+      "La multiplicación \\$3 \\\\times 3\\$",
+      "La división \\$3 \\\\div 1\\$",
+      "La suma",
+      "La resta"
+    ],
+    "pdf_options": [
+      "La multiplicación 3 × 3",
+      "La división 3 ÷ 1",
+      "La suma",
+      "La resta"
+    ],
+    "dart_correct": "La multiplicación \\$3 \\\\times 3\\$",
+    "pdf_correct": "La multiplicación 3 × 3",
+    "pdf_correct_opt": "a"
+  },
+  {
+    "ex_id": "hard_3",
+    "step_id": "hard_3_s14",
+    "step_num": "14",
+    "dart_instruction": "En el segundo bloque, ¿qué operación se debe resolver ahora?",
+    "pdf_instruction": "En el segundo bloque, ¿qué operación se debe resolver ahora?",
+    "dart_options": [
+      "La división \\$9 \\\\div 1\\$",
+      "La multiplicación",
+      "La suma",
+      "La resta"
+    ],
+    "pdf_options": [
+      "La división 9 ÷ 1",
+      "La multiplicación",
+      "La suma",
+      "La resta"
+    ],
+    "dart_correct": "La división \\$9 \\\\div 1\\$",
+    "pdf_correct": "La división 9 ÷ 1",
+    "pdf_correct_opt": "a"
+  },
+  {
+    "ex_id": "hard_4",
+    "step_id": "hard_4_s1",
+    "step_num": "1",
+    "dart_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "pdf_instruction": "Selecciona los signos separadores.",
+    "dart_options": [],
+    "pdf_options": [
+      "Selecciona los signos separadores."
+    ],
+    "dart_correct": "",
+    "pdf_correct": "",
+    "pdf_correct_opt": ""
+  },
+  {
+    "ex_id": "hard_4",
+    "step_id": "hard_4_s3",
+    "step_num": "3",
+    "dart_instruction": "Observando la expresión, ¿qué operación se debe resolver primero?",
+    "pdf_instruction": "Observando la expresión, ¿qué operación se debe resolver primero?",
+    "dart_options": [
+      "La resta \\$55 - 3\\$",
+      "La multiplicación \\$3 \\\\times 2\\$",
+      "La suma",
+      "La raíz"
+    ],
+    "pdf_options": [
+      "La resta 55 − 3",
+      "La multiplicación 3 × 2",
+      "La suma",
+      "La raíz"
+    ],
+    "dart_correct": "La multiplicación \\$3 \\\\times 2\\$",
+    "pdf_correct": "La multiplicación 3 × 2",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "hard_4",
+    "step_id": "hard_4_s5",
+    "step_num": "5",
+    "dart_instruction": "Observando el tercer bloque, ¿qué operación se debe resolver ahora?",
+    "pdf_instruction": "Observando el tercer bloque, ¿qué operación se debe resolver ahora?",
+    "dart_options": [
+      "La resta \\$55 - 6\\$",
+      "La multiplicación \\$3 \\\\times \\\\sqrt[3]{5^6}\\$",
+      "La potenciación \\$5^6\\$",
+      "La propiedad raíz de una potencia"
+    ],
+    "pdf_options": [
+      "La resta 55 − 6",
+      "La multiplicación 3 ×",
+      "La potenciación 56",
+      "La propiedad raíz de una potencia"
+    ],
+    "dart_correct": "La propiedad raíz de una potencia",
+    "pdf_correct": "La propiedad raíz de una potencia",
+    "pdf_correct_opt": "d"
+  },
+  {
+    "ex_id": "hard_4",
+    "step_id": "hard_4_s7",
+    "step_num": "7",
+    "dart_instruction": "La operación que se realiza primero es:",
+    "pdf_instruction": "La operación que se realiza primero en el tercer bloque es:",
+    "dart_options": [
+      "La potencia \\$5^2\\$",
+      "La multiplicación \\$3 \\\\times 5\\$",
+      "La suma \\$6 + 3\\$"
+    ],
+    "pdf_options": [
+      "La potencia 52",
+      "La multiplicación 3 × 5",
+      "La suma 6 + 3"
+    ],
+    "dart_correct": "La potencia \\$5^2\\$",
+    "pdf_correct": "La potencia 52",
+    "pdf_correct_opt": "a"
+  },
+  {
+    "ex_id": "hard_4",
+    "step_id": "hard_4_s9",
+    "step_num": "9",
+    "dart_instruction": "La operación que se realiza primero es:",
+    "pdf_instruction": "La operación que se realiza primero es:",
+    "dart_options": [
+      "La multiplicación \\$3 \\\\times 25\\$",
+      "La suma \\$6 + 3\\$",
+      "La multiplicación \\$6 \\\\times 25\\$"
+    ],
+    "pdf_options": [
+      "La multiplicación 3 × 25",
+      "La suma 6 + 3",
+      "La multiplicación 6 × 25"
+    ],
+    "dart_correct": "La multiplicación \\$3 \\\\times 25\\$",
+    "pdf_correct": "La multiplicación 3 × 25",
+    "pdf_correct_opt": "a"
+  },
+  {
+    "ex_id": "hard_5",
+    "step_id": "hard_5_s5",
+    "step_num": "5",
+    "dart_instruction": "Dentro del corchete, ¿qué operación se debe resolver ahora?",
+    "pdf_instruction": "Dentro del corchete, ¿qué operación se debe resolver ahora?",
+    "dart_options": [
+      "La resta \\$27 - 16\\$",
+      "La operación interna del paréntesis",
+      "La multiplicación externa",
+      "La resta \\$5 - 3\\$"
+    ],
+    "pdf_options": [
+      "La resta 27 − 16",
+      "La operación interna del paréntesis",
+      "La multiplicación externa",
+      "La resta 5 − 3"
+    ],
+    "dart_correct": "La operación interna del paréntesis",
+    "pdf_correct": "La operación interna del paréntesis",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "hard_5",
+    "step_id": "hard_5_s7",
+    "step_num": "7",
+    "dart_instruction": "Dentro del corchete, ¿qué operación se debe resolver ahora?",
+    "pdf_instruction": "Dentro del corchete, ¿qué operación se debe resolver ahora?",
+    "dart_options": [
+      "La resta \\$27 - 16\\$",
+      "La división \\$16 \\\\div 8\\$",
+      "La multiplicación \\$3 \\\\times 27\\$",
+      "La suma"
+    ],
+    "pdf_options": [
+      "La resta 27 − 16",
+      "La división 16 ÷ 8",
+      "La multiplicación 3 × 27",
+      "La suma"
+    ],
+    "dart_correct": "La división \\$16 \\\\div 8\\$",
+    "pdf_correct": "La división 16 ÷ 8",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "hard_6",
+    "step_id": "hard_6_s1",
+    "step_num": "1",
+    "dart_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "pdf_instruction": "Selecciona los signos separadores.",
+    "dart_options": [],
+    "pdf_options": [
+      "Selecciona los signos separadores."
+    ],
+    "dart_correct": "",
+    "pdf_correct": "",
+    "pdf_correct_opt": ""
+  },
+  {
+    "ex_id": "hard_6",
+    "step_id": "hard_6_s5",
+    "step_num": "5",
+    "dart_instruction": "En el tercer bloque, ¿qué se debe resolver primero?",
+    "pdf_instruction": "En el tercer bloque, ¿qué se debe resolver primero?",
+    "dart_options": [
+      "La raíz cuadrada exterior",
+      "La propiedad de la raíz cúbica de una potencia",
+      "La suma final",
+      "La resta"
+    ],
+    "pdf_options": [
+      "La raíz cuadrada exterior",
+      "La propiedad de la raíz de una potencia",
+      "La suma final",
+      "La resta"
+    ],
+    "dart_correct": "La propiedad de la raíz cúbica de una potencia",
+    "pdf_correct": "La propiedad de la raíz cúbica de una",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "hard_7",
+    "step_id": "hard_7_s1",
+    "step_num": "1",
+    "dart_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "pdf_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "dart_options": [],
+    "pdf_options": [
+      "Selecciona los signos separadores que no constan en las operaciones internas."
+    ],
+    "dart_correct": "",
+    "pdf_correct": "",
+    "pdf_correct_opt": ""
+  },
+  {
+    "ex_id": "hard_7",
+    "step_id": "hard_7_s5",
+    "step_num": "5",
+    "dart_instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+    "pdf_instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+    "dart_options": [
+      "La resta \\$10 - 9\\$",
+      "La operación interna del paréntesis",
+      "La suma exterior",
+      "La raíz cuadrada"
+    ],
+    "pdf_options": [
+      "La resta 10 − 9",
+      "La operación interna del paréntesis",
+      "La suma exterior",
+      "La raíz cuadrada"
+    ],
+    "dart_correct": "La operación interna del paréntesis",
+    "pdf_correct": "La operación interna del paréntesis",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "hard_7",
+    "step_id": "hard_7_s6",
+    "step_num": "6",
+    "dart_instruction": "En la operación interna del segundo bloque, ¿qué se debe resolver primero?",
+    "pdf_instruction": "En la operación interna del segundo bloque, ¿qué se debe resolver primero?",
+    "dart_options": [
+      "La división \\$9 \\\\div 3\\$",
+      "La suma \\$3 + 1\\$",
+      "La resta",
+      "La potencia"
+    ],
+    "pdf_options": [
+      "La división 9 ÷ 3",
+      "La suma 3 + 1",
+      "La resta",
+      "La potencia"
+    ],
+    "dart_correct": "La división \\$9 \\\\div 3\\$",
+    "pdf_correct": "La división 9 ÷ 3",
+    "pdf_correct_opt": "a"
+  },
+  {
+    "ex_id": "hard_7",
+    "step_id": "hard_7_s12",
+    "step_num": "12",
+    "dart_instruction": "En el segundo bloque, ¿qué operación se debe resolver ahora?",
+    "pdf_instruction": "En el segundo bloque, ¿qué operación se debe resolver ahora?",
+    "dart_options": [
+      "La resta \\$10 - 3\\$",
+      "La suma \\$3 + 1\\$",
+      "La raíz cuadrada",
+      "La potencia"
+    ],
+    "pdf_options": [
+      "La resta 10 − 3",
+      "La suma 3 + 1",
+      "La raíz cuadrada",
+      "La potencia"
+    ],
+    "dart_correct": "La suma \\$3 + 1\\$",
+    "pdf_correct": "La suma 3 + 1",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "hard_7",
+    "step_id": "hard_7_s18",
+    "step_num": "18",
+    "dart_instruction": "En el segundo bloque, ¿qué operación se debe resolver ahora?",
+    "pdf_instruction": "En el segundo bloque, ¿qué operación se debe resolver ahora?",
+    "dart_options": [
+      "La resta \\$10 - 4\\$",
+      "La suma",
+      "La potencia",
+      "La multiplicación"
+    ],
+    "pdf_options": [
+      "La resta 10 − (4)",
+      "La suma",
+      "La potencia",
+      "La multiplicación"
+    ],
+    "dart_correct": "La resta \\$10 - 4\\$",
+    "pdf_correct": "La resta 10 − (4)",
+    "pdf_correct_opt": "a"
+  },
+  {
+    "ex_id": "hard_8",
+    "step_id": "hard_8_s1",
+    "step_num": "1",
+    "dart_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "pdf_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "dart_options": [],
+    "pdf_options": [
+      "Selecciona los signos separadores que no constan en las operaciones internas."
+    ],
+    "dart_correct": "",
+    "pdf_correct": "",
+    "pdf_correct_opt": ""
+  },
+  {
+    "ex_id": "hard_8",
+    "step_id": "hard_8_s4",
+    "step_num": "4",
+    "dart_instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?",
+    "pdf_instruction": "En el segundo bloque, ¿qué operación se debe resolver primero?\n--- PAGE 138 ---",
+    "dart_options": [
+      "La resta \\$15 - 3\\$",
+      "La operación interna del paréntesis",
+      "La suma \\$2^3\\$",
+      "La suma final"
+    ],
+    "pdf_options": [
+      "La resta 15 − 3",
+      "La operación interna del paréntesis",
+      "La suma 23",
+      "La suma final"
+    ],
+    "dart_correct": "La operación interna del paréntesis",
+    "pdf_correct": "La operación interna del paréntesis",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "hard_8",
+    "step_id": "hard_8_s6",
+    "step_num": "6",
+    "dart_instruction": "En el segundo bloque, ¿qué operación se resuelve ahora?",
+    "pdf_instruction": "En el segundo bloque, ¿qué operación se resuelve ahora?",
+    "dart_options": [
+      "La resta \\$15 - 2\\$",
+      "La potenciación \\$2^2\\$",
+      "La potenciación \\$2^3\\$",
+      "La suma final"
+    ],
+    "pdf_options": [
+      "La resta 15 − 2",
+      "La potenciación 22",
+      "La potenciación 23",
+      "La suma final"
+    ],
+    "dart_correct": "La potenciación \\$2^3\\$",
+    "pdf_correct": "La potenciación 23",
+    "pdf_correct_opt": "c"
+  },
+  {
+    "ex_id": "hard_8",
+    "step_id": "hard_8_s10",
+    "step_num": "10",
+    "dart_instruction": "En el segundo bloque, ¿qué operación se debe resolver ahora?",
+    "pdf_instruction": "En el segundo bloque, ¿qué operación se debe resolver ahora?",
+    "dart_options": [
+      "La potencia \\$2^2\\$",
+      "La suma final",
+      "La resta"
+    ],
+    "pdf_options": [
+      "La potencia (2)2",
+      "La suma final",
+      "La resta"
+    ],
+    "dart_correct": "La potencia \\$2^2\\$",
+    "pdf_correct": "La potencia (2)2",
+    "pdf_correct_opt": "a"
+  },
+  {
+    "ex_id": "hard_9",
+    "step_id": "hard_9_s1",
+    "step_num": "1",
+    "dart_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "pdf_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "dart_options": [],
+    "pdf_options": [
+      "Selecciona los signos separadores que no constan en las operaciones internas."
+    ],
+    "dart_correct": "",
+    "pdf_correct": "",
+    "pdf_correct_opt": ""
+  },
+  {
+    "ex_id": "hard_9",
+    "step_id": "hard_9_s12",
+    "step_num": "12",
+    "dart_instruction": "En el segundo bloque, ¿qué operación se debe resolver ahora?",
+    "pdf_instruction": "En el segundo bloque, ¿qué operación se debe resolver ahora?",
+    "dart_options": [
+      "La suma \\$4 + 1\\$",
+      "La división \\$10 \\\\div 4\\$",
+      "La suma \\$23 + 10\\$",
+      "La raíz cuadrada"
+    ],
+    "pdf_options": [
+      "La suma 4 + 1",
+      "La división 10 ÷ 4",
+      "La suma 23 + 10",
+      "La raíz cuadrada"
+    ],
+    "dart_correct": "La suma \\$4 + 1\\$",
+    "pdf_correct": "La suma 4 + 1",
+    "pdf_correct_opt": "a"
+  },
+  {
+    "ex_id": "hard_9",
+    "step_id": "hard_9_s14",
+    "step_num": "14",
+    "dart_instruction": "En el tercer bloque, ¿qué operación se debe resolver ahora?",
+    "pdf_instruction": "En el tercer bloque, ¿qué operación se debe resolver ahora?",
+    "dart_options": [
+      "La potencia \\$8^2\\$",
+      "La suma",
+      "La resta",
+      "La raíz"
+    ],
+    "pdf_options": [
+      "La potencia (8)2",
+      "La suma",
+      "La resta",
+      "La raíz"
+    ],
+    "dart_correct": "La potencia \\$8^2\\$",
+    "pdf_correct": "La potencia (8)2",
+    "pdf_correct_opt": "a"
+  },
+  {
+    "ex_id": "hard_9",
+    "step_id": "hard_9_s16",
+    "step_num": "16",
+    "dart_instruction": "En el primer bloque, ¿qué operación se debe resolver ahora?",
+    "pdf_instruction": "En el primer bloque, ¿qué operación se debe resolver ahora?",
+    "dart_options": [
+      "La multiplicación \\$83 \\\\times 3\\$",
+      "La resta",
+      "La división",
+      "La raíz"
+    ],
+    "pdf_options": [
+      "La multiplicación 83 × 3",
+      "La resta",
+      "La división",
+      "La raíz"
+    ],
+    "dart_correct": "La multiplicación \\$83 \\\\times 3\\$",
+    "pdf_correct": "La multiplicación 83 × 3",
+    "pdf_correct_opt": "a"
+  },
+  {
+    "ex_id": "hard_9",
+    "step_id": "hard_9_s18",
+    "step_num": "18",
+    "dart_instruction": "En el segundo bloque, ¿qué operación se debe resolver ahora?",
+    "pdf_instruction": "En el segundo bloque, ¿qué operación se debe resolver ahora?",
+    "dart_options": [
+      "La división \\$10 \\\\div 5\\$",
+      "La suma \\$23 + 10\\$",
+      "La resta",
+      "La potencia"
+    ],
+    "pdf_options": [
+      "La división 10 ÷ 5",
+      "La suma 23 + 10",
+      "La resta",
+      "La potencia"
+    ],
+    "dart_correct": "La división \\$10 \\\\div 5\\$",
+    "pdf_correct": "La división 10 ÷ 5",
+    "pdf_correct_opt": "a"
+  },
+  {
+    "ex_id": "hard_10",
+    "step_id": "hard_10_s1",
+    "step_num": "1",
+    "dart_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "pdf_instruction": "Selecciona los signos separadores que no constan en las operaciones internas.",
+    "dart_options": [],
+    "pdf_options": [
+      "Selecciona los signos separadores que no constan en las operaciones internas."
+    ],
+    "dart_correct": "",
+    "pdf_correct": "",
+    "pdf_correct_opt": ""
+  },
+  {
+    "ex_id": "hard_10",
+    "step_id": "hard_10_s9",
+    "step_num": "9",
+    "dart_instruction": "En las operaciones internas del bloque cuatro, ¿qué operación se resuelve primero?",
+    "pdf_instruction": "En las operaciones internas del bloque cuatro, ¿qué operación se resuelve primero?",
+    "dart_options": [
+      "La suma",
+      "La división"
+    ],
+    "pdf_options": [
+      "La suma",
+      "La división",
+      "La multiplicación"
+    ],
+    "dart_correct": "La división",
+    "pdf_correct": "La división",
+    "pdf_correct_opt": "b"
+  },
+  {
+    "ex_id": "hard_10",
+    "step_id": "hard_10_s14",
+    "step_num": "14",
+    "dart_instruction": "¿Qué se realiza en el primer bloque?",
+    "pdf_instruction": "¿Qué se realiza en el primer bloque?",
+    "dart_options": [
+      "Se conserva el número 25",
+      "La suma 25+8"
+    ],
+    "pdf_options": [
+      "Se conserva",
+      "Se elimina"
+    ],
+    "dart_correct": "Se conserva el número 25",
+    "pdf_correct": "Se conserva",
+    "pdf_correct_opt": "a"
+  },
+  {
+    "ex_id": "hard_10",
+    "step_id": "hard_10_s17",
+    "step_num": "17",
+    "dart_instruction": "¿Cuál es el resultado de la operación interna del bloque cuatro?",
+    "pdf_instruction": "En el bloque cuatro, ¿qué se realiza primero?",
+    "dart_options": [
+      "7",
+      "10"
+    ],
+    "pdf_options": [
+      "La operación interna",
+      "La multiplicación"
+    ],
+    "dart_correct": "7",
+    "pdf_correct": "La operación interna",
+    "pdf_correct_opt": "a"
+  },
+  {
+    "ex_id": "hard_10",
+    "step_id": "hard_10_s18",
+    "step_num": "18",
+    "dart_instruction": "¿Cuál es el resultado de la operación interna del bloque cinco?",
+    "pdf_instruction": "¿Cuál es el resultado de la operación interna del bloque cuatro?",
+    "dart_options": [
+      "8",
+      "4"
+    ],
+    "pdf_options": [
+      "7",
+      "10"
+    ],
+    "dart_correct": "4",
+    "pdf_correct": "7",
+    "pdf_correct_opt": "a"
+  },
+  {
+    "ex_id": "hard_10",
+    "step_id": "hard_10_s20",
+    "step_num": "20",
+    "dart_instruction": "¿Cuál es el resultado de la multiplicación?",
+    "pdf_instruction": "¿Qué operación se realiza primero?",
+    "dart_options": [
+      "9",
+      "14"
+    ],
+    "pdf_options": [
+      "La multiplicación",
+      "Las sumas",
+      "Las restas"
+    ],
+    "dart_correct": "14",
+    "pdf_correct": "La multiplicación",
+    "pdf_correct_opt": "a"
+  },
+  {
+    "ex_id": "hard_10",
+    "step_id": "hard_10_s21",
+    "step_num": "21",
+    "dart_instruction": "Al resolver ordenadamente las sumas y restas de la expresión aritmética, se obtiene el siguiente resultado:",
+    "pdf_instruction": "¿Cuál es el resultado de la multiplicación?",
+    "dart_options": [
+      "18",
+      "22",
+      "50",
+      "21"
+    ],
+    "pdf_options": [
+      "9",
+      "14"
+    ],
+    "dart_correct": "18",
+    "pdf_correct": "14",
+    "pdf_correct_opt": "b"
+  }
+]

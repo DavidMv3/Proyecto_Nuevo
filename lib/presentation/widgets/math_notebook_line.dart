@@ -125,7 +125,7 @@ class MathNotebookLine extends StatelessWidget {
 
   Widget _buildBlockWidget(List<String> blockTokens) {
     final blockExpr = blockTokens.join(' ');
-    final latex = _toLatex(blockExpr);
+    String latex = _toLatex(blockExpr);
 
     if (!showBoxesAndColors) {
       return Math.tex(
@@ -138,6 +138,10 @@ class MathNotebookLine extends StatelessWidget {
         mathStyle: MathStyle.display,
       );
     }
+
+    // When showing boxes, inner + and - should be red to distinguish from the blue external separators
+    latex = latex.replaceAll('+', r'\textcolor{red}{+}');
+    latex = latex.replaceAll('-', r'\textcolor{red}{-}');
 
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),

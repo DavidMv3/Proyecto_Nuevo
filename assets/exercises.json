@@ -263,7 +263,7 @@
           },
           {
             "id": "b",
-            "text": "$3^3$"
+            "text": "33"
           },
           {
             "id": "c",
@@ -274,8 +274,8 @@
             "text": "23"
           }
         ],
-        "correct_answer": "$3^3$",
-        "feedback_failure": "El resultado de la última operación es $3^3$.",
+        "correct_answer": "33",
+        "feedback_failure": "El resultado de la última operación es $33$.",
         "display_append": "33"
       }
     ]
@@ -6990,7 +6990,7 @@
         ],
         "correct_answer": "La propiedad de la raíz cuadrada de una potencia",
         "feedback_failure": "Antes de realizar sumas o restas, se debe resolver la raíz cuadrada de la potencia",
-        "display_append": ""
+        "display_append": "20 + 2 -"
       },
       {
         "step_index": 9,
@@ -7040,7 +7040,7 @@
         ],
         "correct_answer": "La potenciación",
         "feedback_failure": "La potenciación tiene mayor jerarquía que las sumas y restas",
-        "display_append": ""
+        "display_append": "20 + 2 -"
       },
       {
         "step_index": 11,
@@ -7199,7 +7199,7 @@
         ],
         "correct_answer": "4",
         "feedback_failure": "El resultado de la potencia $2^2$ es $4$",
-        "display_append": "( 4 + 1 ) ^ 3 + [ 10 - ( 9 / 3 + 1 ) ] - sqrt( 9 + 40 )"
+        "display_append": "( 4 + 1 ) ^ 3 +"
       },
       {
         "step_index": 5,
@@ -7226,7 +7226,7 @@
         ],
         "correct_answer": "La operación interna del paréntesis",
         "feedback_failure": "Dentro del corchete primero se resuelve la operación interna que está dentro del paréntesis",
-        "display_append": ""
+        "display_append": "( 4 + 1 ) ^ 3 + [ 10 - ("
       },
       {
         "step_index": 6,
@@ -7280,7 +7280,7 @@
         ],
         "correct_answer": "3",
         "feedback_failure": "El resultado de la división $9 \\div 3$ es $3$",
-        "display_append": "( 4 + 1 ) ^ 3 + [ 10 - ( 3 + 1 ) ] - sqrt( 9 + 40 )"
+        "display_append": "( 4 + 1 ) ^ 3 + [ 10 - ( 3 + 1 ) ] -"
       },
       {
         "step_index": 8,
@@ -7361,7 +7361,7 @@
         ],
         "correct_answer": "La suma $4 + 1$",
         "feedback_failure": "Al volver a analizar la expresión de izquierda a derecha, en el primer bloque queda pendiente la suma interna $4 + 1$",
-        "display_append": ""
+        "display_append": "("
       },
       {
         "step_index": 11,
@@ -7388,7 +7388,7 @@
         ],
         "correct_answer": "5",
         "feedback_failure": "El resultado de la suma $4 + 1$ es $5$",
-        "display_append": "5 ^ 3 + [ 10 - ( 3 + 1 ) ] - sqrt( 49 )"
+        "display_append": "5 ^ 3 +"
       },
       {
         "step_index": 12,
@@ -7415,7 +7415,7 @@
         ],
         "correct_answer": "La suma $3 + 1$",
         "feedback_failure": "Luego de resolver la división, queda pendiente la suma interna $3 + 1$",
-        "display_append": ""
+        "display_append": "5 ^ 3 + [ 10 - ("
       },
       {
         "step_index": 13,
@@ -7442,7 +7442,7 @@
         ],
         "correct_answer": "4",
         "feedback_failure": "El resultado de la suma $3 + 1$ es $4$",
-        "display_append": "5 ^ 3 + [ 10 - 4 ] - sqrt( 49 )"
+        "display_append": "5 ^ 3 + [ 10 - ( 4 ) ] -"
       },
       {
         "step_index": 14,
@@ -7469,7 +7469,7 @@
         ],
         "correct_answer": "La raíz cuadrada de $49$",
         "feedback_failure": "Luego de resolver la operación interna del radical, se debe resolver la raíz cuadrada",
-        "display_append": ""
+        "display_append": "5 ^ 3 + [ 10 - ( 4 ) ] - sqrt("
       },
       {
         "step_index": 15,
@@ -7496,7 +7496,7 @@
         ],
         "correct_answer": "7",
         "feedback_failure": "El resultado de la raíz cuadrada $\\sqrt{49}$ es $7$",
-        "display_append": "5 ^ 3 + [ 10 - 4 ] - 7"
+        "display_append": "5 ^ 3 + [ 10 - ( 4 ) ] - 7"
       },
       {
         "step_index": 16,
@@ -7550,7 +7550,7 @@
         ],
         "correct_answer": "125",
         "feedback_failure": "El resultado de la potencia $5^3$ es $125$",
-        "display_append": "125 + [ 10 - 4 ] - 7"
+        "display_append": "125 +"
       },
       {
         "step_index": 18,
@@ -7688,7 +7688,7 @@
         "step_index": 3,
         "type": "evaluation_step",
         "focus_block": 1,
-        "question": "En el primer bloque no hay operaciones internas, por lo tanto÷",
+        "question": "En el primer bloque no hay operaciones internas, por lo tanto:",
         "options": [
           {
             "id": "a",
@@ -7709,7 +7709,7 @@
         ],
         "correct_answer": "Se conserva el número 5",
         "feedback_failure": "Cuando un bloque no tiene operaciones internas, el número se conserva",
-        "display_append": "5 + [ 15 - ("
+        "display_append": "5"
       },
       {
         "step_index": 4,
@@ -7727,7 +7727,7 @@
           },
           {
             "id": "c",
-            "text": "La suma 23"
+            "text": "La suma $2^3$"
           },
           {
             "id": "d",
@@ -7736,7 +7736,7 @@
         ],
         "correct_answer": "La operación interna del paréntesis",
         "feedback_failure": "Primero se resuelve la operación interna ($3 - 1$)",
-        "display_append": ""
+        "display_append": "5 + [ 15 - ("
       },
       {
         "step_index": 5,
@@ -7763,7 +7763,7 @@
         ],
         "correct_answer": "2",
         "feedback_failure": "$3 - 1$ = 2",
-        "display_append": "5 + [ 15 - 2 ^ 2 + 2 ^ 3 ] + root3( 7 + 1 )"
+        "display_append": "5 + [ 15 - ( 2 ) ^ 2 +"
       },
       {
         "step_index": 6,
@@ -7777,20 +7777,20 @@
           },
           {
             "id": "b",
-            "text": "La potenciación 22"
+            "text": "La potenciación $2^2$"
           },
           {
             "id": "c",
-            "text": "La potenciación 23"
+            "text": "La potenciación $2^3$"
           },
           {
             "id": "d",
             "text": "La suma final"
           }
         ],
-        "correct_answer": "La potenciación 23",
-        "feedback_failure": "Estamos resolviendo el segundo bloque de izquierda a derecha, ahora se debe resolver la potenciación 23",
-        "display_append": ""
+        "correct_answer": "La potenciación $2^3$",
+        "feedback_failure": "Estamos resolviendo el segundo bloque de izquierda a derecha, ahora se debe resolver la potenciación $2^3$",
+        "display_append": "5 + [ 15 - ( 2 ) ^ 2 +"
       },
       {
         "step_index": 7,
@@ -7817,7 +7817,7 @@
         ],
         "correct_answer": "8",
         "feedback_failure": "$2^3 = 8$",
-        "display_append": "5 + [ 15 - 2 ^ 2 + 8 ] + root3( 7 + 1 )"
+        "display_append": "5 + [ 15 - ( 2 ) ^ 2 + 8 ] +"
       },
       {
         "step_index": 8,
@@ -7844,7 +7844,7 @@
         ],
         "correct_answer": "La operación interna $7 + 1$",
         "feedback_failure": "Primero se resuelve lo que está dentro del radical",
-        "display_append": ""
+        "display_append": "5 + [ 15 - ( 2 ) ^ 2 + 8 ] + root3"
       },
       {
         "step_index": 9,
@@ -7871,7 +7871,7 @@
         ],
         "correct_answer": "8",
         "feedback_failure": "$7 + 1$ = 8",
-        "display_append": "5 + [ 15 - 2 ^ 2 + 8 ] + root3( 8 )"
+        "display_append": "5 + [ 15 - ( 2 ) ^ 2 + 8 ] + root3( 8 )"
       },
       {
         "step_index": 10,
@@ -7881,7 +7881,7 @@
         "options": [
           {
             "id": "a",
-            "text": "La potencia $2^2$"
+            "text": "La potencia $(2)^2$"
           },
           {
             "id": "b",
@@ -7892,9 +7892,9 @@
             "text": "La resta"
           }
         ],
-        "correct_answer": "La potencia $2^2$",
+        "correct_answer": "La potencia $(2)^2$",
         "feedback_failure": "Entre las operaciones pendientes, la potencia tiene mayor jerarquía",
-        "display_append": ""
+        "display_append": "5 + [ 15 -"
       },
       {
         "step_index": 11,
@@ -7921,7 +7921,7 @@
         ],
         "correct_answer": "4",
         "feedback_failure": "$2^2 = 4$",
-        "display_append": "5 + [ 15 - 4 + 8 ] + root3( 8 )"
+        "display_append": "5 + [ 15 - 4 + 8 ] +"
       },
       {
         "step_index": 12,
@@ -7948,7 +7948,7 @@
         ],
         "correct_answer": "La raíz cúbica",
         "feedback_failure": "Luegode resolver la operación interna, se resuelve la raíz",
-        "display_append": ""
+        "display_append": "5 + [ 15 - 4 + 8 ] +"
       },
       {
         "step_index": 13,
@@ -8002,7 +8002,7 @@
         ],
         "correct_answer": "19",
         "feedback_failure": "El resultado de $15$ - $4 + 8$ es $19$",
-        "display_append": "5 + 19 + 2"
+        "display_append": "5 + [ 19 ] + 2"
       },
       {
         "step_index": 15,
@@ -8134,7 +8134,7 @@
         ],
         "correct_answer": "81",
         "feedback_failure": "El resultado de la potencia $9^2$ es $81$",
-        "display_append": "( 81 + 2 ) * 3 - sqrt( 23 + 10 / ( 2 ^ 2 + 1 ) ) - ( 6 + 2 ) ^ 2"
+        "display_append": "( 81 + 2 ) * 3 -"
       },
       {
         "step_index": 5,
@@ -8161,7 +8161,7 @@
         ],
         "correct_answer": "La operación interna del paréntesis",
         "feedback_failure": "En el segundo bloque primero se analiza la operación interna que está dentro del paréntesis",
-        "display_append": ""
+        "display_append": "( 81 + 2 ) * 3 - sqrt( 23 + 10 / ("
       },
       {
         "step_index": 6,
@@ -8215,7 +8215,7 @@
         ],
         "correct_answer": "4",
         "feedback_failure": "El resultado de la potencia $2^2$ es $4$",
-        "display_append": "( 81 + 2 ) * 3 - sqrt( 23 + 10 / ( 4 + 1 ) ) - ( 6 + 2 ) ^ 2"
+        "display_append": "( 81 + 2 ) * 3 - sqrt( 23 + 10 / ( 4 + 1 ) ) -"
       },
       {
         "step_index": 8,
@@ -8242,7 +8242,7 @@
         ],
         "correct_answer": "La operación interna del paréntesis",
         "feedback_failure": "En el tercer bloque primero se resuelve la operación interna que está dentro del paréntesis",
-        "display_append": "( 81 + 2 ) * 3 - sqrt( 23 + 10 / ( 2 ^ 2 + 1 ) ) - ("
+        "display_append": "( 81 + 2 ) * 3 - sqrt( 23 + 10 / ( 4 + 1 ) ) -"
       },
       {
         "step_index": 9,
@@ -8269,7 +8269,7 @@
         ],
         "correct_answer": "8",
         "feedback_failure": "El resultado de la suma $6 + 2$ es $8$",
-        "display_append": "( 81 + 2 ) * 3 - sqrt( 23 + 10 / ( 4 + 1 ) ) - 8 ^ 2"
+        "display_append": "( 81 + 2 ) * 3 - sqrt( 23 + 10 / ( 4 + 1 ) ) - ( 8 ) ^ 2"
       },
       {
         "step_index": 10,
@@ -8296,7 +8296,7 @@
         ],
         "correct_answer": "La suma $81 + 2$",
         "feedback_failure": "Al volver a observar de izquierda a derecha, en el primer bloque queda pendiente la suma interna $81 + 2$.",
-        "display_append": ""
+        "display_append": "("
       },
       {
         "step_index": 11,
@@ -8323,7 +8323,7 @@
         ],
         "correct_answer": "83",
         "feedback_failure": "El resultado de la suma $81 + 2$ es $83$.",
-        "display_append": "83 * 3 - sqrt( 23 + 10 / ( 4 + 1 ) ) - 8 ^ 2"
+        "display_append": "( 83 ) * 3 -"
       },
       {
         "step_index": 12,
@@ -8350,7 +8350,7 @@
         ],
         "correct_answer": "La suma $4 + 1$",
         "feedback_failure": "Luego de resolver la potencia, queda pendiente la suma interna $4 + 1$",
-        "display_append": ""
+        "display_append": "( 83 ) * 3 - sqrt( 23 + 10 / ("
       },
       {
         "step_index": 13,
@@ -8377,7 +8377,7 @@
         ],
         "correct_answer": "5",
         "feedback_failure": "El resultado de la suma $4 + 1$ es $5$",
-        "display_append": "83 * 3 - sqrt( 23 + 10 / 5 ) - 8 ^ 2"
+        "display_append": "( 83 ) * 3 - sqrt( 23 + 10 / ( 5 ) ) -"
       },
       {
         "step_index": 14,
@@ -8404,7 +8404,7 @@
         ],
         "correct_answer": "La potencia $8^2$",
         "feedback_failure": "Luego de resolver la operación interna del paréntesis, se resuelve la potencia",
-        "display_append": ""
+        "display_append": "( 83 ) * 3 - sqrt( 23 + 10 / ( 5 ) ) -"
       },
       {
         "step_index": 15,
@@ -8431,7 +8431,7 @@
         ],
         "correct_answer": "64",
         "feedback_failure": "El resultado de la potencia $8^2$ es $64$",
-        "display_append": "83 * 3 - sqrt( 23 + 10 / 5 ) - 64"
+        "display_append": "( 83 ) * 3 - sqrt( 23 + 10 / ( 5 ) ) - 64"
       },
       {
         "step_index": 16,
@@ -8458,7 +8458,7 @@
         ],
         "correct_answer": "La multiplicación $83 \\times 3$",
         "feedback_failure": "En el primer bloque queda pendiente la multiplicación $83 \\times 3$",
-        "display_append": ""
+        "display_append": "( 83 ) * 3 - sqrt( 23 + 10 / ( 5 ) ) - 64"
       },
       {
         "step_index": 17,
@@ -8485,7 +8485,7 @@
         ],
         "correct_answer": "249",
         "feedback_failure": "El resultado de la multiplicación $83 \\times 3$ es $249$",
-        "display_append": "249 - sqrt( 23 + 10 / 5 ) - 64"
+        "display_append": "249 -"
       },
       {
         "step_index": 18,
@@ -8512,13 +8512,13 @@
         ],
         "correct_answer": "La división $10 \\div 5$",
         "feedback_failure": "Dentro del radical, entre la suma y la división, se resuelve primero la división",
-        "display_append": ""
+        "display_append": "249 - sqrt( 23 +"
       },
       {
         "step_index": 19,
         "type": "evaluation_step",
         "focus_block": 1,
-        "question": "El resultado de la división$10 \\div 5$ es:",
+        "question": "El resultado de la división $10 \\div 5$ es:",
         "options": [
           {
             "id": "a",
@@ -8689,7 +8689,7 @@
         ],
         "correct_answer": "25",
         "feedback_failure": "El resultado de la potencia $5^2$ es $25$.",
-        "display_append": "25 + 8 * 2 ^ 2 - 7 ^ 8 / 7 ^ 6 + 2 * ( 5 + 4 / 2 ) - sqrt ( 15 + 1 )"
+        "display_append": "25 + 8"
       },
       {
         "step_index": 4,
@@ -8734,7 +8734,7 @@
         ],
         "correct_answer": "4",
         "feedback_failure": "El resultado de la potencia $2^2$ es $4$.",
-        "display_append": "25 + 8 * 4 - 7 ^ 8 / 7 ^ 6 + 2 * ( 5 + 4 / 2 ) - sqrt ( 15 + 1 )"
+        "display_append": "25 + 8 * 4 -"
       },
       {
         "step_index": 6,
@@ -8783,7 +8783,7 @@
         ],
         "correct_answer": "$7^2$",
         "feedback_failure": "En la división de potencias de igual base, se conserva la base y se restan los exponentes: $8 - 6 = 2$ (obteniendo $7^2$).",
-        "display_append": "25 + 8 * 4 - 7 ^ 2 + 2 * ( 5 + 4 / 2 ) - sqrt ( 15 + 1 )"
+        "display_append": "25 + 8 * 4 - 7 ^ 2 +"
       },
       {
         "step_index": 8,
@@ -8805,7 +8805,8 @@
           }
         ],
         "correct_answer": "Las operaciones internas",
-        "feedback_failure": "Entre las operaciones internas y otras operaciones, primero se resuelven las operaciones internas."
+        "feedback_failure": "Entre las operaciones internas y otras operaciones, primero se resuelven las operaciones internas.",
+        "display_append": "25 + 8 * 4 - 7 ^ 2 + 2 * ("
       },
       {
         "step_index": 9,
@@ -8850,7 +8851,7 @@
         ],
         "correct_answer": "2",
         "feedback_failure": "El resultado de la división $4 \\div 2$ es $2$.",
-        "display_append": "25 + 8 * 4 - 7 ^ 2 + 2 * ( 5 + 2 ) - sqrt ( 15 + 1 )"
+        "display_append": "25 + 8 * 4 - 7 ^ 2 + 2 * ( 5 + 2 ) -"
       },
       {
         "step_index": 11,
@@ -8952,7 +8953,7 @@
         ],
         "correct_answer": "32",
         "feedback_failure": "El resultado de la multiplicación $8 \\times 4$ es $32$.",
-        "display_append": "25 + 32 - 7 ^ 2 + 2 * ( 5 + 2 ) - sqrt ( 16 )"
+        "display_append": "25 + 32 -"
       },
       {
         "step_index": 16,
@@ -8971,7 +8972,7 @@
         ],
         "correct_answer": "49",
         "feedback_failure": "El resultado de la potencia $7^2$ es $49$.",
-        "display_append": "25 + 32 - 49 + 2 * ( 5 + 2 ) - sqrt ( 16 )"
+        "display_append": "25 + 32 - 49 +"
       },
       {
         "step_index": 17,
@@ -8989,7 +8990,8 @@
           }
         ],
         "correct_answer": "La operación interna",
-        "feedback_failure": "Entre las operaciones internas y otras operaciones, primero se resuelven las operaciones internas."
+        "feedback_failure": "Entre las operaciones internas y otras operaciones, primero se resuelven las operaciones internas.",
+        "display_append": "25 + 32 - 49 + 2 * ("
       },
       {
         "step_index": 18,
@@ -9008,7 +9010,7 @@
         ],
         "correct_answer": "7",
         "feedback_failure": "La suma $5 + 2 = 7$.",
-        "display_append": "25 + 32 - 49 + 2 * ( 7 ) - sqrt ( 16 )"
+        "display_append": "25 + 32 - 49 + 2 * ( 7 ) -"
       },
       {
         "step_index": 19,
@@ -9049,7 +9051,8 @@
           }
         ],
         "correct_answer": "La multiplicación",
-        "feedback_failure": "Entre sumas, restas y multiplicación, se resuelve primero la multiplicación; mientras tanto, los demás números se conservan."
+        "feedback_failure": "Entre sumas, restas y multiplicación, se resuelve primero la multiplicación; mientras tanto, los demás números se conservan.",
+        "display_append": "25 + 32 - 49 +"
       },
       {
         "step_index": 21,

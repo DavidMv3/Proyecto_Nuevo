@@ -15,7 +15,6 @@ import 'presentation/screens/shop_screen.dart';
 import 'presentation/screens/llama_screen.dart';
 import 'presentation/widgets/main_navigation_shell.dart';
 import 'presentation/widgets/andean_background.dart';
-import 'data/repositories/exercise_repository.dart';
 
 // ---------------------------------------------------------------------------
 // Entry Point

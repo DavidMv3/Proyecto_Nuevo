@@ -178,6 +178,7 @@ class _BlockWidget extends StatelessWidget {
               isHint: hintIds.contains(token.id) || hintIds.contains(exponentToken.id),
               isEnabled: isEnabled,
               isDimmed: focusIds.isNotEmpty && !focusIds.contains(exponentToken.id),
+              showInnerRed: showBox,
               onTap: () {
                 // Tap the caret token (the ^ is the meaningful one for selection)
                 onTokenTapped(token.id);
@@ -200,6 +201,7 @@ class _BlockWidget extends StatelessWidget {
           isHint: hintIds.contains(token.id),
           isEnabled: isEnabled,
           isDimmed: focusIds.isNotEmpty && !focusIds.contains(token.id),
+          showInnerRed: showBox,
           onTap: () => onTokenTapped(token.id),
         ),
       );
@@ -354,6 +356,7 @@ class MathTokenWidget extends StatefulWidget {
   final bool isSuperscript;
   final String? displayOverride;
   final VoidCallback onTap;
+  final bool showInnerRed;
 
   const MathTokenWidget({
     super.key,
@@ -368,6 +371,7 @@ class MathTokenWidget extends StatefulWidget {
     this.isDimmed = false,
     this.isSuperscript = false,
     this.displayOverride,
+    this.showInnerRed = false,
   });
 
   /// Formatea el texto crudo (ej: sqrt -> √, * -> ×) para visualización robusta.
@@ -491,7 +495,7 @@ class _MathTokenWidgetState extends State<MathTokenWidget>
     // Operators inside blocks: colored
     final v = widget.token.value;
     if (v == '*' || v == '/' || v == 'x' || v == '×' || v == '÷') return Colors.black87;
-    if (v == '+' || v == '-') return Colors.black87;
+    if (v == '+' || v == '-') return widget.showInnerRed ? Colors.red : Colors.black87;
     return Colors.black87;
   }
 
