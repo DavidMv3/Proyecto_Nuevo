@@ -501,7 +501,7 @@ class _PracticeScreenState extends ConsumerState<PracticeScreen> {
                 style: TextStyle(
                     fontSize: 22, fontWeight: FontWeight.w800)),
             const SizedBox(height: 4),
-            const Text('¡Excelente trabajo, pequeño Chaski! 🌋',
+            const Text('¡Excelente trabajo, joven Chaski! 🌋',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                     fontSize: 14,
